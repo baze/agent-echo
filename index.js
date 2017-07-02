@@ -38,6 +38,23 @@ restService.post('/info', function (req, res) {
 
                 return generateResponse(res, 'Kein Name angegeben.');
 
+            case 'emailAddress' :
+                var username = req.body.result && req.body.result.parameters && req.body.result.parameters.username ? req.body.result.parameters.username : null;
+
+                if (username) {
+                    var emailAddress = getEmailAddressForUsername(username);
+                    var speech = 'Ich konnte die E-Mail-Adresse von ' + username + ' nicht finden';;
+
+                    if (emailAddress) {
+                        speech = 'Die E-Mail-Adresse von ' + username + ' lautet ' + emailAddress;
+                    }
+
+                    return generateResponse(res, speech);
+
+                }
+
+                return generateResponse(res, 'Kein Name angegeben.');
+
             case 'blog' :
 
                 var blogName = req.body.result && req.body.result.parameters && req.body.result.parameters.blogName ? req.body.result.parameters.blogName : 'schlaadt';
@@ -88,6 +105,28 @@ function getPhoneNumberForUsername(username) {
 
         case 'jawa' :
             return 30;
+
+        default:
+            break;
+    }
+}
+
+function getEmailAddressForUsername(username) {
+
+    switch (username) {
+
+        case 'dieb' :
+        case 'mawo' :
+            break;
+
+        case 'joma' :
+            return 'joma@euw.de';
+
+        case 'bjma' :
+            return 'bjma@euw.de';
+
+        case 'jawa' :
+            return 'jawa@euw.de';
 
         default:
             break;
