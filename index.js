@@ -22,14 +22,14 @@ restService.post('/info', function (req, res) {
         switch (intentName) {
 
             case 'phonenumber' :
-                var username = req.body.result && req.body.result.parameters && req.body.result.parameters.username ? req.body.result.parameters.username : null;
+                var userName = req.body.result && req.body.result.parameters && req.body.result.parameters.userName ? req.body.result.parameters.userName : null;
 
                 if (username) {
-                    var phonenumber = getPhoneNumberForUsername(username);
-                    var speech = 'Ich konnte die Durchwahl von ' + username + ' nicht finden';;
+                    var phonenumber = getPhoneNumberForUsername(userName);
+                    var speech = 'Ich konnte die Durchwahl von ' + userName + ' nicht finden';;
 
                     if (phonenumber) {
-                        speech = 'Die Durchwahl von ' + username + ' lautet ' + phonenumber;
+                        speech = 'Die Durchwahl von ' + userName + ' lautet ' + phonenumber;
                     }
 
                     return generateResponse(res, speech);
@@ -39,14 +39,14 @@ restService.post('/info', function (req, res) {
                 return generateResponse(res, 'Kein Name angegeben.');
 
             case 'emailAddress' :
-                var username = req.body.result && req.body.result.parameters && req.body.result.parameters.username ? req.body.result.parameters.username : null;
+                var userName = req.body.result && req.body.result.parameters && req.body.result.parameters.userName ? req.body.result.parameters.userName : null;
 
-                if (username) {
-                    var emailAddress = getEmailAddressForUsername(username);
-                    var speech = 'Ich konnte die E-Mail-Adresse von ' + username + ' nicht finden';;
+                if (userName) {
+                    var emailAddress = getEmailAddressForUsername(userName);
+                    var speech = 'Ich konnte die E-Mail-Adresse von ' + userName + ' nicht finden';;
 
                     if (emailAddress) {
-                        speech = 'Die E-Mail-Adresse von ' + username + ' lautet ' + emailAddress;
+                        speech = 'Die E-Mail-Adresse von ' + userName + ' lautet ' + emailAddress;
                     }
 
                     return generateResponse(res, speech);
