@@ -25,11 +25,11 @@ restService.post('/info', function (req, res) {
                 var userName = req.body.result && req.body.result.parameters && req.body.result.parameters.userName ? req.body.result.parameters.userName : null;
 
                 if (userName) {
-                    var phonenumber = getPhoneNumberForUsername(userName);
+                    var phoneNumber = getPhoneNumberForUsername(userName);
                     var speech = 'Ich konnte die Durchwahl von ' + userName + ' nicht finden';;
 
-                    if (phonenumber) {
-                        speech = 'Die Durchwahl von ' + userName + ' lautet ' + phonenumber;
+                    if (phoneNumber) {
+                        speech = 'Die Durchwahl von ' + userName + ' lautet ' + phoneNumber;
                     }
 
                     return generateResponse(res, speech);
