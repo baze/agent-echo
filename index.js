@@ -19,14 +19,14 @@ restService.post('/info', function (req, res) {
     switch (action) {
 
         case 'getPhoneNumber' :
-            var userName = req.body.result && req.body.result.parameters && req.body.result.parameters.userName ? req.body.result.parameters.userName : null;
+            var employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
 
-            if (userName) {
-                var phoneNumber = getPhoneNumberForUsername(userName);
-                var speech = 'Ich konnte die Durchwahl von ' + userName + ' nicht finden';;
+            if (employee) {
+                var phoneNumber = getPhoneNumberForUsername(employee);
+                var speech = 'Ich konnte die Durchwahl von ' + employee + ' nicht finden';;
 
                 if (phoneNumber) {
-                    speech = 'Die Durchwahl von ' + userName + ' lautet ' + phoneNumber;
+                    speech = 'Die Durchwahl von ' + employee + ' lautet ' + phoneNumber;
                 }
 
                 return generateResponse(res, speech);
@@ -36,14 +36,14 @@ restService.post('/info', function (req, res) {
             return generateResponse(res, 'Kein Name angegeben.');
 
         case 'getEmailAddress' :
-            var userName = req.body.result && req.body.result.parameters && req.body.result.parameters.userName ? req.body.result.parameters.userName : null;
+            var employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
 
-            if (userName) {
-                var emailAddress = getEmailAddressForUsername(userName);
-                var speech = 'Ich konnte die E-Mail-Adresse von ' + userName + ' nicht finden';;
+            if (employee) {
+                var emailAddress = getEmailAddressForUsername(employee);
+                var speech = 'Ich konnte die E-Mail-Adresse von ' + employee + ' nicht finden';;
 
                 if (emailAddress) {
-                    speech = 'Die E-Mail-Adresse von ' + userName + ' lautet ' + emailAddress;
+                    speech = 'Die E-Mail-Adresse von ' + employee + ' lautet ' + emailAddress;
                 }
 
                 return generateResponse(res, speech);
@@ -54,10 +54,10 @@ restService.post('/info', function (req, res) {
 
         case 'getBlogPosts' :
 
-            var blogName = req.body.result && req.body.result.parameters && req.body.result.parameters.blogName ? req.body.result.parameters.blogName : 'schlaadt';
-            console.log(blogName);
+            var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : 'schlaadt';
+            console.log(blog);
 
-            var wp = new WPAPI({ endpoint: 'https://www.' + blogName + '.de/wp-json' });
+            var wp = new WPAPI({ endpoint: 'https://www.' + blog + '.de/wp-json' });
 
             wp.posts().then(function( data ) {
                 // do something with the returned posts
@@ -80,9 +80,9 @@ restService.post('/info', function (req, res) {
 
 });
 
-function getPhoneNumberForUsername(username) {
+function getPhoneNumberForUsername(employee) {
 
-    switch (username) {
+    switch (employee) {
 
         case 'dieb' :
         case 'mawo' :
@@ -102,9 +102,9 @@ function getPhoneNumberForUsername(username) {
     }
 }
 
-function getEmailAddressForUsername(username) {
+function getEmailAddressForUsername(employee) {
 
-    switch (username) {
+    switch (employee) {
 
         case 'dieb' :
         case 'mawo' :
