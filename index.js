@@ -40,7 +40,7 @@ restService.post('/info', function (req, res) {
 
             case 'blog' :
 
-                var blogName = req.body.result && req.body.result.parameters && req.body.result.parameters.blogName ? req.body.result.parameters.blogName : 'euw';
+                var blogName = req.body.result && req.body.result.parameters && req.body.result.parameters.blogName ? req.body.result.parameters.blogName : 'schlaadt';
                 console.log(blogName);
 
                 var wp = new WPAPI({ endpoint: 'https://www.' + blogName + '.de/wp-json' });
@@ -48,11 +48,14 @@ restService.post('/info', function (req, res) {
                 wp.posts().then(function( data ) {
                     // do something with the returned posts
                     console.log(data[0]);
-                    return generateResponse(res, data[0].title.rendered);
+
+                    // 2015-07-09T16:13:46
+
+                    return generateResponse(res, 'Der letzte Beitrag war: ' + data[0].title.rendered);
                 }).catch(function( err ) {
                     // handle error
                     // console.log(err);
-                    return generateResponse(res, 'no posts found');
+                    return generateResponse(res, 'Ich konnte keine Beiträge finden');
                 });
 
                 break;
