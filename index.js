@@ -10,6 +10,8 @@ restService.use(bodyParser.urlencoded({
     extended: true
 }));
 
+// test
+
 restService.use(bodyParser.json());
 
 restService.post('/info', function (req, res) {
