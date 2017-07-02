@@ -24,7 +24,7 @@ restService.post('/info', function (req, res) {
             case 'phonenumber' :
                 var userName = req.body.result && req.body.result.parameters && req.body.result.parameters.userName ? req.body.result.parameters.userName : null;
 
-                if (username) {
+                if (userName) {
                     var phonenumber = getPhoneNumberForUsername(userName);
                     var speech = 'Ich konnte die Durchwahl von ' + userName + ' nicht finden';;
 
