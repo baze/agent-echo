@@ -16,9 +16,72 @@ restService.use(bodyParser.json());
 
 restService.post('/info', function (req, res) {
 
-    var intentName = req.body.result && req.body.result.metadata && req.body.result.metadata.intentName ? req.body.result.metadata.intentName : null;
+    // var intentName = req.body.result && req.body.result.metadata && req.body.result.metadata.intentName ? req.body.result.metadata.intentName : null;
+    var action = req.body.result && req.body.result.action ? req.body.result.action : null;
 
-    if (intentName) {
+    switch (action) {
+
+        case 'getPhoneNumber' :
+            var userName = req.body.result && req.body.result.parameters && req.body.result.parameters.userName ? req.body.result.parameters.userName : null;
+
+            if (userName) {
+                var phoneNumber = getPhoneNumberForUsername(userName);
+                var speech = 'Ich konnte die Durchwahl von ' + userName + ' nicht finden';;
+
+                if (phoneNumber) {
+                    speech = 'Die Durchwahl von ' + userName + ' lautet ' + phoneNumber;
+                }
+
+                return generateResponse(res, speech);
+
+            }
+
+            return generateResponse(res, 'Kein Name angegeben.');
+
+        case 'getEmailAddress' :
+            var userName = req.body.result && req.body.result.parameters && req.body.result.parameters.userName ? req.body.result.parameters.userName : null;
+
+            if (userName) {
+                var emailAddress = getEmailAddressForUsername(userName);
+                var speech = 'Ich konnte die E-Mail-Adresse von ' + userName + ' nicht finden';;
+
+                if (emailAddress) {
+                    speech = 'Die E-Mail-Adresse von ' + userName + ' lautet ' + emailAddress;
+                }
+
+                return generateResponse(res, speech);
+
+            }
+
+            return generateResponse(res, 'Kein Name angegeben.');
+
+        case 'getBlogPosts' :
+
+            var blogName = req.body.result && req.body.result.parameters && req.body.result.parameters.blogName ? req.body.result.parameters.blogName : 'schlaadt';
+            console.log(blogName);
+
+            var wp = new WPAPI({ endpoint: 'https://www.' + blogName + '.de/wp-json' });
+
+            wp.posts().then(function( data ) {
+                // do something with the returned posts
+                console.log(data[0]);
+
+                // 2015-07-09T16:13:46
+
+                return generateResponse(res, 'Der letzte Beitrag war: ' + data[0].title.rendered);
+            }).catch(function( err ) {
+                // handle error
+                // console.log(err);
+                return generateResponse(res, 'Ich konnte keine Beiträge finden');
+            });
+
+            break;
+
+        default:
+            break;
+    }
+
+    /*if (intentName) {
         switch (intentName) {
 
             case 'phoneNumber' :
@@ -82,7 +145,7 @@ restService.post('/info', function (req, res) {
         }
     } else {
         return generateResponse(res, 'No Intent Provided');
-    }
+    }*/
 
     // return generateResponse(res, 'Something went wrong.');
 
