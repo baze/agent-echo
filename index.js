@@ -21,7 +21,7 @@ restService.post('/info', function (req, res) {
     if (intentName) {
         switch (intentName) {
 
-            case 'phonenumber' :
+            case 'phoneNumber' :
                 var userName = req.body.result && req.body.result.parameters && req.body.result.parameters.userName ? req.body.result.parameters.userName : null;
 
                 if (userName) {
