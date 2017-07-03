@@ -80,7 +80,7 @@ restService.post('/info', function (req, res) {
 
             break;
 
-        case 'getBlogPosts' :
+        case 'blog.latest' :
 
             var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : 'schlaadt';
 
