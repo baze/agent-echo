@@ -91,7 +91,7 @@ restService.post('/info', function (req, res) {
                 // console.log(data[0]);
 
                 var date = new Date(data[0].date);
-                console.log(date.format('d.m.Y'));
+                console.log(date);
 
                 return generateResponse(res, 'Der letzte Beitrag vom ' + '$date' + ' ist: ' + data[0].title.rendered);
             }).catch(function( err ) {
