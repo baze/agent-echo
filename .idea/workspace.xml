@@ -17,8 +17,9 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="114" column="34" lean-forward="false" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
+            <state relative-caret-position="585">
+              <caret line="66" column="107" lean-forward="false" selection-start-line="66" selection-start-column="107" selection-end-line="66" selection-end-column="107" />
+              <caret line="66" column="145" lean-forward="false" selection-start-line="66" selection-start-column="145" selection-end-line="66" selection-end-column="145" />
               <folding />
             </state>
           </provider>
@@ -40,7 +41,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response82.html" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response84.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -282,12 +283,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499063936110</updated>
       <workItem from="1499063937354" duration="1315000" />
-      <workItem from="1499085945126" duration="7618000" />
+      <workItem from="1499085945126" duration="8083000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8933000" />
+    <option name="totallyTimeSpent" value="9398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="700" y="110" width="1864" height="1204" extended-state="0" />
@@ -354,8 +355,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="114" column="34" lean-forward="false" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
+        <state relative-caret-position="585">
+          <caret line="66" column="107" lean-forward="false" selection-start-line="66" selection-start-column="107" selection-end-line="66" selection-end-column="107" />
+          <caret line="66" column="145" lean-forward="false" selection-start-line="66" selection-start-column="145" selection-end-line="66" selection-end-column="145" />
           <folding />
         </state>
       </provider>
