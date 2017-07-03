@@ -51,7 +51,7 @@ restService.post('/info', function (req, res) {
                 info = getInfoForUsername(employee);
 
                 if (info.email) {
-                    speech = 'Die E-Mail-Adresse von ' + employee + ' ist ' + email;
+                    speech = 'Die E-Mail-Adresse von ' + employee + ' ist ' + info.email;
                 } else {
                     speech = 'Ich konnte die E-Mail-Adresse von ' + employee + ' nicht finden.';
                     speech += ' Aber vielleicht möchtest du ja etwas anderes erfahren';
