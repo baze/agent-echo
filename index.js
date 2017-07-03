@@ -16,6 +16,9 @@ restService.post('/info', function (req, res) {
 
     var action = req.body.result && req.body.result.action ? req.body.result.action : null;
     var previousAction = req.body.result && req.body.result.parameters && req.body.result.parameters.myAction ? req.body.result.parameters.myAction : null;
+    var speech = '';
+    var info = {};
+    var employee = undefined;
 
     if (action == 'PreviousContext') {
         action = previousAction;
@@ -24,38 +27,41 @@ restService.post('/info', function (req, res) {
     switch (action) {
 
         case 'employee.phone' :
-            var employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
+            employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
 
             if (employee) {
-                var info = getInfoForUsername(employee);
-                var speech = 'Ich konnte die Durchwahl von ' + employee + ' nicht finden';;
+                info = getInfoForUsername(employee);
 
                 if (info.phone) {
                     speech = 'Die Durchwahl von ' + employee + ' ist ' + info.phone;
+                } else {
+                    speech = 'Ich konnte die Durchwahl von ' + employee + ' nicht finden.';
+                    speech += ' Aber vielleicht möchtest du ja etwas anderes erfahren';
                 }
 
                 return generateResponse(res, speech);
             }
 
-            return generateResponse(res, 'Kein Name angegeben.');
+            break;
 
         case 'employee.email' :
-            var employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
+            employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
 
             if (employee) {
-                var info = getInfoForUsername(employee);
-
-                var speech = 'Ich konnte die E-Mail-Adresse von ' + employee + ' nicht finden';;
+                info = getInfoForUsername(employee);
 
                 if (info.email) {
                     speech = 'Die E-Mail-Adresse von ' + employee + ' ist ' + email;
+                } else {
+                    speech = 'Ich konnte die E-Mail-Adresse von ' + employee + ' nicht finden.';
+                    speech += ' Aber vielleicht möchtest du ja etwas anderes erfahren';
                 }
 
                 return generateResponse(res, speech);
 
             }
 
-            return generateResponse(res, 'Kein Name angegeben.');
+            break;
 
         case 'getBlogPosts' :
 
@@ -87,8 +93,8 @@ restService.post('/info', function (req, res) {
 function getInfoForUsername(username) {
 
     var info = {
-        email : 'geheim',
-        phone : 'geheim'
+        email : undefined,
+        phone : undefined
     };
 
     switch (username) {
@@ -100,6 +106,8 @@ function getInfoForUsername(username) {
 
         case 'Herr Eberle' :
         case 'Herr Wollweber' :
+            info.email = undefined;
+            info.phone = undefined;
             break;
 
         case 'Frau Eberle' :
