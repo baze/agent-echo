@@ -1,13 +1,39 @@
 [
   {
-    "handle": "Herr Wambach",
-    "username": "jawa",
-    "first_name": "Jan",
-    "last_name": "Wambach",
+    "handle": "Herr Eberle",
+    "username": "dieb",
+    "first_name": "Dieter",
+    "last_name": "Eberle",
     "salutation": "Herr",
-    "phone": 30,
-    "activity": "Online-Marketing",
-    "email": "wambach@euw.de"
+    "activity": "Geschäftsführung"
+  },
+  {
+    "handle": "Herr Wollweber",
+    "username": "mawo",
+    "first_name": "Mathias",
+    "last_name": "Wollweber",
+    "salutation": "Herr",
+    "activity": "Geschäftsführung"
+  },
+  {
+    "handle": "Herr Roth",
+    "username": "miro",
+    "first_name": "Michael",
+    "last_name": "Roth",
+    "salutation": "Herr",
+    "activity": "Teamleitung und Kontakt",
+    "phone" : 34,
+    "email" : "roth@euw.de"
+  },
+  {
+    "handle": "Frau Brandt",
+    "username": "yvbr",
+    "first_name": "Yvonne",
+    "last_name": "Brandt",
+    "salutation": "Frau",
+    "activity": "Kontakt",
+    "phone": 22,
+    "email": "brandt@euw.de"
   },
   {
     "handle": "Frau Maier",
@@ -18,5 +44,65 @@
     "phone": 19,
     "activity": "Kontakt",
     "email": "maier@euw.de"
+  },
+  {
+    "handle": "Frau Fuhr",
+    "username": "jafu",
+    "first_name": "Janna",
+    "last_name": "Fuhr",
+    "salutation": "Frau",
+    "phone": 24,
+    "activity": "Kontakt",
+    "email": "fuhr@euw.de"
+  },
+  {
+    "handle": "Frau Fais",
+    "username": "safa",
+    "first_name": "Sarah",
+    "last_name": "Fais",
+    "salutation": "Frau",
+    "phone": 33,
+    "activity": "Kontakt",
+    "email": "fais@euw.de"
+  },
+  {
+    "handle": "Frau Eberle",
+    "username": "aneb",
+    "first_name": "Anja",
+    "last_name": "Eberle",
+    "salutation": "Frau",
+    "phone": 13,
+    "activity": "Buchhaltung",
+    "email": "anja.eberle@euw.de"
+  },
+  {
+    "handle": "Frau Neidhöfer",
+    "username": "nane",
+    "first_name": "Natascha",
+    "last_name": "Neidhöfer",
+    "salutation": "Frau",
+    "phone": 28,
+    "activity": "Grafik",
+    "email": "neidhoefer@euw.de"
+  },
+  {
+    "handle": "Herr Martensen",
+    "username": "bjma",
+    "first_name": "Björn",
+    "last_name": "Martensen",
+    "salutation": "Herr",
+    "phone": 25,
+    "activity": "Programmierung, Online",
+    "email": "martensen@euw.de"
+  },
+  {
+    "handle": "Herr Wambach",
+    "username": "jawa",
+    "first_name": "Jan",
+    "last_name": "Wambach",
+    "salutation": "Herr",
+    "phone": 30,
+    "activity": "Online-Marketing",
+    "email": "wambach@euw.de"
   }
 ]
