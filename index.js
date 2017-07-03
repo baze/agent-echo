@@ -17,9 +17,6 @@ restService.post('/info', function (req, res) {
     var action = req.body.result && req.body.result.action ? req.body.result.action : null;
     var previousAction = req.body.result && req.body.result.parameters && req.body.result.parameters.myAction ? req.body.result.parameters.myAction : null;
 
-    console.log(action);
-    console.log(previousAction);
-
     if (action == 'PreviousContext') {
         action = previousAction;
     }
