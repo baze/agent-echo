@@ -27,15 +27,14 @@ restService.post('/info', function (req, res) {
             var employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
 
             if (employee) {
-                var phoneNumber = getPhoneNumberForUsername(employee);
+                var info = getInfoForUsername(employee);
                 var speech = 'Ich konnte die Durchwahl von ' + employee + ' nicht finden';;
 
-                if (phoneNumber) {
-                    speech = 'Die Durchwahl von ' + employee + ' lautet ' + phoneNumber;
+                if (info.phone) {
+                    speech = 'Die Durchwahl von ' + employee + ' ist ' + info.phone;
                 }
 
                 return generateResponse(res, speech);
-
             }
 
             return generateResponse(res, 'Kein Name angegeben.');
@@ -44,11 +43,12 @@ restService.post('/info', function (req, res) {
             var employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
 
             if (employee) {
-                var emailAddress = getEmailAddressForUsername(employee);
+                var info = getInfoForUsername(employee);
+
                 var speech = 'Ich konnte die E-Mail-Adresse von ' + employee + ' nicht finden';;
 
-                if (emailAddress) {
-                    speech = 'Die E-Mail-Adresse von ' + employee + ' lautet ' + emailAddress;
+                if (info.email) {
+                    speech = 'Die E-Mail-Adresse von ' + employee + ' ist ' + email;
                 }
 
                 return generateResponse(res, speech);
@@ -60,7 +60,6 @@ restService.post('/info', function (req, res) {
         case 'getBlogPosts' :
 
             var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : 'schlaadt';
-            console.log(blog);
 
             var wp = new WPAPI({ endpoint: 'https://www.' + blog + '.de/wp-json' });
 
@@ -153,16 +152,6 @@ function getInfoForUsername(username) {
     }
 
     return info;
-}
-
-function getPhoneNumberForUsername(username) {
-    var info = getInfoForUsername(username);
-    return info.phone;
-}
-
-function getEmailAddressForUsername(username) {
-    var info = getInfoForUsername(username);
-    return info.email;
 }
 
 function generateResponse(res, speech) {
