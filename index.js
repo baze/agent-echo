@@ -69,7 +69,7 @@ restService.post('/info', function (req, res) {
                 info = getInfoForUsername(employee);
 
                 if (info.activity) {
-                    speech = employee + ' ist zuständig für' + info.activity;
+                    speech = employee + ' ist zuständig für ' + info.activity;
                 } else {
                     speech = 'Das weiß ich leider nicht.';
                 }
