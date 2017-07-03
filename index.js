@@ -48,9 +48,7 @@ restService.post('/info', function (req, res) {
         case 'employee.email' :
             employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
 
-            // info = getInfoForUsername(employee);
-
-            console.log(users);
+            info = getInfoForUsername(employee);
 
             return generateResponse(res, 'wip');
 
@@ -114,8 +112,10 @@ restService.post('/info', function (req, res) {
 });
 
 function getInfoForUsername(username) {
+    console.log(users);
+
     for (var user in users) {
-        console.log(user);
+        // console.log(user);
         /*if (user.get('handle') == username) {
             return user;
         }*/
