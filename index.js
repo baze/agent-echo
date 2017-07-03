@@ -21,6 +21,8 @@ restService.post('/info', function (req, res) {
         action = previousAction;
     }
 
+    console.log(action);
+
     switch (action) {
 
         case 'employee.phone' :
