@@ -88,12 +88,10 @@ restService.post('/info', function (req, res) {
 
             wp.posts().then(function( data ) {
                 // do something with the returned posts
-                console.log(data[0]);
-
-                // 2015-07-09T16:13:46
+                // console.log(data[0]);
 
                 var date = new Date(data[0].date);
-                console.log(date);
+                console.log(date.format('d.m.Y'));
 
                 return generateResponse(res, 'Der letzte Beitrag vom ' + '$date' + ' ist: ' + data[0].title.rendered);
             }).catch(function( err ) {
