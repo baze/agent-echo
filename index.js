@@ -108,8 +108,11 @@ restService.post('/info', function (req, res) {
 
 function getInfoForUsername(username) {
 
+    console.log(username);
+
     for (var i = 0, len = users.length; i < len; i++) {
         if (users[i].username == username) {
+            console.log(users[i]);
             return users[i];
         }
     }
