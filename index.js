@@ -92,7 +92,10 @@ restService.post('/info', function (req, res) {
 
                 // 2015-07-09T16:13:46
 
-                return generateResponse(res, 'Der letzte Beitrag vom ' + data[0].date + ' ist: ' + data[0].title.rendered);
+                var date = new Date(data[0].date);
+                console.log(date);
+
+                return generateResponse(res, 'Der letzte Beitrag vom ' + '$date' + ' ist: ' + data[0].title.rendered);
             }).catch(function( err ) {
                 // handle error
                 // console.log(err);
