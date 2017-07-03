@@ -48,11 +48,7 @@ restService.post('/info', function (req, res) {
         case 'employee.email' :
             employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
 
-            info = getInfoForUsername(employee);
-
-            return generateResponse(res, 'wip');
-
-            /*if (employee) {
+            if (employee) {
                 info = getInfoForUsername(employee);
 
                 if (info.email) {
@@ -63,7 +59,7 @@ restService.post('/info', function (req, res) {
                 }
 
                 return generateResponse(res, speech);
-            }*/
+            }
 
             break;
 
