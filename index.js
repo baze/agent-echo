@@ -115,7 +115,7 @@ restService.post('/info', function (req, res) {
 
 function getInfoForUsername(username) {
     for (var user in users) {
-        console.log(user.first_name);
+        console.log(user);
         /*if (user.get('handle') == username) {
             return user;
         }*/
