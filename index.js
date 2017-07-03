@@ -4,6 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const WPAPI = require( 'wpapi' );
 const users = require( './users.json' );
+var moment = require( 'moment' );
 
 const restService = express();
 
@@ -91,7 +92,7 @@ restService.post('/info', function (req, res) {
                 // console.log(data[0]);
 
                 var date = new Date(data[0].date);
-                console.log(date);
+                console.log(moment);
 
                 return generateResponse(res, 'Der letzte Beitrag vom ' + '$date' + ' ist: ' + data[0].title.rendered);
             }).catch(function( err ) {
