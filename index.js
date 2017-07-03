@@ -58,7 +58,23 @@ restService.post('/info', function (req, res) {
                 }
 
                 return generateResponse(res, speech);
+            }
 
+            break;
+
+        case 'employee.activity' :
+            employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
+
+            if (employee) {
+                info = getInfoForUsername(employee);
+
+                if (info.activity) {
+                    speech = employee + ' ist zuständig für' + info.activity;
+                } else {
+                    speech = 'Das weiß ich leider nicht.';
+                }
+
+                return generateResponse(res, speech);
             }
 
             break;
