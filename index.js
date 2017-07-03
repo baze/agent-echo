@@ -23,7 +23,7 @@ restService.post('/info', function (req, res) {
 
     switch (action) {
 
-        case 'getPhoneNumber' :
+        case 'employee.phone' :
             var employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
 
             if (employee) {
@@ -40,7 +40,7 @@ restService.post('/info', function (req, res) {
 
             return generateResponse(res, 'Kein Name angegeben.');
 
-        case 'getEmailAddress' :
+        case 'employee.email' :
             var employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
 
             if (employee) {
