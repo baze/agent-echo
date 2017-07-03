@@ -15,6 +15,11 @@ restService.use(bodyParser.json());
 restService.post('/info', function (req, res) {
 
     var action = req.body.result && req.body.result.action ? req.body.result.action : null;
+    var previous_action = req.body.result && req.body.result.parameters && req.body.result.parameters.myAction ? req.body.result.parameters.myAction : null;
+
+    if (action == 'PreviousContext') {
+        action = previous_action;
+    }
 
     switch (action) {
 
