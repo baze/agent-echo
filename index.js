@@ -112,14 +112,13 @@ restService.post('/info', function (req, res) {
 });
 
 function getInfoForUsername(username) {
-    console.log(users);
 
-    for (var user in users) {
-        // console.log(user);
-        /*if (user.get('handle') == username) {
-            return user;
-        }*/
+    for (var i = 0, len = users.length; i < len; i++) {
+        if (users[i].handle == username) {
+            return users[i];
+        }
     }
+
 }
 
 function generateResponse(res, speech) {
