@@ -85,26 +85,29 @@ restService.post('/info', function (req, res) {
 
 });
 
+switch (employee) {
+
+    case 'Zentrale' : return 10;
+
+    case 'Herr Eberle' :
+    case 'Herr Wollweber' :
+        break;
+
+    case 'Frau Eberle' : return 13;
+    case 'Frau Maier' : return 19;
+    case 'Frau Brandt' : return 22;
+    case 'Frau Fuhr' : return 24;
+    case 'Herr Martensen' : return 25;
+    case 'Frau Neidhöfer' : return 25;
+    case 'Herr Wambach' : return 30;
+    case 'Frau Fais' : return 33;
+    case 'Herr Roth' : return 34;
+
+    default:
+        break;
+}
+
 function getPhoneNumberForUsername(employee) {
-
-    switch (employee) {
-
-        case 'dieb' :
-        case 'mawo' :
-            break;
-
-        case 'joma' :
-            return 19;
-
-        case 'bjma' :
-            return 25;
-
-        case 'jawa' :
-            return 30;
-
-        default:
-            break;
-    }
 }
 
 function getEmailAddressForUsername(employee) {
