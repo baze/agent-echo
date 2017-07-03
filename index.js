@@ -20,8 +20,8 @@ restService.post('/info', function (req, res) {
     var action = req.body.result && req.body.result.action ? req.body.result.action : null;
     var previousAction = req.body.result && req.body.result.parameters && req.body.result.parameters.myAction ? req.body.result.parameters.myAction : null;
     var speech = '';
-    var info = {};
     var employee = undefined;
+    var user = undefined;
 
     if (action == 'PreviousContext') {
         action = previousAction;
@@ -31,14 +31,13 @@ restService.post('/info', function (req, res) {
 
         case 'employee.phone' :
             employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
+            user = getInfoForUsername(employee);
 
-            if (employee) {
-                info = getInfoForUsername(employee);
-
-                if (info.phone) {
-                    speech = 'Die Durchwahl von ' + employee + ' ist ' + info.phone;
+            if (user) {
+                if (user.phone) {
+                    speech = 'Die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' ist ' + user.phone;
                 } else {
-                    speech = 'Ich konnte die Durchwahl von ' + employee + ' nicht finden.';
+                    speech = 'Ich konnte die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' nicht finden.';
                     speech += ' Aber vielleicht möchtest du ja etwas anderes erfahren';
                 }
 
@@ -49,14 +48,13 @@ restService.post('/info', function (req, res) {
 
         case 'employee.email' :
             employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
+            user = getInfoForUsername(employee);
 
-            if (employee) {
-                info = getInfoForUsername(employee);
-
-                if (info.email) {
-                    speech = 'Die E-Mail-Adresse von ' + employee + ' ist ' + info.email;
+            if (user) {
+                if (user.email) {
+                    speech = 'Die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' ist ' + user.email;
                 } else {
-                    speech = 'Ich konnte die E-Mail-Adresse von ' + employee + ' nicht finden.';
+                    speech = 'Ich konnte die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' nicht finden.';
                     speech += ' Aber vielleicht möchtest du ja etwas anderes erfahren';
                 }
 
