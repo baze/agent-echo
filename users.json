@@ -8,5 +8,15 @@
     "phone": 30,
     "activity": "Online-Marketing",
     "email": "wambach@euw.de"
+  },
+  {
+    "handle": "Frau Maier",
+    "username": "joma",
+    "first_name": "Johanna",
+    "last_name": "Maier",
+    "salutation": "Frau",
+    "phone": 19,
+    "activity": "Kontakt",
+    "email": "maier@euw.de"
   }
 ]
