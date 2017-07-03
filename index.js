@@ -85,62 +85,84 @@ restService.post('/info', function (req, res) {
 
 });
 
+function getInfoForUsername(username) {
 
-function getPhoneNumberForUsername(employee) {
+    var info = {
+        email : 'geheim',
+        phone : 'geheim'
+    };
 
-    switch (employee) {
+    switch (username) {
 
         case 'Zentrale' :
-            return 10;
+            info.email = 'info@euw.de';
+            info.phone = '10';
+            break;
 
         case 'Herr Eberle' :
         case 'Herr Wollweber' :
             break;
 
         case 'Frau Eberle' :
-            return 13;
+            info.email = 'anja.eberle@euw.de';
+            info.phone = '13';
+            break;
+
         case 'Frau Maier' :
-            return 19;
+            info.email = 'maier@euw.de';
+            info.phone = '19';
+            break;
+
         case 'Frau Brandt' :
-            return 22;
+            info.email = 'brandt@euw.de';
+            info.phone = 22;
+            break;
+
         case 'Frau Fuhr' :
-            return 24;
+            info.email = 'fuhr@euw.de';
+            info.phone = 24;
+            break;
+
         case 'Herr Martensen' :
-            return 25;
+            info.email = 'martensen@euw.de';
+            info.phone = 25;
+            break;
+
         case 'Frau Neidhöfer' :
-            return 25;
+            info.email = 'neidhoefer@euw.de';
+            info.phone = 28;
+            break;
+
         case 'Herr Wambach' :
-            return 30;
+            info.email = 'wambach@euw.de';
+            info.phone = 30;
+            break;
+
         case 'Frau Fais' :
-            return 33;
+            info.email = 'fais@euw.de';
+            info.phone = 33;
+            break;
+
         case 'Herr Roth' :
-            return 34;
+            info.email = 'roth@euw.de';
+            info.phone = 34;
+            break;
 
         default:
-            break;
+            return {};
     }
+
+    return info;
 }
 
-function getEmailAddressForUsername(employee) {
+function getPhoneNumberForUsername(username) {
+    var info = getInfoForUsername(username);
+    return info.phone;
+}
 
-    switch (employee) {
-
-        case 'dieb' :
-        case 'mawo' :
-            break;
-
-        case 'joma' :
-            return 'joma@euw.de';
-
-        case 'bjma' :
-            return 'bjma@euw.de';
-
-        case 'jawa' :
-            return 'jawa@euw.de';
-
-        default:
-            break;
-    }
+function getEmailAddressForUsername(username) {
+    var info = getInfoForUsername(username);
+    return info.email;
 }
 
 function generateResponse(res, speech) {
