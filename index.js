@@ -20,7 +20,7 @@ restService.post('/info', function (req, res) {
     var action = req.body.result && req.body.result.action ? req.body.result.action : null;
     var previousAction = req.body.result && req.body.result.parameters && req.body.result.parameters.myAction ? req.body.result.parameters.myAction : null;
     var speech = '';
-    var employee = undefined;
+    var username = undefined;
     var user = undefined;
 
     if (action == 'PreviousContext') {
@@ -30,8 +30,8 @@ restService.post('/info', function (req, res) {
     switch (action) {
 
         case 'employee.phone' :
-            employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
-            user = getInfoForUsername(employee);
+            username = req.body.result && req.body.result.parameters && req.body.result.parameters.username ? req.body.result.parameters.username : null;
+            user = getInfoForUsername(username);
 
             if (user) {
                 if (user.phone) {
@@ -47,8 +47,8 @@ restService.post('/info', function (req, res) {
             break;
 
         case 'employee.email' :
-            employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
-            user = getInfoForUsername(employee);
+            username = req.body.result && req.body.result.parameters && req.body.result.parameters.username ? req.body.result.parameters.username : null;
+            user = getInfoForUsername(username);
 
             if (user) {
                 if (user.email) {
@@ -64,13 +64,12 @@ restService.post('/info', function (req, res) {
             break;
 
         case 'employee.activity' :
-            employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
+            username = req.body.result && req.body.result.parameters && req.body.result.parameters.username ? req.body.result.parameters.username : null;
+            user = getInfoForUsername(username);
 
-            if (employee) {
-                info = getInfoForUsername(employee);
-
-                if (info.activity) {
-                    speech = employee + ' ist zuständig für ' + info.activity;
+            if (user) {
+                if (user.email) {
+                    speech = user.first_name + ' ' + user.last_name + ' ist zuständig für ' + user.activity;
                 } else {
                     speech = 'Das weiß ich leider nicht.';
                 }
