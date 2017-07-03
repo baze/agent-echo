@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const WPAPI = require( 'wpapi' );
 const users = require( './users.json' );
 var moment = require( 'moment' );
+moment.locale('de');
 
 const restService = express();
 
