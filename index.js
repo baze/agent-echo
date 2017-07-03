@@ -159,6 +159,7 @@ function getInfoForUsername(username) {
         case 'Herr Wambach' :
             info.email = 'wambach@euw.de';
             info.phone = 30;
+            info.activity = 'Online-Marketing';
             break;
 
         case 'Frau Fais' :
