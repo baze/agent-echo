@@ -48,7 +48,9 @@ restService.post('/info', function (req, res) {
         case 'employee.email' :
             employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
 
-            console.log(users);
+            info = getInfoForUsername(employee);
+
+            console.log(info);
 
             return generateResponse(res, 'wip');
 
@@ -112,76 +114,13 @@ restService.post('/info', function (req, res) {
 });
 
 function getInfoForUsername(username) {
-
-    var info = {
-        email : undefined,
-        phone : undefined
-    };
-
-    switch (username) {
-
-        case 'Zentrale' :
-            info.email = 'info@euw.de';
-            info.phone = '10';
-            break;
-
-        case 'Herr Eberle' :
-        case 'Herr Wollweber' :
-            info.email = undefined;
-            info.phone = undefined;
-            break;
-
-        case 'Frau Eberle' :
-            info.email = 'anja.eberle@euw.de';
-            info.phone = '13';
-            break;
-
-        case 'Frau Maier' :
-            info.email = 'maier@euw.de';
-            info.phone = '19';
-            break;
-
-        case 'Frau Brandt' :
-            info.email = 'brandt@euw.de';
-            info.phone = 22;
-            break;
-
-        case 'Frau Fuhr' :
-            info.email = 'fuhr@euw.de';
-            info.phone = 24;
-            break;
-
-        case 'Herr Martensen' :
-            info.email = 'martensen@euw.de';
-            info.phone = 25;
-            break;
-
-        case 'Frau Neidhöfer' :
-            info.email = 'neidhoefer@euw.de';
-            info.phone = 28;
-            break;
-
-        case 'Herr Wambach' :
-            info.email = 'wambach@euw.de';
-            info.phone = 30;
-            info.activity = 'Online-Marketing';
-            break;
-
-        case 'Frau Fais' :
-            info.email = 'fais@euw.de';
-            info.phone = 33;
-            break;
-
-        case 'Herr Roth' :
-            info.email = 'roth@euw.de';
-            info.phone = 34;
-            break;
-
-        default:
-            return {};
+    for (var user in users) {
+        console.log(user.handle);
+        console.log(user.get('handle'));
+        /*if (user.get('handle') == username) {
+            return user;
+        }*/
     }
-
-    return info;
 }
 
 function generateResponse(res, speech) {
