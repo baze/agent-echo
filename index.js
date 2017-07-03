@@ -48,7 +48,11 @@ restService.post('/info', function (req, res) {
         case 'employee.email' :
             employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
 
-            if (employee) {
+            console.log(users);
+
+            return generateResponse(res, 'wip');
+
+            /*if (employee) {
                 info = getInfoForUsername(employee);
 
                 if (info.email) {
@@ -59,18 +63,14 @@ restService.post('/info', function (req, res) {
                 }
 
                 return generateResponse(res, speech);
-            }
+            }*/
 
             break;
 
         case 'employee.activity' :
             employee = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
 
-            console.log(users);
-
-            return generateResponse(res, 'wip');
-
-            /*if (employee) {
+            if (employee) {
                 info = getInfoForUsername(employee);
 
                 if (info.activity) {
@@ -80,7 +80,7 @@ restService.post('/info', function (req, res) {
                 }
 
                 return generateResponse(res, speech);
-            }*/
+            }
 
             break;
 
