@@ -2,9 +2,9 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const WPAPI = require( 'wpapi' );
-const users = require( './users.json' );
-var moment = require( 'moment' );
+const WPAPI = require('wpapi');
+const users = require('./users.json');
+var moment = require('moment');
 moment.locale('de');
 
 const restService = express();
@@ -33,14 +33,8 @@ restService.post('/info', function (req, res) {
             username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
             user = getInfoForUsername(username);
 
-            if (user) {
-                if (user.phone) {
-                    speech = 'Die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' ist die ' + user.phone;
-                } else {
-                    speech = 'Ich konnte die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' nicht finden.';
-                    speech += ' Aber vielleicht möchtest du ja etwas anderes erfahren';
-                }
-
+            if (user && user.phone) {
+                speech = 'Die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' ist die ' + user.phone;
                 return generateResponse(res, speech);
             }
 
@@ -50,30 +44,19 @@ restService.post('/info', function (req, res) {
             username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
             user = getInfoForUsername(username);
 
-            if (user) {
-                if (user.email) {
-                    speech = 'Die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' lautet ' + user.email;
-                } else {
-                    speech = 'Ich konnte die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' nicht finden.';
-                    speech += ' Aber vielleicht möchtest du ja etwas anderes erfahren';
-                }
-
+            if (user && user.email) {
+                speech = 'Die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' lautet ' + user.email;
                 return generateResponse(res, speech);
             }
 
             break;
 
-        case 'employee.activity' :
+        case 'employee.services' :
             username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
             user = getInfoForUsername(username);
 
-            if (user) {
-                if (user.email) {
-                    speech = user.first_name + ' ' + user.last_name + ' ist zuständig für ' + user.activity;
-                } else {
-                    speech = 'Das weiß ich leider nicht.';
-                }
-
+            if (user && user.services.length > 0) {
+                speech = user.first_name + ' ' + user.last_name + ' ist zuständig für ' + user.services[0];
                 return generateResponse(res, speech);
             }
 
@@ -83,16 +66,16 @@ restService.post('/info', function (req, res) {
 
             var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : 'schlaadt';
 
-            var wp = new WPAPI({ endpoint: 'https://www.' + blog + '.de/wp-json' });
+            var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
-            wp.posts().then(function( data ) {
+            wp.posts().then(function (data) {
                 // do something with the returned posts
                 // console.log(data[0]);
 
                 var date = moment(data[0].date);
 
                 return generateResponse(res, 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered);
-            }).catch(function( err ) {
+            }).catch(function (err) {
                 // handle error
                 // console.log(err);
                 return generateResponse(res, 'Ich konnte keine Beiträge finden');
