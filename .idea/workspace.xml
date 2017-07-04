@@ -17,11 +17,14 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="135" column="24" lean-forward="false" selection-start-line="135" selection-start-column="24" selection-end-line="135" selection-end-column="24" />
+            <state relative-caret-position="238">
+              <caret line="139" column="19" lean-forward="false" selection-start-line="139" selection-start-column="19" selection-end-line="139" selection-end-column="19" />
               <folding>
                 <element signature="e#401#4773#0" expanded="false" />
-                <element signature="e#4824#9208#0" expanded="false" />
+                <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
+                <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+                <element signature="n#!!block;n#generateResponse#0" expanded="false" />
+                <element signature="e#5807#7257#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -69,8 +72,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="587" />
-    <option name="y" value="23" />
+    <option name="x" value="517" />
+    <option name="y" value="593" />
     <option name="width" value="1864" />
     <option name="height" value="1204" />
   </component>
@@ -108,7 +111,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,7 +123,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -408,19 +411,20 @@
       <updated>1499063936110</updated>
       <workItem from="1499063937354" duration="1315000" />
       <workItem from="1499085945126" duration="14540000" />
-      <workItem from="1499161787435" duration="1438000" />
+      <workItem from="1499161787435" duration="1819000" />
+      <workItem from="1499176047103" duration="78000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17293000" />
+    <option name="totallyTimeSpent" value="17752000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="587" y="23" width="1864" height="1204" extended-state="0" />
+    <frame x="517" y="593" width="1864" height="1204" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25521407" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2579583" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -460,7 +464,32 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#401#4773#0" expanded="false" />
-            <element signature="e#4824#9208#0" expanded="false" />
+            <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
+            <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
+            <element signature="e#5807#7257#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="57" column="25" lean-forward="false" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#401#4773#0" expanded="false" />
+            <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
+            <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
+            <element signature="e#5807#7257#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -479,7 +508,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#401#4773#0" expanded="false" />
-            <element signature="e#4824#9208#0" expanded="false" />
+            <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
+            <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
+            <element signature="e#5807#7257#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -502,11 +534,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="135" column="24" lean-forward="false" selection-start-line="135" selection-start-column="24" selection-end-line="135" selection-end-column="24" />
+        <state relative-caret-position="238">
+          <caret line="139" column="19" lean-forward="false" selection-start-line="139" selection-start-column="19" selection-end-line="139" selection-end-column="19" />
           <folding>
             <element signature="e#401#4773#0" expanded="false" />
-            <element signature="e#4824#9208#0" expanded="false" />
+            <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
+            <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
+            <element signature="e#5807#7257#0" expanded="false" />
           </folding>
         </state>
       </provider>
