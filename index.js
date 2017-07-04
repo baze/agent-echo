@@ -132,10 +132,13 @@ restService.post('/info', function (req, res) {
 });
 
 function getInfoForUsername(username) {
-    for (var i = 0, len = users.length; i < len; i++) {
-        if (_users[i].username == username) {
-            console.log(users[i]);
-            return users[i];
+    for (var i = 0, len = _users.length; i < len; i++) {
+
+        var user = _users[i];
+
+        if (user.username == username) {
+            console.log(user);
+            return user;
         }
     }
 }
