@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +16,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="98" column="29" lean-forward="false" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
+            <state relative-caret-position="461">
+              <caret line="98" column="47" lean-forward="false" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
               <folding>
                 <element signature="e#2469#3121#0" expanded="false" />
-                <element signature="e#3868#4674#0" expanded="false" />
+                <element signature="e#3907#4713#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -43,7 +42,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response102.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response104.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -410,12 +409,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499063936110</updated>
       <workItem from="1499063937354" duration="1315000" />
-      <workItem from="1499085945126" duration="13574000" />
+      <workItem from="1499085945126" duration="13729000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14889000" />
+    <option name="totallyTimeSpent" value="15044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="587" y="23" width="1864" height="1204" extended-state="0" />
@@ -462,7 +461,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#2469#3121#0" expanded="false" />
-            <element signature="e#3868#4674#0" expanded="false" />
+            <element signature="e#3907#4713#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -485,11 +484,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="98" column="29" lean-forward="false" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
+        <state relative-caret-position="461">
+          <caret line="98" column="47" lean-forward="false" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
           <folding>
             <element signature="e#2469#3121#0" expanded="false" />
-            <element signature="e#3868#4674#0" expanded="false" />
+            <element signature="e#3907#4713#0" expanded="false" />
           </folding>
         </state>
       </provider>
