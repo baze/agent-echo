@@ -93,8 +93,12 @@ restService.post('/info', function (req, res) {
             console.log(users);
 
             if (users) {
-                speech = 'ich stelle das eben zusammen';
-                // speech = user.first_name + ' ' + user.last_name + ' ist zuständig für ' + client;
+
+                var users_output = users.length > 1
+                    ? users.slice(0, -1).join(', ') + ' und ' + users.slice(-1)
+                    : users;
+
+                speech = users_output + users_output.length > 1 ? ' sind ' : ' ist ' + 'zuständig für ' + client;
                 return generateResponse(res, speech);
             }
 
@@ -139,7 +143,7 @@ function getInfoForUsername(username) {
 function getUsersForClient(client) {
     var users = [];
 
-    /*for (var i = 0, len = _users.length; i < len; i++) {
+    for (var i = 0, len = _users.length; i < len; i++) {
 
         var user = _users[i];
 
@@ -152,7 +156,7 @@ function getUsersForClient(client) {
                 }
             }
         }
-    }*/
+    }
 
     return users;
 }
