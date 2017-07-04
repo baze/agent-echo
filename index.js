@@ -85,7 +85,12 @@ restService.post('/info', function (req, res) {
 
         case 'clients.employee' :
             var client = req.body.result && req.body.result.parameters && req.body.result.parameters.client ? req.body.result.parameters.client : null;
+
+            console.log(client);
+
             var users = getUsersForClient(client);
+
+            console.log(users);
 
             if (users) {
                 speech = 'ich stelle das eben zusammen';
@@ -134,9 +139,9 @@ function getInfoForUsername(username) {
 function getUsersForClient(client) {
     var users = [];
 
-    for (var i = 0, len = users.length; i < len; i++) {
+    for (var i = 0, len = _users.length; i < len; i++) {
 
-        var user = users[i];
+        var user = _users[i];
 
         if (user.clients) {
             var clients = user.clients;
