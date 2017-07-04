@@ -18,10 +18,10 @@
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="409">
-              <caret line="98" column="27" lean-forward="false" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
+              <caret line="98" column="29" lean-forward="false" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
               <folding>
                 <element signature="e#2469#3121#0" expanded="false" />
-                <element signature="e#3865#4671#0" expanded="false" />
+                <element signature="e#3868#4674#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -43,7 +43,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response100.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response102.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -410,12 +410,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499063936110</updated>
       <workItem from="1499063937354" duration="1315000" />
-      <workItem from="1499085945126" duration="13513000" />
+      <workItem from="1499085945126" duration="13574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14828000" />
+    <option name="totallyTimeSpent" value="14889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="587" y="23" width="1864" height="1204" extended-state="0" />
@@ -462,7 +462,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#2469#3121#0" expanded="false" />
-            <element signature="e#3865#4671#0" expanded="false" />
+            <element signature="e#3868#4674#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -486,10 +486,10 @@
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
-          <caret line="98" column="27" lean-forward="false" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
+          <caret line="98" column="29" lean-forward="false" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
           <folding>
             <element signature="e#2469#3121#0" expanded="false" />
-            <element signature="e#3865#4671#0" expanded="false" />
+            <element signature="e#3868#4674#0" expanded="false" />
           </folding>
         </state>
       </provider>

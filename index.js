@@ -96,7 +96,7 @@ restService.post('/info', function (req, res) {
 
                 var users_output = users.length > 1
                     ? users.slice(0, -1).join(', ') + ' und ' + users.slice(-1)
-                    : users;
+                    : users[0];
 
                 speech = users_output + users_output.length > 1 ? ' sind ' : ' ist ' + 'zuständig für ' + client;
                 return generateResponse(res, speech);
