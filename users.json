@@ -46,7 +46,10 @@
     "services": [
       "Kontakt"
     ],
-    "clients" : []
+    "clients" : [
+      "Hapro",
+      "Crämer & Wollweber"
+    ]
   },
   {
     "handle": "Frau Maier",
@@ -59,7 +62,11 @@
     "services": [
       "Kontakt"
     ],
-    "clients" : []
+    "clients" : [
+      "Heinen + Löwenstein",
+      "LOTH-HAUS",
+      "Hotel Morjan"
+    ]
   },
   {
     "handle": "Frau Fuhr",
@@ -72,7 +79,9 @@
     "services": [
       "Kontakt"
     ],
-    "clients" : []
+    "clients" : [
+      "DAVINCI HAUS"
+    ]
   },
   {
     "handle": "Frau Fais",
@@ -139,6 +148,9 @@
     "services": [
       "Online-Marketing"
     ],
-    "clients" : []
+    "clients" : [
+      "S&L",
+      "Heinen + Löwenstein"
+    ]
   }
 ]
