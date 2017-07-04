@@ -3,7 +3,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const WPAPI = require('wpapi');
-const users = require('./users.json');
+const _users = require('./users.json');
 var moment = require('moment');
 moment.locale('de');
 
@@ -81,6 +81,20 @@ restService.post('/info', function (req, res) {
 
             break;
 
+        case 'clients.all' : break;
+
+        case 'clients.employee' :
+            var client = req.body.result && req.body.result.parameters && req.body.result.parameters.client ? req.body.result.parameters.client : null;
+            var users = getUsersForClient(client);
+
+            if (users) {
+                speech = 'ich stelle das eben zusammen';
+                // speech = user.first_name + ' ' + user.last_name + ' ist zuständig für ' + client;
+                return generateResponse(res, speech);
+            }
+
+            break;
+
         case 'blog.latest' :
 
             var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : 'schlaadt';
@@ -109,16 +123,33 @@ restService.post('/info', function (req, res) {
 });
 
 function getInfoForUsername(username) {
-
-    console.log(username);
-
     for (var i = 0, len = users.length; i < len; i++) {
-        if (users[i].username == username) {
+        if (_users[i].username == username) {
             console.log(users[i]);
             return users[i];
         }
     }
+}
 
+function getUsersForClient(client) {
+    var users = [];
+
+    for (var i = 0, len = users.length; i < len; i++) {
+
+        var user = users[i];
+
+        if (user.clients) {
+            var clients = user.clients;
+
+            for (var j = 0, len2 = clients.length; j < len2; j++) {
+                if (clients[j] == client) {
+                    users.push(user);
+                }
+            }
+        }
+    }
+
+    return users;
 }
 
 function generateResponse(res, speech) {

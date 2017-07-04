@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users.json" afterPath="$PROJECT_DIR$/users.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,23 +14,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="545">
+              <caret line="90" column="56" lean-forward="false" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
               <folding>
-                <element signature="e#3130#3936#0" expanded="false" />
+                <element signature="e#2469#3121#0" expanded="false" />
+                <element signature="e#3678#4484#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="users.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+            <state relative-caret-position="396">
+              <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -42,15 +43,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response88.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response90.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/userinfo.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/users.json" />
+        <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
   </component>
@@ -133,6 +134,31 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="/info" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;id&quot;: &quot;19cbd9dc-a832-4d91-a39d-7f4b1b7c3bb5&quot;,   &quot;timestamp&quot;: &quot;2017-07-04T08:13:41.879Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;wen betreut johanna?&quot;,     &quot;action&quot;: &quot;employee.clients&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;employee&quot;: &quot;joma&quot;,       &quot;myAction&quot;: &quot;employee.clients&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;myAction&quot;: &quot;employee.clients&quot;,           &quot;employee.original&quot;: &quot;johanna?&quot;,           &quot;employee&quot;: &quot;joma&quot;,           &quot;myAction.original&quot;: &quot;&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;d3863692-8c0a-43d2-984c-933787fd8446&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;employee.clients&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;joma kümmert sich um alle gleichermaßen&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;joma kümmert sich um alle gleichermaßen&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Request timeout.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
@@ -334,12 +360,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499063936110</updated>
       <workItem from="1499063937354" duration="1315000" />
-      <workItem from="1499085945126" duration="12133000" />
+      <workItem from="1499085945126" duration="12856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13448000" />
+    <option name="totallyTimeSpent" value="14171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="587" y="23" width="1864" height="1204" extended-state="0" />
@@ -385,7 +411,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3130#3936#0" expanded="false" />
+            <element signature="e#2469#3121#0" expanded="false" />
+            <element signature="e#3678#4484#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -398,21 +425,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/users.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="e#3130#3936#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="396">
+          <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users.json">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="545">
+          <caret line="90" column="56" lean-forward="false" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
+          <folding>
+            <element signature="e#2469#3121#0" expanded="false" />
+            <element signature="e#3678#4484#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
