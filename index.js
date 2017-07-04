@@ -66,6 +66,21 @@ restService.post('/info', function (req, res) {
 
             break;
 
+        case 'employee.clients' :
+            username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
+            user = getInfoForUsername(username);
+
+            if (user && user.clients.length > 0) {
+                var clients = user.clients.length > 1
+                    ? user.clients.slice(0, -1).join(', ') + ' und ' + user.clients.slice(-1)
+                    : user.clients;
+
+                speech = user.first_name + ' ' + user.last_name + ' ist zuständig für ' + clients;
+                return generateResponse(res, speech);
+            }
+
+            break;
+
         case 'blog.latest' :
 
             var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : 'schlaadt';
