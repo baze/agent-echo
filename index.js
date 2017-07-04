@@ -35,7 +35,7 @@ restService.post('/info', function (req, res) {
 
             if (user) {
                 if (user.phone) {
-                    speech = 'Die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' ist ' + user.phone;
+                    speech = 'Die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' ist die ' + user.phone;
                 } else {
                     speech = 'Ich konnte die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' nicht finden.';
                     speech += ' Aber vielleicht möchtest du ja etwas anderes erfahren';
@@ -52,7 +52,7 @@ restService.post('/info', function (req, res) {
 
             if (user) {
                 if (user.email) {
-                    speech = 'Die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' ist ' + user.email;
+                    speech = 'Die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' lautet ' + user.email;
                 } else {
                     speech = 'Ich konnte die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' nicht finden.';
                     speech += ' Aber vielleicht möchtest du ja etwas anderes erfahren';
