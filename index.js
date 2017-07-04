@@ -45,7 +45,8 @@ restService.post('/info', function (req, res) {
             user = getInfoForUsername(username);
 
             if (user && user.email) {
-                speech = 'Die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' lautet ' + user.email;
+                speech = 'Die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' lautet ' + '<a' +
+                    ' href="mailto:' + user.email + '">'+ user.email +'</a>';
                 return generateResponse(res, speech);
             }
 
