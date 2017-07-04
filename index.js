@@ -30,7 +30,7 @@ restService.post('/info', function (req, res) {
     switch (action) {
 
         case 'employee.phone' :
-            username = req.body.result && req.body.result.parameters && req.body.result.parameters.username ? req.body.result.parameters.username : null;
+            username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
             user = getInfoForUsername(username);
 
             if (user) {
@@ -47,7 +47,7 @@ restService.post('/info', function (req, res) {
             break;
 
         case 'employee.email' :
-            username = req.body.result && req.body.result.parameters && req.body.result.parameters.username ? req.body.result.parameters.username : null;
+            username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
             user = getInfoForUsername(username);
 
             if (user) {
@@ -64,7 +64,7 @@ restService.post('/info', function (req, res) {
             break;
 
         case 'employee.activity' :
-            username = req.body.result && req.body.result.parameters && req.body.result.parameters.username ? req.body.result.parameters.username : null;
+            username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
             user = getInfoForUsername(username);
 
             if (user) {
