@@ -135,10 +135,8 @@ restService.post('/helga', function (req, res) {
 restService.post('/alexa', function (req, res) {
 
     console.log("hello alexa");
-    console.log(req);
-    console.log(res);
 
-    return;
+    return "hello alexa";
 
 });
 
@@ -247,7 +245,6 @@ restService.listen((process.env.PORT || 8000), function () {
 
 var Alexa = require('alexa-sdk');
 
-console.log(Alexa);
 
 /*exports.handler = function(event, context, callback) {
 
