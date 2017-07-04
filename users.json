@@ -5,7 +5,10 @@
     "first_name": "Dieter",
     "last_name": "Eberle",
     "salutation": "Herr",
-    "activity": "Geschäftsführung"
+    "services": [
+      "Geschäftsführung"
+    ],
+    "clients" : []
   },
   {
     "handle": "Herr Wollweber",
@@ -13,7 +16,10 @@
     "first_name": "Mathias",
     "last_name": "Wollweber",
     "salutation": "Herr",
-    "activity": "Geschäftsführung"
+    "services": [
+      "Geschäftsführung"
+    ],
+    "clients" : []
   },
   {
     "handle": "Herr Roth",
@@ -21,9 +27,13 @@
     "first_name": "Michael",
     "last_name": "Roth",
     "salutation": "Herr",
-    "activity": "Teamleitung und Kontakt",
     "phone" : 34,
-    "email" : "roth@euw.de"
+    "email" : "roth@euw.de",
+    "services": [
+      "Teamleitung",
+      "Kontakt"
+    ],
+    "clients" : []
   },
   {
     "handle": "Frau Brandt",
@@ -31,9 +41,12 @@
     "first_name": "Yvonne",
     "last_name": "Brandt",
     "salutation": "Frau",
-    "activity": "Kontakt",
     "phone": 22,
-    "email": "brandt@euw.de"
+    "email": "brandt@euw.de",
+    "services": [
+      "Kontakt"
+    ],
+    "clients" : []
   },
   {
     "handle": "Frau Maier",
@@ -42,8 +55,11 @@
     "last_name": "Maier",
     "salutation": "Frau",
     "phone": 19,
-    "activity": "Kontakt",
-    "email": "maier@euw.de"
+    "email": "maier@euw.de",
+    "services": [
+      "Kontakt"
+    ],
+    "clients" : []
   },
   {
     "handle": "Frau Fuhr",
@@ -52,8 +68,11 @@
     "last_name": "Fuhr",
     "salutation": "Frau",
     "phone": 24,
-    "activity": "Kontakt",
-    "email": "fuhr@euw.de"
+    "email": "fuhr@euw.de",
+    "services": [
+      "Kontakt"
+    ],
+    "clients" : []
   },
   {
     "handle": "Frau Fais",
@@ -62,8 +81,11 @@
     "last_name": "Fais",
     "salutation": "Frau",
     "phone": 33,
-    "activity": "Kontakt",
-    "email": "fais@euw.de"
+    "email": "fais@euw.de",
+    "services": [
+      "Kontakt"
+    ],
+    "clients" : []
   },
   {
     "handle": "Frau Eberle",
@@ -72,8 +94,11 @@
     "last_name": "Eberle",
     "salutation": "Frau",
     "phone": 13,
-    "activity": "Buchhaltung",
-    "email": "anja.eberle@euw.de"
+    "email": "anja.eberle@euw.de",
+    "services": [
+      "Buchhaltung"
+    ],
+    "clients" : []
   },
   {
     "handle": "Frau Neidhöfer",
@@ -82,8 +107,11 @@
     "last_name": "Neidhöfer",
     "salutation": "Frau",
     "phone": 28,
-    "activity": "Grafik",
-    "email": "neidhoefer@euw.de"
+    "email": "neidhoefer@euw.de",
+    "services": [
+      "Grafik"
+    ],
+    "clients" : []
   },
   {
     "handle": "Herr Martensen",
@@ -92,8 +120,12 @@
     "last_name": "Martensen",
     "salutation": "Herr",
     "phone": 25,
-    "activity": "Programmierung, Online",
-    "email": "martensen@euw.de"
+    "email": "martensen@euw.de",
+    "services": [
+      "Programmierung",
+      "Online"
+    ],
+    "clients" : []
   },
   {
     "handle": "Herr Wambach",
@@ -102,7 +134,10 @@
     "last_name": "Wambach",
     "salutation": "Herr",
     "phone": 30,
-    "activity": "Online-Marketing",
-    "email": "wambach@euw.de"
+    "email": "wambach@euw.de",
+    "services": [
+      "Online-Marketing"
+    ],
+    "clients" : []
   }
 ]
