@@ -17,10 +17,10 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="451">
+              <caret line="58" column="114" lean-forward="false" selection-start-line="58" selection-start-column="114" selection-end-line="58" selection-end-column="114" />
               <folding>
-                <element signature="e#2290#3096#0" expanded="false" />
+                <element signature="e#2297#3103#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -309,12 +309,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499063936110</updated>
       <workItem from="1499063937354" duration="1315000" />
-      <workItem from="1499085945126" duration="11244000" />
+      <workItem from="1499085945126" duration="11342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12559000" />
+    <option name="totallyTimeSpent" value="12657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="640" y="61" width="1864" height="1204" extended-state="0" />
@@ -360,7 +360,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2290#3096#0" expanded="false" />
+            <element signature="e#2297#3103#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -383,10 +383,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="451">
+          <caret line="58" column="114" lean-forward="false" selection-start-line="58" selection-start-column="114" selection-end-line="58" selection-end-column="114" />
           <folding>
-            <element signature="e#2290#3096#0" expanded="false" />
+            <element signature="e#2297#3103#0" expanded="false" />
           </folding>
         </state>
       </provider>
