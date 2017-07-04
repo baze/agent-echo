@@ -268,7 +268,7 @@ exports.handler = function (event, context, callback) {
             case "LaunchRequest":
                 console.log("LAUNCH REQUEST");
                 context.succeed(
-                    generateResponse(
+                    generateResponseAlexa(
                         buildSpeechletResponse("Hallo.", true),
                         {}
                     )
@@ -282,7 +282,7 @@ exports.handler = function (event, context, callback) {
 
                     case "SayHello":
                         context.succeed(
-                            generateResponse(
+                            generateResponseAlexa(
                                 buildSpeechletResponse("Hallo. Schön, bei euch zu sein!", true),
                                 {}
                             )
@@ -290,7 +290,7 @@ exports.handler = function (event, context, callback) {
                         break;
 
                     case "SessionEndedRequest":
-                        console.log("SESSION ENDED REQUEST")
+                        console.log("SESSION ENDED REQUEST");
                         break;
 
                     default:
@@ -316,7 +316,7 @@ function buildSpeechletResponse(outputText, shouldEndSession) {
 
 }
 
-function generateResponse(speechletResponse, sessionAttributes) {
+function generateResponseAlexa(speechletResponse, sessionAttributes) {
 
     return {
         version: "1.0",

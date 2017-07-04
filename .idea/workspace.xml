@@ -17,16 +17,15 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="303" column="2" lean-forward="false" selection-start-line="303" selection-start-column="2" selection-end-line="303" selection-end-column="2" />
+            <state relative-caret-position="-73">
+              <caret line="292" column="61" lean-forward="false" selection-start-line="292" selection-start-column="61" selection-end-line="292" selection-end-column="61" />
               <folding>
                 <element signature="e#361#4733#0" expanded="false" />
                 <element signature="e#7775#7852#0" expanded="false" />
                 <element signature="n#!!block;n#buildSpeechletResponse#0" expanded="false" />
-                <element signature="n#!!block;n#generateResponse#1" expanded="false" />
-                <marker date="1499178875000" expanded="false" signature="5025:5275" ph="{...}" />
-                <marker date="1499178875000" expanded="false" signature="5312:5755" ph="{...}" />
-                <marker date="1499178875000" expanded="false" signature="5974:7424" ph="{...}" />
+                <marker date="1499179024000" expanded="false" signature="5025:5275" ph="{...}" />
+                <marker date="1499179024000" expanded="false" signature="5312:5755" ph="{...}" />
+                <marker date="1499179024000" expanded="false" signature="5974:7424" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -38,7 +37,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response25.html" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response27.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -483,12 +482,12 @@
       <workItem from="1499063937354" duration="1315000" />
       <workItem from="1499085945126" duration="14540000" />
       <workItem from="1499161787435" duration="1819000" />
-      <workItem from="1499176047103" duration="2380000" />
+      <workItem from="1499176047103" duration="2528000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20054000" />
+    <option name="totallyTimeSpent" value="20202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="256" y="23" width="1785" height="1204" extended-state="0" />
@@ -537,10 +536,9 @@
             <element signature="e#361#4733#0" expanded="false" />
             <element signature="e#7775#7852#0" expanded="false" />
             <element signature="n#!!block;n#buildSpeechletResponse#0" expanded="false" />
-            <element signature="n#!!block;n#generateResponse#1" expanded="false" />
-            <marker date="1499178875000" expanded="false" signature="5025:5275" ph="{...}" />
-            <marker date="1499178875000" expanded="false" signature="5312:5755" ph="{...}" />
-            <marker date="1499178875000" expanded="false" signature="5974:7424" ph="{...}" />
+            <marker date="1499179024000" expanded="false" signature="5025:5275" ph="{...}" />
+            <marker date="1499179024000" expanded="false" signature="5312:5755" ph="{...}" />
+            <marker date="1499179024000" expanded="false" signature="5974:7424" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -561,10 +559,9 @@
             <element signature="e#361#4733#0" expanded="false" />
             <element signature="e#7775#7852#0" expanded="false" />
             <element signature="n#!!block;n#buildSpeechletResponse#0" expanded="false" />
-            <element signature="n#!!block;n#generateResponse#1" expanded="false" />
-            <marker date="1499178875000" expanded="false" signature="5025:5275" ph="{...}" />
-            <marker date="1499178875000" expanded="false" signature="5312:5755" ph="{...}" />
-            <marker date="1499178875000" expanded="false" signature="5974:7424" ph="{...}" />
+            <marker date="1499179024000" expanded="false" signature="5025:5275" ph="{...}" />
+            <marker date="1499179024000" expanded="false" signature="5312:5755" ph="{...}" />
+            <marker date="1499179024000" expanded="false" signature="5974:7424" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -585,10 +582,9 @@
             <element signature="e#361#4733#0" expanded="false" />
             <element signature="e#7775#7852#0" expanded="false" />
             <element signature="n#!!block;n#buildSpeechletResponse#0" expanded="false" />
-            <element signature="n#!!block;n#generateResponse#1" expanded="false" />
-            <marker date="1499178875000" expanded="false" signature="5025:5275" ph="{...}" />
-            <marker date="1499178875000" expanded="false" signature="5312:5755" ph="{...}" />
-            <marker date="1499178875000" expanded="false" signature="5974:7424" ph="{...}" />
+            <marker date="1499179024000" expanded="false" signature="5025:5275" ph="{...}" />
+            <marker date="1499179024000" expanded="false" signature="5312:5755" ph="{...}" />
+            <marker date="1499179024000" expanded="false" signature="5974:7424" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -611,16 +607,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="303" column="2" lean-forward="false" selection-start-line="303" selection-start-column="2" selection-end-line="303" selection-end-column="2" />
+        <state relative-caret-position="-73">
+          <caret line="292" column="61" lean-forward="false" selection-start-line="292" selection-start-column="61" selection-end-line="292" selection-end-column="61" />
           <folding>
             <element signature="e#361#4733#0" expanded="false" />
             <element signature="e#7775#7852#0" expanded="false" />
             <element signature="n#!!block;n#buildSpeechletResponse#0" expanded="false" />
-            <element signature="n#!!block;n#generateResponse#1" expanded="false" />
-            <marker date="1499178875000" expanded="false" signature="5025:5275" ph="{...}" />
-            <marker date="1499178875000" expanded="false" signature="5312:5755" ph="{...}" />
-            <marker date="1499178875000" expanded="false" signature="5974:7424" ph="{...}" />
+            <marker date="1499179024000" expanded="false" signature="5025:5275" ph="{...}" />
+            <marker date="1499179024000" expanded="false" signature="5312:5755" ph="{...}" />
+            <marker date="1499179024000" expanded="false" signature="5974:7424" ph="{...}" />
           </folding>
         </state>
       </provider>
