@@ -15,7 +15,7 @@ restService.use(bodyParser.urlencoded({
 
 restService.use(bodyParser.json());
 
-restService.post('/info', function (req, res) {
+restService.post('/helga', function (req, res) {
 
     var action = req.body.result && req.body.result.action ? req.body.result.action : null;
     var previousAction = req.body.result && req.body.result.parameters && req.body.result.parameters.myAction ? req.body.result.parameters.myAction : null;
@@ -82,6 +82,125 @@ restService.post('/info', function (req, res) {
             break;
 
         case 'clients.all' : break;
+
+        case 'clients.employee' :
+            var client = req.body.result && req.body.result.parameters && req.body.result.parameters.client ? req.body.result.parameters.client : null;
+
+            console.log(client);
+
+            var users = getUsersForClient(client);
+
+            console.log(users);
+
+            if (users) {
+
+                if (users.length > 1) {
+                    speech = users.slice(0, -1).join(', ') + ' und ' + users.slice(-1) + ' sind ';
+                } else {
+                    speech = users[0].first_name + ' ' + users[0].last_name + ' ist ';
+                }
+
+                speech = speech + 'zuständig für ' + client;
+                return generateResponse(res, speech);
+            }
+
+            break;
+
+        case 'blog.latest' :
+
+            var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : 'schlaadt';
+
+            var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
+
+            wp.posts().then(function (data) {
+                // do something with the returned posts
+                // console.log(data[0]);
+
+                var date = moment(data[0].date);
+
+                return generateResponse(res, 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered);
+            }).catch(function (err) {
+                // handle error
+                // console.log(err);
+                return generateResponse(res, 'Ich konnte keine Beiträge finden');
+            });
+
+            break;
+
+        default:
+            break;
+    }
+
+});
+
+restService.post('/alexa', function (req, res) {
+
+    var action = req.body.result && req.body.result.action ? req.body.result.action : null;
+    var previousAction = req.body.result && req.body.result.parameters && req.body.result.parameters.myAction ? req.body.result.parameters.myAction : null;
+    var speech = '';
+    var username = undefined;
+    var user = undefined;
+
+    if (action == 'PreviousContext') {
+        action = previousAction;
+    }
+
+    switch (action) {
+
+        case 'employee.phone' :
+            username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
+            user = getInfoForUsername(username);
+
+            if (user && user.phone) {
+                speech = 'Die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' ist die ' + user.phone;
+                return generateResponse(res, speech);
+            }
+
+            break;
+
+        case 'employee.email' :
+            username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
+            user = getInfoForUsername(username);
+
+            if (user && user.email) {
+                speech = 'Die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' lautet ' + user.email;
+                return generateResponse(res, speech);
+            }
+
+            break;
+
+        case 'employee.services' :
+            username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
+            user = getInfoForUsername(username);
+
+            if (user && user.services.length > 0) {
+                var services = user.services.length > 1
+                    ? user.services.slice(0, -1).join(', ') + ' und ' + user.services.slice(-1)
+                    : user.services;
+
+                speech = user.first_name + ' ' + user.last_name + ' ist zuständig für ' + services;
+                return generateResponse(res, speech);
+            }
+
+            break;
+
+        case 'employee.clients' :
+            username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
+            user = getInfoForUsername(username);
+
+            if (user && user.clients.length > 0) {
+                var clients = user.clients.length > 1
+                    ? user.clients.slice(0, -1).join(', ') + ' und ' + user.clients.slice(-1)
+                    : user.clients;
+
+                speech = user.first_name + ' ' + user.last_name + ' ist zuständig für ' + clients;
+                return generateResponse(res, speech);
+            }
+
+            break;
+
+        case 'clients.all' :
+            break;
 
         case 'clients.employee' :
             var client = req.body.result && req.body.result.parameters && req.body.result.parameters.client ? req.body.result.parameters.client : null;
