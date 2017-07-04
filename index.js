@@ -289,12 +289,13 @@ exports.handler = function (event, context, callback) {
                         );
                         break;
 
-            case "SessionEndedRequest":
-                console.log("SESSION ENDED REQUEST")
-                break;
+                    case "SessionEndedRequest":
+                        console.log("SESSION ENDED REQUEST")
+                        break;
 
-            default:
-                context.fail(`INVALID REQUEST TYPE: ${event.request.type}`)
+                    default:
+                        context.fail(`INVALID REQUEST TYPE: ${event.request.type}`)
+                }
         }
 
     } catch (error) {
@@ -302,63 +303,6 @@ exports.handler = function (event, context, callback) {
     }
 };
 
-
-/*exports.handler = function(event, context, callback) {
-
-    var alexa = Alexa.handler(event, context, callback);
-    console.log(alexa);
-
-    try {
-
-        if (event.session.new) {
-            // New Session
-            console.log("NEW SESSION")
-        }
-
-        switch (event.request.type) {
-
-            case "LaunchRequest":
-                console.log("LAUNCH REQUEST")
-                context.succeed(
-                    generateResponse(
-                        buildSpeechletResponse("Hallo.", true),
-                        {}
-                    )
-                )
-                break;
-
-            case "IntentRequest":
-                console.log("INTENT REQUEST");
-
-                switch (event.request.intent.name) {
-
-                    case "SayHello":
-                        context.succeed(
-                            generateResponse(
-                                buildSpeechletResponse("Hallo. Schön, bei euch zu sein!", true),
-                                {}
-                            )
-                        );
-                        break;
-
-                    default:
-                        throw "Invalid intent"
-                }
-
-                break;
-
-            case "SessionEndedRequest":
-                console.log("SESSION ENDED REQUEST");
-                break;
-
-            default:
-                context.fail(`INVALID REQUEST TYPE: ${event.request.type}`)
-        }
-
-    } catch (error) {
-        context.fail(`Exception: ${error}`)
-    }
-};*/
 
 function buildSpeechletResponse(outputText, shouldEndSession) {
 
