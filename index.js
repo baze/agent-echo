@@ -249,7 +249,58 @@ restService.listen((process.env.PORT || 8000), function () {
 });
 
 
+var Alexa = require('alexa-sdk');
 
+exports.handler = function (event, context, callback) {
+    var alexa = Alexa.handler(event, context, callback);
+
+    // callback(null, 'Hello from Lambda');
+
+    try {
+
+        if (event.session.new) {
+            // New Session
+            console.log("NEW SESSION")
+        }
+
+        switch (event.request.type) {
+
+            case "LaunchRequest":
+                console.log("LAUNCH REQUEST");
+                context.succeed(
+                    generateResponse(
+                        buildSpeechletResponse("Hallo.", true),
+                        {}
+                    )
+                );
+                break;
+
+            case "IntentRequest":
+                console.log("INTENT REQUEST");
+
+                switch (event.request.intent.name) {
+
+                    case "SayHello":
+                        context.succeed(
+                            generateResponse(
+                                buildSpeechletResponse("Hallo. Schön, bei euch zu sein!", true),
+                                {}
+                            )
+                        );
+                        break;
+
+            case "SessionEndedRequest":
+                console.log("SESSION ENDED REQUEST")
+                break;
+
+            default:
+                context.fail(`INVALID REQUEST TYPE: ${event.request.type}`)
+        }
+
+    } catch (error) {
+        context.fail(`Exception: ${error}`)
+    }
+};
 
 
 /*exports.handler = function(event, context, callback) {
