@@ -132,20 +132,6 @@ restService.post('/helga', function (req, res) {
 
 });
 
-restService.post('/alexa', function (req, res) {
-
-    var Alexa = require('alexa-sdk');
-
-    console.log("hello alexa");
-
-    return res.json({
-        speech: 'speech',
-        displayText: 'speech',
-        source: 'alexa-sdk-sample'
-    });
-
-});
-
 function getInfoForUsername(username) {
     const _users = require('./users.json');
 
@@ -247,81 +233,3 @@ restService.post('/slack-test', function (req, res) {
 restService.listen((process.env.PORT || 8000), function () {
     console.log("Server up and listening");
 });
-
-
-var Alexa = require('alexa-sdk');
-
-exports.handler = function (event, context, callback) {
-    var alexa = Alexa.handler(event, context, callback);
-
-    // callback(null, 'Hello from Lambda');
-
-    try {
-
-        if (event.session.new) {
-            // New Session
-            console.log("NEW SESSION")
-        }
-
-        switch (event.request.type) {
-
-            case "LaunchRequest":
-                console.log("LAUNCH REQUEST");
-                context.succeed(
-                    generateResponseAlexa(
-                        buildSpeechletResponse("Hallo.", true),
-                        {}
-                    )
-                );
-                break;
-
-            case "IntentRequest":
-                console.log("INTENT REQUEST");
-
-                switch (event.request.intent.name) {
-
-                    case "SayHello":
-                        context.succeed(
-                            generateResponseAlexa(
-                                buildSpeechletResponse("Hallo. Schön, bei euch zu sein!", true),
-                                {}
-                            )
-                        );
-                        break;
-
-                    case "SessionEndedRequest":
-                        console.log("SESSION ENDED REQUEST");
-                        break;
-
-                    default:
-                        context.fail(`INVALID REQUEST TYPE: ${event.request.type}`)
-                }
-        }
-
-    } catch (error) {
-        context.fail(`Exception: ${error}`)
-    }
-};
-
-
-function buildSpeechletResponse(outputText, shouldEndSession) {
-
-    return {
-        outputSpeech: {
-            type: "PlainText",
-            text: outputText
-        },
-        shouldEndSession: shouldEndSession
-    }
-
-}
-
-function generateResponseAlexa(speechletResponse, sessionAttributes) {
-
-    return {
-        version: "1.0",
-        sessionAttributes: sessionAttributes,
-        response: speechletResponse
-    }
-
-}
