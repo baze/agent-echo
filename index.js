@@ -139,7 +139,7 @@ function getInfoForUsername(username) {
 function getUsersForClient(client) {
     var users = [];
 
-    for (var i = 0, len = _users.length; i < len; i++) {
+    /*for (var i = 0, len = _users.length; i < len; i++) {
 
         var user = _users[i];
 
@@ -152,7 +152,7 @@ function getUsersForClient(client) {
                 }
             }
         }
-    }
+    }*/
 
     return users;
 }
