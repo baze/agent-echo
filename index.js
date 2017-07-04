@@ -3,7 +3,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const WPAPI = require('wpapi');
-const _users = require('./users.json');
 var moment = require('moment');
 moment.locale('de');
 
@@ -142,6 +141,8 @@ restService.post('/alexa', function (req, res) {
 });
 
 function getInfoForUsername(username) {
+    const _users = require('./users.json');
+
     for (var i = 0, len = _users.length; i < len; i++) {
 
         var user = _users[i];
@@ -154,6 +155,7 @@ function getInfoForUsername(username) {
 }
 
 function getUsersForClient(client) {
+    const _users = require('./users.json');
     var users = [];
 
     for (var i = 0, len = _users.length; i < len; i++) {
