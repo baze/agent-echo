@@ -94,11 +94,13 @@ restService.post('/info', function (req, res) {
 
             if (users) {
 
-                var users_output = users.length > 1
-                    ? users.slice(0, -1).join(', ') + ' und ' + users.slice(-1)
-                    : users[0].first_name  + ' ' + users[0].last_name;
+                if (users.length > 1) {
+                    speech = users.slice(0, -1).join(', ') + ' und ' + users.slice(-1) + ' sind ';
+                } else {
+                    speech = users[0].first_name + ' ' + users[0].last_name + ' ist ';
+                }
 
-                speech = users_output + users_output.length > 1 ? ' sind ' : ' ist ' + 'zuständig für ' + client;
+                speech = speech + 'zuständig für ' + client;
                 return generateResponse(res, speech);
             }
 
