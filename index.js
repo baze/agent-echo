@@ -56,7 +56,7 @@ restService.post('/info', function (req, res) {
             user = getInfoForUsername(username);
 
             if (user && user.services.length > 0) {
-                speech = user.first_name + ' ' + user.last_name + ' ist zuständig für ' + user.services[0];
+                speech = user.first_name + ' ' + user.last_name + ' ist zuständig für ' + user.services.join();
                 return generateResponse(res, speech);
             }
 
