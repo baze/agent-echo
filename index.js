@@ -241,3 +241,12 @@ restService.post('/slack-test', function (req, res) {
 restService.listen((process.env.PORT || 8000), function () {
     console.log("Server up and listening");
 });
+
+
+var Alexa = require('alexa-sdk');
+
+console.log(Alexa);
+
+exports.handler = function (event, context, callback) {
+    var alexa = Alexa.handler(event, context, callback);
+};
