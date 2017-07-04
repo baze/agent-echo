@@ -138,6 +138,8 @@ restService.post('/alexa', function (req, res) {
     console.log(req);
     console.log(res);
 
+    return;
+
 });
 
 function getInfoForUsername(username) {
@@ -245,7 +247,9 @@ restService.listen((process.env.PORT || 8000), function () {
 
 var Alexa = require('alexa-sdk');
 
-exports.handler = function(event, context, callback) {
+console.log(Alexa);
+
+/*exports.handler = function(event, context, callback) {
 
     var alexa = Alexa.handler(event, context, callback);
     console.log(alexa);
@@ -300,7 +304,7 @@ exports.handler = function(event, context, callback) {
     } catch (error) {
         context.fail(`Exception: ${error}`)
     }
-};
+};*/
 
 function buildSpeechletResponse(outputText, shouldEndSession) {
 
