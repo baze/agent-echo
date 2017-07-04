@@ -245,7 +245,7 @@ restService.listen((process.env.PORT || 8000), function () {
 
 var Alexa = require('alexa-sdk');
 
-exports.handler = (event, context, callback) => {
+exports.handler = function(event, context, callback) {
 
     var alexa = Alexa.handler(event, context, callback);
     console.log(alexa);
@@ -270,7 +270,7 @@ exports.handler = (event, context, callback) => {
                 break;
 
             case "IntentRequest":
-                console.log("INTENT REQUEST")
+                console.log("INTENT REQUEST");
 
                 switch (event.request.intent.name) {
 
@@ -280,145 +280,7 @@ exports.handler = (event, context, callback) => {
                                 buildSpeechletResponse("Hallo. Schön, bei euch zu sein!", true),
                                 {}
                             )
-                        )
-                        break;
-
-                    case "GetUpdate":
-                        /*var endpoint = "https://www.schlaadt.de/wp-json/wp/v2/posts?per_page=1"
-                        var body = ""
-
-                        https.get(endpoint, (response) => {
-
-                            response.on('data', (chunk) => {
-                                body += chunk
-                            })
-                            response.on('end', () => {
-                                var data = JSON.parse(body)
-                                var post = data[0]
-                                var date = new Date(post.date)
-
-                                context.succeed(
-                                    generateResponse(
-                                        buildSpeechletResponse("Der letzte Blog-Beitrag war: " + post.title.rendered, true),
-                                        {}
-                                    )
-                                )
-
-                            })
-                        })*/
-                        var endpoint = "https://www.euw.de/apps/alexa/api.twitter.php"
-                        var body = ""
-                        https.get(endpoint, (response) => {
-                            response.on('data', (chunk) => {
-                                body += chunk
-                            })
-                            response.on('end', () => {
-                                var data = JSON.parse(body)
-                                context.succeed(
-                                    generateResponse(
-                                        buildSpeechletResponse(`Der letzte Tweet von ${data.user.name} war: ${data.text}`, true),
-                                        {}
-                                    )
-                                )
-                            })
-                        })
-
-                        break;
-
-                    case "GetKitchenService":
-                        context.succeed(
-                            generateResponse(
-                                buildSpeechletResponse("Stephan hat Küchendienst. Immer!", true),
-                                {}
-                            )
-                        )
-                        break;
-
-                    case "GetInsult":
-                        context.succeed(
-                            generateResponse(
-                                buildSpeechletResponse("Ficke disch doch selber!", true),
-                                {}
-                            )
-                        )
-                        break;
-
-                    case "GetFairy":
-                        context.succeed(
-                            generateResponse(
-                                buildSpeechletResponse("Natascha ist zauberhaft und elfengleich", true),
-                                {}
-                            )
-                        )
-                        break;
-
-                    case "GetLetMe":
-                        context.succeed(
-                            generateResponse(
-                                buildSpeechletResponse("Lasse mich!", true),
-                                {}
-                            )
-                        )
-                        break;
-
-                    case "GetGarbagePlan":
-                        context.succeed(
-                            generateResponse(
-                                buildSpeechletResponse("Gelbe Säcke am Dienstag abend. Mülltonne raus am Mittwoch abend und am Donnerstag vormittag wieder in den Keller.", true),
-                                {}
-                            )
                         );
-                        break;
-
-                    case "GetKitchenServiceDate":
-                        var date = event.request.intent.slots.Date.value
-                        var endpoint = "https://www.euw.de/apps/alexa/api.kitchen.php"
-                        var body = ""
-                        https.get(endpoint, (response) => {
-                            response.on('data', (chunk) => {
-                                body += chunk
-                            })
-                            response.on('end', () => {
-                                var data = JSON.parse(body)
-                                context.succeed(
-                                    generateResponse(
-                                        buildSpeechletResponse(`${data[date]}`, true),
-                                        {}
-                                    )
-                                )
-                            })
-                        })
-                        break;
-
-                    case "GetHailHydra":
-                        context.succeed(
-                            generateResponse(
-                                buildSpeechletResponse('Hail Hydra', true),
-                                {}
-                            )
-                        )
-                        break;
-
-                    case "GetFunnyDay":
-                        var date = event.request.intent.slots.Date.value
-                        //var endpoint = "http://www.webcal.fi/cal.php?id=50&rid=ics&wrn=0&wp=12&wf=55"
-                        var endpoint = "https://www.euw.de/apps/alexa/api.calendar.php"
-                        var body = ""
-                        https.get(endpoint, (response) => {
-                            console.log(response)
-                            response.on('data', (chunk) => {
-                                body += chunk
-                            })
-                            response.on('end', () => {
-                                var data = JSON.parse(body)
-                                context.succeed(
-                                    generateResponse(
-                                        buildSpeechletResponse(`Heute ist ein guter Tag`, true),
-                                        {}
-                                    )
-                                )
-                            })
-                        })
                         break;
 
                     default:
@@ -428,7 +290,7 @@ exports.handler = (event, context, callback) => {
                 break;
 
             case "SessionEndedRequest":
-                console.log("SESSION ENDED REQUEST")
+                console.log("SESSION ENDED REQUEST");
                 break;
 
             default:
@@ -438,9 +300,9 @@ exports.handler = (event, context, callback) => {
     } catch (error) {
         context.fail(`Exception: ${error}`)
     }
-}
+};
 
-buildSpeechletResponse = (outputText, shouldEndSession) => {
+function buildSpeechletResponse(outputText, shouldEndSession) {
 
     return {
         outputSpeech: {
@@ -452,7 +314,7 @@ buildSpeechletResponse = (outputText, shouldEndSession) => {
 
 }
 
-generateResponse = (speechletResponse, sessionAttributes) => {
+function generateResponse(speechletResponse, sessionAttributes) {
 
     return {
         version: "1.0",
