@@ -36,8 +36,15 @@ restService.post('/helga', function (req, res) {
 
             if (user && user.phone) {
                 speech = 'Die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' ist die ' + user.phone;
-                return generateResponse(res, speech);
+            } else {
+                speech = 'Diese Information zu ' + user.first_name + ' ' + user.last_name +
+                    ' habe ich leider nicht vorliegen. ' +
+                    'Aber vielleicht kann ich dir mit Informationen zu ' +
+                    'E-Mail-Adresse, Leistungen oder betreuten Kunden ' +
+                    'weiterhelfen?';
             }
+
+            return generateResponse(res, speech);
 
             break;
 
@@ -47,8 +54,15 @@ restService.post('/helga', function (req, res) {
 
             if (user && user.email) {
                 speech = 'Die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' lautet ' + user.email;
-                return generateResponse(res, speech);
+            } else {
+                speech = 'Diese Information zu ' + user.first_name + ' ' + user.last_name +
+                    ' habe ich leider nicht vorliegen. ' +
+                    'Aber vielleicht kann ich dir mit Informationen zu ' +
+                    'Durchwahl, Leistungen oder betreuten Kunden ' +
+                    'weiterhelfen?';
             }
+
+            return generateResponse(res, speech);
 
             break;
 
@@ -62,8 +76,15 @@ restService.post('/helga', function (req, res) {
                     : user.services;
 
                 speech = user.first_name + ' ' + user.last_name + ' ist zuständig für ' + services;
-                return generateResponse(res, speech);
+            } else {
+                speech = 'Diese Information zu ' + user.first_name + ' ' + user.last_name +
+                    ' habe ich leider nicht vorliegen. ' +
+                    'Aber vielleicht kann ich dir mit Informationen zu ' +
+                    'Durchwahl, E-Mail-Adresse oder betreuten Kunden ' +
+                    'weiterhelfen?';
             }
+
+            return generateResponse(res, speech);
 
             break;
 
@@ -79,8 +100,15 @@ restService.post('/helga', function (req, res) {
                     : user.clients;
 
                 speech = user.first_name + ' ' + user.last_name + ' ist zuständig für ' + clients;
-                return generateResponse(res, speech);
+            } else {
+                speech = 'Diese Information zu ' + user.first_name + ' ' + user.last_name +
+                    ' habe ich leider nicht vorliegen. ' +
+                    'Aber vielleicht kann ich dir mit Informationen zu ' +
+                    'Durchwahl, E-Mail-Adresse oder Leistungen ' +
+                    'weiterhelfen?';
             }
+
+            return generateResponse(res, speech);
 
             break;
 
