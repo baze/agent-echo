@@ -6,6 +6,8 @@ const WPAPI = require('wpapi');
 var moment = require('moment');
 moment.locale('de');
 
+require('./functions');
+
 const restService = express();
 
 restService.use(bodyParser.urlencoded({
@@ -170,50 +172,6 @@ restService.post('/helga', function (req, res) {
 
 });
 
-function getInfoForUsername(username) {
-    const _users = require('./users.json');
-
-    for (var i = 0, len = _users.length; i < len; i++) {
-
-        var user = _users[i];
-
-        if (user.username == username) {
-            console.log(user);
-            return user;
-        }
-    }
-}
-
-function getUsersForClient(client) {
-    const _users = require('./users.json');
-    var users = [];
-
-    for (var i = 0, len = _users.length; i < len; i++) {
-
-        var user = _users[i];
-
-        if (user.clients) {
-            var clients = user.clients;
-
-            for (var j = 0, len2 = clients.length; j < len2; j++) {
-                if (clients[j] == client) {
-                    users.push(user);
-                }
-            }
-        }
-    }
-
-    return users;
-}
-
-function generateResponse(res, speech) {
-    return res.json({
-        speech: speech,
-        displayText: speech,
-        source: 'webhook-echo-sample'
-    });
-}
-
 restService.post('/slack-test', function (req, res) {
 
     var slack_message = {
@@ -268,10 +226,13 @@ restService.post('/slack-test', function (req, res) {
     });
 });
 
+restService.get('/ews', function (req, res) {
+
+    var ews = require("exchange-web-service");
+    console.log(ews);
+
+});
+
 restService.listen((process.env.PORT || 8000), function () {
     console.log("Server up and listening");
 });
-
-
-var ews = require("exchange-web-service");
-console.log(ews);
