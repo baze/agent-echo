@@ -114,14 +114,14 @@ restService.post('/helga', function (req, res) {
 
                 wp.posts().then(function (data) {
                     // do something with the returned posts
-                    // console.log(data[0]);
+                    console.log(data);
 
                     var date = moment(data[0].date);
 
                     return generateResponse(res, 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered);
                 }).catch(function (err) {
                     // handle error
-                    // console.log(err);
+                    console.log(err);
                     return generateResponse(res, 'Ich konnte keine Beiträge finden');
                 });
             } else {

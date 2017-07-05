@@ -18,11 +18,11 @@
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
-              <caret line="116" column="44" lean-forward="true" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
+              <caret line="116" column="36" lean-forward="false" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
               <folding>
                 <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
                 <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
-                <element signature="e#5925#7375#0" expanded="false" />
+                <element signature="e#5916#7366#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -70,8 +70,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="321" />
-    <option name="y" value="23" />
+    <option name="x" value="720" />
+    <option name="y" value="57" />
     <option name="width" value="1785" />
     <option name="height" value="1204" />
   </component>
@@ -584,15 +584,15 @@
       <workItem from="1499085945126" duration="14540000" />
       <workItem from="1499161787435" duration="1819000" />
       <workItem from="1499176047103" duration="3559000" />
-      <workItem from="1499240674291" duration="156000" />
+      <workItem from="1499240674291" duration="311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21389000" />
+    <option name="totallyTimeSpent" value="21544000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="321" y="23" width="1785" height="1204" extended-state="0" />
+    <frame x="720" y="57" width="1785" height="1204" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -637,7 +637,7 @@
           <folding>
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
-            <element signature="e#5925#7375#0" expanded="false" />
+            <element signature="e#5916#7366#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -657,7 +657,7 @@
           <folding>
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
-            <element signature="e#5925#7375#0" expanded="false" />
+            <element signature="e#5916#7366#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -677,7 +677,7 @@
           <folding>
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
-            <element signature="e#5925#7375#0" expanded="false" />
+            <element signature="e#5916#7366#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -697,7 +697,7 @@
           <folding>
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
-            <element signature="e#5925#7375#0" expanded="false" />
+            <element signature="e#5916#7366#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -721,11 +721,11 @@
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
-          <caret line="116" column="44" lean-forward="true" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
+          <caret line="116" column="36" lean-forward="false" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
           <folding>
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
-            <element signature="e#5925#7375#0" expanded="false" />
+            <element signature="e#5916#7366#0" expanded="false" />
           </folding>
         </state>
       </provider>
