@@ -274,3 +274,4 @@ restService.listen((process.env.PORT || 8000), function () {
 
 
 var ews = require("exchange-web-service");
+console.log(ews);
