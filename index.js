@@ -71,6 +71,8 @@ restService.post('/helga', function (req, res) {
             username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
             user = getInfoForUsername(username);
 
+            console.log(user);
+
             if (user && user.clients.length > 0) {
                 var clients = user.clients.length > 1
                     ? user.clients.slice(0, -1).join(', ') + ' und ' + user.clients.slice(-1)
