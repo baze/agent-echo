@@ -26,6 +26,8 @@ restService.post('/helga', function (req, res) {
         action = previousAction;
     }
 
+    console.log(action);
+
     switch (action) {
 
         case 'employee.phone' :
