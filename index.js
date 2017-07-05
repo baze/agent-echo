@@ -224,15 +224,6 @@ restService.post('/slack-test', function (req, res) {
     });
 });
 
-restService.get('/ews', function (req, res) {
-
-    var ews = require("exchange-web-service");
-    console.log(ews);
-
-    return res.json(ews);
-
-});
-
 restService.listen((process.env.PORT || 8000), function () {
     console.log("Server up and listening");
 });

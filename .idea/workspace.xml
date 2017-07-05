@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,24 +17,15 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="231" column="23" lean-forward="false" selection-start-line="231" selection-start-column="23" selection-end-line="231" selection-end-column="23" />
+            <state relative-caret-position="286">
+              <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
               <folding>
                 <element signature="e#361#6422#0" expanded="false" />
                 <element signature="e#6478#7928#0" expanded="false" />
                 <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
                 <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+                <element signature="n#!!block;n#generateResponse#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -41,7 +33,7 @@
       <file leaf-file-name="users.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3978">
+            <state relative-caret-position="527">
               <caret line="153" column="5" lean-forward="false" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
               <folding />
             </state>
@@ -51,8 +43,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="442">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,7 +56,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response3.html" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response23.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -161,6 +153,54 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://192.168.1.99:8000" />
+          <option name="urlPath" value="/ews" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;id&quot;: &quot;c66cd232-ac4e-4234-91c6-3eef52fb259f&quot;,   &quot;timestamp&quot;: &quot;2017-07-05T09:40:36.236Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;welche kunden betreut er?&quot;,     &quot;action&quot;: &quot;employee.clients&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;myAction&quot;: &quot;employee.clients&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;myAction&quot;: &quot;employee.clients&quot;,           &quot;employee.original&quot;: &quot;jan&quot;,           &quot;employee&quot;: &quot;jawa&quot;,           &quot;myAction.original&quot;: &quot;&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;285584b2-61b6-497d-a1e1-73b7858f06a7&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;employee - context:userinfo - comment:clients&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Request timeout.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://192.168.1.99:8000" />
+          <option name="urlPath" value="/ews" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;id&quot;: &quot;c66cd232-ac4e-4234-91c6-3eef52fb259f&quot;,   &quot;timestamp&quot;: &quot;2017-07-05T09:40:36.236Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;welche kunden betreut er?&quot;,     &quot;action&quot;: &quot;employee.clients&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;myAction&quot;: &quot;employee.clients&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;myAction&quot;: &quot;employee.clients&quot;,           &quot;employee.original&quot;: &quot;jan&quot;,           &quot;employee&quot;: &quot;jawa&quot;,           &quot;myAction.original&quot;: &quot;&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;285584b2-61b6-497d-a1e1-73b7858f06a7&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;employee - context:userinfo - comment:clients&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Request timeout.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
@@ -737,12 +777,12 @@
       <workItem from="1499176047103" duration="3559000" />
       <workItem from="1499240674291" duration="1459000" />
       <workItem from="1499247972182" duration="1323000" />
-      <workItem from="1499257361349" duration="2130000" />
+      <workItem from="1499257361349" duration="3191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26145000" />
+    <option name="totallyTimeSpent" value="27206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="685" y="77" width="1826" height="1170" extended-state="0" />
@@ -792,6 +832,7 @@
             <element signature="e#6478#7928#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -821,6 +862,7 @@
             <element signature="e#6478#7928#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -850,6 +892,7 @@
             <element signature="e#6478#7928#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -871,6 +914,7 @@
             <element signature="e#6478#7928#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -892,6 +936,7 @@
             <element signature="e#6478#7928#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -913,22 +958,23 @@
             <element signature="e#6478#7928#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3978">
-          <caret line="153" column="5" lean-forward="false" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="442">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="153" column="5" lean-forward="false" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -936,20 +982,29 @@
     <entry file="file://$PROJECT_DIR$/functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/exchange-web-service/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="66" column="60" lean-forward="true" selection-start-line="66" selection-start-column="60" selection-end-line="66" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="231" column="23" lean-forward="false" selection-start-line="231" selection-start-column="23" selection-end-line="231" selection-end-column="23" />
+        <state relative-caret-position="286">
+          <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
           <folding>
             <element signature="e#361#6422#0" expanded="false" />
             <element signature="e#6478#7928#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
           </folding>
         </state>
       </provider>
