@@ -107,22 +107,26 @@ restService.post('/helga', function (req, res) {
 
         case 'blog.latest' :
 
-            var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : 'schlaadt';
+            var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : 'null';
 
-            var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
+            if (blog) {
+                var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
-            wp.posts().then(function (data) {
-                // do something with the returned posts
-                // console.log(data[0]);
+                wp.posts().then(function (data) {
+                    // do something with the returned posts
+                    // console.log(data[0]);
 
-                var date = moment(data[0].date);
+                    var date = moment(data[0].date);
 
-                return generateResponse(res, 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered);
-            }).catch(function (err) {
-                // handle error
-                // console.log(err);
-                return generateResponse(res, 'Ich konnte keine Beiträge finden');
-            });
+                    return generateResponse(res, 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered);
+                }).catch(function (err) {
+                    // handle error
+                    // console.log(err);
+                    return generateResponse(res, 'Ich konnte keine Beiträge finden');
+                });
+            } else {
+                return generateResponse(res, 'Ich konnte den Blog ' + blog + ' leider nicht finden');
+            }
 
             break;
 
