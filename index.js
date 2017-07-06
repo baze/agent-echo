@@ -339,6 +339,22 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
     alexa.send(req, res, options);
 });
 
+alexa.intent('Employee', function (req, res, slots) {
+
+    console.log(req);
+    console.log(res);
+    console.log(slots);
+
+    var phrase = slots.employeeslot.value;
+    var options = {
+        shouldEndSession: true,
+        outputSpeech: phrase,
+        card: alexa.buildCard("Card Title", phrase)
+    };
+
+    alexa.send(req, res, options);
+});
+
 alexa.ended(function (req, res, reason) {
     console.log(reason);
 });
