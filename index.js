@@ -478,13 +478,13 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
     var phrase = "";
     if (sessionAttributes.previous) {
-        phrase = 'You previously said "' + sessionAttributes.previous + '". I have replaced that with "' + slots.city.value + '". Please say another city name.';
+        phrase = 'You previously said "' + sessionAttributes.previous + '". I have replaced that with "' + slots.employeeslot.value + '". Please say another city name.';
     }
     else {
         phrase = 'You said "' + slots.city.value + '". Please say another city name.';
     }
 
-    sessionAttributes.previous = slots.city.value;
+    sessionAttributes.previous = slots.employeeslot.value;
 
     var options = {
         shouldEndSession: false,
