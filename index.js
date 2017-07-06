@@ -476,11 +476,6 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
 
 alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
-    console.log(req);
-    console.log(res);
-    console.log(slots);
-    console.log(sessionAttributes);
-
     var phrase = "";
     if (sessionAttributes.previous) {
         phrase = 'You previously said "' + sessionAttributes.previous + '". I have replaced that with "' + slots.city.value + '". Please say another city name.';
