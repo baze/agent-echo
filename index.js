@@ -345,7 +345,23 @@ alexa.intent('Employee', function (req, res, slots) {
 
     console.log(slots);
 
-    var employee = slots.employeeslot.value;
+    var request = app.getContextsRequest(options);
+
+    request.on('response', function (response) {
+        // response = [
+        // { name: "contextName" }
+        // ]
+        console.log(response);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+
+
+    /*var employee = slots.employeeslot.value;
     var textQuery = 'Wer ist ' + employee + '?';
 
     var request = app.textRequest(textQuery, {
@@ -381,15 +397,7 @@ alexa.intent('Employee', function (req, res, slots) {
     });
 
 
-    request.end();
-
-    /*var phrase = employee;
-    var options = {
-        shouldEndSession: true,
-        outputSpeech: phrase,
-        card: alexa.buildCard("Card Title", phrase)
-    };*/
-
+    request.end();*/
 
 });
 
