@@ -325,11 +325,11 @@ alexa.intent('SayHello', function (req, res, slots) {
     alexa.send(req, res, options);
 });
 
-alexa.intent('Kitchen', function (req, res, slots) {
+alexa.intent('SmalltalkNane', function (req, res, slots) {
 
     console.log(slots);
 
-    var phrase = 'Stephan';
+    var phrase = 'Natascha';
     var options = {
         shouldEndSession: true,
         outputSpeech: phrase,
