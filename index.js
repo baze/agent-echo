@@ -346,8 +346,8 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
     console.log(slots);
     console.log(sessionAttributes);
 
-    var employee = slots.employeeslot.value;
-    var textQuery = 'Wer ist ' + employee + '?';
+    var phrase = "";
+    var textQuery = 'Wer ist ' + slots.employeeslot.value + '?';
 
     var request = app.textRequest(textQuery, {
         sessionId: '<unique session id>'
@@ -357,21 +357,21 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
         console.log('response');
         console.log(response);
 
-        var phrase = response.result.fulfillment.speech;
+       phrase = response.result.fulfillment.speech;
         var options = {
             shouldEndSession: false,
             outputSpeech: phrase,
             card: alexa.buildCard("Card Title", phrase)
         };
 
-        alexa.send(req, res, options);
+        alexa.send(req, res, options, sessionAttributes);
     });
 
     request.on('error', function (error) {
         console.log('error');
         console.log(error);
 
-        var phrase = 'Error Poperror!';
+        phrase = 'Error Poperror!';
         var options = {
             shouldEndSession: true,
             outputSpeech: phrase,
