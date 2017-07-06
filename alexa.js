@@ -96,7 +96,21 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
 
 alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
-    var phrase = "";
+    console.log(req);
+    console.log(res);
+    console.log(slots);
+    console.log(sessionAttributes);
+
+    var phrase = 'Hello World';
+    var options = {
+        shouldEndSession: true,
+        outputSpeech: phrase,
+        card: alexa.buildCard("Card Title", phrase)
+    };
+
+    alexa.send(req, res, options);
+
+    /*var phrase = "";
     if (sessionAttributes.previous) {
         phrase = 'You previously said "' + sessionAttributes.previous + '". I have replaced that with "' + slots.city.value + '". Please say another city name.';
     }
@@ -111,7 +125,7 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
         outputSpeech: phrase
     };
 
-    alexa.send(req, res, options, sessionAttributes);
+    alexa.send(req, res, options, sessionAttributes);*/
 });
 
 alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots) {
