@@ -435,7 +435,7 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
     alexa.send(req, res, options);
 });
 
-alexa.intent('Employee', function (req, res, slots) {
+alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
     console.log(slots);
 
@@ -460,7 +460,9 @@ alexa.intent('Employee', function (req, res, slots) {
             ]
         };
 
-        alexa.send(req, res, options);
+        sessionAttributes.employee = slots.employeeslot.value;
+
+        alexa.send(req, res, options, sessionAttributes);
     });
 
     request.on('error', function (error) {
@@ -497,40 +499,27 @@ alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots, s
     console.log(sessionAttributes);
 
     var phrase = "";
-    var textQuery = 'Wer ist die Durchwahl von ' + slots.employeeslot.value + '?';
+    var textQuery = 'Wer ist die Durchwahl von ' + sessionAttributes.employee + '?';
 
     var request = app.textRequest(textQuery, {
         sessionId: '<unique session id>'
     });
 
     request.on('response', function (response) {
-        console.log('response');
         console.log(response);
 
         phrase = response.result.fulfillment.speech;
         var options = {
             shouldEndSession: false,
-            outputSpeech: phrase,
-            card: alexa.buildCard("Card Title", phrase)
+            outputSpeech: phrase
         };
 
         alexa.send(req, res, options, sessionAttributes);
     });
 
     request.on('error', function (error) {
-        console.log('error');
         console.log(error);
-
-        phrase = 'Error Poperror!';
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase,
-            card: alexa.buildCard("Card Title", phrase)
-        };
-
-        alexa.send(req, res, options);
     });
-
 
     request.end();
 
