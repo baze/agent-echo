@@ -341,31 +341,10 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
     alexa.send(req, res, options);
 });
 
-alexa.intent('Employee', function (req, res, slots) {
+alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
     console.log(slots);
-
-/*
-    var options = {
-        sessionId: '<UNIQE SESSION ID>'
-    };
-
-    var request = app.getContextsRequest(options);
-
-    request.on('response', function (response) {
-        // response = [
-        // { name: "contextName" }
-        // ]
-        console.log(response);
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();
-
-*/
+    console.log(sessionAttributes);
 
     var employee = slots.employeeslot.value;
     var textQuery = 'Wer ist ' + employee + '?';

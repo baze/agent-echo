@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.js" afterPath="$PROJECT_DIR$/functions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,15 +18,15 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3674">
-              <caret line="150" column="0" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+            <state relative-caret-position="104">
+              <caret line="346" column="33" lean-forward="false" selection-start-line="346" selection-start-column="33" selection-end-line="346" selection-end-column="33" />
               <folding>
+                <element signature="e#768#6841#0" expanded="false" />
                 <element signature="e#6889#8542#0" expanded="false" />
                 <element signature="e#8598#10048#0" expanded="false" />
                 <element signature="e#10085#10255#0" expanded="false" />
                 <element signature="e#10311#10549#0" expanded="false" />
                 <element signature="e#10610#10845#0" expanded="false" />
-                <element signature="e#10901#12265#0" expanded="false" />
                 <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
                 <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
                 <element signature="n#!!block;n#generateResponse#0" expanded="false" />
@@ -37,15 +38,12 @@
       <file leaf-file-name="functions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="234">
+              <caret line="47" column="2" lean-forward="true" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
               <folding>
                 <element signature="e#78#364#0" expanded="false" />
                 <element signature="e#408#911#0" expanded="false" />
-                <element signature="e#960#1108#0" expanded="false" />
-                <marker date="1499334812000" expanded="false" signature="1156:1406" ph="{...}" />
-                <marker date="1499334812000" expanded="false" signature="1443:1886" ph="{...}" />
-                <marker date="1499334812000" expanded="false" signature="1927:2051" ph="{...}" />
+                <element signature="e#959#1107#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -72,6 +70,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getusers</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -951,12 +954,12 @@
       <workItem from="1499268653519" duration="23000" />
       <workItem from="1499268717312" duration="3000" />
       <workItem from="1499322968164" duration="1540000" />
-      <workItem from="1499328138403" duration="5220000" />
+      <workItem from="1499328138403" duration="5990000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34741000" />
+    <option name="totallyTimeSpent" value="35511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1077" y="23" width="1826" height="1170" extended-state="0" />
@@ -1003,12 +1006,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#768#6841#0" expanded="false" />
             <element signature="e#6889#8542#0" expanded="false" />
             <element signature="e#8598#10048#0" expanded="false" />
             <element signature="e#10085#10255#0" expanded="false" />
             <element signature="e#10311#10549#0" expanded="false" />
             <element signature="e#10610#10845#0" expanded="false" />
-            <element signature="e#10901#12265#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
@@ -1037,12 +1040,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#768#6841#0" expanded="false" />
             <element signature="e#6889#8542#0" expanded="false" />
             <element signature="e#8598#10048#0" expanded="false" />
             <element signature="e#10085#10255#0" expanded="false" />
             <element signature="e#10311#10549#0" expanded="false" />
             <element signature="e#10610#10845#0" expanded="false" />
-            <element signature="e#10901#12265#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
@@ -1071,12 +1074,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#768#6841#0" expanded="false" />
             <element signature="e#6889#8542#0" expanded="false" />
             <element signature="e#8598#10048#0" expanded="false" />
             <element signature="e#10085#10255#0" expanded="false" />
             <element signature="e#10311#10549#0" expanded="false" />
             <element signature="e#10610#10845#0" expanded="false" />
-            <element signature="e#10901#12265#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
@@ -1105,12 +1108,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#768#6841#0" expanded="false" />
             <element signature="e#6889#8542#0" expanded="false" />
             <element signature="e#8598#10048#0" expanded="false" />
             <element signature="e#10085#10255#0" expanded="false" />
             <element signature="e#10311#10549#0" expanded="false" />
             <element signature="e#10610#10845#0" expanded="false" />
-            <element signature="e#10901#12265#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
@@ -1139,12 +1142,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#768#6841#0" expanded="false" />
             <element signature="e#6889#8542#0" expanded="false" />
             <element signature="e#8598#10048#0" expanded="false" />
             <element signature="e#10085#10255#0" expanded="false" />
             <element signature="e#10311#10549#0" expanded="false" />
             <element signature="e#10610#10845#0" expanded="false" />
-            <element signature="e#10901#12265#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
@@ -1173,12 +1176,12 @@
         <state relative-caret-position="1638">
           <caret line="63" column="79" lean-forward="true" selection-start-line="63" selection-start-column="79" selection-end-line="63" selection-end-column="79" />
           <folding>
+            <element signature="e#768#6841#0" expanded="false" />
             <element signature="e#6889#8542#0" expanded="false" />
             <element signature="e#8598#10048#0" expanded="false" />
             <element signature="e#10085#10255#0" expanded="false" />
             <element signature="e#10311#10549#0" expanded="false" />
             <element signature="e#10610#10845#0" expanded="false" />
-            <element signature="e#10901#12265#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
@@ -1207,12 +1210,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#768#6841#0" expanded="false" />
             <element signature="e#6889#8542#0" expanded="false" />
             <element signature="e#8598#10048#0" expanded="false" />
             <element signature="e#10085#10255#0" expanded="false" />
             <element signature="e#10311#10549#0" expanded="false" />
             <element signature="e#10610#10845#0" expanded="false" />
-            <element signature="e#10901#12265#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
@@ -1233,12 +1236,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#768#6841#0" expanded="false" />
             <element signature="e#6889#8542#0" expanded="false" />
             <element signature="e#8598#10048#0" expanded="false" />
             <element signature="e#10085#10255#0" expanded="false" />
             <element signature="e#10311#10549#0" expanded="false" />
             <element signature="e#10610#10845#0" expanded="false" />
-            <element signature="e#10901#12265#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
@@ -1259,12 +1262,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#768#6841#0" expanded="false" />
             <element signature="e#6889#8542#0" expanded="false" />
             <element signature="e#8598#10048#0" expanded="false" />
             <element signature="e#10085#10255#0" expanded="false" />
             <element signature="e#10311#10549#0" expanded="false" />
             <element signature="e#10610#10845#0" expanded="false" />
-            <element signature="e#10901#12265#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
@@ -1285,12 +1288,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#768#6841#0" expanded="false" />
             <element signature="e#6889#8542#0" expanded="false" />
             <element signature="e#8598#10048#0" expanded="false" />
             <element signature="e#10085#10255#0" expanded="false" />
             <element signature="e#10311#10549#0" expanded="false" />
             <element signature="e#10610#10845#0" expanded="false" />
-            <element signature="e#10901#12265#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
@@ -1317,30 +1320,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="234">
+          <caret line="47" column="2" lean-forward="true" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
           <folding>
             <element signature="e#78#364#0" expanded="false" />
             <element signature="e#408#911#0" expanded="false" />
-            <element signature="e#960#1108#0" expanded="false" />
-            <marker date="1499334812000" expanded="false" signature="1156:1406" ph="{...}" />
-            <marker date="1499334812000" expanded="false" signature="1443:1886" ph="{...}" />
-            <marker date="1499334812000" expanded="false" signature="1927:2051" ph="{...}" />
+            <element signature="e#959#1107#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3674">
-          <caret line="150" column="0" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+        <state relative-caret-position="104">
+          <caret line="346" column="33" lean-forward="false" selection-start-line="346" selection-start-column="33" selection-end-line="346" selection-end-column="33" />
           <folding>
+            <element signature="e#768#6841#0" expanded="false" />
             <element signature="e#6889#8542#0" expanded="false" />
             <element signature="e#8598#10048#0" expanded="false" />
             <element signature="e#10085#10255#0" expanded="false" />
             <element signature="e#10311#10549#0" expanded="false" />
             <element signature="e#10610#10845#0" expanded="false" />
-            <element signature="e#10901#12265#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
