@@ -476,15 +476,17 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
 
 alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
+    var slotValue = slots.employeeslot.value;
+
     var phrase = "";
     if (sessionAttributes.previous) {
-        phrase = 'You previously said "' + sessionAttributes.previous + '". I have replaced that with "' + slots.employeeslot.value + '". Please say another city name.';
+        phrase = 'You previously said "' + sessionAttributes.previous + '". I have replaced that with "' + slotValue + '". Please say another city name.';
     }
     else {
-        phrase = 'You said "' + slots.city.value + '". Please say another city name.';
+        phrase = 'You said "' + slotValue + '". Please say another city name.';
     }
 
-    sessionAttributes.previous = slots.employeeslot.value;
+    sessionAttributes.previous = slotValue;
 
     var options = {
         shouldEndSession: false,
