@@ -439,7 +439,9 @@ alexa.intent('Employee', function (req, res, slots) {
 
     console.log(slots);
 
-    var request = app.textRequest('Wer ist ' + slots.employeeslot.value + '?', {
+    var textQuery = 'Wer ist ' + slots.employeeslot.value + '?';
+
+    var request = app.textRequest(textQuery, {
         sessionId: '<unique session id>'
     });
 
@@ -447,7 +449,15 @@ alexa.intent('Employee', function (req, res, slots) {
         var phrase = response.result.fulfillment.speech;
         var options = {
             shouldEndSession: false,
-            outputSpeech: phrase
+            outputSpeech: phrase,
+            contexts: [
+                {
+                    name: 'userinfo',
+                    parameters: {
+                        'employee': slots.employeeslot.value
+                    }
+                }
+            ]
         };
 
         alexa.send(req, res, options);
@@ -480,13 +490,14 @@ alexa.intent('Employee2', function (req, res, slots, sessionAttributes) {
     alexa.send(req, res, options, sessionAttributes);
 });
 
-alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots) {
+alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots, sessionAttributes) {
 
+    console.log(req);
     console.log(slots);
     console.log(sessionAttributes);
 
     var phrase = "";
-    var textQuery = 'Wer ist ' + slots.employeeslot.value + '?';
+    var textQuery = 'Wer ist die Durchwahl von ' + slots.employeeslot.value + '?';
 
     var request = app.textRequest(textQuery, {
         sessionId: '<unique session id>'
