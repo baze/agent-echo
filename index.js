@@ -316,7 +316,7 @@ alexa.intent('SayHello', function (req, res, slots) {
 
     console.log(slots);
 
-    var phrase = 'Hello World!';
+    var phrase = 'Hallo, ich bin Helga!';
     var options = {
         shouldEndSession: true,
         outputSpeech: phrase,
@@ -324,6 +324,10 @@ alexa.intent('SayHello', function (req, res, slots) {
     };
 
     alexa.send(req, res, options);
+});
+
+alexa.ended(function (req, res, reason) {
+    console.log(reason);
 });
 
 function getInfoForUsername(username) {
