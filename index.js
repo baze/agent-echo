@@ -304,7 +304,7 @@ alexa.launch(function (req, res) {
 
     var phrase = "Hallo, ich bin Helga!";
     var options = {
-        shouldEndSession: false,
+        shouldEndSession: true,
         outputSpeech: phrase,
         reprompt: "What was that?"
     };
