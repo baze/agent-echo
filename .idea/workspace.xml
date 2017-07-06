@@ -17,8 +17,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="365" column="40" lean-forward="false" selection-start-line="365" selection-start-column="40" selection-end-line="365" selection-end-column="40" />
+            <state relative-caret-position="224">
+              <caret line="427" column="0" lean-forward="true" selection-start-line="427" selection-start-column="0" selection-end-line="427" selection-end-column="0" />
               <folding>
                 <element signature="e#376#609#0" expanded="false" />
                 <element signature="e#2017#3055#0" expanded="false" />
@@ -31,13 +31,14 @@
                 <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
                 <element signature="n#!!block;n#generateResponse#0" expanded="false" />
                 <element signature="e#10749#10919#0" expanded="false" />
+                <element signature="e#10987#11446#0" expanded="false" />
                 <element signature="e#11387#11422#0" expanded="false" />
                 <element signature="e#11502#11959#0" expanded="false" />
                 <element signature="e#11900#11935#0" expanded="false" />
                 <element signature="e#12020#12287#0" expanded="false" />
-                <element signature="e#13351#13902#0" expanded="false" />
-                <element signature="e#13985#15000#0" expanded="false" />
-                <element signature="e#15044#15072#0" expanded="false" />
+                <element signature="e#12938#13489#0" expanded="false" />
+                <element signature="e#13572#14587#0" expanded="false" />
+                <element signature="e#14631#14659#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -78,7 +79,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response55.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response79.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -114,8 +115,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="350" />
-    <option name="y" value="117" />
+    <option name="x" value="557" />
+    <option name="y" value="110" />
     <option name="width" value="1826" />
     <option name="height" value="1170" />
   </component>
@@ -178,6 +179,271 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="/alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;sessionId&quot;: &quot;SessionId.1532c79b-6495-4608-8a31-5e20012feda5&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     },     &quot;new&quot;: false   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.d971d443-bc51-4abb-9b68-5b514598c1c8&quot;,     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-07-06T15:02:11Z&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="/alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="/alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="https://flannel-poutine-21177.herokuapp.com" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="/alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="flannel-poutine-21177.herokuapp.com" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="/alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="https://flannel-poutine-21177.herokuapp.com/alexa" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="/alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;sessionId&quot;: &quot;SessionId.1532c79b-6495-4608-8a31-5e20012feda5&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     },     &quot;new&quot;: false   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.58e21372-f709-44a5-b93a-52136928689f&quot;,     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-07-06T14:55:45Z&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="/alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;sessionId&quot;: &quot;SessionId.1532c79b-6495-4608-8a31-5e20012feda5&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     },     &quot;new&quot;: true   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.567e65f2-ed8f-4ceb-a643-767208575448&quot;,     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-07-06T14:54:48Z&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="/alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;sessionId&quot;: &quot;SessionId.1532c79b-6495-4608-8a31-5e20012feda5&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     },     &quot;new&quot;: true   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.567e65f2-ed8f-4ceb-a643-767208575448&quot;,     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-07-06T14:54:48Z&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="/alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;sessionId&quot;: &quot;SessionId.1532c79b-6495-4608-8a31-5e20012feda5&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     },     &quot;new&quot;: true   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.567e65f2-ed8f-4ceb-a643-767208575448&quot;,     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-07-06T14:54:48Z&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://192.168.1.99:8000" />
@@ -1042,15 +1308,15 @@
       <workItem from="1499268653519" duration="23000" />
       <workItem from="1499268717312" duration="3000" />
       <workItem from="1499322968164" duration="1540000" />
-      <workItem from="1499328138403" duration="14897000" />
+      <workItem from="1499328138403" duration="15905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44418000" />
+    <option name="totallyTimeSpent" value="45426000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="350" y="117" width="1826" height="1170" extended-state="0" />
+    <frame x="557" y="110" width="1826" height="1170" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1105,13 +1371,14 @@
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
             <element signature="e#10749#10919#0" expanded="false" />
+            <element signature="e#10987#11446#0" expanded="false" />
             <element signature="e#11387#11422#0" expanded="false" />
             <element signature="e#11502#11959#0" expanded="false" />
             <element signature="e#11900#11935#0" expanded="false" />
             <element signature="e#12020#12287#0" expanded="false" />
-            <element signature="e#13351#13902#0" expanded="false" />
-            <element signature="e#13985#15000#0" expanded="false" />
-            <element signature="e#15044#15072#0" expanded="false" />
+            <element signature="e#12938#13489#0" expanded="false" />
+            <element signature="e#13572#14587#0" expanded="false" />
+            <element signature="e#14631#14659#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1148,13 +1415,14 @@
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
             <element signature="e#10749#10919#0" expanded="false" />
+            <element signature="e#10987#11446#0" expanded="false" />
             <element signature="e#11387#11422#0" expanded="false" />
             <element signature="e#11502#11959#0" expanded="false" />
             <element signature="e#11900#11935#0" expanded="false" />
             <element signature="e#12020#12287#0" expanded="false" />
-            <element signature="e#13351#13902#0" expanded="false" />
-            <element signature="e#13985#15000#0" expanded="false" />
-            <element signature="e#15044#15072#0" expanded="false" />
+            <element signature="e#12938#13489#0" expanded="false" />
+            <element signature="e#13572#14587#0" expanded="false" />
+            <element signature="e#14631#14659#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1191,13 +1459,14 @@
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
             <element signature="e#10749#10919#0" expanded="false" />
+            <element signature="e#10987#11446#0" expanded="false" />
             <element signature="e#11387#11422#0" expanded="false" />
             <element signature="e#11502#11959#0" expanded="false" />
             <element signature="e#11900#11935#0" expanded="false" />
             <element signature="e#12020#12287#0" expanded="false" />
-            <element signature="e#13351#13902#0" expanded="false" />
-            <element signature="e#13985#15000#0" expanded="false" />
-            <element signature="e#15044#15072#0" expanded="false" />
+            <element signature="e#12938#13489#0" expanded="false" />
+            <element signature="e#13572#14587#0" expanded="false" />
+            <element signature="e#14631#14659#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1234,13 +1503,14 @@
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
             <element signature="e#10749#10919#0" expanded="false" />
+            <element signature="e#10987#11446#0" expanded="false" />
             <element signature="e#11387#11422#0" expanded="false" />
             <element signature="e#11502#11959#0" expanded="false" />
             <element signature="e#11900#11935#0" expanded="false" />
             <element signature="e#12020#12287#0" expanded="false" />
-            <element signature="e#13351#13902#0" expanded="false" />
-            <element signature="e#13985#15000#0" expanded="false" />
-            <element signature="e#15044#15072#0" expanded="false" />
+            <element signature="e#12938#13489#0" expanded="false" />
+            <element signature="e#13572#14587#0" expanded="false" />
+            <element signature="e#14631#14659#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1277,13 +1547,14 @@
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
             <element signature="e#10749#10919#0" expanded="false" />
+            <element signature="e#10987#11446#0" expanded="false" />
             <element signature="e#11387#11422#0" expanded="false" />
             <element signature="e#11502#11959#0" expanded="false" />
             <element signature="e#11900#11935#0" expanded="false" />
             <element signature="e#12020#12287#0" expanded="false" />
-            <element signature="e#13351#13902#0" expanded="false" />
-            <element signature="e#13985#15000#0" expanded="false" />
-            <element signature="e#15044#15072#0" expanded="false" />
+            <element signature="e#12938#13489#0" expanded="false" />
+            <element signature="e#13572#14587#0" expanded="false" />
+            <element signature="e#14631#14659#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1320,13 +1591,14 @@
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
             <element signature="e#10749#10919#0" expanded="false" />
+            <element signature="e#10987#11446#0" expanded="false" />
             <element signature="e#11387#11422#0" expanded="false" />
             <element signature="e#11502#11959#0" expanded="false" />
             <element signature="e#11900#11935#0" expanded="false" />
             <element signature="e#12020#12287#0" expanded="false" />
-            <element signature="e#13351#13902#0" expanded="false" />
-            <element signature="e#13985#15000#0" expanded="false" />
-            <element signature="e#15044#15072#0" expanded="false" />
+            <element signature="e#12938#13489#0" expanded="false" />
+            <element signature="e#13572#14587#0" expanded="false" />
+            <element signature="e#14631#14659#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1363,13 +1635,14 @@
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
             <element signature="e#10749#10919#0" expanded="false" />
+            <element signature="e#10987#11446#0" expanded="false" />
             <element signature="e#11387#11422#0" expanded="false" />
             <element signature="e#11502#11959#0" expanded="false" />
             <element signature="e#11900#11935#0" expanded="false" />
             <element signature="e#12020#12287#0" expanded="false" />
-            <element signature="e#13351#13902#0" expanded="false" />
-            <element signature="e#13985#15000#0" expanded="false" />
-            <element signature="e#15044#15072#0" expanded="false" />
+            <element signature="e#12938#13489#0" expanded="false" />
+            <element signature="e#13572#14587#0" expanded="false" />
+            <element signature="e#14631#14659#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1398,13 +1671,14 @@
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
             <element signature="e#10749#10919#0" expanded="false" />
+            <element signature="e#10987#11446#0" expanded="false" />
             <element signature="e#11387#11422#0" expanded="false" />
             <element signature="e#11502#11959#0" expanded="false" />
             <element signature="e#11900#11935#0" expanded="false" />
             <element signature="e#12020#12287#0" expanded="false" />
-            <element signature="e#13351#13902#0" expanded="false" />
-            <element signature="e#13985#15000#0" expanded="false" />
-            <element signature="e#15044#15072#0" expanded="false" />
+            <element signature="e#12938#13489#0" expanded="false" />
+            <element signature="e#13572#14587#0" expanded="false" />
+            <element signature="e#14631#14659#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1433,13 +1707,14 @@
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
             <element signature="e#10749#10919#0" expanded="false" />
+            <element signature="e#10987#11446#0" expanded="false" />
             <element signature="e#11387#11422#0" expanded="false" />
             <element signature="e#11502#11959#0" expanded="false" />
             <element signature="e#11900#11935#0" expanded="false" />
             <element signature="e#12020#12287#0" expanded="false" />
-            <element signature="e#13351#13902#0" expanded="false" />
-            <element signature="e#13985#15000#0" expanded="false" />
-            <element signature="e#15044#15072#0" expanded="false" />
+            <element signature="e#12938#13489#0" expanded="false" />
+            <element signature="e#13572#14587#0" expanded="false" />
+            <element signature="e#14631#14659#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1468,13 +1743,14 @@
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
             <element signature="e#10749#10919#0" expanded="false" />
+            <element signature="e#10987#11446#0" expanded="false" />
             <element signature="e#11387#11422#0" expanded="false" />
             <element signature="e#11502#11959#0" expanded="false" />
             <element signature="e#11900#11935#0" expanded="false" />
             <element signature="e#12020#12287#0" expanded="false" />
-            <element signature="e#13351#13902#0" expanded="false" />
-            <element signature="e#13985#15000#0" expanded="false" />
-            <element signature="e#15044#15072#0" expanded="false" />
+            <element signature="e#12938#13489#0" expanded="false" />
+            <element signature="e#13572#14587#0" expanded="false" />
+            <element signature="e#14631#14659#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1546,8 +1822,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="365" column="40" lean-forward="false" selection-start-line="365" selection-start-column="40" selection-end-line="365" selection-end-column="40" />
+        <state relative-caret-position="224">
+          <caret line="427" column="0" lean-forward="true" selection-start-line="427" selection-start-column="0" selection-end-line="427" selection-end-column="0" />
           <folding>
             <element signature="e#376#609#0" expanded="false" />
             <element signature="e#2017#3055#0" expanded="false" />
@@ -1560,13 +1836,14 @@
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
             <element signature="e#10749#10919#0" expanded="false" />
+            <element signature="e#10987#11446#0" expanded="false" />
             <element signature="e#11387#11422#0" expanded="false" />
             <element signature="e#11502#11959#0" expanded="false" />
             <element signature="e#11900#11935#0" expanded="false" />
             <element signature="e#12020#12287#0" expanded="false" />
-            <element signature="e#13351#13902#0" expanded="false" />
-            <element signature="e#13985#15000#0" expanded="false" />
-            <element signature="e#15044#15072#0" expanded="false" />
+            <element signature="e#12938#13489#0" expanded="false" />
+            <element signature="e#13572#14587#0" expanded="false" />
+            <element signature="e#14631#14659#0" expanded="false" />
           </folding>
         </state>
       </provider>

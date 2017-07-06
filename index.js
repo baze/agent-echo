@@ -425,19 +425,13 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
 alexa.intent('Employee', function (req, res, slots) {
 
     console.log(slots);
-    console.log(sessionAttributes);
 
-    var phrase = "";
-    var textQuery = 'Wer ist ' + slots.employeeslot.value + '?';
-
-    var request = app.textRequest(textQuery, {
+    var request = app.textRequest('Wer ist ' + slots.employeeslot.value + '?', {
         sessionId: '<unique session id>'
     });
 
     request.on('response', function (response) {
-        console.log(JSON.stringify(response, null, '  '));
-
-        phrase = response.result.fulfillment.speech;
+        var phrase = response.result.fulfillment.speech;
         var options = {
             shouldEndSession: false,
             outputSpeech: phrase
@@ -447,17 +441,7 @@ alexa.intent('Employee', function (req, res, slots) {
     });
 
     request.on('error', function (error) {
-        console.log('error');
         console.log(error);
-
-        phrase = 'Error Poperror!';
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase,
-            card: alexa.buildCard("Card Title", phrase)
-        };
-
-        alexa.send(req, res, options);
     });
 
     request.end();
