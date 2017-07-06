@@ -1,10 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const restService = express();
+
 const WPAPI = require('wpapi');
 const moment = require('moment');
 moment.locale('de');
-
-const restService = express();
 
 restService.use(bodyParser.json());
 

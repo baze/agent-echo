@@ -1,6 +1,8 @@
+const express = require('express');
+const restService = express();
+
 const apiai = require('apiai');
 const AlexaSkills = require('alexa-skills');
-const restService = express();
 
 const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 
