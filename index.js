@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 const WPAPI = require('wpapi');
 var moment = require('moment');
 moment.locale('de');
+var apiai = require('apiai');
+var app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 
 const restService = express();
 
@@ -341,18 +343,49 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
 
 alexa.intent('Employee', function (req, res, slots) {
 
-    console.log(req);
-    console.log(res);
     console.log(slots);
 
-    var phrase = slots.employeeslot.value;
+    var employee = slots.employeeslot.value;
+    var textQuery = 'Wer ist ' + employee + '?';
+
+    var request = app.textRequest(textQuery, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+        console.log(response);
+
+        var phrase = response;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase,
+            card: alexa.buildCard("Card Title", phrase)
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+
+        var phrase = 'Error Poperror!';
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase,
+            card: alexa.buildCard("Card Title", phrase)
+        };
+    });
+
+    request.end();
+
+    /*var phrase = employee;
     var options = {
         shouldEndSession: true,
         outputSpeech: phrase,
         card: alexa.buildCard("Card Title", phrase)
     };
 
-    alexa.send(req, res, options);
+    alexa.send(req, res, options);*/
 });
 
 alexa.ended(function (req, res, reason) {
