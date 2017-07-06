@@ -12,6 +12,7 @@
     "express": "^4.13.4",
     "wpapi": "^1.1.1",
     "moment": "^2.18.1",
-    "node-ews": "^3.1.0"
+    "node-ews": "^3.1.0",
+    "alexa-skills": "^0.2.0"
   }
 }

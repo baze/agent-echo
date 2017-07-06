@@ -339,3 +339,25 @@ function generateResponse(res, speech) {
         source: 'webhook-echo-sample'
     });
 }
+
+function buildSpeechletResponse(outputText, shouldEndSession) {
+
+    return {
+        outputSpeech: {
+            type: "PlainText",
+            text: outputText
+        },
+        shouldEndSession: shouldEndSession
+    }
+
+}
+
+function generateResponseAlexa(speechletResponse, sessionAttributes) {
+
+    return {
+        version: "1.0",
+        sessionAttributes: sessionAttributes,
+        response: speechletResponse
+    }
+
+}
