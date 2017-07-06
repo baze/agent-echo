@@ -8,6 +8,15 @@ const WPAPI = require('wpapi');
 const moment = require('moment');
 moment.locale('de');
 
+const apiai = require('apiai');
+const AlexaSkills = require('alexa-skills');
+const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
+const alexa = new AlexaSkills({
+    express: restService, // required
+    route: "/alexa", // optional, defaults to "/"
+    applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
+});
+
 restService.use(bodyParser.json());
 
 var helga = require('./helga');
@@ -339,16 +348,7 @@ function generateResponse(res, speech) {
     });
 }
 
-const apiai = require('apiai');
-const AlexaSkills = require('alexa-skills');
 
-const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
-
-const alexa = new AlexaSkills({
-    express: restService, // required
-    route: "/alexa", // optional, defaults to "/"
-    applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
-});
 
 alexa.launch(function (req, res) {
 
@@ -363,30 +363,49 @@ alexa.launch(function (req, res) {
 
 alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
 
-    console.log(slots);
+    var request = app.textRequest('Hallo', {
+        sessionId: '<unique session id>'
+    });
 
-    var phrase = 'Hello World';
-    var options = {
-        shouldEndSession: true,
-        outputSpeech: phrase,
-        card: alexa.buildCard("Card Title", phrase)
-    };
+    request.on('response', function (response) {
 
-    alexa.send(req, res, options);
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: false,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
 });
 
 alexa.intent('Thankyou', function (req, res, slots) {
+    var request = app.textRequest('Danke', {
+        sessionId: '<unique session id>'
+    });
 
-    console.log(slots);
+    request.on('response', function (response) {
 
-    var phrase = 'Gern geschehen';
-    var options = {
-        shouldEndSession: true,
-        outputSpeech: phrase,
-        card: alexa.buildCard("Card Title", phrase)
-    };
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase
+        };
 
-    alexa.send(req, res, options);
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
 });
 
 alexa.intent('SmalltalkNane', function (req, res, slots) {
