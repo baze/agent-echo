@@ -43,6 +43,8 @@ restService.post('/helga', function (req, res) {
             username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
             user = getInfoForUsername(username);
 
+            console.log(user);
+
             if (user && user.phone) {
                 speech = 'Die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' ist die ' + user.phone;
             } else {
