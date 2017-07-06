@@ -345,6 +345,10 @@ alexa.intent('Employee', function (req, res, slots) {
 
     console.log(slots);
 
+    var options = {
+        sessionId: '<UNIQE SESSION ID>'
+    };
+
     var request = app.getContextsRequest(options);
 
     request.on('response', function (response) {
