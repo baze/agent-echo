@@ -302,7 +302,7 @@ restService.post('/slack-test', function (req, res) {
 
 alexa.launch(function (req, res) {
 
-    var phrase = "Welcome to my app!";
+    var phrase = "Hallo, ich bin Helga!";
     var options = {
         shouldEndSession: false,
         outputSpeech: phrase,
@@ -316,7 +316,7 @@ alexa.intent('SayHello', function (req, res, slots) {
 
     console.log(slots);
 
-    var phrase = 'Hallo, ich bin Helga!';
+    var phrase = 'Hello World';
     var options = {
         shouldEndSession: true,
         outputSpeech: phrase,
