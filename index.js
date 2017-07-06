@@ -312,6 +312,20 @@ alexa.launch(function (req, res) {
     alexa.send(req, res, options);
 });
 
+alexa.intent('SayHello', function (req, res, slots) {
+
+    console.log(slots);
+
+    var phrase = 'Hello World!';
+    var options = {
+        shouldEndSession: true,
+        outputSpeech: phrase,
+        card: alexa.buildCard("Card Title", phrase)
+    };
+
+    alexa.send(req, res, options);
+});
+
 function getInfoForUsername(username) {
     const _users = require('./users.json');
 
