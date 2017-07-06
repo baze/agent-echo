@@ -353,19 +353,19 @@ alexa.intent('Employee', function (req, res, slots) {
     });
 
     request.on('response', function (response) {
+        console.log('response');
         console.log(response);
 
-        var phrase = response;
+        var phrase = response.result.fulfillment.speech;
         var options = {
             shouldEndSession: true,
             outputSpeech: phrase,
             card: alexa.buildCard("Card Title", phrase)
         };
-
-        alexa.send(req, res, options);
     });
 
     request.on('error', function (error) {
+        console.log('error');
         console.log(error);
 
         var phrase = 'Error Poperror!';
@@ -376,6 +376,7 @@ alexa.intent('Employee', function (req, res, slots) {
         };
     });
 
+
     request.end();
 
     /*var phrase = employee;
@@ -383,9 +384,9 @@ alexa.intent('Employee', function (req, res, slots) {
         shouldEndSession: true,
         outputSpeech: phrase,
         card: alexa.buildCard("Card Title", phrase)
-    };
+    };*/
 
-    alexa.send(req, res, options);*/
+    alexa.send(req, res, options);
 });
 
 alexa.ended(function (req, res, reason) {
