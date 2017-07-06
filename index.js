@@ -10,6 +10,8 @@ moment.locale('de');
 
 restService.use(bodyParser.json());
 
+var helga = require('./helga');
+
 restService.post('/helga', function (req, res) {
 
     var action = req.body.result && req.body.result.action ? req.body.result.action : null;
@@ -27,60 +29,30 @@ restService.post('/helga', function (req, res) {
     switch (action) {
 
         case 'employee.phone' :
-            username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
-            user = getInfoForUsername(username);
+            username = req.body.result.parameters.employee;
+            user = helga.getInfoForUsername(username);
 
-            console.log(user);
-
-            if (user && user.phone) {
-                speech = 'Die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' ist die ' + user.phone;
-            } else {
-                speech = 'Diese Information zu ' + user.first_name + ' ' + user.last_name +
-                    ' habe ich leider nicht vorliegen. ' +
-                    'Aber vielleicht kann ich dir mit Informationen zu ' +
-                    'E-Mail-Adresse, Leistungen oder betreuten Kunden ' +
-                    'weiterhelfen?';
-            }
+            speech = helga.speech.user.phone(user);
 
             return generateResponse(res, speech);
 
             break;
 
         case 'employee.email' :
-            username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
-            user = getInfoForUsername(username);
+            username = req.body.result.parameters.employee;
+            user = helga.getInfoForUsername(username);
 
-            if (user && user.email) {
-                speech = 'Die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' lautet ' + user.email;
-            } else {
-                speech = 'Diese Information zu ' + user.first_name + ' ' + user.last_name +
-                    ' habe ich leider nicht vorliegen. ' +
-                    'Aber vielleicht kann ich dir mit Informationen zu ' +
-                    'Durchwahl, Leistungen oder betreuten Kunden ' +
-                    'weiterhelfen?';
-            }
+            speech = helga.speech.user.email(user);
 
             return generateResponse(res, speech);
 
             break;
 
         case 'employee.services' :
-            username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
-            user = getInfoForUsername(username);
+            username = req.body.result.parameters.employee;
+            user = helga.getInfoForUsername(username);
 
-            if (user && user.services.length > 0) {
-                var services = user.services.length > 1
-                    ? user.services.slice(0, -1).join(', ') + ' und ' + user.services.slice(-1)
-                    : user.services;
-
-                speech = user.first_name + ' ' + user.last_name + ' ist zuständig für ' + services;
-            } else {
-                speech = 'Diese Information zu ' + user.first_name + ' ' + user.last_name +
-                    ' habe ich leider nicht vorliegen. ' +
-                    'Aber vielleicht kann ich dir mit Informationen zu ' +
-                    'Durchwahl, E-Mail-Adresse oder betreuten Kunden ' +
-                    'weiterhelfen?';
-            }
+            speech = helga.speech.user.services(user);
 
             return generateResponse(res, speech);
 
@@ -88,7 +60,7 @@ restService.post('/helga', function (req, res) {
 
         case 'employee.clients' :
             username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
-            user = getInfoForUsername(username);
+            user = helga.getInfoForUsername(username);
 
             console.log(user);
 
@@ -166,10 +138,10 @@ restService.post('/helga', function (req, res) {
         case 'employee.contact.email':
 
             username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
-            subject = req.body.result.parameters.subject;
-            text = req.body.result.parameters.text;
+            var subject = req.body.result.parameters.subject;
+            var text = req.body.result.parameters.text;
 
-            user = getInfoForUsername(username);
+            user = helga.getInfoForUsername(username);
 
             if (user && user.email && subject && text) {
                 var send = require('gmail-send')({
@@ -337,20 +309,6 @@ restService.use(bodyParser.urlencoded({
     extended: true
 }));
 
-function getInfoForUsername(username) {
-    const _users = require('./users.json');
-
-    for (var i = 0, len = _users.length; i < len; i++) {
-
-        var user = _users[i];
-
-        if (user.username == username) {
-            console.log(user);
-            return user;
-        }
-    }
-}
-
 function getUsersForClient(client) {
     const _users = require('./users.json');
     var users = [];
@@ -417,6 +375,20 @@ alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
     alexa.send(req, res, options);
 });
 
+alexa.intent('Thankyou', function (req, res, slots) {
+
+    console.log(slots);
+
+    var phrase = 'Gern geschehen';
+    var options = {
+        shouldEndSession: true,
+        outputSpeech: phrase,
+        card: alexa.buildCard("Card Title", phrase)
+    };
+
+    alexa.send(req, res, options);
+});
+
 alexa.intent('SmalltalkNane', function (req, res, slots) {
 
     console.log(slots);
@@ -469,9 +441,7 @@ alexa.intent('Employee', function (req, res, slots) {
         alexa.send(req, res, options);
     });
 
-
     request.end();
-
 });
 
 alexa.intent('Employee2', function (req, res, slots, sessionAttributes) {
