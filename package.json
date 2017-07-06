@@ -14,6 +14,7 @@
     "moment": "^2.18.1",
     "node-ews": "^3.1.0",
     "alexa-skills": "^0.2.0",
-    "apiai": "^4.0.2"
+    "apiai": "^4.0.2",
+    "gmail-send": "^1.2.10"
   }
 }

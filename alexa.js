@@ -12,7 +12,6 @@ const alexa = new AlexaSkills({
     applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
 });
 
-
 alexa.launch(function (req, res) {
 
     var phrase = "Hallo, ich bin Helga!";
@@ -52,7 +51,7 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
     alexa.send(req, res, options);
 });
 
-alexa.intent('Employee', function (req, res, slots) {
+/*alexa.intent('Employee', function (req, res, slots) {
 
     console.log(slots);
     console.log(sessionAttributes);
@@ -93,6 +92,26 @@ alexa.intent('Employee', function (req, res, slots) {
 
     request.end();
 
+});*/
+
+alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
+
+    var phrase = "";
+    if (sessionAttributes.previous) {
+        phrase = 'You previously said "' + sessionAttributes.previous + '". I have replaced that with "' + slots.city.value + '". Please say another city name.';
+    }
+    else {
+        phrase = 'You said "' + slots.city.value + '". Please say another city name.';
+    }
+
+    sessionAttributes.previous = slots.city.value;
+
+    var options = {
+        shouldEndSession: false,
+        outputSpeech: phrase
+    };
+
+    alexa.send(req, res, options, sessionAttributes);
 });
 
 alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots) {

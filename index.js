@@ -1,4 +1,4 @@
 'use strict';
 
-const restService = require('./rest-service');
-const alexa = require('./alexa');
+require('./rest-service');
+require('./alexa');

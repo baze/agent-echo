@@ -161,6 +161,48 @@ restService.post('/helga', function (req, res) {
 
             break;
 
+        case 'employee.contact.email':
+
+            username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
+            subject = req.body.result.parameters.subject;
+            text = req.body.result.parameters.text;
+
+            user = getInfoForUsername(username);
+
+            if (user && user.email && subject && text) {
+                var send = require('gmail-send')({
+                    user: 'foo@gmail.com',               // Your GMail account used to send emails
+                    pass: 'bar',             // Application-specific password
+                    to: user.email,               // Send back to yourself;
+                    // you also may set array of recipients:
+                    // [ 'user1@gmail.com', 'user2@gmail.com' ]
+                    from: '"E&W Helga" <helga@euw.de>',  // from: by default equals to user
+                    // replyTo:'user@gmail.com'           // replyTo: by default undefined
+                    subject: subject,
+                    text: text
+                    // html:    '<b>html text text</b>'
+                });
+
+                send({
+                    // subject: 'override',   // Override value set as default
+                    // files: [file]                // String or array of strings of filenames to attach
+                }, function (err, res) {
+
+                    if (! err) {
+                        speech = 'Die E-Mail-Adresse wurde versandt!';
+                    } else {
+                        speech = 'Es ist ein Fehler aufgetreten: ' + err;
+                    }
+
+                    console.log('* [example1] send(): err:', err, '; res:', res);
+                });
+
+            }
+
+            return generateResponse(res, speech);
+
+            break;
+
         default:
             break;
     }

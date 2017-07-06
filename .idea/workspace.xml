@@ -4,6 +4,8 @@
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service.js" afterPath="$PROJECT_DIR$/rest-service.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,56 +17,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+            <state relative-caret-position="442">
+              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rest-service.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rest-service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rest-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-              <folding>
-                <element signature="e#283#6388#0" expanded="false" />
-                <element signature="e#6436#8089#0" expanded="false" />
-                <element signature="e#8145#9595#0" expanded="false" />
-                <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
-                <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
-                <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="191">
+              <caret line="278" column="0" lean-forward="true" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="82">
+              <caret line="53" column="2" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="94" selection-end-column="5" />
               <folding>
-                <element signature="e#503#673#0" expanded="false" />
-                <element signature="e#729#967#0" expanded="false" />
-                <element signature="e#1028#1263#0" expanded="false" />
-                <element signature="e#1319#2253#0" expanded="false" />
-                <element signature="e#2336#3351#0" expanded="false" />
-                <element signature="e#3395#3423#0" expanded="false" />
+                <element signature="e#502#672#0" expanded="false" />
+                <element signature="e#728#966#0" expanded="false" />
+                <element signature="e#1027#1262#0" expanded="false" />
+                <element signature="e#2946#3961#0" expanded="false" />
+                <element signature="e#4005#4033#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1583">
-              <caret line="135" column="14" lean-forward="true" selection-start-line="133" selection-start-column="6" selection-end-line="135" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -80,18 +64,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response21.txt" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response55.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/userinfo.js" />
-        <option value="$PROJECT_DIR$/users.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/functions.js" />
+        <option value="$PROJECT_DIR$/users.json" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/alexa.js" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/rest-service.js" />
+        <option value="$PROJECT_DIR$/alexa.js" />
       </list>
     </option>
   </component>
@@ -110,13 +94,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="914" />
-    <option name="y" value="97" />
+    <option name="x" value="620" />
+    <option name="y" value="119" />
     <option name="width" value="1826" />
     <option name="height" value="1170" />
   </component>
@@ -179,6 +166,93 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://192.168.1.99:8000" />
+          <option name="urlPath" value="/helga" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;id&quot;: &quot;f444012d-6b77-46ef-abbd-a9ff4c5306aa&quot;,   &quot;timestamp&quot;: &quot;2017-07-06T12:59:16.01Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;ja&quot;,     &quot;action&quot;: &quot;employee.contact.email&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;confirmation&quot;: &quot;ja&quot;,       &quot;contactOption&quot;: &quot;email&quot;,       &quot;employee&quot;: &quot;nane&quot;,       &quot;subject&quot;: &quot;Test1&quot;,       &quot;text&quot;: &quot;Test2&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;subject.original&quot;: &quot;Test1&quot;,           &quot;contactOption.original&quot;: &quot;email&quot;,           &quot;subject&quot;: &quot;Test1&quot;,           &quot;contactOption&quot;: &quot;email&quot;,           &quot;employee.original&quot;: &quot;&quot;,           &quot;text&quot;: &quot;Test2&quot;,           &quot;confirmation.original&quot;: &quot;ja&quot;,           &quot;confirmation&quot;: &quot;ja&quot;,           &quot;text.original&quot;: &quot;Test2&quot;,           &quot;employee&quot;: &quot;nane&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;175fdb49-aafd-4008-8d4f-f98e4365463f&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;employee.contact.email&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;sende nachricht …&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;sende nachricht …&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Request timeout.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://192.168.1.99:8000" />
+          <option name="urlPath" value="/helga" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;id&quot;: &quot;f444012d-6b77-46ef-abbd-a9ff4c5306aa&quot;,   &quot;timestamp&quot;: &quot;2017-07-06T12:59:16.01Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;ja&quot;,     &quot;action&quot;: &quot;employee.contact.email&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;confirmation&quot;: &quot;ja&quot;,       &quot;contactOption&quot;: &quot;email&quot;,       &quot;employee&quot;: &quot;bjma&quot;,       &quot;subject&quot;: &quot;Test1&quot;,       &quot;text&quot;: &quot;Test2&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;subject.original&quot;: &quot;Test1&quot;,           &quot;contactOption.original&quot;: &quot;email&quot;,           &quot;subject&quot;: &quot;Test1&quot;,           &quot;contactOption&quot;: &quot;email&quot;,           &quot;employee.original&quot;: &quot;&quot;,           &quot;text&quot;: &quot;Test2&quot;,           &quot;confirmation.original&quot;: &quot;ja&quot;,           &quot;confirmation&quot;: &quot;ja&quot;,           &quot;text.original&quot;: &quot;Test2&quot;,           &quot;employee&quot;: &quot;bjma&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;175fdb49-aafd-4008-8d4f-f98e4365463f&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;employee.contact.email&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;sende nachricht …&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;sende nachricht …&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Request timeout.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://192.168.1.99:8000" />
+          <option name="urlPath" value="/mail" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;sessionId&quot;: &quot;SessionId.86372312-f51c-475d-a30a-9d2def8fef77&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     },     &quot;new&quot;: true   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.fa13adf6-9675-41e1-a38f-ad9a0aefbb82&quot;,     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-07-06T12:14:43Z&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;Employee&quot;,       &quot;slots&quot;: {         &quot;employeeslot&quot;: {           &quot;name&quot;: &quot;employeeslot&quot;,           &quot;value&quot;: &quot;Jan&quot;         }       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
@@ -956,15 +1030,15 @@
       <workItem from="1499268653519" duration="23000" />
       <workItem from="1499268717312" duration="3000" />
       <workItem from="1499322968164" duration="1540000" />
-      <workItem from="1499328138403" duration="8781000" />
+      <workItem from="1499328138403" duration="10988000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38302000" />
+    <option name="totallyTimeSpent" value="40509000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="914" y="97" width="1826" height="1170" extended-state="0" />
+    <frame x="620" y="119" width="1826" height="1170" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1216,18 +1290,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1583">
-          <caret line="135" column="14" lean-forward="true" selection-start-line="133" selection-start-column="6" selection-end-line="135" selection-end-column="14" />
+        <state relative-caret-position="289">
+          <caret line="121" column="6" lean-forward="true" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1235,37 +1301,37 @@
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
-          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="278" column="0" lean-forward="true" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="82">
+          <caret line="53" column="2" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="94" selection-end-column="5" />
           <folding>
-            <element signature="e#503#673#0" expanded="false" />
-            <element signature="e#729#967#0" expanded="false" />
-            <element signature="e#1028#1263#0" expanded="false" />
-            <element signature="e#1319#2253#0" expanded="false" />
-            <element signature="e#2336#3351#0" expanded="false" />
-            <element signature="e#3395#3423#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding>
-            <element signature="e#283#6388#0" expanded="false" />
-            <element signature="e#6436#8089#0" expanded="false" />
-            <element signature="e#8145#9595#0" expanded="false" />
-            <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
-            <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
-            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
+            <element signature="e#502#672#0" expanded="false" />
+            <element signature="e#728#966#0" expanded="false" />
+            <element signature="e#1027#1262#0" expanded="false" />
+            <element signature="e#2946#3961#0" expanded="false" />
+            <element signature="e#4005#4033#0" expanded="false" />
           </folding>
         </state>
       </provider>
