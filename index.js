@@ -217,7 +217,7 @@ restService.get('/ews', function (req, res) {
                 },
                 "ToRecipients": {
                     "Mailbox": {
-                        "EmailAddress": "bjoern.martensen@gmail.com"
+                        "EmailAddress": "foo@gmail.com"
                     }
                 },
                 "IsRead": "false"
