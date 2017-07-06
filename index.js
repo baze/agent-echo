@@ -8,6 +8,8 @@ moment.locale('de');
 var apiai = require('apiai');
 var app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 
+var functions = require('./functions');
+
 const restService = express();
 
 var AlexaSkills = require('alexa-skills'),
@@ -41,7 +43,7 @@ restService.post('/helga', function (req, res) {
 
         case 'employee.phone' :
             username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
-            user = getInfoForUsername(username);
+            user = functions.getInfoForUsername(username);
 
             if (user && user.phone) {
                 speech = 'Die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' ist die ' + user.phone;
@@ -53,13 +55,13 @@ restService.post('/helga', function (req, res) {
                     'weiterhelfen?';
             }
 
-            return generateResponse(res, speech);
+            return functions.generateResponse(res, speech);
 
             break;
 
         case 'employee.email' :
             username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
-            user = getInfoForUsername(username);
+            user = functions.getInfoForUsername(username);
 
             if (user && user.email) {
                 speech = 'Die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' lautet ' + user.email;
@@ -71,13 +73,13 @@ restService.post('/helga', function (req, res) {
                     'weiterhelfen?';
             }
 
-            return generateResponse(res, speech);
+            return functions.generateResponse(res, speech);
 
             break;
 
         case 'employee.services' :
             username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
-            user = getInfoForUsername(username);
+            user = functions.getInfoForUsername(username);
 
             if (user && user.services.length > 0) {
                 var services = user.services.length > 1
@@ -93,13 +95,13 @@ restService.post('/helga', function (req, res) {
                     'weiterhelfen?';
             }
 
-            return generateResponse(res, speech);
+            return functions.generateResponse(res, speech);
 
             break;
 
         case 'employee.clients' :
             username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
-            user = getInfoForUsername(username);
+            user = functions.getInfoForUsername(username);
 
             console.log(user);
 
@@ -117,7 +119,7 @@ restService.post('/helga', function (req, res) {
                     'weiterhelfen?';
             }
 
-            return generateResponse(res, speech);
+            return functions.generateResponse(res, speech);
 
             break;
 
@@ -129,7 +131,7 @@ restService.post('/helga', function (req, res) {
 
             console.log(client);
 
-            var users = getUsersForClient(client);
+            var users = functions.getUsersForClient(client);
 
             console.log(users);
 
@@ -142,7 +144,7 @@ restService.post('/helga', function (req, res) {
                 }
 
                 speech = speech + 'zuständig für ' + client;
-                return generateResponse(res, speech);
+                return functions.generateResponse(res, speech);
             }
 
             break;
@@ -162,14 +164,14 @@ restService.post('/helga', function (req, res) {
 
                     var date = moment(data[0].date);
 
-                    return generateResponse(res, 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered);
+                    return functions.generateResponse(res, 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered);
                 }).catch(function (err) {
                     // handle error
                     console.log(err);
-                    return generateResponse(res, 'Ich konnte keine Beiträge finden');
+                    return functions.generateResponse(res, 'Ich konnte keine Beiträge finden');
                 });
             } else {
-                return generateResponse(res, 'Ich konnte den Blog ' + blog + ' leider nicht finden');
+                return functions.generateResponse(res, 'Ich konnte den Blog ' + blog + ' leider nicht finden');
             }
 
             break;
@@ -345,6 +347,7 @@ alexa.intent('Employee', function (req, res, slots) {
 
     console.log(slots);
 
+/*
     var options = {
         sessionId: '<UNIQE SESSION ID>'
     };
@@ -364,8 +367,9 @@ alexa.intent('Employee', function (req, res, slots) {
 
     request.end();
 
+*/
 
-    /*var employee = slots.employeeslot.value;
+    var employee = slots.employeeslot.value;
     var textQuery = 'Wer ist ' + employee + '?';
 
     var request = app.textRequest(textQuery, {
@@ -401,7 +405,7 @@ alexa.intent('Employee', function (req, res, slots) {
     });
 
 
-    request.end();*/
+    request.end();
 
 });
 
@@ -409,7 +413,7 @@ alexa.ended(function (req, res, reason) {
     console.log(reason);
 });
 
-function getInfoForUsername(username) {
+/*function getInfoForUsername(username) {
     const _users = require('./users.json');
 
     for (var i = 0, len = _users.length; i < len; i++) {
@@ -452,6 +456,7 @@ function generateResponse(res, speech) {
         source: 'webhook-echo-sample'
     });
 }
+*/
 
 restService.listen((process.env.PORT || 8000), function () {
     console.log("Server up and listening");
