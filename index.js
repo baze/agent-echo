@@ -358,7 +358,7 @@ alexa.intent('Employee', function (req, res, slots) {
 
         var phrase = response.result.fulfillment.speech;
         var options = {
-            shouldEndSession: true,
+            shouldEndSession: false,
             outputSpeech: phrase,
             card: alexa.buildCard("Card Title", phrase)
         };
