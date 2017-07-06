@@ -352,13 +352,26 @@ function generateResponse(res, speech) {
 
 alexa.launch(function (req, res) {
 
-    var phrase = "Hallo, ich bin Helga!";
-    var options = {
-        shouldEndSession: true,
-        outputSpeech: phrase
-    };
+    var request = app.textRequest('Hallo', {
+        sessionId: '<unique session id>'
+    });
 
-    alexa.send(req, res, options);
+    request.on('response', function (response) {
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: false,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
 });
 
 alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
