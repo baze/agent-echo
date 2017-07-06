@@ -362,6 +362,8 @@ alexa.intent('Employee', function (req, res, slots) {
             outputSpeech: phrase,
             card: alexa.buildCard("Card Title", phrase)
         };
+
+        alexa.send(req, res, options);
     });
 
     request.on('error', function (error) {
@@ -374,6 +376,8 @@ alexa.intent('Employee', function (req, res, slots) {
             outputSpeech: phrase,
             card: alexa.buildCard("Card Title", phrase)
         };
+
+        alexa.send(req, res, options);
     });
 
 
@@ -386,7 +390,7 @@ alexa.intent('Employee', function (req, res, slots) {
         card: alexa.buildCard("Card Title", phrase)
     };*/
 
-    alexa.send(req, res, options);
+
 });
 
 alexa.ended(function (req, res, reason) {
