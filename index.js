@@ -525,6 +525,39 @@ alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots, s
 
 });
 
+alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, sessionAttributes) {
+
+    console.log(req);
+    console.log(slots);
+    console.log(sessionAttributes);
+
+    var phrase = "";
+    var textQuery = 'Wer ist die E-Mail-Adresse von ' + sessionAttributes.employee + '?';
+
+    var request = app.textRequest(textQuery, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+        console.log(response);
+
+        phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: false,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options, sessionAttributes);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+
+});
+
 alexa.ended(function (req, res, reason) {
     console.log(reason);
 });
