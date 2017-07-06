@@ -17,13 +17,12 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="110" column="34" lean-forward="false" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+            <state relative-caret-position="303">
+              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding>
-                <element signature="e#502#672#0" expanded="false" />
-                <element signature="e#1027#1262#0" expanded="false" />
-                <element signature="e#3265#4280#0" expanded="false" />
-                <element signature="e#4324#4352#0" expanded="false" />
+                <element signature="e#1039#1274#0" expanded="false" />
+                <element signature="e#3277#4292#0" expanded="false" />
+                <element signature="e#4336#4364#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1006,12 +1005,12 @@
       <workItem from="1499268653519" duration="23000" />
       <workItem from="1499268717312" duration="3000" />
       <workItem from="1499322968164" duration="1540000" />
-      <workItem from="1499328138403" duration="11187000" />
+      <workItem from="1499328138403" duration="11430000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40708000" />
+    <option name="totallyTimeSpent" value="40951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="620" y="119" width="1826" height="1170" extended-state="0" />
@@ -1300,13 +1299,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="110" column="34" lean-forward="false" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+        <state relative-caret-position="303">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding>
-            <element signature="e#502#672#0" expanded="false" />
-            <element signature="e#1027#1262#0" expanded="false" />
-            <element signature="e#3265#4280#0" expanded="false" />
-            <element signature="e#4324#4352#0" expanded="false" />
+            <element signature="e#1039#1274#0" expanded="false" />
+            <element signature="e#3277#4292#0" expanded="false" />
+            <element signature="e#4336#4364#0" expanded="false" />
           </folding>
         </state>
       </provider>

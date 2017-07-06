@@ -23,7 +23,7 @@ alexa.launch(function (req, res) {
     alexa.send(req, res, options);
 });
 
-alexa.intent('SayHello', function (req, res, slots) {
+alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
 
     console.log(slots);
 
