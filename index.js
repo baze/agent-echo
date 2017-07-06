@@ -421,7 +421,7 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
 
     console.log(slots);
 
-    var phrase = 'Natascha';
+    var phrase = 'Natascha ist zauberhaft und elfengleich!';
     var options = {
         shouldEndSession: true,
         outputSpeech: phrase,
@@ -431,7 +431,7 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
     alexa.send(req, res, options);
 });
 
-/*alexa.intent('Employee', function (req, res, slots) {
+alexa.intent('Employee', function (req, res, slots) {
 
     console.log(slots);
     console.log(sessionAttributes);
@@ -472,9 +472,9 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
 
     request.end();
 
-});*/
+});
 
-alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
+alexa.intent('Employee2', function (req, res, slots, sessionAttributes) {
 
     var phrase = "";
     if (sessionAttributes.previous) {
