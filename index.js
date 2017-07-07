@@ -567,8 +567,9 @@ alexa.intent('BlogLatest', function(req, res, slots, sessionAttributes) {
             console.log("incomplete");
         } else {
             console.log("complete!");
-            alexa.send(req, res, options, sessionAttributes);
         }
+
+        alexa.send(req, res, options, sessionAttributes);
 
     });
 
