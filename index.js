@@ -542,9 +542,9 @@ alexa.intent('BlogLatest', function(req, res, slots, sessionAttributes) {
 
     var phrase = "";
     if (sessionAttributes.blog) {
-        'Was gibt es neues bei ' + sessionAttributes.blog + '?';
+        phrase ='Was gibt es neues bei ' + sessionAttributes.blog + '?';
     } else {
-        'Was gibt es neues bei ' + slots.blogslot.value + '?';
+        phrase ='Was gibt es neues bei ' + slots.blogslot.value + '?';
     }
 
     sessionAttributes.blog = slots.blogslot.value;
