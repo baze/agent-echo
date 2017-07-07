@@ -95,7 +95,7 @@ restService.post('/helga', function (req, res) {
             break;
 
         case 'clients.employee' :
-            var client = req.body.result && req.body.result.parameters && req.body.result.parameters.client ? req.body.result.parameters.client : null;
+            var client = req.body.result.parameters.client;
 
             console.log(client);
 
@@ -143,6 +143,10 @@ restService.post('/helga', function (req, res) {
             } else {
                 return generateResponse(res, 'Ich konnte den Blog ' + blog + ' leider nicht finden');
             }
+
+            break;
+
+        case 'blog.read' :
 
             break;
 
