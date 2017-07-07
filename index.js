@@ -537,11 +537,19 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
 });
 
 alexa.intent('BlogLatest', function(req, res, slots, sessionAttributes) {
-    console.log(slots);
+    console.log(slots.blogslot.value);
+    console.log(sessionAttributes.blog);
 
-    var textQuery = 'Was gibt es neues bei ' + slots.blogslot.value + '?';
+    var phrase = "";
+    if (sessionAttributes.blog) {
+        'Was gibt es neues bei ' + sessionAttributes.blog + '?';
+    } else {
+        'Was gibt es neues bei ' + slots.blogslot.value + '?';
+    }
 
-    var request = app.textRequest(textQuery, {
+    sessionAttributes.blog = slots.blogslot.value;
+
+    var request = app.textRequest(phrase, {
         sessionId: '<unique session id>'
     });
 
