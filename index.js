@@ -351,7 +351,7 @@ function generateResponse(res, speech) {
 alexa.launch(function (req, res) {
 
     var request = app.textRequest('Hallo', {
-        sessionId: req.body.session.sessionId
+        sessionId: '<unique session id>'
     });
 
     request.on('response', function (response) {
@@ -375,7 +375,7 @@ alexa.launch(function (req, res) {
 alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
 
     var request = app.textRequest('Hallo', {
-        sessionId: req.body.session.sessionId
+        sessionId: '<unique session id>'
     });
 
     request.on('response', function (response) {
@@ -398,7 +398,7 @@ alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
 
 alexa.intent('Thankyou', function (req, res, slots) {
     var request = app.textRequest('Danke', {
-        sessionId: req.body.session.sessionId
+        sessionId: '<unique session id>'
     });
 
     request.on('response', function (response) {
@@ -440,7 +440,7 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
     var textQuery = 'Wer ist ' + slots.employeeslot.value + '?';
 
     var request = app.textRequest(textQuery, {
-        sessionId: req.body.session.sessionId
+        sessionId: '<unique session id>'
     });
 
     request.on('response', function (response) {
@@ -480,7 +480,7 @@ alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots, s
     var textQuery = 'Wer ist die Durchwahl von ' + sessionAttributes.employee + '?';
 
     var request = app.textRequest(textQuery, {
-        sessionId: req.body.session.sessionId
+        sessionId: '<unique session id>'
     });
 
     request.on('response', function (response) {
@@ -513,7 +513,7 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
     var textQuery = 'Wer ist die E-Mail-Adresse von ' + sessionAttributes.employee + '?';
 
     var request = app.textRequest(textQuery, {
-        sessionId: req.body.session.sessionId
+        sessionId: '<unique session id>'
     });
 
     request.on('response', function (response) {
@@ -537,6 +537,7 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
 });
 
 alexa.intent('BlogLatest', function(req, res, slots, sessionAttributes) {
+    console.log(req.body.session.sessionId);
     console.log(slots);
     console.log(sessionAttributes.blog);
 
@@ -550,7 +551,7 @@ alexa.intent('BlogLatest', function(req, res, slots, sessionAttributes) {
     sessionAttributes.blog = slots.blogslot.value;
 
     var request = app.textRequest(phrase, {
-        sessionId: req.body.session.sessionId
+        sessionId: '<unique session id>'
     });
 
     request.on('response', function (response) {
