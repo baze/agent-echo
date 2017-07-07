@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="547" column="12" lean-forward="true" selection-start-line="547" selection-start-column="12" selection-end-line="547" selection-end-column="12" />
+            <state relative-caret-position="219">
+              <caret line="544" column="33" lean-forward="true" selection-start-line="544" selection-start-column="33" selection-end-line="544" selection-end-column="33" />
               <folding>
                 <element signature="e#1195#1457#0" expanded="false" />
                 <element signature="e#1467#1729#0" expanded="false" />
@@ -1302,12 +1303,12 @@
       <workItem from="1499268717312" duration="3000" />
       <workItem from="1499322968164" duration="1540000" />
       <workItem from="1499328138403" duration="18131000" />
-      <workItem from="1499412684016" duration="2395000" />
+      <workItem from="1499412684016" duration="2505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50047000" />
+    <option name="totallyTimeSpent" value="50157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="716" y="142" width="1826" height="1170" extended-state="0" />
@@ -1800,10 +1801,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="1450" column="19" lean-forward="true" selection-start-line="1450" selection-start-column="19" selection-end-line="1450" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="547" column="12" lean-forward="true" selection-start-line="547" selection-start-column="12" selection-end-line="547" selection-end-column="12" />
+        <state relative-caret-position="219">
+          <caret line="544" column="33" lean-forward="true" selection-start-line="544" selection-start-column="33" selection-end-line="544" selection-end-column="33" />
           <folding>
             <element signature="e#1195#1457#0" expanded="false" />
             <element signature="e#1467#1729#0" expanded="false" />
@@ -1822,14 +1839,6 @@
             <element signature="e#13515#14213#0" expanded="false" />
             <element signature="e#14315#15018#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
