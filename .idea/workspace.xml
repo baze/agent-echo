@@ -17,8 +17,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="556" column="25" lean-forward="false" selection-start-line="556" selection-start-column="25" selection-end-line="556" selection-end-column="25" />
+            <state relative-caret-position="585">
+              <caret line="568" column="34" lean-forward="false" selection-start-line="568" selection-start-column="34" selection-end-line="568" selection-end-column="34" />
               <folding>
                 <element signature="e#1195#1457#0" expanded="false" />
                 <element signature="e#1467#1729#0" expanded="false" />
@@ -104,8 +104,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="716" />
-    <option name="y" value="142" />
+    <option name="x" value="1297" />
+    <option name="y" value="89" />
     <option name="width" value="1826" />
     <option name="height" value="1170" />
   </component>
@@ -1298,15 +1298,15 @@
       <workItem from="1499268717312" duration="3000" />
       <workItem from="1499322968164" duration="1540000" />
       <workItem from="1499328138403" duration="18131000" />
-      <workItem from="1499412684016" duration="3255000" />
+      <workItem from="1499412684016" duration="3784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50907000" />
+    <option name="totallyTimeSpent" value="51436000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="716" y="142" width="1826" height="1170" extended-state="0" />
+    <frame x="1297" y="89" width="1826" height="1170" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1759,8 +1759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="556" column="25" lean-forward="false" selection-start-line="556" selection-start-column="25" selection-end-line="556" selection-end-column="25" />
+        <state relative-caret-position="585">
+          <caret line="568" column="34" lean-forward="false" selection-start-line="568" selection-start-column="34" selection-end-line="568" selection-end-column="34" />
           <folding>
             <element signature="e#1195#1457#0" expanded="false" />
             <element signature="e#1467#1729#0" expanded="false" />

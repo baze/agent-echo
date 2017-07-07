@@ -563,7 +563,13 @@ alexa.intent('BlogLatest', function(req, res, slots, sessionAttributes) {
             outputSpeech: phrase
         };
 
-        alexa.send(req, res, options, sessionAttributes);
+        if (response.result.actionIncomplete) {
+            console.log("incomplete");
+        } else {
+            console.log("complete!");
+            alexa.send(req, res, options, sessionAttributes);
+        }
+
     });
 
     request.on('error', function (error) {
