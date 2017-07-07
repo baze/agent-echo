@@ -427,21 +427,35 @@ alexa.intent('Thankyou', function (req, res, slots) {
 
 alexa.intent('SmalltalkNane', function (req, res, slots) {
 
-    console.log(slots);
+    var phrase = 'Wer ist zauberhaft und elfengleich?';
 
-    var phrase = 'Natascha ist zauberhaft und elfengleich!';
-    var options = {
-        shouldEndSession: true,
-        outputSpeech: phrase,
-        card: alexa.buildCard("Card Title", phrase)
-    };
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>'
+    });
 
-    alexa.send(req, res, options);
+    request.on('response', function (response) {
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
 });
 
 alexa.intent('SmalltalkInsult', function (req, res, slots) {
 
-    var request = app.textRequest('Ficke disch', {
+    var phrase = 'Ficke disch';
+
+    var request = app.textRequest(phrase, {
         sessionId: '<unique session id>'
     });
 
