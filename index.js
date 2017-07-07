@@ -427,6 +427,9 @@ alexa.intent('Thankyou', function (req, res, slots) {
 
 alexa.intent('SmalltalkNane', function (req, res, slots) {
 
+    console.log(req);
+    console.log(res);
+
     var phrase = 'Wer ist zauberhaft und elfengleich?';
 
     var request = app.textRequest(phrase, {
