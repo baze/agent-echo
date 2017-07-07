@@ -439,6 +439,30 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
     alexa.send(req, res, options);
 });
 
+alexa.intent('SmalltalkInsult', function (req, res, slots) {
+
+    var request = app.textRequest('Ficke disch', {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+});
+
 alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
     console.log(slots);
