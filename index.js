@@ -131,8 +131,8 @@ restService.post('/helga', function (req, res) {
                     console.log(data);
 
                     var date = moment(data[0].date);
-                    var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered;
-                    phrase += 'Möchtest du mehr darüber erfahren?';
+                    var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
+                    phrase += ' Möchtest du, dass ich ihn dir vorlese?';
 
                     return generateResponse(res, phrase);
                 }).catch(function (err) {
