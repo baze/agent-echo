@@ -537,7 +537,7 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
 });
 
 alexa.intent('BlogLatest', function(req, res, slots, sessionAttributes) {
-    console.log(slots.blogslot.value);
+    console.log(slots);
     console.log(sessionAttributes.blog);
 
     var phrase = "";
