@@ -119,7 +119,7 @@ restService.post('/helga', function (req, res) {
 
         case 'blog.latest' :
 
-            var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : 'null';
+            var blog = req.body.result.parameters.blog;
 
             console.log(blog);
 
@@ -172,7 +172,7 @@ restService.post('/helga', function (req, res) {
                 }, function (err, res) {
 
                     if (!err) {
-                        speech = 'Die E-Mail-Adresse wurde versandt!';
+                        speech = 'Die E-Mail wurde versandt!';
                     } else {
                         speech = 'Es ist ein Fehler aufgetreten: ' + err;
                     }
@@ -348,8 +348,6 @@ function generateResponse(res, speech) {
     });
 }
 
-
-
 alexa.launch(function (req, res) {
 
     var request = app.textRequest('Hallo', {
@@ -472,26 +470,6 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
     request.end();
 });
 
-alexa.intent('Employee2', function (req, res, slots, sessionAttributes) {
-
-    var phrase = "";
-    if (sessionAttributes.previous) {
-        phrase = 'Du sagtest "' + sessionAttributes.previous + '". Ich habe es durch "' + slots.employeeslot.value + ' ersetzt". Bitte sag einen anderen Namen.';
-    }
-    else {
-        phrase = 'Du sagtest "' + slots.employeeslot.value + '". Bitte sag einen anderen Namen.';
-    }
-
-    sessionAttributes.previous = slots.employeeslot.value;
-
-    var options = {
-        shouldEndSession: false,
-        outputSpeech: phrase
-    };
-
-    alexa.send(req, res, options, sessionAttributes);
-});
-
 alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots, sessionAttributes) {
 
     console.log(req);
@@ -556,6 +534,32 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
 
     request.end();
 
+});
+
+alexa.intent('BlogLatest', function(req, res, slots, sessionAttributes) {
+    console.log(slots);
+
+    var textQuery = 'Was gibt es neues bei ' + slots.blogslot.value + '?';
+
+    var request = app.textRequest(textQuery, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: false,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options, sessionAttributes);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
 });
 
 alexa.ended(function (req, res, reason) {
