@@ -148,6 +148,10 @@ restService.post('/helga', function (req, res) {
 
         case 'blog.read' :
 
+            var confirmation = req.body.result && req.body.result.parameters && req.body.result.parameters.confirmation ? req.body.result.parameters.confirmation : null;
+
+            console.log(confirmation);
+
             break;
 
         case 'employee.contact.email':
