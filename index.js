@@ -150,7 +150,11 @@ restService.post('/helga', function (req, res) {
 
             var confirmation = req.body.result && req.body.result.parameters && req.body.result.parameters.confirmation ? req.body.result.parameters.confirmation : null;
 
-            console.log(confirmation);
+            if (confirmation) {
+                var phrase = 'Ich lese den Post vor';
+
+                return generateResponse(res, phrase);
+            }
 
             break;
 
