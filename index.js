@@ -161,8 +161,8 @@ restService.post('/helga', function (req, res) {
                     // do something with the returned posts
                     console.log(data[0].content.rendered);
 
-                    // var phrase = data[0].content.rendered;
-                    var phrase = "bummsfallera";
+                    var phrase = data[0].content.rendered;
+                    // var phrase = "bummsfallerra";
 
                     return generateResponse(res, phrase);
                 }).catch(function (err) {
@@ -175,7 +175,7 @@ restService.post('/helga', function (req, res) {
                 console.log(blog);
                 console.log(post_id);
 
-                var phrase = "So geht das nicht! Ich brauche erst noch weitere Informationen zu ";
+                var phrase = "Das geht leider nich nicht. Ich benötige erst noch weitere Informationen zu ";
 
                 if (! confirmation) {
                     phrase += "phrase, Wert: " + phrase;
