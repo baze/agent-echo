@@ -387,33 +387,7 @@ function generateResponse(res, speech, contextOut) {
     return res.json(response);
 }
 
-alexa.launch(function (req, res) {
-
-    console.log("alexa");
-
-    var request = app.textRequest('Hallo', {
-        sessionId: '<unique session id>'
-    });
-
-    request.on('response', function (response) {
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: false,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options);
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();
-});
-
-alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
+function alexaWelcome(req, res, slots) {
 
     console.log("DefaultWelcomeIntent");
 
@@ -437,7 +411,11 @@ alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
     });
 
     request.end();
-});
+}
+
+alexa.launch(alexaWelcome);
+
+alexa.intent('DefaultWelcomeIntent', alexaWelcome);
 
 
 

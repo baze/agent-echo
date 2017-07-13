@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/alexa.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
@@ -17,8 +18,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="441" column="0" lean-forward="true" selection-start-line="441" selection-start-column="0" selection-end-line="441" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="415" column="25" lean-forward="false" selection-start-line="415" selection-start-column="25" selection-end-line="415" selection-end-column="25" />
               <folding>
                 <element signature="e#730#8051#0" expanded="false" />
                 <element signature="e#8099#9752#0" expanded="false" />
@@ -27,22 +28,7 @@
                 <element signature="e#9926#10415#0" expanded="false" />
                 <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
                 <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-                <element signature="e#12214#12700#0" expanded="false" />
-                <element signature="e#12768#13269#0" expanded="false" />
-                <element signature="e#13315#13343#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="helga.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helga.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding>
-                <element signature="e#64#350#0" expanded="false" />
-                <element signature="e#366#2431#0" expanded="false" />
+                <element signature="e#12847#12875#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1386,12 +1372,12 @@
       <workItem from="1499433314694" duration="3061000" />
       <workItem from="1499844489219" duration="1768000" />
       <workItem from="1499926466689" duration="6059000" />
-      <workItem from="1499954303421" duration="1744000" />
+      <workItem from="1499954303421" duration="1990000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64757000" />
+    <option name="totallyTimeSpent" value="65003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="34" y="23" width="1826" height="1178" extended-state="0" />
@@ -1445,9 +1431,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1472,9 +1456,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1499,9 +1481,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1533,9 +1513,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1567,9 +1545,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1593,9 +1569,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1628,9 +1602,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1663,9 +1635,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1698,9 +1668,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1733,9 +1701,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1768,9 +1734,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1803,9 +1767,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1830,9 +1792,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1857,9 +1817,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1884,9 +1842,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1922,13 +1878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alexa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3973">
-          <caret line="177" column="3" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="177" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tmp.json" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -1949,10 +1898,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/alexa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="441" column="0" lean-forward="true" selection-start-line="441" selection-start-column="0" selection-end-line="441" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="415" column="25" lean-forward="false" selection-start-line="415" selection-start-column="25" selection-end-line="415" selection-end-column="25" />
           <folding>
             <element signature="e#730#8051#0" expanded="false" />
             <element signature="e#8099#9752#0" expanded="false" />
@@ -1961,9 +1918,7 @@
             <element signature="e#9926#10415#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-            <element signature="e#12214#12700#0" expanded="false" />
-            <element signature="e#12768#13269#0" expanded="false" />
-            <element signature="e#13315#13343#0" expanded="false" />
+            <element signature="e#12847#12875#0" expanded="false" />
           </folding>
         </state>
       </provider>
