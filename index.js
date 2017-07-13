@@ -137,7 +137,7 @@ restService.post('/helga', function (req, res) {
                     return generateResponse(res, phrase, contextOut);
                 }).catch(function (err) {
                     // handle error
-                    // console.log(err);
+                    console.log(err);
                     return generateResponse(res, 'Ich konnte keine Beiträge finden');
                 });
             } else {
