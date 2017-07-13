@@ -161,7 +161,8 @@ restService.post('/helga', function (req, res) {
 
                 wp.posts(post_id).then(function (data) {
                     // do something with the returned posts
-                    var html = data[0].content.rendered;
+                    // var html = data[0].content.rendered;
+                    var html = '<strong>BAMM BAMM BALLERMANN!</strong>'
                     var phrase = striptags(html);
 
                     console.log(phrase);
