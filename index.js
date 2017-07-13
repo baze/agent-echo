@@ -600,9 +600,15 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
 });
 
 alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
-    console.log(req.body.session.sessionId);
+    // console.log(req.body.session.sessionId);
     /*console.log(slots);
     console.log(sessionAttributes.blog);*/
+
+
+    console.log('sessionAttributes');
+    console.log(sessionAttributes.blog);
+    console.log('blogslot');
+    console.log(slots.blogslot.value);
 
     var phrase = "";
     if (sessionAttributes.blog) {
@@ -612,8 +618,7 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
     }
 
     sessionAttributes.blog = slots.blogslot.value;
-    console.log(sessionAttributes.blog);
-    console.log(slots.blogslot.value);
+
 
     var request = app.textRequest(phrase, {
         sessionId: '<unique session id>'
@@ -621,7 +626,7 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 
     request.on('response', function (response) {
 
-        console.log(response);
+        // console.log(response);
 
         var phrase = response.result.fulfillment.speech;
         var options = {
