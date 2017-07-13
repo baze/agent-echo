@@ -385,6 +385,8 @@ function generateResponse(res, speech, contextOut) {
 
 alexa.launch(function (req, res) {
 
+    console.log("alexa");
+
     var request = app.textRequest('Hallo', {
         sessionId: '<unique session id>'
     });
