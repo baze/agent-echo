@@ -123,7 +123,10 @@ restService.post('/helga', function (req, res) {
 
             console.log(blog);
 
-            if (blog) {
+            var phrase = blog;
+            return generateResponse(res, phrase);
+
+            /*if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
                 wp.posts().perPage(1).then(function (data) {
@@ -132,9 +135,9 @@ restService.post('/helga', function (req, res) {
 
                     var phrase = 'foofofofo';
 
-                    /*var date = moment(data.date);
+                    /!*var date = moment(data.date);
                     var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data.title.rendered + '.';
-                    phrase += ' Möchtest du, dass ich ihn dir vorlese?';*/
+                    phrase += ' Möchtest du, dass ich ihn dir vorlese?';*!/
 
                     // var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data.id}}];
 
@@ -146,7 +149,7 @@ restService.post('/helga', function (req, res) {
                 });
             } else {
                 return generateResponse(res, 'Ich konnte den Blog ' + blog + ' leider nicht finden');
-            }
+            }*/
 
             break;
 
