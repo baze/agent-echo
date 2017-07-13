@@ -126,9 +126,9 @@ restService.post('/helga', function (req, res) {
             if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
-                wp.posts().then(function (data) {
+                wp.posts().perPage(1).then(function (data) {
                     // do something with the returned posts
-                    console.log(data);
+                    // console.log(data);
 
                     var date = moment(data[0].date);
                     var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
@@ -137,7 +137,7 @@ restService.post('/helga', function (req, res) {
                     return generateResponse(res, phrase);
                 }).catch(function (err) {
                     // handle error
-                    console.log(err);
+                    // console.log(err);
                     return generateResponse(res, 'Ich konnte keine Beiträge finden');
                 });
             } else {
@@ -149,11 +149,27 @@ restService.post('/helga', function (req, res) {
         case 'blog.read' :
 
             var confirmation = req.body.result && req.body.result.parameters && req.body.result.parameters.confirmation ? req.body.result.parameters.confirmation : null;
+            // var post_id = req.body.result && req.body.result.parameters && req.body.result.parameters.post ? req.body.result.parameters.post : null;
+            var post_id = 4864;
 
-            if (confirmation) {
-                var phrase = 'Ich lese den Post vor';
+            console.log(confirmation);
+            console.log(post_id);
 
-                return generateResponse(res, phrase);
+            if (confirmation && post_id) {
+                var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
+
+                wp.posts(post_id).then(function (data) {
+                    // do something with the returned posts
+                    console.log(data);
+
+                    var phrase = 'Ich lese den Post vor';
+
+                    return generateResponse(res, phrase);
+                }).catch(function (err) {
+                    // handle error
+                    // console.log(err);
+                    return generateResponse(res, 'Ich konnte den Beitrag nicht finden');
+                });
             }
 
             break;
