@@ -127,13 +127,12 @@ restService.post('/helga', function (req, res) {
                 wp.posts().perPage(1).then(function (data) {
                     // do something with the returned posts
                     console.log(data);
-                    var data = data[0];
 
-                    var date = moment(data.date);
-                    var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data.title.rendered + '.';
+                    var date = moment(data[0].date);
+                    var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
                     phrase += ' Möchtest du, dass ich ihn dir vorlese?';
 
-                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data.id}}];
+                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
 
                     return generateResponse(res, phrase, contextOut);
                 }).catch(function (err) {
@@ -162,7 +161,7 @@ restService.post('/helga', function (req, res) {
                     // do something with the returned posts
                     console.log(data);
 
-                    var phrase = 'Ich lese den Post vor';
+                    var phrase = data[0].content.rendered;
 
                     return generateResponse(res, phrase);
                 }).catch(function (err) {
@@ -655,6 +654,49 @@ alexa.intent('BlogLatest', function(req, res, slots, sessionAttributes) {
     });
 
     request.end();
+});
+
+alexa.intent('BlogRead', function(req, res, slots, sessionAttributes) {
+    console.log(req.body.session.sessionId);
+    console.log(slots);
+    console.log(sessionAttributes.blog);
+/*    var phrase = "";
+    if (sessionAttributes.blog) {
+        phrase = 'Was gibt es neues bei ' + sessionAttributes.blog + '?';
+    } else {
+        phrase = 'Was gibt es neues bei ' + slots.blogslot.value + '?';
+    }
+
+    sessionAttributes.blog = slots.blogslot.value;
+
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>'
+    });
+
+    console.log(request);
+
+    request.on('response', function (response) {
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: false,
+            outputSpeech: phrase
+        };
+
+        if (response.result.actionIncomplete) {
+            console.log("incomplete");
+        } else {
+            console.log("complete!");
+        }
+
+        alexa.send(req, res, options, sessionAttributes);
+
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();*/
 });
 
 alexa.ended(function (req, res, reason) {
