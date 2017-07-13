@@ -134,7 +134,9 @@ restService.post('/helga', function (req, res) {
                     var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
                     phrase += ' Möchtest du, dass ich ihn dir vorlese?';
 
-                    return generateResponse(res, phrase);
+                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post": data[0].id}}]
+
+                    return generateResponse(res, phrase, contextOut);
                 }).catch(function (err) {
                     // handle error
                     // console.log(err);
@@ -372,12 +374,18 @@ function getUsersForClient(client) {
     return users;
 }
 
-function generateResponse(res, speech) {
-    return res.json({
+function generateResponse(res, speech, contextOut) {
+    var response = {
         speech: speech,
         displayText: speech,
         source: 'webhook-echo-sample'
-    });
+    };
+
+    if (contextOut) {
+        response.contextOut = contextOut;
+    }
+
+    return res.json(reponse);
 }
 
 alexa.launch(function (req, res) {
