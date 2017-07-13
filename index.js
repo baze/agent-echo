@@ -163,10 +163,10 @@ restService.post('/helga', function (req, res) {
 
                 wp.posts(post_id).then(function (data) {
                     // do something with the returned posts
-                    console.log(data[0].content);
+                    console.log(data[0].content.rendered);
 
                     // var phrase = data[0].content.rendered;
-                    var phrase = "der bot ist dazu leider nicht in der lage.";
+                    var phrase = "bummsfallera";
 
                     return generateResponse(res, phrase);
                 }).catch(function (err) {
@@ -434,7 +434,7 @@ function alexaYes(req, res, slots) {
 
         var phrase = response.result.fulfillment.speech;
         var options = {
-            shouldEndSession: false,
+            shouldEndSession: true,
             outputSpeech: phrase
         };
 
