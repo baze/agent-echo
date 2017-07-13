@@ -612,6 +612,8 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
     }
 
     sessionAttributes.blog = slots.blogslot.value;
+    console.log(sessionAttributes.blog);
+    console.log(slots.blogslot.value);
 
     var request = app.textRequest(phrase, {
         sessionId: '<unique session id>'
