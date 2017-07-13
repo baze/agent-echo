@@ -163,6 +163,9 @@ restService.post('/helga', function (req, res) {
                     // do something with the returned posts
                     var html = data[0].content.rendered;
                     var phrase = striptags(html);
+
+                    console.log(phrase);
+
                     // var phrase = "bummsfallerra";
 
                     return generateResponse(res, phrase);
