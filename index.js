@@ -414,6 +414,33 @@ function alexaWelcome(req, res, slots) {
     request.end();
 }
 
+function alexaYes(req, res, slots) {
+
+    var phrase = "Ja";
+
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: false,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+
+    });
+
+    request.on('error', function (error) {
+        // console.log(error);
+    });
+
+    request.end();
+}
+
 alexa.launch(alexaWelcome);
 
 alexa.intent('DefaultWelcomeIntent', alexaWelcome);
@@ -645,43 +672,7 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
     request.end();
 });
 
-alexa.intent('BlogReadAnswerYes', function (req, res, slots, sessionAttributes) {
-
-    console.log(slots);
-
-    /*var phrase = "";
-    if (sessionAttributes.blog) {
-        phrase = 'Was gibt es neues bei ' + sessionAttributes.blog + '?';
-    } else {
-        phrase = 'Was gibt es neues bei ' + slots.blogslot.value + '?';
-    }
-
-    sessionAttributes.blog = slots.blogslot.value;
-
-    var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>'
-    });
-
-    request.on('response', function (response) {
-
-        console.log(response);
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: false,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options, sessionAttributes);
-
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();*/
-});
+alexa.intent('BlogReadAnswerYes', alexaYes);
 
 alexa.intent('BlogRead', function (req, res, slots, sessionAttributes) {
     console.log(req.body.session.sessionId);
