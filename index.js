@@ -134,7 +134,7 @@ restService.post('/helga', function (req, res) {
                     var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
                     phrase += ' Möchtest du, dass ich ihn dir vorlese?';
 
-                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post": data[0].id}}]
+                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}]
 
                     return generateResponse(res, phrase, contextOut);
                 }).catch(function (err) {
