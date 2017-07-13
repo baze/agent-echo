@@ -128,13 +128,13 @@ restService.post('/helga', function (req, res) {
 
                 wp.posts().perPage(1).then(function (data) {
                     // do something with the returned posts
-                    // console.log(data);
+                    console.log(data);
 
-                    var date = moment(data[0].date);
-                    var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
+                    var date = moment(data.date);
+                    var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data.title.rendered + '.';
                     phrase += ' Möchtest du, dass ich ihn dir vorlese?';
 
-                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}]
+                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data.id}}]
 
                     return generateResponse(res, phrase, contextOut);
                 }).catch(function (err) {
