@@ -377,12 +377,12 @@ function generateResponse(res, speech, contextOut) {
     var response = {
         speech: speech,
         displayText: speech,
-        source: 'webhook-echo-sample'
+        source: 'helga'
     };
 
-    if (contextOut) {
+    /*if (contextOut) {
         response.contextOut = contextOut;
-    }
+    }*/
 
     return res.json(reponse);
 }
