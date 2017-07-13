@@ -134,7 +134,7 @@ restService.post('/helga', function (req, res) {
                     var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data.title.rendered + '.';
                     phrase += ' Möchtest du, dass ich ihn dir vorlese?';
 
-                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data.id}}]
+                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data.id}}];
 
                     return generateResponse(res, phrase, contextOut);
                 }).catch(function (err) {
@@ -380,9 +380,9 @@ function generateResponse(res, speech, contextOut) {
         source: 'helga'
     };
 
-    /*if (contextOut) {
+    if (contextOut) {
         response.contextOut = contextOut;
-    }*/
+    }
 
     return res.json(reponse);
 }
