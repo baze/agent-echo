@@ -632,10 +632,12 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
     console.log(sessionAttributes.blog);*/
 
 
-    console.log('sessionAttributes');
-    console.log(sessionAttributes.blog);
-    console.log('blogslot');
-    console.log(slots.blogslot.value);
+    // console.log('sessionAttributes');
+    // console.log(sessionAttributes.blog);
+    // console.log('blogslot');
+    // console.log(slots.blogslot.value);
+
+    sessionAttributes.blog = 'euw';
 
     var phrase = "";
     if (sessionAttributes.blog) {
@@ -644,11 +646,19 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
         phrase = 'Was gibt es neues bei ' + slots.blogslot.value + '?';
     }
 
-    sessionAttributes.blog = slots.blogslot.value;
+    // sessionAttributes.blog = slots.blogslot.value;
 
 
     var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>'
+        sessionId: '<unique session id>',
+        contexts: [
+            {
+                name: 'blog',
+                parameters: {
+                    'blog': sessionAttributes.blog
+                }
+            }
+        ]
     });
 
     request.on('response', function (response) {
