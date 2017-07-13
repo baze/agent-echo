@@ -17,6 +17,8 @@ const alexa = new AlexaSkills({
     applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
 });
 
+var striptags = require('striptags');
+
 restService.use(bodyParser.json());
 
 var helga = require('./helga');
@@ -159,10 +161,9 @@ restService.post('/helga', function (req, res) {
 
                 wp.posts(post_id).then(function (data) {
                     // do something with the returned posts
-                    console.log(data[0].content.rendered);
-
-                    // var phrase = data[0].content.rendered;
-                    var phrase = "bummsfallerra";
+                    var html = data[0].content.rendered;
+                    var phrase = striptags(html);
+                    // var phrase = "bummsfallerra";
 
                     return generateResponse(res, phrase);
                 }).catch(function (err) {
