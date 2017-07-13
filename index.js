@@ -175,7 +175,24 @@ restService.post('/helga', function (req, res) {
                     return generateResponse(res, 'Ich konnte den Beitrag nicht finden');
                 });
             } else {
-                var phrase = "der bot ist dazu leider nicht in der lage.";
+                console.log(confirmation);
+                console.log(blog);
+                console.log(post_id);
+
+                var phrase = "So geht das nicht! Ich brauche erst noch weitere Informationen zu ";
+
+                if (! confirmation) {
+                    phrase += "phrase, Wert: " + phrase;
+                }
+
+                if (!blog) {
+                    phrase += "blog, Wert: " + blog;
+                }
+
+                if (!post_id) {
+                    phrase += "post_id, Wert: " + post_id;
+                }
+
                 return generateResponse(res, phrase);
             }
 
