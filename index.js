@@ -417,7 +417,282 @@ alexa.launch(alexaWelcome);
 
 alexa.intent('DefaultWelcomeIntent', alexaWelcome);
 
+alexa.intent('Thankyou', function (req, res, slots) {
+    var request = app.textRequest('Danke', {
+        sessionId: '<unique session id>'
+    });
 
+    request.on('response', function (response) {
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+});
+
+alexa.intent('SmalltalkNane', function (req, res, slots) {
+
+    console.log(req);
+    console.log(res);
+
+    var phrase = 'Wer ist zauberhaft und elfengleich?';
+
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+});
+
+alexa.intent('SmalltalkInsult', function (req, res, slots) {
+
+    var phrase = 'Ficke disch';
+
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+});
+
+alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
+
+    console.log(slots);
+
+    var textQuery = 'Wer ist ' + slots.employeeslot.value + '?';
+
+    var request = app.textRequest(textQuery, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: false,
+            outputSpeech: phrase,
+            contexts: [
+                {
+                    name: 'userinfo',
+                    parameters: {
+                        'employee': slots.employeeslot.value
+                    }
+                }
+            ]
+        };
+
+        sessionAttributes.employee = slots.employeeslot.value;
+
+        alexa.send(req, res, options, sessionAttributes);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+});
+
+alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots, sessionAttributes) {
+
+    console.log(req);
+    console.log(slots);
+    console.log(sessionAttributes);
+
+    var phrase = "";
+    var textQuery = 'Wer ist die Durchwahl von ' + sessionAttributes.employee + '?';
+
+    var request = app.textRequest(textQuery, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+        console.log(response);
+
+        phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: false,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options, sessionAttributes);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+
+});
+
+alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, sessionAttributes) {
+
+    console.log(req);
+    console.log(slots);
+    console.log(sessionAttributes);
+
+    var phrase = "";
+    var textQuery = 'Wer ist die E-Mail-Adresse von ' + sessionAttributes.employee + '?';
+
+    var request = app.textRequest(textQuery, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+        console.log(response);
+
+        phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: false,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options, sessionAttributes);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+
+});
+
+alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
+    console.log(req.body.session.sessionId);
+    /*console.log(slots);
+    console.log(sessionAttributes.blog);*/
+
+    var phrase = 'BlogLatesT';
+    var options = {
+        shouldEndSession: true,
+        outputSpeech: phrase
+    };
+
+    alexa.send(req, res, options);
+
+
+    /*var phrase = "";
+    if (sessionAttributes.blog) {
+        phrase = 'Was gibt es neues bei ' + sessionAttributes.blog + '?';
+    } else {
+        phrase = 'Was gibt es neues bei ' + slots.blogslot.value + '?';
+    }
+
+    sessionAttributes.blog = slots.blogslot.value;
+
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>'
+    });
+
+    console.log(request);
+
+    request.on('response', function (response) {
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: false,
+            outputSpeech: phrase
+        };
+
+        if (response.result.actionIncomplete) {
+            console.log("incomplete");
+        } else {
+            console.log("complete!");
+        }
+
+        alexa.send(req, res, options, sessionAttributes);
+
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();*/
+});
+
+alexa.intent('BlogRead', function (req, res, slots, sessionAttributes) {
+    console.log(req.body.session.sessionId);
+    console.log(slots);
+    console.log(sessionAttributes.blog);
+    /*    var phrase = "";
+        if (sessionAttributes.blog) {
+            phrase = 'Was gibt es neues bei ' + sessionAttributes.blog + '?';
+        } else {
+            phrase = 'Was gibt es neues bei ' + slots.blogslot.value + '?';
+        }
+
+        sessionAttributes.blog = slots.blogslot.value;
+
+        var request = app.textRequest(phrase, {
+            sessionId: '<unique session id>'
+        });
+
+        console.log(request);
+
+        request.on('response', function (response) {
+            var phrase = response.result.fulfillment.speech;
+            var options = {
+                shouldEndSession: false,
+                outputSpeech: phrase
+            };
+
+            if (response.result.actionIncomplete) {
+                console.log("incomplete");
+            } else {
+                console.log("complete!");
+            }
+
+            alexa.send(req, res, options, sessionAttributes);
+
+        });
+
+        request.on('error', function (error) {
+            console.log(error);
+        });
+
+        request.end();*/
+});
 
 alexa.ended(function (req, res, reason) {
     console.log(reason);
