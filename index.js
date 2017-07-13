@@ -152,7 +152,7 @@ restService.post('/helga', function (req, res) {
 
             var confirmation = req.body.result && req.body.result.parameters && req.body.result.parameters.confirmation ? req.body.result.parameters.confirmation : null;
             var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : null;
-            var post_id = req.body.result && req.body.result.parameters && req.body.result.parameters.post_id ? req.body.result.parameters.post_id : null;
+            var post_id = req.body.result && req.body.result.parameters && req.body.result.parameters.post_id ? parseInt(req.body.result.parameters.post_id) : null;
 
             console.log(confirmation);
             console.log(blog);
@@ -163,14 +163,15 @@ restService.post('/helga', function (req, res) {
 
                 wp.posts(post_id).then(function (data) {
                     // do something with the returned posts
-                    // console.log(data[0].content);
+                    console.log(data[0].content);
 
-                    var phrase = data[0].content.rendered;
+                    // var phrase = data[0].content.rendered;
+                    var phrase = "der bot ist dazu leider nicht in der lage.";
 
                     return generateResponse(res, phrase);
                 }).catch(function (err) {
                     // handle error
-                    // console.log(err);
+                    console.log(err);
                     return generateResponse(res, 'Ich konnte den Beitrag nicht finden');
                 });
             } else {
@@ -634,15 +635,6 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
 });
 
 alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
-    // console.log(req.body.session.sessionId);
-    /*console.log(slots);
-    console.log(sessionAttributes.blog);*/
-
-
-    // console.log('sessionAttributes');
-    // console.log(sessionAttributes.blog);
-    // console.log('blogslot');
-    // console.log(slots.blogslot.value);
 
     sessionAttributes.blog = 'euw';
 
@@ -654,7 +646,6 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
     }
 
     // sessionAttributes.blog = slots.blogslot.value;
-
 
     var request = app.textRequest(phrase, {
         sessionId: '<unique session id>',
