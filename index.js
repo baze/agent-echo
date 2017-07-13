@@ -159,7 +159,7 @@ restService.post('/helga', function (req, res) {
 
                 wp.posts(post_id).then(function (data) {
                     // do something with the returned posts
-                    console.log(data);
+                    console.log(data[0].content);
 
                     var phrase = data[0].content.rendered;
 
