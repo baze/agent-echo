@@ -411,6 +411,8 @@ alexa.launch(function (req, res) {
 
 alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
 
+    console.log("DefaultWelcomeIntent");
+
     var request = app.textRequest('Hallo', {
         sessionId: '<unique session id>'
     });
