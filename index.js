@@ -639,7 +639,7 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
     });
 
     request.on('error', function (error) {
-        console.log(error);
+        // console.log(error);
     });
 
     request.end();
