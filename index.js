@@ -617,6 +617,15 @@ alexa.intent('BlogLatest', function(req, res, slots, sessionAttributes) {
     /*console.log(slots);
     console.log(sessionAttributes.blog);*/
 
+    var phrase = 'BlogLatesT';
+    var options = {
+        shouldEndSession: true,
+        outputSpeech: phrase
+    };
+
+    alexa.send(req, res, options);
+
+
     /*var phrase = "";
     if (sessionAttributes.blog) {
         phrase = 'Was gibt es neues bei ' + sessionAttributes.blog + '?';
