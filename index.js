@@ -153,8 +153,7 @@ restService.post('/helga', function (req, res) {
             console.log("blog read");
 
             var confirmation = req.body.result && req.body.result.parameters && req.body.result.parameters.confirmation ? req.body.result.parameters.confirmation : null;
-            // var post_id = req.body.result && req.body.result.parameters && req.body.result.parameters.post ? req.body.result.parameters.post : null;
-            var post_id = 4864;
+            var post_id = req.body.result && req.body.result.parameters && req.body.result.parameters.post_id ? req.body.result.parameters.post_id : null;
 
             console.log(confirmation);
             console.log(post_id);
