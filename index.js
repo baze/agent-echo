@@ -398,7 +398,7 @@ function alexaWelcome(req, res, slots) {
     request.on('response', function (response) {
 
         // var phrase = response.result.fulfillment.speech;
-        var phrase = 'Bitte werfen Sie eine Münze ein!';
+        var phrase = 'Hey Johanna, was geht denn?';
         var options = {
             shouldEndSession: false,
             outputSpeech: phrase
@@ -636,6 +636,10 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
     });
 
     request.end();
+});
+
+alexa.intent('BlogReadAnswerYes', function (req, res, slots, sessionAttributes) {
+
 });
 
 alexa.intent('BlogRead', function (req, res, slots, sessionAttributes) {
