@@ -129,9 +129,8 @@ restService.post('/helga', function (req, res) {
                     console.log(data);
 
                     var date = moment(data[0].date);
-                    // var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
-                    var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].content.rendered + '.';
-                    // phrase += ' Möchtest du, dass ich ihn dir vorlese?';
+                    var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
+                    phrase += ' Möchtest du, dass ich ihn dir vorlese?';
 
                     var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
 
@@ -615,10 +614,10 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
 
 alexa.intent('BlogLatest', function(req, res, slots, sessionAttributes) {
     console.log(req.body.session.sessionId);
-    console.log(slots);
-    console.log(sessionAttributes.blog);
+    /*console.log(slots);
+    console.log(sessionAttributes.blog);*/
 
-    var phrase = "";
+    /*var phrase = "";
     if (sessionAttributes.blog) {
         phrase = 'Was gibt es neues bei ' + sessionAttributes.blog + '?';
     } else {
@@ -654,7 +653,7 @@ alexa.intent('BlogLatest', function(req, res, slots, sessionAttributes) {
         console.log(error);
     });
 
-    request.end();
+    request.end();*/
 });
 
 alexa.intent('BlogRead', function(req, res, slots, sessionAttributes) {
