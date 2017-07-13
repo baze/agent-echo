@@ -121,12 +121,7 @@ restService.post('/helga', function (req, res) {
 
             var blog = req.body.result.parameters.blog;
 
-            console.log(blog);
-
-            var phrase = blog;
-            return generateResponse(res, phrase);
-
-            /*if (blog) {
+            if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
                 wp.posts().perPage(1).then(function (data) {
@@ -149,7 +144,7 @@ restService.post('/helga', function (req, res) {
                 });
             } else {
                 return generateResponse(res, 'Ich konnte den Blog ' + blog + ' leider nicht finden');
-            }*/
+            }
 
             break;
 
@@ -393,7 +388,7 @@ function generateResponse(res, speech, contextOut) {
         response.contextOut = contextOut;
     }
 
-    return res.json(reponse);
+    return res.json(response);
 }
 
 alexa.launch(function (req, res) {
