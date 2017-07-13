@@ -397,7 +397,8 @@ function alexaWelcome(req, res, slots) {
 
     request.on('response', function (response) {
 
-        var phrase = response.result.fulfillment.speech;
+        // var phrase = response.result.fulfillment.speech;
+        var phrase = 'Bitte werfen Sie eine Münze ein!';
         var options = {
             shouldEndSession: false,
             outputSpeech: phrase
