@@ -1,10 +1,13 @@
 {
-  "name": "webhook-echo-sample",
+  "name": "helga",
   "version": "1.0.0",
   "description": "Webhook echo sample",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
+  },
+  "engines": {
+    "node": "8.1.4"
   },
   "author": "Sunil Syal",
   "dependencies": {
