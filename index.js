@@ -603,16 +603,7 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
     /*console.log(slots);
     console.log(sessionAttributes.blog);*/
 
-    var phrase = 'BlogLatesT';
-    var options = {
-        shouldEndSession: true,
-        outputSpeech: phrase
-    };
-
-    alexa.send(req, res, options);
-
-
-    /*var phrase = "";
+    var phrase = "";
     if (sessionAttributes.blog) {
         phrase = 'Was gibt es neues bei ' + sessionAttributes.blog + '?';
     } else {
@@ -625,20 +616,15 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
         sessionId: '<unique session id>'
     });
 
-    console.log(request);
-
     request.on('response', function (response) {
+
+        console.log(response);
+
         var phrase = response.result.fulfillment.speech;
         var options = {
             shouldEndSession: false,
             outputSpeech: phrase
         };
-
-        if (response.result.actionIncomplete) {
-            console.log("incomplete");
-        } else {
-            console.log("complete!");
-        }
 
         alexa.send(req, res, options, sessionAttributes);
 
@@ -648,7 +634,7 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
         console.log(error);
     });
 
-    request.end();*/
+    request.end();
 });
 
 alexa.intent('BlogRead', function (req, res, slots, sessionAttributes) {
