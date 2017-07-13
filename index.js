@@ -132,11 +132,11 @@ restService.post('/helga', function (req, res) {
 
                     /!*var date = moment(data.date);
                     var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data.title.rendered + '.';
-                    phrase += ' Möchtest du, dass ich ihn dir vorlese?';*!/
+                    phrase += ' Möchtest du, dass ich ihn dir vorlese?';
 
-                    // var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data.id}}];
+                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data.id}}];
 
-                    return generateResponse(res, phrase);
+                    return generateResponse(res, phrase, contextOut);
                 }).catch(function (err) {
                     // handle error
                     // console.log(err);
