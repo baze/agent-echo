@@ -161,8 +161,8 @@ restService.post('/helga', function (req, res) {
                     // do something with the returned posts
                     console.log(data[0].content.rendered);
 
-                    var phrase = data[0].content.rendered;
-                    // var phrase = "bummsfallerra";
+                    // var phrase = data[0].content.rendered;
+                    var phrase = "bummsfallerra";
 
                     return generateResponse(res, phrase);
                 }).catch(function (err) {
