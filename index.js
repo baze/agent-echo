@@ -171,6 +171,18 @@ restService.post('/helga', function (req, res) {
                     html = stripTags(html, ['link', 'script', 'img', 'style', 'form', 'iframe']);
                     html = striptags(html);
                     // html = decode(html, 'all');
+
+                    html = html.replace(/&amp;/g, "&")
+                        .replace(/&lt;/g, "<")
+                        .replace(/&gt;/g, ">")
+                        .replace(/&#39;/g, "'")
+                        .replace(/&#xE4;/g, 'ä')
+                        .replace(/&#xF6;/g, 'ö')
+                        .replace(/&#xFC;/g, 'ü')
+                        .replace(/&szlig;/g, 'ß')
+                        .replace(/&#x2013;/g, '–')
+                        .replace(/&quot;/g, '"');
+
                     console.log(html);
                     var phrase = html;
 
