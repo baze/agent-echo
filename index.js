@@ -657,7 +657,7 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
 
 alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 
-    sessionAttributes.blog = 'euw';
+    sessionAttributes.blog = 'schlaadt';
 
     var phrase = "";
     if (sessionAttributes.blog) {
