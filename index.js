@@ -125,10 +125,13 @@ restService.post('/helga', function (req, res) {
 
             var blog = req.body.result.parameters.blog;
 
+            var post_id = 3321;
+            console.log(post_id);
+
             if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
-                wp.posts().id(3321).then(function (data) {
+                wp.posts().id(post_id).then(function (data) {
                     // do something with the returned posts
                     console.log(data);
 
