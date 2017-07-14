@@ -17,8 +17,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="191" column="41" lean-forward="true" selection-start-line="191" selection-start-column="41" selection-end-line="191" selection-end-column="41" />
+            <state relative-caret-position="451">
+              <caret line="193" column="64" lean-forward="false" selection-start-line="193" selection-start-column="64" selection-end-line="193" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -83,8 +83,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="496" />
-    <option name="y" value="72" />
+    <option name="x" value="838" />
+    <option name="y" value="95" />
     <option name="width" value="1826" />
     <option name="height" value="1178" />
   </component>
@@ -1505,12 +1505,12 @@
       <workItem from="1499954303421" duration="6993000" />
       <workItem from="1500023184010" duration="3667000" />
       <workItem from="1500030327612" duration="1000" />
-      <workItem from="1500030351390" duration="3554000" />
+      <workItem from="1500030351390" duration="3683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77228000" />
+    <option name="totallyTimeSpent" value="77357000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1522,7 +1522,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="496" y="72" width="1826" height="1178" extended-state="0" />
+    <frame x="838" y="95" width="1826" height="1178" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1932,8 +1932,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="191" column="41" lean-forward="true" selection-start-line="191" selection-start-column="41" selection-end-line="191" selection-end-column="41" />
+        <state relative-caret-position="451">
+          <caret line="193" column="64" lean-forward="false" selection-start-line="193" selection-start-column="64" selection-end-line="193" selection-end-column="64" />
           <folding />
         </state>
       </provider>
