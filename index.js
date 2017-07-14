@@ -191,7 +191,7 @@ restService.post('/helga', function (req, res) {
 
                     console.log(html.length);
                     // var phrase = html;
-                    var phrase = html.substring(0, 8000);
+                    var phrase = html.substring(0, 8001);
 
                     console.log(phrase);
 
