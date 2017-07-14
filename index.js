@@ -149,7 +149,8 @@ restService.post('/helga', function (req, res) {
 
                     console.log(phrase);
 
-                    return generateResponse(res, phrase, contextOut);
+                    return generateResponse(res, phrase);
+                    // return generateResponse(res, phrase, contextOut);
                 }).catch(function (err) {
                     // handle error
                     console.log(err);
