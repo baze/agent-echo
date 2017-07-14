@@ -176,10 +176,12 @@ restService.post('/helga', function (req, res) {
                         .replace(/&lt;/g, "<")
                         .replace(/&gt;/g, ">")
                         .replace(/&#39;/g, "'")
+                        .replace(/&#x2018;/g, "'")
                         .replace(/&#xE4;/g, 'ä')
                         .replace(/&#xF6;/g, 'ö')
                         .replace(/&#xFC;/g, 'ü')
                         .replace(/&szlig;/g, 'ß')
+                        .replace(/&#xDF;/g, 'ß')
                         .replace(/&#x2013;/g, '–')
                         .replace(/&quot;/g, '"');
 
