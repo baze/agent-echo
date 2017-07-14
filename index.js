@@ -18,6 +18,7 @@ const alexa = new AlexaSkills({
 });
 
 var striptags = require('striptags');
+var stripTags = require('strip-tags');
 
 restService.use(bodyParser.json());
 
@@ -156,8 +157,8 @@ restService.post('/helga', function (req, res) {
             var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : null;
             var post_id = req.body.result && req.body.result.parameters && req.body.result.parameters.post_id ? parseInt(req.body.result.parameters.post_id) : null;
 
-            var post_id = 3321;
-            console.log(post_id);
+            // var post_id = 3321;
+            // console.log(post_id);
 
             if (confirmation && blog && post_id) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
@@ -166,7 +167,11 @@ restService.post('/helga', function (req, res) {
                     // do something with the returned posts
 
                     var html = data.content.rendered;
+                    console.log(html);
+                    html = stripTags(html, 'img');
+                    console.log(html);
                     html = striptags(html);
+                    console.log(html);
                     var phrase = html;
 
                     console.log(phrase);
