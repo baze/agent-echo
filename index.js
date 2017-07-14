@@ -128,7 +128,7 @@ restService.post('/helga', function (req, res) {
             if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
-                wp.posts(3321).then(function (data) {
+                wp.posts('3321').then(function (data) {
                     // do something with the returned posts
                     console.log(data);
 
