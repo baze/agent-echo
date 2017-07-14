@@ -19,6 +19,7 @@ const alexa = new AlexaSkills({
 
 var striptags = require('striptags');
 var nl2br = require('nl2br');
+var removeWhitespace = require('remove-whitespace');
 
 restService.use(bodyParser.json());
 
@@ -167,6 +168,7 @@ restService.post('/helga', function (req, res) {
                     html = html.replace(/(\r\n|\n|\r)/gm, "");
                     html = nl2br(html, false);
                     html = striptags(html);
+                    html = removeWhitespace(html);
                     var phrase = html;
 
 
