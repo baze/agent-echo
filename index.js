@@ -18,8 +18,6 @@ const alexa = new AlexaSkills({
 });
 
 var striptags = require('striptags');
-var nl2br = require('nl2br');
-var removeWhitespace = require('remove-whitespace');
 
 restService.use(bodyParser.json());
 
@@ -135,26 +133,13 @@ restService.post('/helga', function (req, res) {
                     // do something with the returned posts
                     console.log(data);
 
-                    // var date = moment(data[0].date);
-                    var phrase = data.content.rendered;
-                    // var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
-                    // phrase += ' Möchtest du, dass ich ihn dir vorlese?';
+                    var date = moment(data[0].date);
+                    var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
+                    phrase += ' Möchtest du, dass ich ihn dir vorlese?';
 
-                    // var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
+                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
 
-                    // var html = data[0].content.rendered;
-                    // var html = '<strong>BAMM BAMM BALLERMANN!</strong>'
-/*                    html = html.replace(/(\t\r\n|\n|\r)/gm, "");
-                    html = nl2br(html, false);
-                    html = striptags(html);
-                    html = removeWhitespace(html);*/
-                    // var phrase = html;
-
-
-                    // console.log(phrase);
-
-                    return generateResponse(res, phrase);
-                    // return generateResponse(res, phrase, contextOut);
+                    return generateResponse(res, phrase, contextOut);
                 }).catch(function (err) {
                     // handle error
                     console.log(err);
@@ -179,18 +164,12 @@ restService.post('/helga', function (req, res) {
 
                 wp.posts().id(post_id).then(function (data) {
                     // do something with the returned posts
+
                     var html = data.content.rendered;
-                    // var html = '<strong>BAMM BAMM BALLERMANN!</strong>'
-                    html = html.replace(/(\t\r\n|\n|\r)/gm, "");
-                    html = nl2br(html, false);
                     html = striptags(html);
-                    html = removeWhitespace(html);
                     var phrase = html;
 
-
                     console.log(phrase);
-
-                    // var phrase = "bummsfallerra";
 
                     return generateResponse(res, phrase);
                 }).catch(function (err) {

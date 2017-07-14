@@ -19,8 +19,6 @@
     "alexa-skills": "^0.2.0",
     "apiai": "^4.0.3",
     "gmail-send": "^1.2.11",
-    "striptags": "^3.0.1",
-    "nl2br": "^0.0.3",
-    "remove-whitespace": "^1.1.0"
+    "striptags": "^3.0.1"
   }
 }
