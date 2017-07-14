@@ -183,6 +183,8 @@ restService.post('/helga', function (req, res) {
                         .replace(/&szlig;/g, 'ß')
                         .replace(/&#xDF;/g, 'ß')
                         .replace(/&#x2013;/g, '–')
+                        .replace(/&#x201E;/g, '„')
+                        .replace(/&#x201C;/g, '“')
                         .replace(/&quot;/g, '"');
 
                     console.log(html);
