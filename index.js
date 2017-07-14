@@ -164,9 +164,9 @@ restService.post('/helga', function (req, res) {
                     // do something with the returned posts
                     var html = data[0].content.rendered;
                     // var html = '<strong>BAMM BAMM BALLERMANN!</strong>'
+                    html = html.replace(/(\r\n|\n|\r)/gm, "");
                     html = nl2br(html, false);
                     html = striptags(html);
-                    // var phrase = html.replace(/(\r\n|\n|\r)/gm, "");
                     var phrase = html;
 
 
