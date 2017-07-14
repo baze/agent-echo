@@ -18,6 +18,11 @@ module.exports = {
         user : {
             phone : function (user) {
                 if (user && user.phone) {
+
+                    if (user.phone == '__SECRET__') {
+                        return 'Diese Information ist streng geheim!';
+                    }
+
                     return 'Die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' ist die ' + user.phone;
                 } else {
                     return 'Diese Information zu ' + user.first_name + ' ' + user.last_name +
@@ -29,6 +34,11 @@ module.exports = {
             },
             email : function (user) {
                 if (user && user.email) {
+
+                    if (user.phone == '__SECRET__') {
+                        return 'Wenn ich dir das sagen würde, müsste ich dich leider umbringen.';
+                    }
+
                     return 'Die E-Mail-Adresse von ' + user.first_name + ' ' + user.last_name + ' lautet ' + user.email;
                 } else {
                     return 'Diese Information zu ' + user.first_name + ' ' + user.last_name +

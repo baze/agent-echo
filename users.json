@@ -5,6 +5,8 @@
     "first_name": "Dieter",
     "last_name": "Eberle",
     "salutation": "Herr",
+    "phone": "__SECRET__",
+    "email": "__SECRET__",
     "services": [
       "Geschäftsführung"
     ],
@@ -16,6 +18,8 @@
     "first_name": "Mathias",
     "last_name": "Wollweber",
     "salutation": "Herr",
+    "phone": "__SECRET__",
+    "email": "__SECRET__",
     "services": [
       "Geschäftsführung"
     ],
