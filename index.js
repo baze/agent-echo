@@ -128,7 +128,7 @@ restService.post('/helga', function (req, res) {
             if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
-                wp.posts(3321).then(function (data) {
+                wp.posts().id(3321).then(function (data) {
                     // do something with the returned posts
                     console.log(data);
 
@@ -173,7 +173,7 @@ restService.post('/helga', function (req, res) {
             if (confirmation && blog && post_id) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
-                wp.posts(post_id).then(function (data) {
+                wp.posts().id(post_id).then(function (data) {
                     // do something with the returned posts
                     var html = data[0].content.rendered;
                     // var html = '<strong>BAMM BAMM BALLERMANN!</strong>'
