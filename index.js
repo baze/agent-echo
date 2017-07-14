@@ -135,10 +135,8 @@ restService.post('/helga', function (req, res) {
                     console.log(data);
 
                     var date = moment(data[0].date);
-                    // var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
-                    // phrase += ' Möchtest du, dass ich ihn dir vorlese?';
-
-                    var phrase = 'Möchtest du den ganzen Beitrag hören?';
+                    var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
+                    phrase += ' Möchtest du, dass ich ihn vorlese?';
 
                     var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
 
