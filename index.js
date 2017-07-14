@@ -168,7 +168,7 @@ restService.post('/helga', function (req, res) {
 
                     var html = data.content.rendered;
                     console.log(html);
-                    html = stripTags(html, 'img');
+                    html = stripTags(html, ['link', 'script', 'img', 'style']);
                     console.log(html);
                     html = striptags(html);
                     console.log(html);
