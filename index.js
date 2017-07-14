@@ -123,13 +123,10 @@ restService.post('/helga', function (req, res) {
 
             var blog = req.body.result.parameters.blog;
 
-            var post_id = 3321;
-            console.log(post_id);
-
             if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
-                wp.posts().id(post_id).then(function (data) {
+                wp.posts().perPage(1).then(function (data) {
                     // do something with the returned posts
                     console.log(data);
 
@@ -158,6 +155,9 @@ restService.post('/helga', function (req, res) {
             var confirmation = req.body.result && req.body.result.parameters && req.body.result.parameters.confirmation ? req.body.result.parameters.confirmation : null;
             var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : null;
             var post_id = req.body.result && req.body.result.parameters && req.body.result.parameters.post_id ? parseInt(req.body.result.parameters.post_id) : null;
+
+            var post_id = 3321;
+            console.log(post_id);
 
             if (confirmation && blog && post_id) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
