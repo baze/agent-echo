@@ -9,7 +9,7 @@
   "engines": {
     "node": "8.1.4"
   },
-  "author": "Sunil Syal",
+  "author": "Björn Martensen",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",

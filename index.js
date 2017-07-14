@@ -161,9 +161,11 @@ restService.post('/helga', function (req, res) {
 
                 wp.posts(post_id).then(function (data) {
                     // do something with the returned posts
-                    // var html = data[0].content.rendered;
-                    var html = '<strong>BAMM BAMM BALLERMANN!</strong>'
-                    var phrase = striptags(html);
+                    var html = data[0].content.rendered;
+                    // var html = '<strong>BAMM BAMM BALLERMANN!</strong>'
+                    html = striptags(html);
+                    var phrase = html.replace(/(\r\n|\n|\r)/gm, "");
+
 
                     console.log(phrase);
 
