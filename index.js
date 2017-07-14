@@ -18,6 +18,7 @@ const alexa = new AlexaSkills({
 });
 
 var striptags = require('striptags');
+var nl2br = require('nl2br');
 
 restService.use(bodyParser.json());
 
@@ -163,8 +164,10 @@ restService.post('/helga', function (req, res) {
                     // do something with the returned posts
                     var html = data[0].content.rendered;
                     // var html = '<strong>BAMM BAMM BALLERMANN!</strong>'
+                    html = nl2br(html, false);
                     html = striptags(html);
-                    var phrase = html.replace(/(\r\n|\n|\r)/gm, "");
+                    // var phrase = html.replace(/(\r\n|\n|\r)/gm, "");
+                    var phrase = html;
 
 
                     console.log(phrase);
