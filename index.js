@@ -17,6 +17,8 @@ const alexa = new AlexaSkills({
     applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
 });
 
+const OUTPUT_SPEECH_MAX_LENGTH = 8000;
+
 var striptags = require('striptags');
 var stripTags = require('strip-tags');
 var html = require('html-escaper');
@@ -191,7 +193,7 @@ restService.post('/helga', function (req, res) {
 
                     console.log(html.length);
                     // var phrase = html;
-                    var phrase = html.substring(0, 8001);
+                    var phrase = html.substring(0, OUTPUT_SPEECH_MAX_LENGTH);
 
                     console.log(phrase);
 
