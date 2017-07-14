@@ -128,7 +128,7 @@ restService.post('/helga', function (req, res) {
             if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
-                wp.posts('3321').then(function (data) {
+                wp.posts(3321).then(function (data) {
                     // do something with the returned posts
                     console.log(data);
 
@@ -140,10 +140,10 @@ restService.post('/helga', function (req, res) {
 
                     var html = data[0].content.rendered;
                     // var html = '<strong>BAMM BAMM BALLERMANN!</strong>'
-                    html = html.replace(/(\t\r\n|\n|\r)/gm, "");
+/*                    html = html.replace(/(\t\r\n|\n|\r)/gm, "");
                     html = nl2br(html, false);
                     html = striptags(html);
-                    html = removeWhitespace(html);
+                    html = removeWhitespace(html);*/
                     var phrase = html;
 
 
