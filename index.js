@@ -135,8 +135,8 @@ restService.post('/helga', function (req, res) {
                     // do something with the returned posts
                     console.log(data);
 
-                    var date = moment(data[0].date);
-                    var phrase = data[0].content.rendered;
+                    // var date = moment(data[0].date);
+                    var phrase = data.content.rendered;
                     // var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
                     // phrase += ' Möchtest du, dass ich ihn dir vorlese?';
 
@@ -179,7 +179,7 @@ restService.post('/helga', function (req, res) {
 
                 wp.posts().id(post_id).then(function (data) {
                     // do something with the returned posts
-                    var html = data[0].content.rendered;
+                    var html = data.content.rendered;
                     // var html = '<strong>BAMM BAMM BALLERMANN!</strong>'
                     html = html.replace(/(\t\r\n|\n|\r)/gm, "");
                     html = nl2br(html, false);
