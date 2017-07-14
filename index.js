@@ -128,15 +128,28 @@ restService.post('/helga', function (req, res) {
             if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
-                wp.posts().perPage(1).then(function (data) {
+
+
+                wp.posts(3321).perPage(1).then(function (data) {
                     // do something with the returned posts
                     console.log(data);
 
-                    var date = moment(data[0].date);
+                    /*var date = moment(data[0].date);
                     var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
                     phrase += ' Möchtest du, dass ich ihn dir vorlese?';
 
-                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
+                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];*/
+
+                    var html = data[0].content.rendered;
+                    // var html = '<strong>BAMM BAMM BALLERMANN!</strong>'
+                    html = html.replace(/(\t\r\n|\n|\r)/gm, "");
+                    html = nl2br(html, false);
+                    html = striptags(html);
+                    html = removeWhitespace(html);
+                    var phrase = html;
+
+
+                    console.log(phrase);
 
                     return generateResponse(res, phrase, contextOut);
                 }).catch(function (err) {
@@ -157,8 +170,6 @@ restService.post('/helga', function (req, res) {
             var confirmation = req.body.result && req.body.result.parameters && req.body.result.parameters.confirmation ? req.body.result.parameters.confirmation : null;
             var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : null;
             var post_id = req.body.result && req.body.result.parameters && req.body.result.parameters.post_id ? parseInt(req.body.result.parameters.post_id) : null;
-
-            post_id = 3321;
 
             if (confirmation && blog && post_id) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
