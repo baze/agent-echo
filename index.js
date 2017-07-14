@@ -187,8 +187,9 @@ restService.post('/helga', function (req, res) {
                         .replace(/&#x201C;/g, '“')
                         .replace(/&quot;/g, '"');
 
-                    console.log(html);
-                    var phrase = html;
+                    console.log(html.length);
+                    // var phrase = html;
+                    var phrase = html.length;
 
                     console.log(phrase);
 
