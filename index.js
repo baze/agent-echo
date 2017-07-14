@@ -373,10 +373,6 @@ restService.use(bodyParser.urlencoded({
     extended: true
 }));
 
-restService.listen((process.env.PORT || 8000), function () {
-    console.log("Server up and listening");
-});
-
 function getUsersForClient(client) {
     const _users = require('./users.json');
     var users = [];
@@ -702,4 +698,8 @@ alexa.intent('BlogReadAnswerYes', alexaYes);
 
 alexa.ended(function (req, res, reason) {
     console.log(reason);
+});
+
+restService.listen((process.env.PORT || 8000), function () {
+    console.log("Server up and listening");
 });
