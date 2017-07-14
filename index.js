@@ -19,7 +19,7 @@ const alexa = new AlexaSkills({
 
 var striptags = require('striptags');
 var stripTags = require('strip-tags');
-var decode = require('unescape');
+var html = require('html-escaper');
 
 restService.use(bodyParser.json());
 
@@ -170,7 +170,7 @@ restService.post('/helga', function (req, res) {
                     var html = data.content.rendered;
                     html = stripTags(html, ['link', 'script', 'img', 'style', 'form', 'iframe']);
                     html = striptags(html);
-                    html = decode(html, 'all');
+                    // html = decode(html, 'all');
                     console.log(html);
                     var phrase = html;
 

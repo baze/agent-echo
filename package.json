@@ -21,6 +21,6 @@
     "gmail-send": "^1.2.11",
     "striptags": "^3.0.1",
     "strip-tags": "^0.1.1",
-    "unescape": "^1.0.1"
+    "html-escaper": "^1.0.1"
   }
 }
