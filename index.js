@@ -136,7 +136,7 @@ restService.post('/helga', function (req, res) {
                     // var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
                     // phrase += ' Möchtest du, dass ich ihn dir vorlese?';
 
-                    var phrase = 'mehr erfahren?';
+                    var phrase = 'Möchtest du den ganzen Beitrag hören?';
 
                     var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
 
@@ -191,7 +191,7 @@ restService.post('/helga', function (req, res) {
 
                     console.log(html.length);
                     // var phrase = html;
-                    var phrase = html.substring(html.length / 2);
+                    var phrase = html.substring(0, html.length * 2/3);
 
                     console.log(phrase);
 
