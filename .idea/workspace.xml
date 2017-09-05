@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
     </list>
@@ -18,18 +17,18 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+            <state relative-caret-position="592">
+              <caret line="309" column="49" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="309" selection-end-column="49" />
               <folding>
                 <element signature="e#587#1220#0" expanded="false" />
                 <element signature="e#1258#1811#0" expanded="false" />
-                <element signature="e#2058#2515#0" expanded="false" />
-                <element signature="e#2569#3128#0" expanded="false" />
-                <element signature="e#3184#3674#0" expanded="false" />
-                <element signature="e#3749#4613#0" expanded="false" />
-                <element signature="e#4715#5413#0" expanded="false" />
-                <element signature="e#5515#6218#0" expanded="false" />
-                <element signature="e#6295#7312#0" expanded="false" />
+                <marker date="1504620028000" expanded="false" signature="2060:2517" ph="{...}" />
+                <marker date="1504620028000" expanded="false" signature="2571:3130" ph="{...}" />
+                <marker date="1504620028000" expanded="false" signature="3186:3676" ph="{...}" />
+                <marker date="1504620028000" expanded="false" signature="3751:4615" ph="{...}" />
+                <marker date="1504620028000" expanded="false" signature="4717:5415" ph="{...}" />
+                <marker date="1504620028000" expanded="false" signature="5517:6220" ph="{...}" />
+                <marker date="1504620028000" expanded="false" signature="6297:7314" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -52,6 +51,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response11.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -172,11 +174,23 @@
                 <option name="key" value="Content-Type" />
                 <option name="value" value="application/json;charset=UTF-8" />
               </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
             </list>
           </option>
           <option name="parametersEnabled" value="true" />
           <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;a5e82564-1b00-40a6-825b-1aa3b2d044e4&quot;,   &quot;timestamp&quot;: &quot;2017-09-05T10:14:10.988Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;wer arbeitet bei euw&quot;,     &quot;action&quot;: &quot;knowledge.employees&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;blog&quot;: &quot;euw&quot;     },     &quot;contexts&quot;: [],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;dce9debf-c0ae-45e5-83c8-b5aa14553b0e&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;knowledge.employees&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: 500 Internal Server Error&quot;   },   &quot;sessionId&quot;: &quot;6c2b8839-f375-44a6-bf1a-7325e7f413d2&quot; }" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.4b63a2a6-8243-4dcd-9167-518a66b879ad&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.3ff4a3ae-940a-4a51-944d-8881d51ce1ae&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T13:57:01Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -193,11 +207,56 @@
                 <option name="key" value="Content-Type" />
                 <option name="value" value="application/json;charset=UTF-8" />
               </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
             </list>
           </option>
           <option name="parametersEnabled" value="true" />
           <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;341e4751-0305-4343-9f26-3ed8d10911c8&quot;,   &quot;timestamp&quot;: &quot;2017-09-05T09:12:51.389Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;wer arbeitet bei euw&quot;,     &quot;action&quot;: &quot;knowledge.employees&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;blog&quot;: &quot;euw&quot;     },     &quot;contexts&quot;: [],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;dce9debf-c0ae-45e5-83c8-b5aa14553b0e&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;webhookResponseTime&quot;: 621,       &quot;intentName&quot;: &quot;knowledge.employees&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;moment …&quot;,       &quot;source&quot;: &quot;helga&quot;,       &quot;displayText&quot;: &quot;moment …&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;moment …&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 200,     &quot;errorType&quot;: &quot;success&quot;   },   &quot;sessionId&quot;: &quot;6c2b8839-f375-44a6-bf1a-7325e7f413d2&quot; }" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -227,6 +286,48 @@
           <option name="parametersEnabled" value="true" />
           <option name="haveTextToSend" value="true" />
           <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="helga" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;id&quot;: &quot;a5e82564-1b00-40a6-825b-1aa3b2d044e4&quot;,   &quot;timestamp&quot;: &quot;2017-09-05T10:14:10.988Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;wer arbeitet bei euw&quot;,     &quot;action&quot;: &quot;knowledge.employees&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;blog&quot;: &quot;euw&quot;     },     &quot;contexts&quot;: [],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;dce9debf-c0ae-45e5-83c8-b5aa14553b0e&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;knowledge.employees&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: 500 Internal Server Error&quot;   },   &quot;sessionId&quot;: &quot;6c2b8839-f375-44a6-bf1a-7325e7f413d2&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="helga" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;id&quot;: &quot;341e4751-0305-4343-9f26-3ed8d10911c8&quot;,   &quot;timestamp&quot;: &quot;2017-09-05T09:12:51.389Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;wer arbeitet bei euw&quot;,     &quot;action&quot;: &quot;knowledge.employees&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;blog&quot;: &quot;euw&quot;     },     &quot;contexts&quot;: [],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;dce9debf-c0ae-45e5-83c8-b5aa14553b0e&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;webhookResponseTime&quot;: 621,       &quot;intentName&quot;: &quot;knowledge.employees&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;moment …&quot;,       &quot;source&quot;: &quot;helga&quot;,       &quot;displayText&quot;: &quot;moment …&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;moment …&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 200,     &quot;errorType&quot;: &quot;success&quot;   },   &quot;sessionId&quot;: &quot;6c2b8839-f375-44a6-bf1a-7325e7f413d2&quot; }" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -1387,81 +1488,6 @@
           <option name="textToSend" value="{   &quot;id&quot;: &quot;19cbd9dc-a832-4d91-a39d-7f4b1b7c3bb5&quot;,   &quot;timestamp&quot;: &quot;2017-07-04T08:13:41.879Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;wen betreut johanna?&quot;,     &quot;action&quot;: &quot;employee.clients&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;employee&quot;: &quot;joma&quot;,       &quot;myAction&quot;: &quot;employee.clients&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;myAction&quot;: &quot;employee.clients&quot;,           &quot;employee.original&quot;: &quot;johanna?&quot;,           &quot;employee&quot;: &quot;joma&quot;,           &quot;myAction.original&quot;: &quot;&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;d3863692-8c0a-43d2-984c-933787fd8446&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;employee.clients&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;joma kümmert sich um alle gleichermaßen&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;joma kümmert sich um alle gleichermaßen&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Request timeout.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="/info" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;4150d754-cf05-4761-929f-2400fad83303&quot;,   &quot;timestamp&quot;: &quot;2017-07-04T07:47:52.44Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;wobei kann michael mir helfen?&quot;,     &quot;action&quot;: &quot;employee.services&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;employee&quot;: &quot;miro&quot;,       &quot;myAction&quot;: &quot;employee.services&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;myAction&quot;: &quot;employee.services&quot;,           &quot;employee.original&quot;: &quot;michael&quot;,           &quot;employee&quot;: &quot;miro&quot;,           &quot;myAction.original&quot;: &quot;&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;f4913065-8063-4d3e-9c90-2789bfb1f67b&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;webhookResponseTime&quot;: 132,       &quot;intentName&quot;: &quot;employee.services&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;Michael Roth ist zuständig für Teamleitung,Kontakt&quot;,       &quot;source&quot;: &quot;webhook-echo-sample&quot;,       &quot;displayText&quot;: &quot;Michael Roth ist zuständig für Teamleitung,Kontakt&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;Michael Roth ist zuständig für Teamleitung,Kontakt&quot;         }       ]     },     &quot;score&quot;: 0.8500000238418579   },   &quot;status&quot;: {     &quot;code&quot;: 200,     &quot;errorType&quot;: &quot;success&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="/info" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;cd10ef87-f0bf-4f10-a9b8-cec6e58bc21d&quot;,   &quot;timestamp&quot;: &quot;2017-07-04T07:43:51.452Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;wofür ist natascha zuständig?&quot;,     &quot;action&quot;: &quot;employee.services&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;employee&quot;: &quot;nane&quot;,       &quot;myAction&quot;: &quot;employee.services&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;myAction&quot;: &quot;employee.services&quot;,           &quot;employee.original&quot;: &quot;natascha&quot;,           &quot;employee&quot;: &quot;nane&quot;,           &quot;myAction.original&quot;: &quot;&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;f4913065-8063-4d3e-9c90-2789bfb1f67b&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;webhookResponseTime&quot;: 2093,       &quot;intentName&quot;: &quot;employee.services&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;nane macht so dies und das&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;nane macht so dies und das&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Webhook response was empty.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="/info" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;dc80e5a6-581b-44b0-ab55-8a70efa217af&quot;,   &quot;timestamp&quot;: &quot;2017-07-03T15:18:13.934Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;wie ist die email von johanna&quot;,     &quot;action&quot;: &quot;employee.email&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;employee&quot;: &quot;Frau Maier&quot;,       &quot;myAction&quot;: &quot;employee.email&quot;,       &quot;phone&quot;: &quot;&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;myAction&quot;: &quot;employee.email&quot;,           &quot;phone&quot;: &quot;&quot;,           &quot;phone.original&quot;: &quot;&quot;,           &quot;employee.original&quot;: &quot;johanna&quot;,           &quot;employee&quot;: &quot;Frau Maier&quot;,           &quot;myAction.original&quot;: &quot;&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;f0a0a932-fe89-449b-8a17-c04103f2849c&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;webhookResponseTime&quot;: 174,       &quot;intentName&quot;: &quot;employee.email&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;Die E-Mail-Adresse von Johanna Maier ist maier@euw.de&quot;,       &quot;source&quot;: &quot;webhook-echo-sample&quot;,       &quot;displayText&quot;: &quot;Die E-Mail-Adresse von Johanna Maier ist maier@euw.de&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;Die E-Mail-Adresse von Johanna Maier ist maier@euw.de&quot;         }       ]     },     &quot;score&quot;: 0.5   },   &quot;status&quot;: {     &quot;code&quot;: 200,     &quot;errorType&quot;: &quot;success&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1526,12 +1552,12 @@
       <workItem from="1500030327612" duration="1000" />
       <workItem from="1500030351390" duration="5756000" />
       <workItem from="1504600219414" duration="9514000" />
-      <workItem from="1504617246239" duration="1182000" />
+      <workItem from="1504617246239" duration="2344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90126000" />
+    <option name="totallyTimeSpent" value="91288000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1546,23 +1572,23 @@
     <frame x="150" y="61" width="2325" height="1288" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23565485" sideWeight="0.46083552" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951543" sideWeight="0.48150223" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23565485" sideWeight="0.5391645" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38313252" sideWeight="0.53964084" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23565485" sideWeight="0.5390625" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38313252" sideWeight="0.4603592" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23565485" sideWeight="0.4609375" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.383749" sideWeight="0.46211126" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38393575" sideWeight="0.53788877" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1937,18 +1963,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+        <state relative-caret-position="592">
+          <caret line="309" column="49" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="309" selection-end-column="49" />
           <folding>
             <element signature="e#587#1220#0" expanded="false" />
             <element signature="e#1258#1811#0" expanded="false" />
-            <element signature="e#2058#2515#0" expanded="false" />
-            <element signature="e#2569#3128#0" expanded="false" />
-            <element signature="e#3184#3674#0" expanded="false" />
-            <element signature="e#3749#4613#0" expanded="false" />
-            <element signature="e#4715#5413#0" expanded="false" />
-            <element signature="e#5515#6218#0" expanded="false" />
-            <element signature="e#6295#7312#0" expanded="false" />
+            <marker date="1504620028000" expanded="false" signature="2060:2517" ph="{...}" />
+            <marker date="1504620028000" expanded="false" signature="2571:3130" ph="{...}" />
+            <marker date="1504620028000" expanded="false" signature="3186:3676" ph="{...}" />
+            <marker date="1504620028000" expanded="false" signature="3751:4615" ph="{...}" />
+            <marker date="1504620028000" expanded="false" signature="4717:5415" ph="{...}" />
+            <marker date="1504620028000" expanded="false" signature="5517:6220" ph="{...}" />
+            <marker date="1504620028000" expanded="false" signature="6297:7314" ph="{...}" />
           </folding>
         </state>
       </provider>

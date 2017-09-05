@@ -80,7 +80,7 @@ alexa.launch(function (req, res, reason) {
 
 alexa.intent('DefaultWelcomeIntent', helpers.welcome);
 
-alexa.intent('Thankyou', function (req, res) {
+/*alexa.intent('Thankyou', function (req, res) {
     var request = app.textRequest('Danke', {
         sessionId: '<unique session id>'
     });
@@ -307,7 +307,7 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
     request.end();
 });
 
-alexa.intent('BlogReadAnswerYes', helpers.yes);
+alexa.intent('BlogReadAnswerYes', helpers.yes);*/
 
 alexa.ended(function (req, res, reason) {
     console.log(reason);
