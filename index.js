@@ -282,7 +282,7 @@ restService.post('/helga', function (req, res) {
 
                 wp.mitarbeiter = wp.registerRoute(namespace, route);
 
-                wp.mitarbeiter().perPage(100).order('asc').then(function (data) {
+                wp.posts().perPage(2).order('asc').then(function (data) {
                     // do something with the returned posts
                     // console.log(data);
 
@@ -305,8 +305,8 @@ restService.post('/helga', function (req, res) {
 
                     // var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
                     // return generateResponse(res, phrase, contextOut);
-                    console.log(speech);
-                    // return generateResponse(res, speech);
+
+                    return generateResponse(res, speech);
 
                 }).catch(function (err) {
                     // handle error
@@ -316,8 +316,6 @@ restService.post('/helga', function (req, res) {
             } else {
                 speech = 'no blog provided';
             }
-
-            return generateResponse(res, speech);
 
             break;
 
