@@ -440,7 +440,8 @@ function replaceHTMLEntities(string) {
         .replace(/&#x2013;/g, '–')
         .replace(/&#x201E;/g, '„')
         .replace(/&#x201C;/g, '“')
-        .replace(/&#8216;/g, '\'')
+        .replace(/&#8216;/g, '‚')
+        .replace(/&#8218;/g, '‘')
         .replace(/&quot;/g, '"');
 
     return string;
