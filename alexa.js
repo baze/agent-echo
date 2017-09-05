@@ -20,7 +20,9 @@ var helpers = {
 
         console.log("DefaultWelcomeIntent");
 
-        var request = app.textRequest('Hallo', {
+        return res.json('foo');
+
+        /*var request = app.textRequest('Hallo', {
             sessionId: '<unique session id>'
         });
 
@@ -40,7 +42,7 @@ var helpers = {
             console.log(error);
         });
 
-        request.end();
+        request.end();*/
     },
     yes: function (req, res, slots) {
 
@@ -75,7 +77,7 @@ alexa.launch(function (req, res, reason) {
     console.log(res);
     console.log(reason);
 
-    // helpers.welcome();
+    helpers.welcome();
 });
 
 alexa.intent('DefaultWelcomeIntent', function (req, res, reason) {
@@ -83,7 +85,7 @@ alexa.intent('DefaultWelcomeIntent', function (req, res, reason) {
     console.log(res);
     console.log(reason);
 
-    // helpers.welcome();
+    helpers.welcome();
 });
 
 /*alexa.intent('Thankyou', function (req, res) {

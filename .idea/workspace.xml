@@ -16,17 +16,16 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="86" column="1" lean-forward="false" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
+            <state relative-caret-position="407">
+              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding>
-                <element signature="e#587#1220#0" expanded="false" />
-                <element signature="e#1258#1811#0" expanded="false" />
-                <marker date="1504620575000" expanded="false" signature="2175:2632" ph="{...}" />
-                <marker date="1504620575000" expanded="false" signature="2686:3245" ph="{...}" />
-                <marker date="1504620575000" expanded="false" signature="3301:3791" ph="{...}" />
-                <marker date="1504620575000" expanded="false" signature="4832:5530" ph="{...}" />
-                <marker date="1504620575000" expanded="false" signature="5632:6335" ph="{...}" />
-                <marker date="1504620575000" expanded="false" signature="6412:7429" ph="{...}" />
+                <element signature="e#1295#1848#0" expanded="false" />
+                <marker date="1504620661000" expanded="false" signature="2206:2663" ph="{...}" />
+                <marker date="1504620661000" expanded="false" signature="2717:3276" ph="{...}" />
+                <marker date="1504620661000" expanded="false" signature="3332:3822" ph="{...}" />
+                <marker date="1504620661000" expanded="false" signature="4863:5561" ph="{...}" />
+                <marker date="1504620661000" expanded="false" signature="5663:6366" ph="{...}" />
+                <marker date="1504620661000" expanded="false" signature="6443:7460" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -51,7 +50,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response13.html" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response15.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -158,6 +157,35 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="helga" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.4b63a2a6-8243-4dcd-9167-518a66b879ad&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.3ff4a3ae-940a-4a51-944d-8881d51ce1ae&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T13:57:01Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
@@ -1461,31 +1489,6 @@
           <option name="textToSend" value="{   &quot;id&quot;: &quot;9c1854ee-6de5-4e60-9011-514121476582&quot;,   &quot;timestamp&quot;: &quot;2017-07-04T08:32:38.795Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;Wer ist für S&amp;L zuständig?&quot;,     &quot;action&quot;: &quot;clients.employee&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;client&quot;: &quot;S&amp;L&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;client&quot;: &quot;S&amp;L&quot;,           &quot;client.original&quot;: &quot;S&amp;L&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;7bd06179-1d45-490e-8a64-9d2ba79019b1&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;webhookResponseTime&quot;: 553,       &quot;intentName&quot;: &quot;clients.employee&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;ich stelle das eben zusammen&quot;,       &quot;source&quot;: &quot;webhook-echo-sample&quot;,       &quot;displayText&quot;: &quot;ich stelle das eben zusammen&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;ich stelle das eben zusammen&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 200,     &quot;errorType&quot;: &quot;success&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="/info" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;f96097ba-d12e-4aa4-a4ca-cc8ff2f83275&quot;,   &quot;timestamp&quot;: &quot;2017-07-04T08:17:28.764Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;Wer ist für S&amp;L zuständig?&quot;,     &quot;action&quot;: &quot;client.employee&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;client&quot;: &quot;S&amp;L&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;myAction&quot;: &quot;employee.clients&quot;,           &quot;employee.original&quot;: &quot;johanna?&quot;,           &quot;client&quot;: &quot;S&amp;L&quot;,           &quot;employee&quot;: &quot;joma&quot;,           &quot;client.original&quot;: &quot;S&amp;L&quot;,           &quot;myAction.original&quot;: &quot;&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;7bd06179-1d45-490e-8a64-9d2ba79019b1&quot;,       &quot;webhookUsed&quot;: &quot;false&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;clients.employee&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;Ich weiß leider nicht genau, wer S&amp;L betreut&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;Ich weiß leider nicht genau, wer S&amp;L betreut&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 200,     &quot;errorType&quot;: &quot;success&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1550,12 +1553,12 @@
       <workItem from="1500030327612" duration="1000" />
       <workItem from="1500030351390" duration="5756000" />
       <workItem from="1504600219414" duration="9514000" />
-      <workItem from="1504617246239" duration="2618000" />
+      <workItem from="1504617246239" duration="2705000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91562000" />
+    <option name="totallyTimeSpent" value="91649000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1961,17 +1964,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="86" column="1" lean-forward="false" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
+        <state relative-caret-position="407">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
-            <element signature="e#587#1220#0" expanded="false" />
-            <element signature="e#1258#1811#0" expanded="false" />
-            <marker date="1504620575000" expanded="false" signature="2175:2632" ph="{...}" />
-            <marker date="1504620575000" expanded="false" signature="2686:3245" ph="{...}" />
-            <marker date="1504620575000" expanded="false" signature="3301:3791" ph="{...}" />
-            <marker date="1504620575000" expanded="false" signature="4832:5530" ph="{...}" />
-            <marker date="1504620575000" expanded="false" signature="5632:6335" ph="{...}" />
-            <marker date="1504620575000" expanded="false" signature="6412:7429" ph="{...}" />
+            <element signature="e#1295#1848#0" expanded="false" />
+            <marker date="1504620661000" expanded="false" signature="2206:2663" ph="{...}" />
+            <marker date="1504620661000" expanded="false" signature="2717:3276" ph="{...}" />
+            <marker date="1504620661000" expanded="false" signature="3332:3822" ph="{...}" />
+            <marker date="1504620661000" expanded="false" signature="4863:5561" ph="{...}" />
+            <marker date="1504620661000" expanded="false" signature="5663:6366" ph="{...}" />
+            <marker date="1504620661000" expanded="false" signature="6443:7460" ph="{...}" />
           </folding>
         </state>
       </provider>
