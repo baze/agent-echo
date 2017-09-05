@@ -75,10 +75,16 @@ alexa.launch(function (req, res, reason) {
     console.log(res);
     console.log(reason);
 
-    helpers.welcome();
+    // helpers.welcome();
 });
 
-alexa.intent('DefaultWelcomeIntent', helpers.welcome);
+alexa.intent('DefaultWelcomeIntent', function (req, res, reason) {
+    console.log(req);
+    console.log(res);
+    console.log(reason);
+
+    // helpers.welcome();
+});
 
 /*alexa.intent('Thankyou', function (req, res) {
     var request = app.textRequest('Danke', {
