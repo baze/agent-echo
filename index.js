@@ -280,8 +280,6 @@ restService.post('/helga', function (req, res) {
                 var namespace = 'wp/v2'; // use the WP API namespace
                 var route = '/mitarbeiter/(?P<id>)'; // route string - allows optional ID parameter
 
-                return generateResponse(res, 'before');
-
                 wp.mitarbeiter = wp.registerRoute(namespace, route);
 
                 return generateResponse(res, 'after');
