@@ -298,7 +298,7 @@ restService.post('/helga', function (req, res) {
                     var speech = "Wer bei euw arbeitet? Das frage ich mich auch manchmal. Aber Spaß beiseite.\n" +
                         "Neben einer ganzen Reihe von digitalen Kollegen, die fast rund um die Uhr arbeiten, gibt es noch ein paar Menschen. Die Chefs sagen immer, dass diese Menschen der eigentliche Wert von euw sind. Also, die beiden Chefs heißen Dieter Eberle und Mathias Wollweber und dann haben wir noch:\n" +
                         speech_mitarbeiter_list +
-                        "Wenn Du jetzt wissen möchtest, wer für was verantwortlich ist, frage einfach danach.\n"
+                        "Wenn Du jetzt wissen möchtest, wer für was verantwortlich ist, frage einfach danach.\n";
 
                     /*var date = moment(data[0].date);
                     var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
