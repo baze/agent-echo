@@ -2,73 +2,76 @@
 
 var restService = require('./restService');
 
+const alexa_application_id = "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938";
+
 const apiai = require('apiai');
 const AlexaSkills = require('alexa-skills');
 const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 const alexa = new AlexaSkills({
     express: restService, // required
     route: "/alexa", // optional, defaults to "/"
-    applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
+    applicationId: alexa_application_id // optional, but recommended. If you do not set this leave it blank
 });
 
+var helpers = {
+    welcome: function Welcome(req, res, slots) {
 
-function alexaWelcome(req, res, slots) {
+        console.log("DefaultWelcomeIntent");
 
-    console.log("DefaultWelcomeIntent");
+        var request = app.textRequest('Hallo', {
+            sessionId: '<unique session id>'
+        });
 
-    var request = app.textRequest('Hallo', {
-        sessionId: '<unique session id>'
-    });
+        request.on('response', function (response) {
 
-    request.on('response', function (response) {
+            // var phrase = response.result.fulfillment.speech;
+            var phrase = 'Bitte werfen Sie eine Münze ein!';
+            var options = {
+                shouldEndSession: false,
+                outputSpeech: phrase
+            };
 
-        // var phrase = response.result.fulfillment.speech;
-        var phrase = 'Bitte werfen Sie eine Münze ein!';
-        var options = {
-            shouldEndSession: false,
-            outputSpeech: phrase
-        };
+            alexa.send(req, res, options);
+        });
 
-        alexa.send(req, res, options);
-    });
+        request.on('error', function (error) {
+            console.log(error);
+        });
 
-    request.on('error', function (error) {
-        console.log(error);
-    });
+        request.end();
+    },
 
-    request.end();
-}
+    yes: function (req, res, slots) {
 
-function alexaYes(req, res, slots) {
+        var phrase = "Ja";
 
-    var phrase = "Ja";
+        var request = app.textRequest(phrase, {
+            sessionId: '<unique session id>'
+        });
 
-    var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>'
-    });
+        request.on('response', function (response) {
 
-    request.on('response', function (response) {
+            var phrase = response.result.fulfillment.speech;
+            var options = {
+                shouldEndSession: true,
+                outputSpeech: phrase
+            };
 
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase
-        };
+            alexa.send(req, res, options);
 
-        alexa.send(req, res, options);
+        });
 
-    });
+        request.on('error', function (error) {
+            // console.log(error);
+        });
 
-    request.on('error', function (error) {
-        // console.log(error);
-    });
+        request.end();
+    }
+};
 
-    request.end();
-}
+alexa.launch(helpers.welcome);
 
-alexa.launch(alexaWelcome);
-
-alexa.intent('DefaultWelcomeIntent', alexaWelcome);
+alexa.intent('DefaultWelcomeIntent', helpers.welcome);
 
 alexa.intent('Thankyou', function (req, res, slots) {
     var request = app.textRequest('Danke', {
@@ -297,7 +300,7 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
     request.end();
 });
 
-alexa.intent('BlogReadAnswerYes', alexaYes);
+alexa.intent('BlogReadAnswerYes', helpers.yes);
 
 alexa.ended(function (req, res, reason) {
     console.log(reason);

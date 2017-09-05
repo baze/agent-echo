@@ -12,7 +12,7 @@ var striptags = require('striptags');
 var stripTags = require('strip-tags');
 // var html = require('html-escaper');
 
-var helga = {
+var helpers = {
     speech: {
         user: {
             phone: function (user) {
@@ -158,7 +158,7 @@ restService.post('/helga', function (req, res) {
             username = req.body.result.parameters.employee;
             user = getInfoForUsername(username);
 
-            speech = helga.speech.user.phone(user);
+            speech = helpers.speech.user.phone(user);
 
             return generateResponse(res, speech);
 
@@ -168,7 +168,7 @@ restService.post('/helga', function (req, res) {
             username = req.body.result.parameters.employee;
             user = getInfoForUsername(username);
 
-            speech = helga.speech.user.email(user);
+            speech = helpers.speech.user.email(user);
 
             return generateResponse(res, speech);
 
@@ -178,7 +178,7 @@ restService.post('/helga', function (req, res) {
             username = req.body.result.parameters.employee;
             user = getInfoForUsername(username);
 
-            speech = helga.speech.user.services(user);
+            speech = helpers.speech.user.services(user);
 
             return generateResponse(res, speech);
 
