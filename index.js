@@ -271,7 +271,6 @@ restService.post('/helga', function (req, res) {
 
             var blog = req.body.result.parameters.blog;
             console.log(blog);
-            speech = 'moment …';
 
             if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
@@ -285,6 +284,22 @@ restService.post('/helga', function (req, res) {
                     // do something with the returned posts
                     console.log(data);
 
+                    var mitarbeiter = [];
+
+                    data.forEach((m) => {
+                        console.log(m.title.rendered);
+                        mitarbeiter.push(m.title.rendered);
+                    });
+
+                    var speech_mitarbeiter_list = mitarbeiter.length > 1
+                        ? mitarbeiter.slice(0, -1).join(', ') + ' und ' + mitarbeiter.slice(-1)
+                        : mitarbeiter;
+
+                    var speech = "Wer bei euw arbeitet? Das frage ich mich auch manchmal. Aber Spaß beiseite.\n" +
+                        "Neben einer ganzen Reihe von digitalen Kollegen, die fast rund um die Uhr arbeiten, gibt es noch ein paar Menschen. Die Chefs sagen immer, dass diese Menschen der eigentliche Wert von euw sind. Also, die beiden Chefs heißen Dieter Eberle und Mathias Wollweber und dann haben wir noch:\n" +
+                        speech_mitarbeiter_list +
+                        "Wenn Du jetzt wissen möchtest, wer für was verantwortlich ist, frage einfach danach.\n"
+
                     /*var date = moment(data[0].date);
                     var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
                     phrase += ' Möchtest du, dass ich ihn vorlese?';
@@ -292,16 +307,17 @@ restService.post('/helga', function (req, res) {
                     var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];*/
 
                     // return generateResponse(res, phrase, contextOut);
+                    return generateResponse(res, speech);
                 }).catch(function (err) {
                     // handle error
                     console.log(err);
-                    // return generateResponse(res, 'Ich konnte keine Beiträge finden');
+                    return generateResponse(res, 'Ich konnte keine Mitarbeiter finden');
                 });
             } else {
                 speech = 'no blog provided';
             }
 
-            return generateResponse(res, speech);
+            return generateResponse(res, 'error');
 
             break;
 
