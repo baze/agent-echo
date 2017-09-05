@@ -312,8 +312,8 @@ restService.post('/helga', function (req, res) {
                     data.forEach((m) => {
                         var name = replaceHTMLEntities(m.title.rendered);
 
-                        if (name != "Dieter Eberle") {
-                            mitarbeiter.push();
+                        if (name != "Dieter Eberle" && name != "Mathias Wollweber") {
+                            mitarbeiter.push(name);
                         }
 
                     });
