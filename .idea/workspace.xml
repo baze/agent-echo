@@ -26,18 +26,17 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="325" column="0" lean-forward="false" selection-start-line="324" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
+            <state relative-caret-position="384">
+              <caret line="78" column="22" lean-forward="false" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
               <folding>
-                <element signature="e#550#1854#0" expanded="false" />
                 <element signature="e#1299#1852#0" expanded="false" />
-                <marker date="1504622620000" expanded="false" signature="2163:2259" ph="{...}" />
-                <marker date="1504622620000" expanded="false" signature="2312:2769" ph="{...}" />
-                <marker date="1504622620000" expanded="false" signature="2823:3382" ph="{...}" />
-                <marker date="1504622620000" expanded="false" signature="3438:3928" ph="{...}" />
-                <marker date="1504622620000" expanded="false" signature="4969:5667" ph="{...}" />
-                <marker date="1504622620000" expanded="false" signature="5769:6472" ph="{...}" />
-                <marker date="1504622620000" expanded="false" signature="6549:7566" ph="{...}" />
+                <marker date="1504622787000" expanded="false" signature="2187:2283" ph="{...}" />
+                <marker date="1504622787000" expanded="false" signature="2336:2793" ph="{...}" />
+                <marker date="1504622787000" expanded="false" signature="2847:3406" ph="{...}" />
+                <marker date="1504622787000" expanded="false" signature="3462:3952" ph="{...}" />
+                <marker date="1504622787000" expanded="false" signature="4993:5691" ph="{...}" />
+                <marker date="1504622787000" expanded="false" signature="5793:6496" ph="{...}" />
+                <marker date="1504622787000" expanded="false" signature="6573:7590" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -62,7 +61,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response67.html" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response71.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1540,12 +1539,12 @@
       <workItem from="1500030351390" duration="5756000" />
       <workItem from="1504600219414" duration="9514000" />
       <workItem from="1504617246239" duration="4365000" />
-      <workItem from="1504622376655" duration="243000" />
+      <workItem from="1504622376655" duration="410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93552000" />
+    <option name="totallyTimeSpent" value="93719000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1922,8 +1921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apiai.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="48" />
+        <state relative-caret-position="182">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#349#2846#0" expanded="false" />
             <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
@@ -1944,18 +1943,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="325" column="0" lean-forward="false" selection-start-line="324" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
+        <state relative-caret-position="384">
+          <caret line="78" column="22" lean-forward="false" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
           <folding>
-            <element signature="e#550#1854#0" expanded="false" />
             <element signature="e#1299#1852#0" expanded="false" />
-            <marker date="1504622620000" expanded="false" signature="2163:2259" ph="{...}" />
-            <marker date="1504622620000" expanded="false" signature="2312:2769" ph="{...}" />
-            <marker date="1504622620000" expanded="false" signature="2823:3382" ph="{...}" />
-            <marker date="1504622620000" expanded="false" signature="3438:3928" ph="{...}" />
-            <marker date="1504622620000" expanded="false" signature="4969:5667" ph="{...}" />
-            <marker date="1504622620000" expanded="false" signature="5769:6472" ph="{...}" />
-            <marker date="1504622620000" expanded="false" signature="6549:7566" ph="{...}" />
+            <marker date="1504622787000" expanded="false" signature="2187:2283" ph="{...}" />
+            <marker date="1504622787000" expanded="false" signature="2336:2793" ph="{...}" />
+            <marker date="1504622787000" expanded="false" signature="2847:3406" ph="{...}" />
+            <marker date="1504622787000" expanded="false" signature="3462:3952" ph="{...}" />
+            <marker date="1504622787000" expanded="false" signature="4993:5691" ph="{...}" />
+            <marker date="1504622787000" expanded="false" signature="5793:6496" ph="{...}" />
+            <marker date="1504622787000" expanded="false" signature="6573:7590" ph="{...}" />
           </folding>
         </state>
       </provider>
