@@ -27,17 +27,17 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1611">
-              <caret line="266" column="35" lean-forward="true" selection-start-line="266" selection-start-column="35" selection-end-line="266" selection-end-column="35" />
+            <state relative-caret-position="1049">
+              <caret line="314" column="27" lean-forward="true" selection-start-line="314" selection-start-column="27" selection-end-line="314" selection-end-column="27" />
               <folding>
                 <element signature="e#546#2006#0" expanded="false" />
                 <element signature="e#1451#2004#0" expanded="false" />
-                <marker date="1504623181000" expanded="false" signature="2149:2606" ph="{...}" />
-                <marker date="1504623181000" expanded="false" signature="2660:3219" ph="{...}" />
-                <marker date="1504623181000" expanded="false" signature="3275:3765" ph="{...}" />
-                <marker date="1504623181000" expanded="false" signature="4806:5504" ph="{...}" />
-                <marker date="1504623181000" expanded="false" signature="5606:6309" ph="{...}" />
-                <marker date="1504623181000" expanded="false" signature="6386:7403" ph="{...}" />
+                <marker date="1504623687000" expanded="false" signature="2187:2644" ph="{...}" />
+                <marker date="1504623687000" expanded="false" signature="2698:3257" ph="{...}" />
+                <marker date="1504623687000" expanded="false" signature="3313:3803" ph="{...}" />
+                <marker date="1504623687000" expanded="false" signature="4844:5542" ph="{...}" />
+                <marker date="1504623687000" expanded="false" signature="5644:6347" ph="{...}" />
+                <marker date="1504623687000" expanded="false" signature="6424:7441" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -62,7 +62,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response78.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response111.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -173,6 +173,206 @@
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
           <option name="urlPath" value="alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.91e44096-987d-4399-a696-67413be64f70&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.db00844a-4978-4e89-9470-c0a77f1fa387&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T14:55:02Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.91e44096-987d-4399-a696-67413be64f70&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.db00844a-4978-4e89-9470-c0a77f1fa387&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T14:55:02Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.91e44096-987d-4399-a696-67413be64f70&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.db00844a-4978-4e89-9470-c0a77f1fa387&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T14:55:02Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.91e44096-987d-4399-a696-67413be64f70&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.db00844a-4978-4e89-9470-c0a77f1fa387&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T14:55:02Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.91e44096-987d-4399-a696-67413be64f70&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.db00844a-4978-4e89-9470-c0a77f1fa387&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T14:55:02Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa2" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.91e44096-987d-4399-a696-67413be64f70&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.db00844a-4978-4e89-9470-c0a77f1fa387&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T14:55:02Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.91e44096-987d-4399-a696-67413be64f70&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.db00844a-4978-4e89-9470-c0a77f1fa387&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T14:55:02Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa2" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -1276,202 +1476,6 @@
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="/helga" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;c66cd232-ac4e-4234-91c6-3eef52fb259f&quot;,   &quot;timestamp&quot;: &quot;2017-07-05T09:40:36.236Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;welche kunden betreut er?&quot;,     &quot;action&quot;: &quot;employee.clients&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;myAction&quot;: &quot;employee.clients&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;myAction&quot;: &quot;employee.clients&quot;,           &quot;employee.original&quot;: &quot;jan&quot;,           &quot;employee&quot;: &quot;jawa&quot;,           &quot;myAction.original&quot;: &quot;&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;285584b2-61b6-497d-a1e1-73b7858f06a7&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;employee - context:userinfo - comment:clients&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Request timeout.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://192.168.1.99:8000" />
-          <option name="urlPath" value="/ews" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;c66cd232-ac4e-4234-91c6-3eef52fb259f&quot;,   &quot;timestamp&quot;: &quot;2017-07-05T09:40:36.236Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;welche kunden betreut er?&quot;,     &quot;action&quot;: &quot;employee.clients&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;myAction&quot;: &quot;employee.clients&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;myAction&quot;: &quot;employee.clients&quot;,           &quot;employee.original&quot;: &quot;jan&quot;,           &quot;employee&quot;: &quot;jawa&quot;,           &quot;myAction.original&quot;: &quot;&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;285584b2-61b6-497d-a1e1-73b7858f06a7&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;employee - context:userinfo - comment:clients&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Request timeout.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://192.168.1.99:8000" />
-          <option name="urlPath" value="/ews" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;c66cd232-ac4e-4234-91c6-3eef52fb259f&quot;,   &quot;timestamp&quot;: &quot;2017-07-05T09:40:36.236Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;welche kunden betreut er?&quot;,     &quot;action&quot;: &quot;employee.clients&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;myAction&quot;: &quot;employee.clients&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;myAction&quot;: &quot;employee.clients&quot;,           &quot;employee.original&quot;: &quot;jan&quot;,           &quot;employee&quot;: &quot;jawa&quot;,           &quot;myAction.original&quot;: &quot;&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;285584b2-61b6-497d-a1e1-73b7858f06a7&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;employee - context:userinfo - comment:clients&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Request timeout.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="/ews" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;c66cd232-ac4e-4234-91c6-3eef52fb259f&quot;,   &quot;timestamp&quot;: &quot;2017-07-05T09:40:36.236Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;welche kunden betreut er?&quot;,     &quot;action&quot;: &quot;employee.clients&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;myAction&quot;: &quot;employee.clients&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;myAction&quot;: &quot;employee.clients&quot;,           &quot;employee.original&quot;: &quot;jan&quot;,           &quot;employee&quot;: &quot;jawa&quot;,           &quot;myAction.original&quot;: &quot;&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;285584b2-61b6-497d-a1e1-73b7858f06a7&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;employee - context:userinfo - comment:clients&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Request timeout.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="/helga" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;c66cd232-ac4e-4234-91c6-3eef52fb259f&quot;,   &quot;timestamp&quot;: &quot;2017-07-05T09:40:36.236Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;welche kunden betreut er?&quot;,     &quot;action&quot;: &quot;employee.clients&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;myAction&quot;: &quot;employee.clients&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;myAction&quot;: &quot;employee.clients&quot;,           &quot;employee.original&quot;: &quot;jan&quot;,           &quot;employee&quot;: &quot;jawa&quot;,           &quot;myAction.original&quot;: &quot;&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;285584b2-61b6-497d-a1e1-73b7858f06a7&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;employee - context:userinfo - comment:clients&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Request timeout.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="/helga" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;4bcdbda3-9a0c-4b4b-82d0-4958b3655d0e&quot;,   &quot;timestamp&quot;: &quot;2017-07-05T08:06:19.984Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;was gibt es neues bei sul?&quot;,     &quot;action&quot;: &quot;blog.latest&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;blog&quot;: &quot;sul&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;knowledge&quot;,         &quot;parameters&quot;: {           &quot;blog.original&quot;: &quot;sul?&quot;,           &quot;blog&quot;: &quot;sul&quot;         },         &quot;lifespan&quot;: 3       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;c07a76e2-c963-412a-b62d-d735cef982a7&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;webhookResponseTime&quot;: 1917,       &quot;intentName&quot;: &quot;blog.latest&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;Der letzte Beitrag vom 5. Juli 2017 ist: Beef Back Ribs in 7h vom Smoker&quot;,       &quot;source&quot;: &quot;webhook-echo-sample&quot;,       &quot;displayText&quot;: &quot;Der letzte Beitrag vom 5. Juli 2017 ist: Beef Back Ribs in 7h vom Smoker&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;Der letzte Beitrag vom 5. Juli 2017 ist: Beef Back Ribs in 7h vom Smoker&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 200,     &quot;errorType&quot;: &quot;success&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="/helga" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;631f772b-baf1-4f26-b330-1f82dfedc1d4&quot;,   &quot;timestamp&quot;: &quot;2017-07-05T07:49:48.113Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;was gibt es neues bei sul?&quot;,     &quot;action&quot;: &quot;getBlogPosts&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;blog&quot;: &quot;sul&quot;     },     &quot;contexts&quot;: [],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;c07a76e2-c963-412a-b62d-d735cef982a7&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;blog.latest&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;Ich suche nach Blogeinträgen&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;Ich suche nach Blogeinträgen&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Request timeout.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="/helga" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json;charset=UTF-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;631f772b-baf1-4f26-b330-1f82dfedc1d4&quot;,   &quot;timestamp&quot;: &quot;2017-07-05T07:49:48.113Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;was gibt es neues bei sul?&quot;,     &quot;action&quot;: &quot;getBlogPosts&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;blog&quot;: &quot;sul&quot;     },     &quot;contexts&quot;: [],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;c07a76e2-c963-412a-b62d-d735cef982a7&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;intentName&quot;: &quot;blog.latest&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;Ich suche nach Blogeinträgen&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;Ich suche nach Blogeinträgen&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 206,     &quot;errorType&quot;: &quot;partial_content&quot;,     &quot;errorDetails&quot;: &quot;Webhook call failed. Error: Request timeout.&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1537,12 +1541,12 @@
       <workItem from="1500030351390" duration="5756000" />
       <workItem from="1504600219414" duration="9514000" />
       <workItem from="1504617246239" duration="4365000" />
-      <workItem from="1504622376655" duration="792000" />
+      <workItem from="1504622376655" duration="1296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94101000" />
+    <option name="totallyTimeSpent" value="94605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1941,17 +1945,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1611">
-          <caret line="266" column="35" lean-forward="true" selection-start-line="266" selection-start-column="35" selection-end-line="266" selection-end-column="35" />
+        <state relative-caret-position="1049">
+          <caret line="314" column="27" lean-forward="true" selection-start-line="314" selection-start-column="27" selection-end-line="314" selection-end-column="27" />
           <folding>
             <element signature="e#546#2006#0" expanded="false" />
             <element signature="e#1451#2004#0" expanded="false" />
-            <marker date="1504623181000" expanded="false" signature="2149:2606" ph="{...}" />
-            <marker date="1504623181000" expanded="false" signature="2660:3219" ph="{...}" />
-            <marker date="1504623181000" expanded="false" signature="3275:3765" ph="{...}" />
-            <marker date="1504623181000" expanded="false" signature="4806:5504" ph="{...}" />
-            <marker date="1504623181000" expanded="false" signature="5606:6309" ph="{...}" />
-            <marker date="1504623181000" expanded="false" signature="6386:7403" ph="{...}" />
+            <marker date="1504623687000" expanded="false" signature="2187:2644" ph="{...}" />
+            <marker date="1504623687000" expanded="false" signature="2698:3257" ph="{...}" />
+            <marker date="1504623687000" expanded="false" signature="3313:3803" ph="{...}" />
+            <marker date="1504623687000" expanded="false" signature="4844:5542" ph="{...}" />
+            <marker date="1504623687000" expanded="false" signature="5644:6347" ph="{...}" />
+            <marker date="1504623687000" expanded="false" signature="6424:7441" ph="{...}" />
           </folding>
         </state>
       </provider>

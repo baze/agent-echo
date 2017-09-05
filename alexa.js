@@ -80,8 +80,8 @@ var helpers = {
 
 restService.post('/alexa2', helpers.launch);
 
-alexa.launch();
-alexa.intent(helpers.launch);
+alexa.launch(helpers.launch);
+alexa.intent('DefaultWelcomeIntent', helpers.launch);
 
 /*alexa.intent('Thankyou', function (req, res) {
     var request = app.textRequest('Danke', {
