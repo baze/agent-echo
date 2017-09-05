@@ -272,6 +272,8 @@ restService.post('/helga', function (req, res) {
             var blog = req.body.result.parameters.blog;
             console.log(blog);
 
+            speech = blog;
+
             if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
