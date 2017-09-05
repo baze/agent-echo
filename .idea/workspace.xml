@@ -26,17 +26,16 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="78" column="22" lean-forward="false" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
+            <state relative-caret-position="155">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
-                <element signature="e#1299#1852#0" expanded="false" />
-                <marker date="1504622787000" expanded="false" signature="2187:2283" ph="{...}" />
-                <marker date="1504622787000" expanded="false" signature="2336:2793" ph="{...}" />
-                <marker date="1504622787000" expanded="false" signature="2847:3406" ph="{...}" />
-                <marker date="1504622787000" expanded="false" signature="3462:3952" ph="{...}" />
-                <marker date="1504622787000" expanded="false" signature="4993:5691" ph="{...}" />
-                <marker date="1504622787000" expanded="false" signature="5793:6496" ph="{...}" />
-                <marker date="1504622787000" expanded="false" signature="6573:7590" ph="{...}" />
+                <element signature="e#1455#2008#0" expanded="false" />
+                <marker date="1504622982000" expanded="false" signature="2313:2770" ph="{...}" />
+                <marker date="1504622982000" expanded="false" signature="2824:3383" ph="{...}" />
+                <marker date="1504622982000" expanded="false" signature="3439:3929" ph="{...}" />
+                <marker date="1504622982000" expanded="false" signature="4970:5668" ph="{...}" />
+                <marker date="1504622982000" expanded="false" signature="5770:6473" ph="{...}" />
+                <marker date="1504622982000" expanded="false" signature="6550:7567" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -61,7 +60,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response71.html" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response73.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1539,12 +1538,12 @@
       <workItem from="1500030351390" duration="5756000" />
       <workItem from="1504600219414" duration="9514000" />
       <workItem from="1504617246239" duration="4365000" />
-      <workItem from="1504622376655" duration="410000" />
+      <workItem from="1504622376655" duration="606000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93719000" />
+    <option name="totallyTimeSpent" value="93915000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1943,17 +1942,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="78" column="22" lean-forward="false" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
+        <state relative-caret-position="155">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
-            <element signature="e#1299#1852#0" expanded="false" />
-            <marker date="1504622787000" expanded="false" signature="2187:2283" ph="{...}" />
-            <marker date="1504622787000" expanded="false" signature="2336:2793" ph="{...}" />
-            <marker date="1504622787000" expanded="false" signature="2847:3406" ph="{...}" />
-            <marker date="1504622787000" expanded="false" signature="3462:3952" ph="{...}" />
-            <marker date="1504622787000" expanded="false" signature="4993:5691" ph="{...}" />
-            <marker date="1504622787000" expanded="false" signature="5793:6496" ph="{...}" />
-            <marker date="1504622787000" expanded="false" signature="6573:7590" ph="{...}" />
+            <element signature="e#1455#2008#0" expanded="false" />
+            <marker date="1504622982000" expanded="false" signature="2313:2770" ph="{...}" />
+            <marker date="1504622982000" expanded="false" signature="2824:3383" ph="{...}" />
+            <marker date="1504622982000" expanded="false" signature="3439:3929" ph="{...}" />
+            <marker date="1504622982000" expanded="false" signature="4970:5668" ph="{...}" />
+            <marker date="1504622982000" expanded="false" signature="5770:6473" ph="{...}" />
+            <marker date="1504622982000" expanded="false" signature="6550:7567" ph="{...}" />
           </folding>
         </state>
       </provider>

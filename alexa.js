@@ -16,9 +16,12 @@ const apiai = require('apiai');
 const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 
 var helpers = {
-    welcome: function(req, res, slots) {
+    launch: function(req, res, slots) {
 
         console.log("DefaultWelcomeIntent");
+        console.log(req);
+        console.log(res);
+        console.log(slots);
 
         return res.json('foo');
 
@@ -43,6 +46,9 @@ var helpers = {
         });
 
         request.end();*/
+    },
+    ended: function (req, res, reason) {
+        console.log(reason);
     },
     yes: function (req, res, slots) {
 
@@ -72,27 +78,16 @@ var helpers = {
     }
 };
 
-restService.post('/alexa', function (req, res) {
-    console.log(req);
-    console.log(res);
+restService.post('/alexa', helpers.launch);
 
-    helpers.welcome();
-});
-
-/*alexa.launch(function (req, res, reason) {
-    console.log(req);
-    console.log(res);
-    console.log(reason);
-
-    helpers.welcome();
-});
+/*alexa.launch(helpers.launch);
 
 alexa.intent('DefaultWelcomeIntent', function (req, res, reason) {
     console.log(req);
     console.log(res);
     console.log(reason);
 
-    helpers.welcome();
+    helpers.welcome(req, res);
 });*/
 
 /*alexa.intent('Thankyou', function (req, res) {
@@ -325,7 +320,5 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 alexa.intent('BlogReadAnswerYes', helpers.yes);*/
 
 /*
-alexa.ended(function (req, res, reason) {
-    console.log(reason);
-});
+alexa.ended(helpers.ended);
 */
