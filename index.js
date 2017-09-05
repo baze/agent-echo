@@ -305,7 +305,9 @@ restService.post('/helga', function (req, res) {
 
                     // var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
                     // return generateResponse(res, phrase, contextOut);
-                    return generateResponse(res, speech);
+                    // return generateResponse(res, speech);
+
+                    console.log(speech);
 
                 }).catch(function (err) {
                     // handle error
