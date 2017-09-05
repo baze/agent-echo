@@ -27,17 +27,15 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="266">
+              <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="77" selection-end-column="4" />
               <folding>
-                <element signature="e#499#1959#0" expanded="false" />
-                <element signature="e#1404#1957#0" expanded="false" />
-                <marker date="1504624978000" expanded="false" signature="2556:3013" ph="{...}" />
-                <marker date="1504624978000" expanded="false" signature="3067:3626" ph="{...}" />
-                <marker date="1504624978000" expanded="false" signature="3682:4172" ph="{...}" />
-                <marker date="1504624978000" expanded="false" signature="5213:5911" ph="{...}" />
-                <marker date="1504624978000" expanded="false" signature="6013:6716" ph="{...}" />
-                <marker date="1504624978000" expanded="false" signature="6793:7810" ph="{...}" />
+                <marker date="1504625067000" expanded="false" signature="2562:3019" ph="{...}" />
+                <marker date="1504625067000" expanded="false" signature="3073:3632" ph="{...}" />
+                <marker date="1504625067000" expanded="false" signature="3688:4178" ph="{...}" />
+                <marker date="1504625067000" expanded="false" signature="5219:5917" ph="{...}" />
+                <marker date="1504625067000" expanded="false" signature="6019:6722" ph="{...}" />
+                <marker date="1504625067000" expanded="false" signature="6799:7816" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -1560,12 +1558,12 @@
       <workItem from="1504600219414" duration="9514000" />
       <workItem from="1504617246239" duration="4365000" />
       <workItem from="1504622376655" duration="1373000" />
-      <workItem from="1504623789929" duration="1123000" />
+      <workItem from="1504623789929" duration="1205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95805000" />
+    <option name="totallyTimeSpent" value="95887000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1964,17 +1962,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="266">
+          <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="77" selection-end-column="4" />
           <folding>
-            <element signature="e#499#1959#0" expanded="false" />
-            <element signature="e#1404#1957#0" expanded="false" />
-            <marker date="1504624978000" expanded="false" signature="2556:3013" ph="{...}" />
-            <marker date="1504624978000" expanded="false" signature="3067:3626" ph="{...}" />
-            <marker date="1504624978000" expanded="false" signature="3682:4172" ph="{...}" />
-            <marker date="1504624978000" expanded="false" signature="5213:5911" ph="{...}" />
-            <marker date="1504624978000" expanded="false" signature="6013:6716" ph="{...}" />
-            <marker date="1504624978000" expanded="false" signature="6793:7810" ph="{...}" />
+            <marker date="1504625067000" expanded="false" signature="2562:3019" ph="{...}" />
+            <marker date="1504625067000" expanded="false" signature="3073:3632" ph="{...}" />
+            <marker date="1504625067000" expanded="false" signature="3688:4178" ph="{...}" />
+            <marker date="1504625067000" expanded="false" signature="5219:5917" ph="{...}" />
+            <marker date="1504625067000" expanded="false" signature="6019:6722" ph="{...}" />
+            <marker date="1504625067000" expanded="false" signature="6799:7816" ph="{...}" />
           </folding>
         </state>
       </provider>

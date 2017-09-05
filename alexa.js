@@ -14,7 +14,7 @@ var express = require('express'),
 // const apiai = require('apiai');
 // const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 
-var helpers = {
+/*var helpers = {
     launch: function(req, res, slots) {
 
         console.log("DefaultWelcomeIntent");
@@ -24,7 +24,7 @@ var helpers = {
 
         return res.json('foo');
 
-        /*var request = app.textRequest('Hallo', {
+        /!*var request = app.textRequest('Hallo', {
             sessionId: '<unique session id>'
         });
 
@@ -44,7 +44,7 @@ var helpers = {
             console.log(error);
         });
 
-        request.end();*/
+        request.end();*!/
     },
     ended: function (req, res, reason) {
         console.log(reason);
@@ -75,7 +75,7 @@ var helpers = {
 
         request.end();
     }
-};
+};*/
 
 alexa.launch(function (req, res) {
 
