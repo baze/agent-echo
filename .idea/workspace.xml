@@ -16,8 +16,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="443" column="31" lean-forward="false" selection-start-line="443" selection-start-column="31" selection-end-line="443" selection-end-column="31" />
+            <state relative-caret-position="389">
+              <caret line="442" column="31" lean-forward="false" selection-start-line="442" selection-start-column="31" selection-end-line="442" selection-end-column="31" />
               <folding>
                 <element signature="e#3268#3918#0" expanded="false" />
                 <element signature="e#7436#9269#0" expanded="false" />
@@ -84,7 +84,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response85.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response89.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1536,12 +1536,12 @@
       <workItem from="1500023184010" duration="3667000" />
       <workItem from="1500030327612" duration="1000" />
       <workItem from="1500030351390" duration="5756000" />
-      <workItem from="1504600219414" duration="6765000" />
+      <workItem from="1504600219414" duration="7150000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86195000" />
+    <option name="totallyTimeSpent" value="86580000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2170,8 +2170,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="443" column="31" lean-forward="false" selection-start-line="443" selection-start-column="31" selection-end-line="443" selection-end-column="31" />
+        <state relative-caret-position="389">
+          <caret line="442" column="31" lean-forward="false" selection-start-line="442" selection-start-column="31" selection-end-line="442" selection-end-column="31" />
           <folding>
             <element signature="e#3268#3918#0" expanded="false" />
             <element signature="e#7436#9269#0" expanded="false" />
