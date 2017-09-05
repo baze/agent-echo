@@ -1,15 +1,14 @@
 'use strict';
 
-// get main rest service
-const express = require('express');
-
-// initialize alexa skill
-const AlexaSkills = require('alexa-skills');
-const alexa = new AlexaSkills({
-    express: express, // required
-    route: "/alexa", // optional, defaults to "/"
-    applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
-});
+var express = require('express'),
+    AlexaSkills = require('alexa-skills'),
+    app = express(),
+    port = process.env.PORT || 8080,
+    alexa = new AlexaSkills({
+        express: app, // required
+        route: "/alexa", // optional, defaults to "/"
+        applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
+    });
 
 // initialize api.ai
 const apiai = require('apiai');
@@ -335,3 +334,5 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 alexa.intent('BlogReadAnswerYes', helpers.yes);*/
 
 alexa.ended(helpers.ended);
+
+app.listen(port);
