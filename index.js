@@ -282,11 +282,11 @@ restService.post('/helga', function (req, res) {
 
                 wp.mitarbeiter = wp.registerRoute(namespace, route);
 
-                return generateResponse(res, 'after');
-
                 wp.mitarbeiter().perPage(100).order('asc').then(function (data) {
                     // do something with the returned posts
                     // console.log(data);
+
+                    return generateResponse(res, 'inside');
 
                     /*var mitarbeiter = [];
 
