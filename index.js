@@ -174,20 +174,7 @@ restService.post('/helga', function (req, res) {
                     html = striptags(html);
                     // html = decode(html, 'all');
 
-                    html = html.replace(/&amp;/g, "&")
-                        .replace(/&lt;/g, "<")
-                        .replace(/&gt;/g, ">")
-                        .replace(/&#39;/g, "'")
-                        .replace(/&#x2018;/g, "'")
-                        .replace(/&#xE4;/g, 'ä')
-                        .replace(/&#xF6;/g, 'ö')
-                        .replace(/&#xFC;/g, 'ü')
-                        .replace(/&szlig;/g, 'ß')
-                        .replace(/&#xDF;/g, 'ß')
-                        .replace(/&#x2013;/g, '–')
-                        .replace(/&#x201E;/g, '„')
-                        .replace(/&#x201C;/g, '“')
-                        .replace(/&quot;/g, '"');
+                    html = replaceHTMLEntities(html);
 
                     console.log(html.length);
                     // var phrase = html;
@@ -289,14 +276,12 @@ restService.post('/helga', function (req, res) {
                     var mitarbeiter = [];
 
                     data.forEach((m) => {
-                        mitarbeiter.push(m.title.rendered);
+                        mitarbeiter.push(replaceHTMLEntities(m.title.rendered));
                     });
 
                     var speech_mitarbeiter_list = mitarbeiter.length > 1
                         ? mitarbeiter.slice(0, -1).join(', ') + ' und ' + mitarbeiter.slice(-1)
                         : mitarbeiter;
-
-
 
                     var speech = "Wer bei euw arbeitet? Das frage ich mich auch manchmal. Aber Spaß beiseite. " +
                         "Neben einer ganzen Reihe von digitalen Kollegen, die fast rund um die Uhr arbeiten, gibt es noch ein paar Menschen. Die Chefs sagen immer, dass diese Menschen der eigentliche Wert von euw sind. Also, die beiden Chefs heißen Dieter Eberle und Mathias Wollweber und dann haben wir noch:" +
@@ -396,6 +381,25 @@ restService.get('/ews', function (req, res) {
 restService.use(bodyParser.urlencoded({
     extended: true
 }));
+
+function replaceHTMLEntities(string) {
+    string = string.replace(/&amp;/g, "&")
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">")
+        .replace(/&#39;/g, "'")
+        .replace(/&#x2018;/g, "'")
+        .replace(/&#xE4;/g, 'ä')
+        .replace(/&#xF6;/g, 'ö')
+        .replace(/&#xFC;/g, 'ü')
+        .replace(/&szlig;/g, 'ß')
+        .replace(/&#xDF;/g, 'ß')
+        .replace(/&#x2013;/g, '–')
+        .replace(/&#x201E;/g, '„')
+        .replace(/&#x201C;/g, '“')
+        .replace(/&quot;/g, '"');
+
+    return string;
+}
 
 function getUsersForClient(client) {
     const _users = require('./users.json');
