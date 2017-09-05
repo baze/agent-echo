@@ -269,7 +269,33 @@ restService.post('/helga', function (req, res) {
 
         case 'knowledge.employees' :
 
+            var blog = req.body.result.parameters.blog;
             speech = 'moment …';
+
+            if (blog) {
+                var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
+
+                wp.types().type('mitarbeiter').then(function (data) {
+                    // do something with the returned posts
+                    console.log(data);
+
+                    return data;
+
+                    /*var date = moment(data[0].date);
+                    var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
+                    phrase += ' Möchtest du, dass ich ihn vorlese?';
+
+                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];*/
+
+                    // return generateResponse(res, phrase, contextOut);
+                }).catch(function (err) {
+                    // handle error
+                    console.log(err);
+                    // return generateResponse(res, 'Ich konnte keine Beiträge finden');
+                });
+            } else {
+                speech = 'no blog provided';
+            }
 
             return generateResponse(res, speech);
 
