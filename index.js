@@ -276,7 +276,12 @@ restService.post('/helga', function (req, res) {
             if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
-                wp.types().type('mitarbeiter').then(function (data) {
+                var namespace = 'wp/v2'; // use the WP API namespace
+                var route = '/mitarbeiter/(?P<id>)'; // route string - allows optional ID parameter
+
+                wp.mitarbeiter = wp.registerRoute(namespace, route);
+
+                wp.mitarbeiter.then(function (data) {
                     // do something with the returned posts
                     console.log(data);
 
