@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helga.js" afterPath="$PROJECT_DIR$/helga.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="330" column="50" lean-forward="false" selection-start-line="330" selection-start-column="50" selection-end-line="330" selection-end-column="50" />
+            <state relative-caret-position="199">
+              <caret line="563" column="3" lean-forward="true" selection-start-line="563" selection-start-column="3" selection-end-line="563" selection-end-column="3" />
               <folding>
                 <element signature="e#3268#3918#0" expanded="false" />
                 <element signature="e#7436#9269#0" expanded="false" />
@@ -46,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helga.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="helga.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/helga.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="54" column="40" lean-forward="true" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+            <state relative-caret-position="260">
+              <caret line="22" column="112" lean-forward="false" selection-start-line="22" selection-start-column="112" selection-end-line="22" selection-end-column="112" />
               <folding>
                 <element signature="e#64#350#0" expanded="false" />
               </folding>
@@ -84,7 +85,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response89.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response91.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -96,8 +97,8 @@
         <option value="$PROJECT_DIR$/tmp.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/users.json" />
-        <option value="$PROJECT_DIR$/helga.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/helga.js" />
       </list>
     </option>
   </component>
@@ -1536,12 +1537,12 @@
       <workItem from="1500023184010" duration="3667000" />
       <workItem from="1500030327612" duration="1000" />
       <workItem from="1500030351390" duration="5756000" />
-      <workItem from="1504600219414" duration="7191000" />
+      <workItem from="1504600219414" duration="7466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86621000" />
+    <option name="totallyTimeSpent" value="86896000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2150,16 +2151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helga.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="54" column="40" lean-forward="true" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
-          <folding>
-            <element signature="e#64#350#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -2170,8 +2161,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="330" column="50" lean-forward="false" selection-start-line="330" selection-start-column="50" selection-end-line="330" selection-end-column="50" />
+        <state relative-caret-position="199">
+          <caret line="563" column="3" lean-forward="true" selection-start-line="563" selection-start-column="3" selection-end-line="563" selection-end-column="3" />
           <folding>
             <element signature="e#3268#3918#0" expanded="false" />
             <element signature="e#7436#9269#0" expanded="false" />
@@ -2185,6 +2176,16 @@
             <element signature="e#20409#21107#0" expanded="false" />
             <element signature="e#21209#21912#0" expanded="false" />
             <element signature="e#21989#23006#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helga.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="22" column="112" lean-forward="false" selection-start-line="22" selection-start-column="112" selection-end-line="22" selection-end-column="112" />
+          <folding>
+            <element signature="e#64#350#0" expanded="false" />
           </folding>
         </state>
       </provider>

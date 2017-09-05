@@ -20,7 +20,8 @@ module.exports = {
                 if (user && user.phone) {
 
                     if (user.phone == '__SECRET__') {
-                        return 'Diese Information ist streng geheim!';
+                        return 'Wenn ich die Nummer verrate, zieht er mir den Stecker, sorry. Du kannst ihn aber' +
+                            ' über E-Mail erreichen. Seine Adresse ist: ' + user.email;
                     }
 
                     return 'Die Durchwahl von ' + user.first_name + ' ' + user.last_name + ' ist die ' + user.phone;
