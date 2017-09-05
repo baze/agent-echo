@@ -3,18 +3,20 @@
 var express = require('express'),
     AlexaSkills = require('alexa-skills'),
     myApp = express(),
-    port = process.env.PORT || 8080,
+    port = process.env.PORT || 8000,
     alexa = new AlexaSkills({
         express: myApp, // required
         route: "/alexa", // optional, defaults to "/"
         applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
     });
 
+console.log(port);
+
 // initialize api.ai
 // const apiai = require('apiai');
 // const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 
-var helpers = {
+/*var helpers = {
     launch: function(req, res, slots) {
 
         console.log("DefaultWelcomeIntent");
@@ -24,7 +26,7 @@ var helpers = {
 
         return res.json('foo');
 
-        /*var request = app.textRequest('Hallo', {
+        /!*var request = app.textRequest('Hallo', {
             sessionId: '<unique session id>'
         });
 
@@ -44,7 +46,7 @@ var helpers = {
             console.log(error);
         });
 
-        request.end();*/
+        request.end();*!/
     },
     ended: function (req, res, reason) {
         console.log(reason);
@@ -75,7 +77,7 @@ var helpers = {
 
         request.end();
     }
-};
+};*/
 
 alexa.launch(function (req, res) {
 
