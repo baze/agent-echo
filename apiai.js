@@ -139,7 +139,7 @@ function generateResponse(res, speech, contextOut) {
 }
 
 restService.post('/alexa2', function (req, res) {
-    return res.json('foo');
+    return 'foo';
 });
 
 restService.post('/helga', function (req, res) {
