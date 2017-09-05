@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apiai.js" afterPath="$PROJECT_DIR$/apiai.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restService.js" afterPath="$PROJECT_DIR$/restService.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
@@ -45,9 +46,25 @@
       <file leaf-file-name="restService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="44" />
+            <state relative-caret-position="52">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apiai.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apiai.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9438">
+              <caret line="475" column="3" lean-forward="false" selection-start-line="475" selection-start-column="3" selection-end-line="475" selection-end-column="3" />
+              <folding>
+                <element signature="e#516#3013#0" expanded="false" />
+                <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
+                <element signature="n#!!block;n#replaceHTMLEntities#0" expanded="false" />
+                <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+                <element signature="n#!!block;n#generateResponse#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,10 +101,10 @@
         <option value="$PROJECT_DIR$/users.json" />
         <option value="$PROJECT_DIR$/helga.js" />
         <option value="$PROJECT_DIR$/ews.js" />
-        <option value="$PROJECT_DIR$/restService.js" />
-        <option value="$PROJECT_DIR$/apiai.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/alexa.js" />
+        <option value="$PROJECT_DIR$/restService.js" />
+        <option value="$PROJECT_DIR$/apiai.js" />
       </list>
     </option>
   </component>
@@ -1556,12 +1573,12 @@
       <workItem from="1504600219414" duration="9514000" />
       <workItem from="1504617246239" duration="4365000" />
       <workItem from="1504622376655" duration="1373000" />
-      <workItem from="1504623789929" duration="616000" />
+      <workItem from="1504623789929" duration="665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95298000" />
+    <option name="totallyTimeSpent" value="95347000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1691,6 +1708,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3978">
           <caret line="153" column="5" lean-forward="false" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1714,6 +1732,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3978">
           <caret line="153" column="5" lean-forward="false" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1745,6 +1764,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3978">
           <caret line="153" column="5" lean-forward="false" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1760,6 +1780,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3978">
           <caret line="153" column="5" lean-forward="false" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1783,6 +1804,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3978">
           <caret line="153" column="5" lean-forward="true" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1814,6 +1836,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3978">
           <caret line="153" column="5" lean-forward="true" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1845,6 +1868,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1482">
           <caret line="57" column="25" lean-forward="false" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1860,6 +1884,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1482">
           <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1916,13 +1941,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apiai.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1930,14 +1949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1955,6 +1966,28 @@
             <marker date="1504624407000" expanded="false" signature="5260:5958" ph="{...}" />
             <marker date="1504624407000" expanded="false" signature="6060:6763" ph="{...}" />
             <marker date="1504624407000" expanded="false" signature="6840:7857" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apiai.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9438">
+          <caret line="475" column="3" lean-forward="false" selection-start-line="475" selection-start-column="3" selection-end-line="475" selection-end-column="3" />
+          <folding>
+            <element signature="e#516#3013#0" expanded="false" />
+            <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
+            <element signature="n#!!block;n#replaceHTMLEntities#0" expanded="false" />
+            <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
           </folding>
         </state>
       </provider>
