@@ -5,11 +5,11 @@ var restService = require('./restService');
 
 // initialize alexa skill
 const AlexaSkills = require('alexa-skills');
-/*const alexa = new AlexaSkills({
+const alexa = new AlexaSkills({
     express: restService, // required
     route: "/alexa", // optional, defaults to "/"
     applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
-});*/
+});
 
 // initialize api.ai
 const apiai = require('apiai');
@@ -78,17 +78,10 @@ var helpers = {
     }
 };
 
-restService.post('/alexa', helpers.launch);
+restService.post('/alexa2', helpers.launch);
 
-/*alexa.launch(helpers.launch);
-
-alexa.intent('DefaultWelcomeIntent', function (req, res, reason) {
-    console.log(req);
-    console.log(res);
-    console.log(reason);
-
-    helpers.welcome(req, res);
-});*/
+alexa.launch();
+alexa.intent(helpers.launch);
 
 /*alexa.intent('Thankyou', function (req, res) {
     var request = app.textRequest('Danke', {
@@ -319,6 +312,4 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('BlogReadAnswerYes', helpers.yes);*/
 
-/*
 alexa.ended(helpers.ended);
-*/
