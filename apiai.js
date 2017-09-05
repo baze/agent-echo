@@ -138,6 +138,10 @@ function generateResponse(res, speech, contextOut) {
     return res.json(response);
 }
 
+restService.post('/alexa2', function (req, res) {
+    return res.json('foo');
+});
+
 restService.post('/helga', function (req, res) {
 
     var action = req.body.result && req.body.result.action ? req.body.result.action : null;

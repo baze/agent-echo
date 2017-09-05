@@ -72,10 +72,6 @@ var helpers = {
     }
 };
 
-restService.post('/alexa2', function (req, res) {
-    return res.json('foo');
-});
-
 alexa.launch(function (req, res, reason) {
     console.log(req);
     console.log(res);
