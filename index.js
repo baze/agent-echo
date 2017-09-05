@@ -256,7 +256,7 @@ restService.post('/helga', function (req, res) {
 
         case 'knowledge.employeesCount' :
 
-            var blog = req.body.result.parameters.blog;
+            var blog = req.body.result.parameters.blog || 'euw';
 
             if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
@@ -293,7 +293,7 @@ restService.post('/helga', function (req, res) {
 
         case 'knowledge.employees' :
 
-            var blog = req.body.result.parameters.blog;
+            var blog = req.body.result.parameters.blog || 'euw';
 
             if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
