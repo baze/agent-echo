@@ -328,8 +328,7 @@ restService.post('/helga', function (req, res) {
                         "noch ein paar Menschen. Die Chefs sagen immer, dass diese Menschen der eigentliche Wert " +
                         "von euw sind. Also, die beiden Chefs heißen Dieter Eberle und Mathias Wollweber und dann " +
                         "haben wir noch: \n" +
-                        speech_mitarbeiter_list +
-                        " \n" +
+                        speech_mitarbeiter_list + ". \n" +
                         "Wenn Du jetzt wissen möchtest, wer für was verantwortlich ist, frage einfach danach.";
 
                     // var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
