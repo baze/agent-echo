@@ -3,7 +3,7 @@
 var express = require('express'),
     AlexaSkills = require('alexa-skills'),
     myApp = express(),
-    port = process.env.PORT || 8000,
+    port = process.env.PORT || 8080,
     alexa = new AlexaSkills({
         express: myApp, // required
         route: "/alexa", // optional, defaults to "/"
