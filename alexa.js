@@ -1,20 +1,22 @@
 'use strict';
 
+// get main rest service
 var restService = require('./restService');
 
-const alexa_application_id = "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938";
-
-const apiai = require('apiai');
+// initialize alexa skill
 const AlexaSkills = require('alexa-skills');
-const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 const alexa = new AlexaSkills({
     express: restService, // required
     route: "/alexa", // optional, defaults to "/"
-    applicationId: alexa_application_id // optional, but recommended. If you do not set this leave it blank
+    applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
 });
 
+// initialize api.ai
+const apiai = require('apiai');
+const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
+
 var helpers = {
-    welcome: function Welcome(req, res, slots) {
+    welcome: function(req, res, slots) {
 
         console.log("DefaultWelcomeIntent");
 
@@ -40,7 +42,6 @@ var helpers = {
 
         request.end();
     },
-
     yes: function (req, res, slots) {
 
         var phrase = "Ja";
@@ -69,11 +70,17 @@ var helpers = {
     }
 };
 
-alexa.launch(helpers.welcome);
+alexa.launch(function (req, res, reason) {
+    console.log(req);
+    console.log(res);
+    console.log(reason);
+
+    helpers.welcome();
+});
 
 alexa.intent('DefaultWelcomeIntent', helpers.welcome);
 
-alexa.intent('Thankyou', function (req, res, slots) {
+alexa.intent('Thankyou', function (req, res) {
     var request = app.textRequest('Danke', {
         sessionId: '<unique session id>'
     });
@@ -96,7 +103,7 @@ alexa.intent('Thankyou', function (req, res, slots) {
     request.end();
 });
 
-alexa.intent('SmalltalkNane', function (req, res, slots) {
+alexa.intent('SmalltalkNane', function (req, res) {
 
     console.log(req);
     console.log(res);
@@ -125,7 +132,7 @@ alexa.intent('SmalltalkNane', function (req, res, slots) {
     request.end();
 });
 
-alexa.intent('SmalltalkInsult', function (req, res, slots) {
+alexa.intent('SmalltalkInsult', function (req, res) {
 
     var phrase = 'Ficke disch';
 
