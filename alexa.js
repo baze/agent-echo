@@ -72,6 +72,11 @@ var helpers = {
     }
 };
 
+restService.post('/alexa', function (req, res) {
+    console.log(req);
+    console.log(res);
+});
+
 alexa.launch(function (req, res, reason) {
     console.log(req);
     console.log(res);
