@@ -11,10 +11,10 @@ var express = require('express'),
     });
 
 // initialize api.ai
-// const apiai = require('apiai');
-// const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
+const apiai = require('apiai');
+const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 
-/*var helpers = {
+var helpers = {
     launch: function(req, res, slots) {
 
         console.log("DefaultWelcomeIntent");
@@ -24,7 +24,7 @@ var express = require('express'),
 
         return res.json('foo');
 
-        /!*var request = app.textRequest('Hallo', {
+        var request = app.textRequest('Hallo', {
             sessionId: '<unique session id>'
         });
 
@@ -44,11 +44,13 @@ var express = require('express'),
             console.log(error);
         });
 
-        request.end();*!/
+        request.end();
     },
+
     ended: function (req, res, reason) {
         console.log(reason);
     },
+
     yes: function (req, res, slots) {
 
         var phrase = "Ja";
@@ -75,33 +77,10 @@ var express = require('express'),
 
         request.end();
     }
-};*/
+};
+alexa.launch(helpers.launch);
 
-alexa.launch(function (req, res) {
-
-    var phrase = "Welcome to my app!";
-    var options = {
-        shouldEndSession: false,
-        outputSpeech: phrase,
-        reprompt: "What was that?"
-    };
-
-    alexa.send(req, res, options);
-});
-
-alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
-
-    console.log(slots);
-
-    var phrase = 'Hello World!';
-    var options = {
-        shouldEndSession: true,
-        outputSpeech: phrase,
-        card: alexa.buildCard("Card Title", phrase)
-    };
-
-    alexa.send(req, res, options);
-});
+alexa.intent('DefaultWelcomeIntent', helpers.launch);
 
 /*alexa.intent('Thankyou', function (req, res) {
     var request = app.textRequest('Danke', {
@@ -330,10 +309,10 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
     request.end();
 });
 
-alexa.intent('BlogReadAnswerYes', helpers.yes);*/
+alexa.intent('BlogReadAnswerYes', helpers.yes);
 
 alexa.ended(function (req, res, reason) {
     console.log(reason);
 });
-
+*/
 myApp.listen(port);
