@@ -77,7 +77,7 @@ restService.post('/alexa', function (req, res) {
     console.log(res);
 });
 
-alexa.launch(function (req, res, reason) {
+/*alexa.launch(function (req, res, reason) {
     console.log(req);
     console.log(res);
     console.log(reason);
@@ -91,7 +91,7 @@ alexa.intent('DefaultWelcomeIntent', function (req, res, reason) {
     console.log(reason);
 
     helpers.welcome();
-});
+});*/
 
 /*alexa.intent('Thankyou', function (req, res) {
     var request = app.textRequest('Danke', {
@@ -322,6 +322,8 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('BlogReadAnswerYes', helpers.yes);*/
 
+/*
 alexa.ended(function (req, res, reason) {
     console.log(reason);
 });
+*/

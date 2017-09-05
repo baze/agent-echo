@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,19 +26,18 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="76" column="19" lean-forward="false" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+            <state relative-caret-position="540">
+              <caret line="325" column="0" lean-forward="false" selection-start-line="324" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
               <folding>
                 <element signature="e#550#1854#0" expanded="false" />
                 <element signature="e#1299#1852#0" expanded="false" />
-                <element signature="e#1996#2092#0" expanded="false" />
-                <element signature="e#2161#2257#0" expanded="false" />
-                <marker date="1504622539000" expanded="false" signature="2308:2765" ph="{...}" />
-                <marker date="1504622539000" expanded="false" signature="2819:3378" ph="{...}" />
-                <marker date="1504622539000" expanded="false" signature="3434:3924" ph="{...}" />
-                <marker date="1504622539000" expanded="false" signature="4965:5663" ph="{...}" />
-                <marker date="1504622539000" expanded="false" signature="5765:6468" ph="{...}" />
-                <marker date="1504622539000" expanded="false" signature="6545:7562" ph="{...}" />
+                <marker date="1504622620000" expanded="false" signature="2163:2259" ph="{...}" />
+                <marker date="1504622620000" expanded="false" signature="2312:2769" ph="{...}" />
+                <marker date="1504622620000" expanded="false" signature="2823:3382" ph="{...}" />
+                <marker date="1504622620000" expanded="false" signature="3438:3928" ph="{...}" />
+                <marker date="1504622620000" expanded="false" signature="4969:5667" ph="{...}" />
+                <marker date="1504622620000" expanded="false" signature="5769:6472" ph="{...}" />
+                <marker date="1504622620000" expanded="false" signature="6549:7566" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -65,7 +62,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response65.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response67.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -172,6 +169,27 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;id&quot;: &quot;ba74204e-4a3e-4524-9140-6eae92ae2905&quot;,   &quot;timestamp&quot;: &quot;2017-09-05T14:40:35.917Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;wer arbeitet bei euch&quot;,     &quot;action&quot;: &quot;knowledge.employees&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;blog&quot;: &quot;&quot;     },     &quot;contexts&quot;: [],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;dce9debf-c0ae-45e5-83c8-b5aa14553b0e&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;webhookResponseTime&quot;: 1696,       &quot;intentName&quot;: &quot;knowledge.employees&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;Wer bei euw arbeitet? Das frage ich mich auch manchmal. \nAber Spaß beiseite. \nNeben einer ganzen Reihe von digitalen Kollegen, die fast rund um die Uhr arbeiten, gibt es noch ein paar Menschen. Die Chefs sagen immer, dass diese Menschen der eigentliche Wert von euw sind. Also, die beiden Chefs heißen Dieter Eberle und Mathias Wollweber und dann haben wir noch: \nFabienne Wilhelmi, Johanna Maier, Janna Fuhr, Yvonne Brandt, Björn Martensen, Jan Wambach, Michael Dillmann, Michael Roth, Susanne Dockendorff, Sarah Fais, Natascha Neidhöfer und Konstantin ‚Costa‘ Wickel. \nWenn Du jetzt wissen möchtest, wer für was verantwortlich ist, frage einfach danach.&quot;,       &quot;source&quot;: &quot;helga&quot;,       &quot;displayText&quot;: &quot;Wer bei euw arbeitet? Das frage ich mich auch manchmal. \nAber Spaß beiseite. \nNeben einer ganzen Reihe von digitalen Kollegen, die fast rund um die Uhr arbeiten, gibt es noch ein paar Menschen. Die Chefs sagen immer, dass diese Menschen der eigentliche Wert von euw sind. Also, die beiden Chefs heißen Dieter Eberle und Mathias Wollweber und dann haben wir noch: \nFabienne Wilhelmi, Johanna Maier, Janna Fuhr, Yvonne Brandt, Björn Martensen, Jan Wambach, Michael Dillmann, Michael Roth, Susanne Dockendorff, Sarah Fais, Natascha Neidhöfer und Konstantin ‚Costa‘ Wickel. \nWenn Du jetzt wissen möchtest, wer für was verantwortlich ist, frage einfach danach.&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;Wer bei euw arbeitet? Das frage ich mich auch manchmal. \nAber Spaß beiseite. \nNeben einer ganzen Reihe von digitalen Kollegen, die fast rund um die Uhr arbeiten, gibt es noch ein paar Menschen. Die Chefs sagen immer, dass diese Menschen der eigentliche Wert von euw sind. Also, die beiden Chefs heißen Dieter Eberle und Mathias Wollweber und dann haben wir noch: \nFabienne Wilhelmi, Johanna Maier, Janna Fuhr, Yvonne Brandt, Björn Martensen, Jan Wambach, Michael Dillmann, Michael Roth, Susanne Dockendorff, Sarah Fais, Natascha Neidhöfer und Konstantin ‚Costa‘ Wickel. \nWenn Du jetzt wissen möchtest, wer für was verantwortlich ist, frage einfach danach.&quot;         }       ]     },     &quot;score&quot;: 0.7300000190734863   },   &quot;status&quot;: {     &quot;code&quot;: 200,     &quot;errorType&quot;: &quot;success&quot;   },   &quot;sessionId&quot;: &quot;6c2b8839-f375-44a6-bf1a-7325e7f413d2&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
@@ -1457,30 +1475,6 @@
           <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="/info" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json;charset=UTF-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1546,12 +1540,12 @@
       <workItem from="1500030351390" duration="5756000" />
       <workItem from="1504600219414" duration="9514000" />
       <workItem from="1504617246239" duration="4365000" />
-      <workItem from="1504622376655" duration="163000" />
+      <workItem from="1504622376655" duration="243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93472000" />
+    <option name="totallyTimeSpent" value="93552000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1950,19 +1944,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="76" column="19" lean-forward="false" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+        <state relative-caret-position="540">
+          <caret line="325" column="0" lean-forward="false" selection-start-line="324" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
           <folding>
             <element signature="e#550#1854#0" expanded="false" />
             <element signature="e#1299#1852#0" expanded="false" />
-            <element signature="e#1996#2092#0" expanded="false" />
-            <element signature="e#2161#2257#0" expanded="false" />
-            <marker date="1504622539000" expanded="false" signature="2308:2765" ph="{...}" />
-            <marker date="1504622539000" expanded="false" signature="2819:3378" ph="{...}" />
-            <marker date="1504622539000" expanded="false" signature="3434:3924" ph="{...}" />
-            <marker date="1504622539000" expanded="false" signature="4965:5663" ph="{...}" />
-            <marker date="1504622539000" expanded="false" signature="5765:6468" ph="{...}" />
-            <marker date="1504622539000" expanded="false" signature="6545:7562" ph="{...}" />
+            <marker date="1504622620000" expanded="false" signature="2163:2259" ph="{...}" />
+            <marker date="1504622620000" expanded="false" signature="2312:2769" ph="{...}" />
+            <marker date="1504622620000" expanded="false" signature="2823:3382" ph="{...}" />
+            <marker date="1504622620000" expanded="false" signature="3438:3928" ph="{...}" />
+            <marker date="1504622620000" expanded="false" signature="4969:5667" ph="{...}" />
+            <marker date="1504622620000" expanded="false" signature="5769:6472" ph="{...}" />
+            <marker date="1504622620000" expanded="false" signature="6549:7566" ph="{...}" />
           </folding>
         </state>
       </provider>
