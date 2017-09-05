@@ -284,12 +284,11 @@ restService.post('/helga', function (req, res) {
 
                 wp.mitarbeiter().perPage(100).order('asc').then(function (data) {
                     // do something with the returned posts
-                    console.log(data);
+                    // console.log(data);
 
                     var mitarbeiter = [];
 
                     data.forEach((m) => {
-                        console.log(m.title.rendered);
                         mitarbeiter.push(m.title.rendered);
                     });
 
@@ -297,8 +296,10 @@ restService.post('/helga', function (req, res) {
                         ? mitarbeiter.slice(0, -1).join(', ') + ' und ' + mitarbeiter.slice(-1)
                         : mitarbeiter;
 
-                    speech = "Wer bei euw arbeitet? Das frage ich mich auch manchmal. Aber Spaß beiseite.\n" +
-                        "Neben einer ganzen Reihe von digitalen Kollegen, die fast rund um die Uhr arbeiten, gibt es noch ein paar Menschen. Die Chefs sagen immer, dass diese Menschen der eigentliche Wert von euw sind. Also, die beiden Chefs heißen Dieter Eberle und Mathias Wollweber und dann haben wir noch:\n" +
+                    console.log(speech_mitarbeiter_list);
+
+                    speech = "Wer bei euw arbeitet? Das frage ich mich auch manchmal. Aber Spaß beiseite." +
+                        "Neben einer ganzen Reihe von digitalen Kollegen, die fast rund um die Uhr arbeiten, gibt es noch ein paar Menschen. Die Chefs sagen immer, dass diese Menschen der eigentliche Wert von euw sind. Also, die beiden Chefs heißen Dieter Eberle und Mathias Wollweber und dann haben wir noch:" +
                         speech_mitarbeiter_list +
                         "Wenn Du jetzt wissen möchtest, wer für was verantwortlich ist, frage einfach danach.";
 
