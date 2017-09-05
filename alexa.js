@@ -77,8 +77,6 @@ var helpers = {
     }
 };
 
-restService.post('/alexa2', helpers.launch);
-
 alexa.launch(function (req, res) {
 
     var phrase = "Welcome to my app!";
