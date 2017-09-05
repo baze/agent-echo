@@ -254,12 +254,46 @@ restService.post('/helga', function (req, res) {
 
             break;
 
+        case 'knowledge.employeesCount' :
+
+            var blog = req.body.result.parameters.blog;
+
+            if (blog) {
+                var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
+
+                var namespace = 'wp/v2'; // use the WP API namespace
+                var route = '/mitarbeiter/(?P<id>)'; // route string - allows optional ID parameter
+
+                wp.mitarbeiter = wp.registerRoute(namespace, route);
+
+                wp.mitarbeiter().perPage(100).order('asc').then(function (data) {
+                    // do something with the returned posts
+                    // console.log(data.length);
+
+                    var speech = "Das kann man nie so genau sagen. " +
+                        "Zur Zeit laufen auch noch einige Praktikanten im Haus rum. " +
+                        "Lass mich mal schauen … \n" +
+                        "Wir haben " + data.length + " Mitarbeiter, einige Freelancer und natürlich mich.";
+
+                    // var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
+                    // return generateResponse(res, phrase, contextOut);
+
+                    return generateResponse(res, speech);
+
+                }).catch(function (err) {
+                    // handle error
+                    console.log(err);
+                    return generateResponse(res, 'Ich konnte keine Mitarbeiter finden');
+                });
+            } else {
+                speech = 'no blog provided';
+            }
+
+            break;
+
         case 'knowledge.employees' :
 
             var blog = req.body.result.parameters.blog;
-            console.log(blog);
-
-            speech = blog;
 
             if (blog) {
                 var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
@@ -278,7 +312,7 @@ restService.post('/helga', function (req, res) {
                     data.forEach((m) => {
                         var name = replaceHTMLEntities(m.title.rendered);
 
-                        if (name != "Dieter Eberle" && name != "Mathias Wollweber") {
+                        if (name != "Dieter Eberle") {
                             mitarbeiter.push();
                         }
 
@@ -288,13 +322,15 @@ restService.post('/helga', function (req, res) {
                         ? mitarbeiter.slice(0, -1).join(', ') + ' und ' + mitarbeiter.slice(-1)
                         : mitarbeiter;
 
-                    var speech = "Wer bei euw arbeitet? Das frage ich mich auch manchmal. Aber Spaß beiseite. " +
+                    var speech = "Wer bei euw arbeitet? Das frage ich mich auch manchmal. \n" +
+                        "Aber Spaß beiseite. \n" +
                         "Neben einer ganzen Reihe von digitalen Kollegen, die fast rund um die Uhr arbeiten, gibt es " +
                         "noch ein paar Menschen. Die Chefs sagen immer, dass diese Menschen der eigentliche Wert " +
                         "von euw sind. Also, die beiden Chefs heißen Dieter Eberle und Mathias Wollweber und dann " +
-                        "haben wir noch: " +
+                        "haben wir noch: \n" +
                         speech_mitarbeiter_list +
-                        " Wenn Du jetzt wissen möchtest, wer für was verantwortlich ist, frage einfach danach.";
+                        " \n" +
+                        "Wenn Du jetzt wissen möchtest, wer für was verantwortlich ist, frage einfach danach.";
 
                     // var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
                     // return generateResponse(res, phrase, contextOut);
