@@ -22,8 +22,6 @@ var helpers = {
         console.log(res);
         console.log(slots);
 
-        return res.json('foo');
-
         var request = app.textRequest('Hallo', {
             sessionId: '<unique session id>'
         });
@@ -311,8 +309,10 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('BlogReadAnswerYes', helpers.yes);
 
+*/
+
 alexa.ended(function (req, res, reason) {
     console.log(reason);
 });
-*/
+
 myApp.listen(port);
