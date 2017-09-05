@@ -280,13 +280,17 @@ restService.post('/helga', function (req, res) {
                 var namespace = 'wp/v2'; // use the WP API namespace
                 var route = '/mitarbeiter/(?P<id>)'; // route string - allows optional ID parameter
 
+                return generateResponse(res, 'before');
+
                 wp.mitarbeiter = wp.registerRoute(namespace, route);
+
+                return generateResponse(res, 'after');
 
                 wp.mitarbeiter().perPage(100).order('asc').then(function (data) {
                     // do something with the returned posts
                     // console.log(data);
 
-                    var mitarbeiter = [];
+                    /*var mitarbeiter = [];
 
                     data.forEach((m) => {
                         mitarbeiter.push(m.title.rendered);
@@ -298,13 +302,13 @@ restService.post('/helga', function (req, res) {
 
                     console.log(speech_mitarbeiter_list);
 
-                    var speech2 = "Wer bei euw arbeitet? Das frage ich mich auch manchmal. Aber Spaß beiseite. " +
+                    var speech = "Wer bei euw arbeitet? Das frage ich mich auch manchmal. Aber Spaß beiseite. " +
                         "Neben einer ganzen Reihe von digitalen Kollegen, die fast rund um die Uhr arbeiten, gibt es noch ein paar Menschen. Die Chefs sagen immer, dass diese Menschen der eigentliche Wert von euw sind. Also, die beiden Chefs heißen Dieter Eberle und Mathias Wollweber und dann haben wir noch:" +
                         speech_mitarbeiter_list +
                         "Wenn Du jetzt wissen möchtest, wer für was verantwortlich ist, frage einfach danach.";
 
                     // var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
-                    // return generateResponse(res, phrase, contextOut);
+                    // return generateResponse(res, phrase, contextOut);*/
 
                     return generateResponse(res, speech);
 
