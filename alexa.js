@@ -333,6 +333,6 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('BlogReadAnswerYes', helpers.yes);*/
 
-alexa.ended(helpers.ended);
+// alexa.ended(helpers.ended);
 
 myApp.listen(port);
