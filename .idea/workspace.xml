@@ -16,16 +16,32 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            <state relative-caret-position="349">
+              <caret line="76" column="3" lean-forward="false" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
               <folding>
-                <element signature="e#1295#1848#0" expanded="false" />
-                <marker date="1504620661000" expanded="false" signature="2206:2663" ph="{...}" />
-                <marker date="1504620661000" expanded="false" signature="2717:3276" ph="{...}" />
-                <marker date="1504620661000" expanded="false" signature="3332:3822" ph="{...}" />
-                <marker date="1504620661000" expanded="false" signature="4863:5561" ph="{...}" />
-                <marker date="1504620661000" expanded="false" signature="5663:6366" ph="{...}" />
-                <marker date="1504620661000" expanded="false" signature="6443:7460" ph="{...}" />
+                <element signature="e#1299#1852#0" expanded="false" />
+                <marker date="1504621669000" expanded="false" signature="2293:2750" ph="{...}" />
+                <marker date="1504621669000" expanded="false" signature="2804:3363" ph="{...}" />
+                <marker date="1504621669000" expanded="false" signature="3419:3909" ph="{...}" />
+                <marker date="1504621669000" expanded="false" signature="4950:5648" ph="{...}" />
+                <marker date="1504621669000" expanded="false" signature="5750:6453" ph="{...}" />
+                <marker date="1504621669000" expanded="false" signature="6530:7547" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apiai.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apiai.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="138" column="1" lean-forward="false" selection-start-line="138" selection-start-column="1" selection-end-line="138" selection-end-column="1" />
+              <folding>
+                <element signature="e#349#2846#0" expanded="false" />
+                <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
+                <element signature="n#!!block;n#replaceHTMLEntities#0" expanded="false" />
+                <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+                <element signature="n#!!block;n#generateResponse#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -50,7 +66,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response15.html" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response29.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -63,9 +79,9 @@
         <option value="$PROJECT_DIR$/users.json" />
         <option value="$PROJECT_DIR$/helga.js" />
         <option value="$PROJECT_DIR$/ews.js" />
-        <option value="$PROJECT_DIR$/apiai.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/restService.js" />
+        <option value="$PROJECT_DIR$/apiai.js" />
         <option value="$PROJECT_DIR$/alexa.js" />
       </list>
     </option>
@@ -160,6 +176,26 @@
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa2" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json;charset=UTF-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
           <option name="urlPath" value="helga" />
           <option name="headers">
             <list>
@@ -174,10 +210,6 @@
               <KeyValuePair>
                 <option name="key" value="SignatureCertChainUrl" />
                 <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Signature" />
-                <option name="value" value="" />
               </KeyValuePair>
             </list>
           </option>
@@ -203,6 +235,10 @@
               <KeyValuePair>
                 <option name="key" value="SignatureCertChainUrl" />
                 <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Signature" />
+                <option name="value" value="" />
               </KeyValuePair>
             </list>
           </option>
@@ -1464,31 +1500,6 @@
           <option name="textToSend" value="{   &quot;id&quot;: &quot;9c1854ee-6de5-4e60-9011-514121476582&quot;,   &quot;timestamp&quot;: &quot;2017-07-04T08:32:38.795Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;Wer ist für S&amp;L zuständig?&quot;,     &quot;action&quot;: &quot;clients.employee&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;client&quot;: &quot;S&amp;L&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;client&quot;: &quot;S&amp;L&quot;,           &quot;client.original&quot;: &quot;S&amp;L&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;7bd06179-1d45-490e-8a64-9d2ba79019b1&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;webhookResponseTime&quot;: 553,       &quot;intentName&quot;: &quot;clients.employee&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;ich stelle das eben zusammen&quot;,       &quot;source&quot;: &quot;webhook-echo-sample&quot;,       &quot;displayText&quot;: &quot;ich stelle das eben zusammen&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;ich stelle das eben zusammen&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 200,     &quot;errorType&quot;: &quot;success&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="/info" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;id&quot;: &quot;9c1854ee-6de5-4e60-9011-514121476582&quot;,   &quot;timestamp&quot;: &quot;2017-07-04T08:32:38.795Z&quot;,   &quot;lang&quot;: &quot;de&quot;,   &quot;result&quot;: {     &quot;source&quot;: &quot;agent&quot;,     &quot;resolvedQuery&quot;: &quot;Wer ist für S&amp;L zuständig?&quot;,     &quot;action&quot;: &quot;clients.employee&quot;,     &quot;actionIncomplete&quot;: false,     &quot;parameters&quot;: {       &quot;client&quot;: &quot;S&amp;L&quot;     },     &quot;contexts&quot;: [       {         &quot;name&quot;: &quot;userinfo&quot;,         &quot;parameters&quot;: {           &quot;client&quot;: &quot;S&amp;L&quot;,           &quot;client.original&quot;: &quot;S&amp;L&quot;         },         &quot;lifespan&quot;: 5       }     ],     &quot;metadata&quot;: {       &quot;intentId&quot;: &quot;7bd06179-1d45-490e-8a64-9d2ba79019b1&quot;,       &quot;webhookUsed&quot;: &quot;true&quot;,       &quot;webhookForSlotFillingUsed&quot;: &quot;false&quot;,       &quot;webhookResponseTime&quot;: 553,       &quot;intentName&quot;: &quot;clients.employee&quot;     },     &quot;fulfillment&quot;: {       &quot;speech&quot;: &quot;ich stelle das eben zusammen&quot;,       &quot;source&quot;: &quot;webhook-echo-sample&quot;,       &quot;displayText&quot;: &quot;ich stelle das eben zusammen&quot;,       &quot;messages&quot;: [         {           &quot;type&quot;: 0,           &quot;speech&quot;: &quot;ich stelle das eben zusammen&quot;         }       ]     },     &quot;score&quot;: 1   },   &quot;status&quot;: {     &quot;code&quot;: 200,     &quot;errorType&quot;: &quot;success&quot;   },   &quot;sessionId&quot;: &quot;763d51bd-05d4-4851-9dc5-57f79f9544a7&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1553,12 +1564,12 @@
       <workItem from="1500030327612" duration="1000" />
       <workItem from="1500030351390" duration="5756000" />
       <workItem from="1504600219414" duration="9514000" />
-      <workItem from="1504617246239" duration="2705000" />
+      <workItem from="1504617246239" duration="3710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91649000" />
+    <option name="totallyTimeSpent" value="92654000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1576,12 +1587,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951543" sideWeight="0.48150223" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38313252" sideWeight="0.53964084" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23565485" sideWeight="0.5390625" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23565485" sideWeight="0.5078125" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38313252" sideWeight="0.4603592" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23565485" sideWeight="0.4609375" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23565485" sideWeight="0.4921875" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1893,14 +1904,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp.json" />
-    <entry file="file://$PROJECT_DIR$/users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helga.js" />
     <entry file="file://$PROJECT_DIR$/ews.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1916,40 +1919,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest-service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9370">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="379" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apiai.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="167" column="59" lean-forward="true" selection-start-line="167" selection-start-column="59" selection-end-line="167" selection-end-column="59" />
-          <folding>
-            <element signature="e#349#2846#0" expanded="false" />
-            <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
-            <element signature="n#!!block;n#replaceHTMLEntities#0" expanded="false" />
-            <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
-            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1962,18 +1935,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/restService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apiai.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="138" column="1" lean-forward="false" selection-start-line="138" selection-start-column="1" selection-end-line="138" selection-end-column="1" />
+          <folding>
+            <element signature="e#349#2846#0" expanded="false" />
+            <element signature="n#!!block;n#getInfoForUsername#0" expanded="false" />
+            <element signature="n#!!block;n#replaceHTMLEntities#0" expanded="false" />
+            <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
+            <element signature="n#!!block;n#generateResponse#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        <state relative-caret-position="349">
+          <caret line="76" column="3" lean-forward="false" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
           <folding>
-            <element signature="e#1295#1848#0" expanded="false" />
-            <marker date="1504620661000" expanded="false" signature="2206:2663" ph="{...}" />
-            <marker date="1504620661000" expanded="false" signature="2717:3276" ph="{...}" />
-            <marker date="1504620661000" expanded="false" signature="3332:3822" ph="{...}" />
-            <marker date="1504620661000" expanded="false" signature="4863:5561" ph="{...}" />
-            <marker date="1504620661000" expanded="false" signature="5663:6366" ph="{...}" />
-            <marker date="1504620661000" expanded="false" signature="6443:7460" ph="{...}" />
+            <element signature="e#1299#1852#0" expanded="false" />
+            <marker date="1504621669000" expanded="false" signature="2293:2750" ph="{...}" />
+            <marker date="1504621669000" expanded="false" signature="2804:3363" ph="{...}" />
+            <marker date="1504621669000" expanded="false" signature="3419:3909" ph="{...}" />
+            <marker date="1504621669000" expanded="false" signature="4950:5648" ph="{...}" />
+            <marker date="1504621669000" expanded="false" signature="5750:6453" ph="{...}" />
+            <marker date="1504621669000" expanded="false" signature="6530:7547" ph="{...}" />
           </folding>
         </state>
       </provider>
