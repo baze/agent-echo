@@ -298,16 +298,15 @@ restService.post('/helga', function (req, res) {
 
                     console.log(speech_mitarbeiter_list);
 
-                    speech = "Wer bei euw arbeitet? Das frage ich mich auch manchmal. Aber Spaß beiseite." +
+                    var speech2 = "Wer bei euw arbeitet? Das frage ich mich auch manchmal. Aber Spaß beiseite. " +
                         "Neben einer ganzen Reihe von digitalen Kollegen, die fast rund um die Uhr arbeiten, gibt es noch ein paar Menschen. Die Chefs sagen immer, dass diese Menschen der eigentliche Wert von euw sind. Also, die beiden Chefs heißen Dieter Eberle und Mathias Wollweber und dann haben wir noch:" +
                         speech_mitarbeiter_list +
                         "Wenn Du jetzt wissen möchtest, wer für was verantwortlich ist, frage einfach danach.";
 
                     // var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
                     // return generateResponse(res, phrase, contextOut);
-                    // return generateResponse(res, speech);
 
-                    console.log(speech);
+                    return generateResponse(res, speech);
 
                 }).catch(function (err) {
                     // handle error
