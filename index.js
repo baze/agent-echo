@@ -279,7 +279,7 @@ restService.post('/helga', function (req, res) {
                     // do something with the returned posts
                     console.log(data);
 
-                    return data;
+                    return res.json(data);
 
                     /*var date = moment(data[0].date);
                     var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
