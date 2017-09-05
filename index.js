@@ -276,7 +276,12 @@ restService.post('/helga', function (req, res) {
                     var mitarbeiter = [];
 
                     data.forEach((m) => {
-                        mitarbeiter.push(replaceHTMLEntities(m.title.rendered));
+                        var name = replaceHTMLEntities(m.title.rendered);
+
+                        if (name != "Dieter Eberle" && name != "Mathias Wollweber") {
+                            mitarbeiter.push();
+                        }
+
                     });
 
                     var speech_mitarbeiter_list = mitarbeiter.length > 1
@@ -399,6 +404,7 @@ function replaceHTMLEntities(string) {
         .replace(/&#x2013;/g, '–')
         .replace(/&#x201E;/g, '„')
         .replace(/&#x201C;/g, '“')
+        .replace(/&#8216;/g, '\'')
         .replace(/&quot;/g, '"');
 
     return string;
