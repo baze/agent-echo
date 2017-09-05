@@ -2,10 +2,10 @@
 
 var express = require('express'),
     AlexaSkills = require('alexa-skills'),
-    myApp = express(),
+    app = express(),
     port = process.env.PORT || 8080,
     alexa = new AlexaSkills({
-        express: myApp, // required
+        express: app, // required
         route: "/alexa", // optional, defaults to "/"
         applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
     });
@@ -337,4 +337,4 @@ alexa.ended(function (req, res, reason) {
     console.log(reason);
 });
 
-myApp.listen(port);
+app.listen(port);
