@@ -1,11 +1,6 @@
 'use strict';
 
-// const restService = require('./restService');
-
-const express = require('express');
-const restService = express();
-
-// console.log(restService);
+const restService = require('./restService');
 
 const AlexaSkills = require('alexa-skills');
 const alexa = new AlexaSkills({
@@ -83,6 +78,10 @@ const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
         request.end();
     }
 };*/
+
+restService.post('/alexa2', function (req, res) {
+    console.log(req.body.request);
+});
 
 alexa.launch(function (req, res) {
 
@@ -354,7 +353,3 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('BlogReadAnswerYes', helpers.yes);
 */
-
-restService.listen((process.env.PORT || 8080), function () {
-    console.log("Server up and listening");
-});
