@@ -4,13 +4,13 @@ var restService = require('./restService');
 
 var AlexaSkills = require('alexa-skills');
 
-console.log(AlexaSkills);
-
 var alexa = new AlexaSkills({
     express: restService, // required
     route: "/alexa", // optional, defaults to "/"
     applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
 });
+
+console.log(alexa);
 
 const apiai = require('apiai');
 const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
