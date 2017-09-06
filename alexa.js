@@ -80,7 +80,9 @@ const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 };*/
 
 restService.post('/alexa2', function (req, res) {
-    console.log(req.body.request);
+    console.log(req.body.request.type);
+
+    console.log(alexa);
 });
 
 alexa.launch(function (req, res) {
