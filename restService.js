@@ -1,8 +1,8 @@
 'use strict';
 
-const express = require('express');
-const restService = express();
-const bodyParser = require('body-parser');
+var express = require('express');
+var restService = express();
+var bodyParser = require('body-parser');
 
 restService.use(bodyParser.json());
 restService.use(bodyParser.urlencoded({
@@ -10,7 +10,7 @@ restService.use(bodyParser.urlencoded({
 }));
 
 // restService.listen((process.env.PORT || 8000), function () {
-restService.listen(443, function () {
+restService.listen((process.env.PORT || 8000), function () {
     console.log("Server up and listening");
 });
 
