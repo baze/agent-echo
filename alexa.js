@@ -2,15 +2,16 @@
 
 const restService = require('./restService');
 
-console.log("restService 1");
-console.log(restService);
-
 const AlexaSkills = require('alexa-skills');
 const alexa = new AlexaSkills({
     express: restService, // required
     route: "/alexa", // optional, defaults to "/"
     applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
 });
+
+console.log(alexa);
+console.log(alexa.express);
+console.log(alexa.route);
 
 // initialize api.ai
 // const apiai = require('apiai');
@@ -82,29 +83,13 @@ const alexa = new AlexaSkills({
     }
 };*/
 
-console.log("restService 2");
-console.log(restService);
-
-restService.post('/alexa', function (req, res) {
-    console.log(req.body.request.type);
-
-    console.log(alexa);
-    console.log(restService);
-
-    return res.json({});
-});
-
 restService.post('/alexa2', function (req, res) {
     console.log(req.body.request.type);
 
     console.log(alexa);
-    console.log(restService);
 
     return res.json({});
 });
-
-console.log("restService 3");
-console.log(restService);
 
 /*alexa.launch(function (req, res) {
 
