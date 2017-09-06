@@ -1,13 +1,6 @@
 'use strict';
 
-const express = require('express');
-const bodyParser = require('body-parser');
-const restService = express();
-
-restService.use(bodyParser.json());
-restService.use(bodyParser.urlencoded({
-    extended: true
-}));
+let restService = require('./restService');
 
 const WPAPI = require('wpapi');
 const moment = require('moment');
@@ -469,8 +462,4 @@ restService.post('/helga', function (req, res) {
             break;
     }
 
-});
-
-restService.listen((process.env.PORT || 8000), function () {
-    console.log("Server up and listening");
 });

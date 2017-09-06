@@ -1,11 +1,10 @@
 'use strict';
 
-var express = require('express'),
-    AlexaSkills = require('alexa-skills'),
-    myApp = express(),
-    port = process.env.PORT || 8080,
+let restService = require('./restService');
+
+var AlexaSkills = require('alexa-skills'),
     alexa = new AlexaSkills({
-        express: myApp, // required
+        express: restService, // required
         route: "/alexa", // optional, defaults to "/"
         applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
     });
@@ -347,5 +346,3 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 alexa.intent('BlogReadAnswerYes', helpers.yes);
 
 */
-
-myApp.listen(port);
