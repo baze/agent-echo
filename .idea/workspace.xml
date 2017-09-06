@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,18 +17,18 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="78">
+              <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="105" column="3" lean-forward="false" selection-start-line="105" selection-start-column="3" selection-end-line="105" selection-end-column="3" />
+            <state relative-caret-position="1352">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <marker date="1504678467000" expanded="false" signature="2753:3210" ph="{...}" />
                 <marker date="1504678467000" expanded="false" signature="3264:3823" ph="{...}" />
@@ -41,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apiai.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="apiai.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apiai.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="9594">
@@ -91,8 +91,8 @@
         <option value="$PROJECT_DIR$/ews.js" />
         <option value="$PROJECT_DIR$/restService.js" />
         <option value="$PROJECT_DIR$/apiai.js" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/alexa.js" />
+        <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
   </component>
@@ -1586,12 +1586,12 @@
       <workItem from="1504600219414" duration="9514000" />
       <workItem from="1504617246239" duration="4365000" />
       <workItem from="1504622376655" duration="1373000" />
-      <workItem from="1504623789929" duration="3868000" />
+      <workItem from="1504623789929" duration="4003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98550000" />
+    <option name="totallyTimeSpent" value="98685000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1966,6 +1966,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/alexa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1352">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <marker date="1504678467000" expanded="false" signature="2753:3210" ph="{...}" />
+            <marker date="1504678467000" expanded="false" signature="3264:3823" ph="{...}" />
+            <marker date="1504678467000" expanded="false" signature="3879:4369" ph="{...}" />
+            <marker date="1504678467000" expanded="false" signature="5410:6108" ph="{...}" />
+            <marker date="1504678467000" expanded="false" signature="6210:6913" ph="{...}" />
+            <marker date="1504678467000" expanded="false" signature="6990:8007" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apiai.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9594">
@@ -1976,29 +1999,6 @@
             <element signature="n#!!block;n#replaceHTMLEntities#0" expanded="false" />
             <element signature="n#!!block;n#getUsersForClient#0" expanded="false" />
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alexa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="105" column="3" lean-forward="false" selection-start-line="105" selection-start-column="3" selection-end-line="105" selection-end-column="3" />
-          <folding>
-            <marker date="1504678467000" expanded="false" signature="2753:3210" ph="{...}" />
-            <marker date="1504678467000" expanded="false" signature="3264:3823" ph="{...}" />
-            <marker date="1504678467000" expanded="false" signature="3879:4369" ph="{...}" />
-            <marker date="1504678467000" expanded="false" signature="5410:6108" ph="{...}" />
-            <marker date="1504678467000" expanded="false" signature="6210:6913" ph="{...}" />
-            <marker date="1504678467000" expanded="false" signature="6990:8007" ph="{...}" />
           </folding>
         </state>
       </provider>
