@@ -11,8 +11,9 @@ var express = require('express'),
     });
 
 // initialize api.ai
-const apiai = require('apiai');
-const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
+// const apiai = require('apiai');
+// const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
+/*
 
 var helpers = {
     launch: function(req, res, slots) {
@@ -76,6 +77,7 @@ var helpers = {
         request.end();
     }
 };
+*/
 
 alexa.launch(function (req, res) {
 
