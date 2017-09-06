@@ -361,7 +361,3 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('BlogReadAnswerYes', helpers.yes);
 */
-
-restService.listen((process.env.PORT || 8080), function () {
-    console.log("Server up and listening");
-});
