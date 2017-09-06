@@ -13,7 +13,7 @@ const alexa = new AlexaSkills({
 const apiai = require('apiai');
 const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 
-let helpers = {
+/*let helpers = {
     launch: function(req, res, slots) {
 
         console.log("DefaultWelcomeIntent");
@@ -77,12 +77,13 @@ let helpers = {
 
         request.end();
     }
-};
+};*/
 
 alexa.launch(function (req, res) {
 
     console.log("start launch");
-    console.log(req);
+    // console.log(req);
+    console.log(req.body.request);
     // console.log(res);
     console.log("end launch");
 
@@ -98,6 +99,7 @@ alexa.launch(function (req, res) {
 
 alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
 
+    console.log(req.body.request);
     console.log(slots);
 
     var phrase = 'Hallo';

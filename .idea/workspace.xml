@@ -4,6 +4,7 @@
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restService.js" afterPath="$PROJECT_DIR$/restService.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,78 +28,28 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="98">
+              <caret line="85" column="24" lean-forward="true" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
               <folding>
-                <element signature="e#1399#1435#0" expanded="false" />
-                <marker date="1504682988000" expanded="false" signature="2856:3313" ph="{...}" />
-                <marker date="1504682988000" expanded="false" signature="3367:3926" ph="{...}" />
-                <marker date="1504682988000" expanded="false" signature="3982:4472" ph="{...}" />
-                <marker date="1504682988000" expanded="true" signature="5514:6212" ph="{...}" />
-                <marker date="1504682988000" expanded="true" signature="6314:7017" ph="{...}" />
-                <marker date="1504682988000" expanded="true" signature="7094:8111" ph="{...}" />
+                <element signature="e#483#2034#0" expanded="false" />
+                <marker date="1504683176000" expanded="false" signature="1401:1437" ph="{...}" />
+                <marker date="1504683176000" expanded="false" signature="2933:3390" ph="{...}" />
+                <marker date="1504683176000" expanded="false" signature="3444:4003" ph="{...}" />
+                <marker date="1504683176000" expanded="false" signature="4059:4549" ph="{...}" />
+                <marker date="1504683176000" expanded="true" signature="5591:6289" ph="{...}" />
+                <marker date="1504683176000" expanded="true" signature="6391:7094" ph="{...}" />
+                <marker date="1504683176000" expanded="true" signature="7171:8188" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apiai.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apiai.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/alexa-skills/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="6" />
-              <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="23" />
-              <caret line="72" column="12" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="12" />
-              <caret line="74" column="11" lean-forward="true" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="11" />
-              <caret line="106" column="7" lean-forward="true" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="7" />
-              <caret line="108" column="12" lean-forward="true" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="12" />
-              <caret line="110" column="11" lean-forward="true" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="11" />
-              <caret line="113" column="15" lean-forward="true" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="15" />
-              <caret line="115" column="20" lean-forward="true" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="20" />
-              <caret line="127" column="7" lean-forward="true" selection-start-line="127" selection-start-column="4" selection-end-line="127" selection-end-column="7" />
-              <caret line="142" column="7" lean-forward="true" selection-start-line="142" selection-start-column="4" selection-end-line="142" selection-end-column="7" />
-              <caret line="143" column="7" lean-forward="true" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="7" />
-              <caret line="144" column="7" lean-forward="true" selection-start-line="144" selection-start-column="4" selection-end-line="144" selection-end-column="7" />
-              <caret line="145" column="7" lean-forward="true" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="7" />
-              <caret line="146" column="7" lean-forward="true" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="7" />
-              <caret line="193" column="19" lean-forward="true" selection-start-line="193" selection-start-column="16" selection-end-line="193" selection-end-column="19" />
-              <caret line="214" column="15" lean-forward="true" selection-start-line="214" selection-start-column="12" selection-end-line="214" selection-end-column="15" />
-              <caret line="218" column="15" lean-forward="true" selection-start-line="218" selection-start-column="12" selection-end-line="218" selection-end-column="15" />
-              <caret line="238" column="15" lean-forward="true" selection-start-line="238" selection-start-column="12" selection-end-line="238" selection-end-column="15" />
-              <caret line="241" column="19" lean-forward="true" selection-start-line="241" selection-start-column="16" selection-end-line="241" selection-end-column="19" />
-              <caret line="247" column="23" lean-forward="true" selection-start-line="247" selection-start-column="20" selection-end-line="247" selection-end-column="23" />
-              <caret line="248" column="23" lean-forward="true" selection-start-line="248" selection-start-column="20" selection-end-line="248" selection-end-column="23" />
-              <caret line="251" column="23" lean-forward="true" selection-start-line="251" selection-start-column="20" selection-end-line="251" selection-end-column="23" />
-              <caret line="269" column="15" lean-forward="true" selection-start-line="269" selection-start-column="12" selection-end-line="269" selection-end-column="15" />
-              <caret line="270" column="15" lean-forward="true" selection-start-line="270" selection-start-column="12" selection-end-line="270" selection-end-column="15" />
-              <caret line="271" column="15" lean-forward="true" selection-start-line="271" selection-start-column="12" selection-end-line="271" selection-end-column="15" />
-              <caret line="273" column="18" lean-forward="true" selection-start-line="273" selection-start-column="15" selection-end-line="273" selection-end-column="18" />
-              <caret line="277" column="19" lean-forward="true" selection-start-line="277" selection-start-column="16" selection-end-line="277" selection-end-column="19" />
-              <caret line="282" column="23" lean-forward="true" selection-start-line="282" selection-start-column="20" selection-end-line="282" selection-end-column="23" />
-              <caret line="290" column="26" lean-forward="true" selection-start-line="290" selection-start-column="23" selection-end-line="290" selection-end-column="26" />
-              <caret line="291" column="23" lean-forward="true" selection-start-line="291" selection-start-column="20" selection-end-line="291" selection-end-column="23" />
-              <caret line="306" column="19" lean-forward="true" selection-start-line="306" selection-start-column="16" selection-end-line="306" selection-end-column="19" />
-              <caret line="328" column="15" lean-forward="true" selection-start-line="328" selection-start-column="12" selection-end-line="328" selection-end-column="15" />
-              <caret line="329" column="15" lean-forward="true" selection-start-line="329" selection-start-column="12" selection-end-line="329" selection-end-column="15" />
-              <caret line="334" column="19" lean-forward="true" selection-start-line="334" selection-start-column="16" selection-end-line="334" selection-end-column="19" />
-              <caret line="369" column="15" lean-forward="true" selection-start-line="369" selection-start-column="12" selection-end-line="369" selection-end-column="15" />
-              <caret line="372" column="19" lean-forward="true" selection-start-line="372" selection-start-column="16" selection-end-line="372" selection-end-column="19" />
-              <caret line="374" column="19" lean-forward="true" selection-start-line="374" selection-start-column="16" selection-end-line="374" selection-end-column="19" />
-              <caret line="375" column="19" lean-forward="true" selection-start-line="375" selection-start-column="16" selection-end-line="375" selection-end-column="19" />
-              <caret line="383" column="23" lean-forward="true" selection-start-line="383" selection-start-column="20" selection-end-line="383" selection-end-column="23" />
-              <caret line="388" column="26" lean-forward="true" selection-start-line="388" selection-start-column="23" selection-end-line="388" selection-end-column="26" />
-              <caret line="406" column="15" lean-forward="true" selection-start-line="406" selection-start-column="12" selection-end-line="406" selection-end-column="15" />
-              <caret line="409" column="19" lean-forward="true" selection-start-line="409" selection-start-column="16" selection-end-line="409" selection-end-column="19" />
-              <caret line="411" column="19" lean-forward="true" selection-start-line="411" selection-start-column="16" selection-end-line="411" selection-end-column="19" />
-              <caret line="412" column="19" lean-forward="true" selection-start-line="412" selection-start-column="16" selection-end-line="412" selection-end-column="19" />
-              <caret line="420" column="23" lean-forward="true" selection-start-line="420" selection-start-column="20" selection-end-line="420" selection-end-column="23" />
-              <caret line="423" column="27" lean-forward="true" selection-start-line="423" selection-start-column="24" selection-end-line="423" selection-end-column="27" />
-              <caret line="431" column="23" lean-forward="true" selection-start-line="431" selection-start-column="20" selection-end-line="431" selection-end-column="23" />
-              <caret line="435" column="23" lean-forward="true" selection-start-line="435" selection-start-column="20" selection-end-line="435" selection-end-column="23" />
-              <caret line="444" column="26" lean-forward="true" selection-start-line="444" selection-start-column="23" selection-end-line="444" selection-end-column="26" />
-              <folding>
-                <element signature="n#!!block;n#replaceHTMLEntities#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="216">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,8 +57,8 @@
       <file leaf-file-name="restService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="156">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -221,6 +172,17 @@
             <path>
               <item name="agent-echo" type="b2602c69:ProjectViewProjectNode" />
               <item name="agent-echo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agent-echo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agent-echo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agent-echo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agent-echo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="alexa-skills" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -1632,12 +1594,12 @@
       <workItem from="1504600219414" duration="9514000" />
       <workItem from="1504617246239" duration="4365000" />
       <workItem from="1504622376655" duration="1373000" />
-      <workItem from="1504623789929" duration="7673000" />
+      <workItem from="1504623789929" duration="7861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102355000" />
+    <option name="totallyTimeSpent" value="102543000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1688,14 +1650,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2004,6 +1958,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apiai.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
@@ -2065,32 +2027,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/restService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state relative-caret-position="156">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/alexa-skills/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="216">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="98">
+          <caret line="85" column="24" lean-forward="true" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
           <folding>
-            <element signature="e#1399#1435#0" expanded="false" />
-            <marker date="1504682988000" expanded="false" signature="2856:3313" ph="{...}" />
-            <marker date="1504682988000" expanded="false" signature="3367:3926" ph="{...}" />
-            <marker date="1504682988000" expanded="false" signature="3982:4472" ph="{...}" />
-            <marker date="1504682988000" expanded="true" signature="5514:6212" ph="{...}" />
-            <marker date="1504682988000" expanded="true" signature="6314:7017" ph="{...}" />
-            <marker date="1504682988000" expanded="true" signature="7094:8111" ph="{...}" />
+            <element signature="e#483#2034#0" expanded="false" />
+            <marker date="1504683176000" expanded="false" signature="1401:1437" ph="{...}" />
+            <marker date="1504683176000" expanded="false" signature="2933:3390" ph="{...}" />
+            <marker date="1504683176000" expanded="false" signature="3444:4003" ph="{...}" />
+            <marker date="1504683176000" expanded="false" signature="4059:4549" ph="{...}" />
+            <marker date="1504683176000" expanded="true" signature="5591:6289" ph="{...}" />
+            <marker date="1504683176000" expanded="true" signature="6391:7094" ph="{...}" />
+            <marker date="1504683176000" expanded="true" signature="7171:8188" ph="{...}" />
           </folding>
         </state>
       </provider>
