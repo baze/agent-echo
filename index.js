@@ -5,8 +5,7 @@
 
 var express = require('express');
 var app = express();
-
-var AlexaSkills = require('alexa-skills');
+/*var AlexaSkills = require('alexa-skills');
 var alexa = new AlexaSkills({
     express: app, // required
     route: "/alexa", // optional, defaults to "/"
@@ -48,7 +47,7 @@ alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
 
 alexa.ended(function (req, res, reason) {
     console.log(reason);
-});
+});*/
 
 // restService.listen((process.env.PORT || 8000), function () {
 app.listen((process.env.PORT || 8080), function () {
