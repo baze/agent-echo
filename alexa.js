@@ -32,11 +32,12 @@ var helpers = {
 
             console.log(phrase);
 
-            var phrase = 'Bitte werfen Sie eine Münze ein!';
+            // var phrase = 'Bitte werfen Sie eine Münze ein!';
             var options = {
                 shouldEndSession: false,
                 outputSpeech: phrase,
-                reprompt: "Bitte werfen Sie noch eine Münze ein"
+                // reprompt: "Bitte werfen Sie noch eine Münze ein",
+                reprompt: phrase
             };
 
             alexa.send(req, res, options);
@@ -165,6 +166,7 @@ alexa.intent('SmalltalkInsult', function (req, res) {
     request.end();
 });
 
+/*
 alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
     console.log(slots);
@@ -315,3 +317,4 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 });
 
 alexa.intent('BlogReadAnswerYes', helpers.yes);
+*/
