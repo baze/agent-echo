@@ -2,6 +2,9 @@
 
 const restService = require('./restService');
 
+console.log("restService 1");
+console.log(restService);
+
 const AlexaSkills = require('alexa-skills');
 const alexa = new AlexaSkills({
     express: restService, // required
@@ -79,6 +82,9 @@ const alexa = new AlexaSkills({
     }
 };*/
 
+console.log("restService 2");
+console.log(restService);
+
 restService.post('/alexa2', function (req, res) {
     console.log(req.body.request.type);
 
@@ -86,6 +92,9 @@ restService.post('/alexa2', function (req, res) {
 
     return res.json({});
 });
+
+console.log("restService 3");
+console.log(restService);
 
 alexa.launch(function (req, res) {
 
