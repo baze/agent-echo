@@ -4,13 +4,13 @@
 // require('./alexa');
 
 var express = require('express');
-var restService = express();
+var app = express();
 
 var AlexaSkills = require('alexa-skills');
 var alexa = new AlexaSkills({
-    express: restService, // required
+    express: app, // required
     route: "/alexa", // optional, defaults to "/"
-    applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
+    applicationId: "" // optional, but recommended. If you do not set this leave it blank
 });
 
 alexa.launch(function (req, res) {
@@ -51,6 +51,6 @@ alexa.ended(function (req, res, reason) {
 });
 
 // restService.listen((process.env.PORT || 8000), function () {
-restService.listen((process.env.PORT || 8000), function () {
+app.listen((process.env.PORT || 8080), function () {
     console.log("Server up and listening");
 });
