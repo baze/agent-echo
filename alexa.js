@@ -28,7 +28,10 @@ var helpers = {
 
         request.on('response', function (response) {
 
-            // var phrase = response.result.fulfillment.speech;
+            var phrase = response.result.fulfillment.speech;
+
+            console.log(phrase);
+
             var phrase = 'Bitte werfen Sie eine Münze ein!';
             var options = {
                 shouldEndSession: false,
