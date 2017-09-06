@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restService.js" afterPath="$PROJECT_DIR$/restService.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,31 +25,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="594">
+              <caret line="363" column="34" lean-forward="false" selection-start-line="363" selection-start-column="34" selection-end-line="363" selection-end-column="34" />
               <folding>
                 <element signature="e#562#2113#0" expanded="false" />
                 <element signature="e#3071#3099#0" expanded="false" />
-                <marker date="1504711692000" expanded="false" signature="1480:1516" ph="{...}" />
-                <marker date="1504711692000" expanded="false" signature="3162:3619" ph="{...}" />
-                <marker date="1504711692000" expanded="false" signature="3673:4232" ph="{...}" />
-                <marker date="1504711692000" expanded="false" signature="4288:4778" ph="{...}" />
-                <marker date="1504711692000" expanded="true" signature="5820:6518" ph="{...}" />
-                <marker date="1504711692000" expanded="true" signature="6620:7323" ph="{...}" />
-                <marker date="1504711692000" expanded="true" signature="7400:8417" ph="{...}" />
+                <marker date="1504712764000" expanded="false" signature="1480:1516" ph="{...}" />
+                <marker date="1504712764000" expanded="false" signature="3162:3619" ph="{...}" />
+                <marker date="1504712764000" expanded="false" signature="3673:4232" ph="{...}" />
+                <marker date="1504712764000" expanded="false" signature="4288:4778" ph="{...}" />
+                <marker date="1504712764000" expanded="true" signature="5820:6518" ph="{...}" />
+                <marker date="1504712764000" expanded="true" signature="6620:7323" ph="{...}" />
+                <marker date="1504712764000" expanded="true" signature="7400:8417" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="restService.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="restService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="260">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,7 +75,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response30.html" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response34.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -89,8 +90,8 @@
         <option value="$PROJECT_DIR$/ews.js" />
         <option value="$PROJECT_DIR$/apiai.js" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/alexa.js" />
         <option value="$PROJECT_DIR$/restService.js" />
+        <option value="$PROJECT_DIR$/alexa.js" />
       </list>
     </option>
   </component>
@@ -1656,12 +1657,12 @@
       <workItem from="1504617246239" duration="4365000" />
       <workItem from="1504622376655" duration="1373000" />
       <workItem from="1504623789929" duration="14250000" />
-      <workItem from="1504710983526" duration="1098000" />
+      <workItem from="1504710983526" duration="1329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110030000" />
+    <option name="totallyTimeSpent" value="110261000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2022,29 +2023,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alexa.js">
+    <entry file="file://$PROJECT_DIR$/restService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="e#562#2113#0" expanded="false" />
-            <element signature="e#3071#3099#0" expanded="false" />
-            <marker date="1504711692000" expanded="false" signature="1480:1516" ph="{...}" />
-            <marker date="1504711692000" expanded="false" signature="3162:3619" ph="{...}" />
-            <marker date="1504711692000" expanded="false" signature="3673:4232" ph="{...}" />
-            <marker date="1504711692000" expanded="false" signature="4288:4778" ph="{...}" />
-            <marker date="1504711692000" expanded="true" signature="5820:6518" ph="{...}" />
-            <marker date="1504711692000" expanded="true" signature="6620:7323" ph="{...}" />
-            <marker date="1504711692000" expanded="true" signature="7400:8417" ph="{...}" />
-          </folding>
+        <state relative-caret-position="260">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restService.js">
+    <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="594">
+          <caret line="363" column="34" lean-forward="false" selection-start-line="363" selection-start-column="34" selection-end-line="363" selection-end-column="34" />
+          <folding>
+            <element signature="e#562#2113#0" expanded="false" />
+            <element signature="e#3071#3099#0" expanded="false" />
+            <marker date="1504712764000" expanded="false" signature="1480:1516" ph="{...}" />
+            <marker date="1504712764000" expanded="false" signature="3162:3619" ph="{...}" />
+            <marker date="1504712764000" expanded="false" signature="3673:4232" ph="{...}" />
+            <marker date="1504712764000" expanded="false" signature="4288:4778" ph="{...}" />
+            <marker date="1504712764000" expanded="true" signature="5820:6518" ph="{...}" />
+            <marker date="1504712764000" expanded="true" signature="6620:7323" ph="{...}" />
+            <marker date="1504712764000" expanded="true" signature="7400:8417" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
