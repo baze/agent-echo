@@ -76,9 +76,57 @@ var helpers = {
         request.end();
     }
 };
-alexa.launch(helpers.launch);
 
-alexa.intent('DefaultWelcomeIntent', helpers.launch);
+alexa.launch(function (req, res) {
+
+    var phrase = "Welcome to my app!";
+    var options = {
+        shouldEndSession: false,
+        outputSpeech: phrase,
+        reprompt: "What was that?"
+    };
+
+    alexa.send(req, res, options);
+});
+
+alexa.intent('Hello', function (req, res, slots) {
+
+    console.log(slots);
+
+    var phrase = 'Hello World!';
+    var options = {
+        shouldEndSession: true,
+        outputSpeech: phrase,
+        card: alexa.buildCard("Card Title", phrase)
+    };
+
+    alexa.send(req, res, options);
+});
+
+alexa.intent('Spell hello', function (req, res, slots) {
+
+    console.log(slots);
+
+    var phrase = '<speak><say-as interpret-as="spell-out">hello</say-as></speak>!';
+    var options = {
+        shouldEndSession: true,
+        outputSSML: phrase
+    };
+
+    alexa.send(req, res, options);
+});
+
+alexa.ended(function (req, res, reason) {
+    console.log(reason);
+});
+
+
+
+
+
+// alexa.launch(helpers.launch);
+
+// alexa.intent('DefaultWelcomeIntent', helpers.launch);
 
 /*alexa.intent('Thankyou', function (req, res) {
     var request = app.textRequest('Danke', {
@@ -310,9 +358,5 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 alexa.intent('BlogReadAnswerYes', helpers.yes);
 
 */
-
-alexa.ended(function (req, res, reason) {
-    console.log(reason);
-});
 
 myApp.listen(port);
