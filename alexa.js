@@ -10,8 +10,8 @@ const alexa = new AlexaSkills({
 });
 
 // initialize api.ai
-const apiai = require('apiai');
-const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
+// const apiai = require('apiai');
+// const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 
 /*let helpers = {
     launch: function(req, res, slots) {
