@@ -1,4 +1,4 @@
 'use strict';
 
-require('./apiai');
+// require('./apiai');
 require('./alexa');
