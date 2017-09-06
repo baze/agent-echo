@@ -10,8 +10,8 @@ var AlexaSkills = require('alexa-skills'),
     });
 
 // initialize api.ai
-// const apiai = require('apiai');
-// const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
+const apiai = require('apiai');
+const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 /*
 
 var helpers = {
@@ -80,11 +80,11 @@ var helpers = {
 
 alexa.launch(function (req, res) {
 
-    var phrase = "Welcome to my app!";
+    var phrase = "Bitte werfen Sie eine Münze ein";
     var options = {
         shouldEndSession: false,
         outputSpeech: phrase,
-        reprompt: "What was that?"
+        reprompt: "Bitte werfen Sie noch eine Münze ein"
     };
 
     alexa.send(req, res, options);
