@@ -91,7 +91,7 @@ var alexa = new AlexaSkills({
     return res.json({});
 });*/
 
-/*alexa.launch(function (req, res) {
+alexa.launch(function (req, res) {
 
     console.log("start launch");
     // console.log(req);
@@ -126,7 +126,7 @@ alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
 
 alexa.ended(function (req, res, reason) {
     console.log(reason);
-});*/
+});
 
 // ======
 
@@ -361,3 +361,7 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('BlogReadAnswerYes', helpers.yes);
 */
+
+restService.listen((process.env.PORT || 8080), function () {
+    console.log("Server up and listening");
+});
