@@ -5,13 +5,13 @@
 
 var express = require('express');
 var app = express();
-/*var AlexaSkills = require('alexa-skills');
+var AlexaSkills = require('alexa-skills');
 var alexa = new AlexaSkills({
     express: app, // required
     route: "/alexa", // optional, defaults to "/"
     applicationId: "" // optional, but recommended. If you do not set this leave it blank
 });
-
+/*
 alexa.launch(function (req, res) {
 
     console.log("start launch");
