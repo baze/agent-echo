@@ -85,6 +85,15 @@ const alexa = new AlexaSkills({
 console.log("restService 2");
 console.log(restService);
 
+restService.post('/alexa', function (req, res) {
+    console.log(req.body.request.type);
+
+    console.log(alexa);
+    console.log(restService);
+
+    return res.json({});
+});
+
 restService.post('/alexa2', function (req, res) {
     console.log(req.body.request.type);
 
@@ -97,7 +106,7 @@ restService.post('/alexa2', function (req, res) {
 console.log("restService 3");
 console.log(restService);
 
-alexa.launch(function (req, res) {
+/*alexa.launch(function (req, res) {
 
     console.log("start launch");
     // console.log(req);
@@ -132,7 +141,7 @@ alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
 
 alexa.ended(function (req, res, reason) {
     console.log(reason);
-});
+});*/
 
 // ======
 
