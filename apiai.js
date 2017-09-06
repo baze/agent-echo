@@ -10,7 +10,7 @@ const OUTPUT_SPEECH_MAX_LENGTH = 8000;
 
 let striptags = require('striptags');
 let stripTags = require('strip-tags');
-// let html = require('html-escaper');
+// var html = require('html-escaper');
 
 let helpers = {
     speech: {
@@ -50,7 +50,7 @@ let helpers = {
             },
             services: function (user) {
                 if (user && user.services.length > 0) {
-                    let services = user.services.length > 1
+                    var services = user.services.length > 1
                         ? user.services.slice(0, -1).join(', ') + ' und ' + user.services.slice(-1)
                         : user.services;
 
@@ -70,9 +70,9 @@ let helpers = {
 function getInfoForUsername(username) {
     const _users = require('./users.json');
 
-    for (let i = 0, len = _users.length; i < len; i++) {
+    for (var i = 0, len = _users.length; i < len; i++) {
 
-        let user = _users[i];
+        var user = _users[i];
 
         if (user.username == username) {
             console.log(user);
@@ -104,16 +104,16 @@ function replaceHTMLEntities(string) {
 
 function getUsersForClient(client) {
     const _users = require('./users.json');
-    let users = [];
+    var users = [];
 
-    for (let i = 0, len = _users.length; i < len; i++) {
+    for (var i = 0, len = _users.length; i < len; i++) {
 
-        let user = _users[i];
+        var user = _users[i];
 
         if (user.clients) {
-            let clients = user.clients;
+            var clients = user.clients;
 
-            for (let j = 0, len2 = clients.length; j < len2; j++) {
+            for (var j = 0, len2 = clients.length; j < len2; j++) {
                 if (clients[j] == client) {
                     users.push(user);
                 }
@@ -125,7 +125,7 @@ function getUsersForClient(client) {
 }
 
 function generateResponse(res, speech, contextOut) {
-    let response = {
+    var response = {
         speech: speech,
         displayText: speech,
         source: 'helga'
@@ -140,11 +140,11 @@ function generateResponse(res, speech, contextOut) {
 
 restService.post('/helga', function (req, res) {
 
-    let action = req.body.result && req.body.result.action ? req.body.result.action : null;
-    let previousAction = req.body.result && req.body.result.parameters && req.body.result.parameters.myAction ? req.body.result.parameters.myAction : null;
-    let speech = '';
-    let username = undefined;
-    let user = undefined;
+    var action = req.body.result && req.body.result.action ? req.body.result.action : null;
+    var previousAction = req.body.result && req.body.result.parameters && req.body.result.parameters.myAction ? req.body.result.parameters.myAction : null;
+    var speech = '';
+    var username = undefined;
+    var user = undefined;
 
     if (action == 'PreviousContext') {
         action = previousAction;
@@ -191,7 +191,7 @@ restService.post('/helga', function (req, res) {
             console.log(user);
 
             if (user && user.clients.length > 0) {
-                let clients = user.clients.length > 1
+                var clients = user.clients.length > 1
                     ? user.clients.slice(0, -1).join(', ') + ' und ' + user.clients.slice(-1)
                     : user.clients;
 
@@ -212,11 +212,11 @@ restService.post('/helga', function (req, res) {
             break;
 
         case 'clients.employee' :
-            let client = req.body.result.parameters.client;
+            var client = req.body.result.parameters.client;
 
             console.log(client);
 
-            let users = getUsersForClient(client);
+            var users = getUsersForClient(client);
 
             console.log(users);
 
@@ -236,20 +236,20 @@ restService.post('/helga', function (req, res) {
 
         case 'blog.latest' :
 
-            let blog = req.body.result.parameters.blog;
+            var blog = req.body.result.parameters.blog;
 
             if (blog) {
-                let wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
+                var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
                 wp.posts().perPage(1).then(function (data) {
                     // do something with the returned posts
                     console.log(data);
 
-                    let date = moment(data[0].date);
-                    let phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
+                    var date = moment(data[0].date);
+                    var phrase = 'Der letzte Beitrag vom ' + date.format("LL") + ' ist: ' + data[0].title.rendered + '.';
                     phrase += ' Möchtest du, dass ich ihn vorlese?';
 
-                    let contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
+                    var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
 
                     return generateResponse(res, phrase, contextOut);
                 }).catch(function (err) {
@@ -267,20 +267,20 @@ restService.post('/helga', function (req, res) {
 
             console.log("blog read");
 
-            let confirmation = req.body.result && req.body.result.parameters && req.body.result.parameters.confirmation ? req.body.result.parameters.confirmation : null;
-            let blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : null;
-            let post_id = req.body.result && req.body.result.parameters && req.body.result.parameters.post_id ? parseInt(req.body.result.parameters.post_id) : null;
+            var confirmation = req.body.result && req.body.result.parameters && req.body.result.parameters.confirmation ? req.body.result.parameters.confirmation : null;
+            var blog = req.body.result && req.body.result.parameters && req.body.result.parameters.blog ? req.body.result.parameters.blog : null;
+            var post_id = req.body.result && req.body.result.parameters && req.body.result.parameters.post_id ? parseInt(req.body.result.parameters.post_id) : null;
 
-            // let post_id = 3321;
+            // var post_id = 3321;
             // console.log(post_id);
 
             if (confirmation && blog && post_id) {
-                let wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
+                var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
                 wp.posts().id(post_id).then(function (data) {
                     // do something with the returned posts
 
-                    let html = data.content.rendered;
+                    var html = data.content.rendered;
                     html = stripTags(html, ['link', 'script', 'img', 'style', 'form', 'iframe']);
                     html = striptags(html);
                     // html = decode(html, 'all');
@@ -288,8 +288,8 @@ restService.post('/helga', function (req, res) {
                     html = replaceHTMLEntities(html);
 
                     console.log(html.length);
-                    // let phrase = html;
-                    let phrase = html.substring(0, OUTPUT_SPEECH_MAX_LENGTH);
+                    // var phrase = html;
+                    var phrase = html.substring(0, OUTPUT_SPEECH_MAX_LENGTH);
 
                     console.log(phrase);
 
@@ -304,7 +304,7 @@ restService.post('/helga', function (req, res) {
                 console.log(blog);
                 console.log(post_id);
 
-                let phrase = "Das geht leider nich nicht. Ich benötige erst noch weitere Informationen zu ";
+                var phrase = "Das geht leider nich nicht. Ich benötige erst noch weitere Informationen zu ";
 
                 if (!confirmation) {
                     phrase += "phrase, Wert: " + phrase;
@@ -326,13 +326,13 @@ restService.post('/helga', function (req, res) {
         case 'employee.contact.email':
 
             username = req.body.result && req.body.result.parameters && req.body.result.parameters.employee ? req.body.result.parameters.employee : null;
-            let subject = req.body.result.parameters.subject;
-            let text = req.body.result.parameters.text;
+            var subject = req.body.result.parameters.subject;
+            var text = req.body.result.parameters.text;
 
             user = getInfoForUsername(username);
 
             if (user && user.email && subject && text) {
-                let send = require('gmail-send')({
+                var send = require('gmail-send')({
                     user: 'foo@gmail.com',               // Your GMail account used to send emails
                     pass: 'bar',             // Application-specific password
                     to: user.email,               // Send back to yourself;
@@ -367,13 +367,13 @@ restService.post('/helga', function (req, res) {
 
         case 'knowledge.employeesCount' :
 
-            let blog = req.body.result.parameters.blog || 'euw';
+            var blog = req.body.result.parameters.blog || 'euw';
 
             if (blog) {
-                let wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
+                var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
-                let namespace = 'wp/v2'; // use the WP API namespace
-                let route = '/mitarbeiter/(?P<id>)'; // route string - allows optional ID parameter
+                var namespace = 'wp/v2'; // use the WP API namespace
+                var route = '/mitarbeiter/(?P<id>)'; // route string - allows optional ID parameter
 
                 wp.mitarbeiter = wp.registerRoute(namespace, route);
 
@@ -381,12 +381,12 @@ restService.post('/helga', function (req, res) {
                     // do something with the returned posts
                     // console.log(data.length);
 
-                    let speech = "Das kann man nie so genau sagen. " +
+                    var speech = "Das kann man nie so genau sagen. " +
                         "Zur Zeit laufen auch noch einige Praktikanten im Haus rum. " +
                         "Lass mich mal schauen … \n" +
                         "Wir haben " + data.length + " Mitarbeiter, einige Freelancer und natürlich mich.";
 
-                    // let contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
+                    // var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
                     // return generateResponse(res, phrase, contextOut);
 
                     return generateResponse(res, speech);
@@ -404,13 +404,13 @@ restService.post('/helga', function (req, res) {
 
         case 'knowledge.employees' :
 
-            let blog = req.body.result.parameters.blog || 'euw';
+            var blog = req.body.result.parameters.blog || 'euw';
 
             if (blog) {
-                let wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
+                var wp = new WPAPI({endpoint: 'https://www.' + blog + '.de/wp-json'});
 
-                let namespace = 'wp/v2'; // use the WP API namespace
-                let route = '/mitarbeiter/(?P<id>)'; // route string - allows optional ID parameter
+                var namespace = 'wp/v2'; // use the WP API namespace
+                var route = '/mitarbeiter/(?P<id>)'; // route string - allows optional ID parameter
 
                 wp.mitarbeiter = wp.registerRoute(namespace, route);
 
@@ -418,10 +418,10 @@ restService.post('/helga', function (req, res) {
                     // do something with the returned posts
                     // console.log(data);
 
-                    let mitarbeiter = [];
+                    var mitarbeiter = [];
 
                     data.forEach((m) => {
-                        let name = replaceHTMLEntities(m.title.rendered);
+                        var name = replaceHTMLEntities(m.title.rendered);
 
                         if (name != "Dieter Eberle" && name != "Mathias Wollweber") {
                             mitarbeiter.push(name);
@@ -429,11 +429,11 @@ restService.post('/helga', function (req, res) {
 
                     });
 
-                    let speech_mitarbeiter_list = mitarbeiter.length > 1
+                    var speech_mitarbeiter_list = mitarbeiter.length > 1
                         ? mitarbeiter.slice(0, -1).join(', ') + ' und ' + mitarbeiter.slice(-1)
                         : mitarbeiter;
 
-                    let speech = "Wer bei euw arbeitet? Das frage ich mich auch manchmal. \n" +
+                    var speech = "Wer bei euw arbeitet? Das frage ich mich auch manchmal. \n" +
                         "Aber Spaß beiseite. \n" +
                         "Neben einer ganzen Reihe von digitalen Kollegen, die fast rund um die Uhr arbeiten, gibt es " +
                         "noch ein paar Menschen. Die Chefs sagen immer, dass diese Menschen der eigentliche Wert " +
@@ -442,7 +442,7 @@ restService.post('/helga', function (req, res) {
                         speech_mitarbeiter_list + ". \n" +
                         "Wenn Du jetzt wissen möchtest, wer für was verantwortlich ist, frage einfach danach.";
 
-                    // let contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
+                    // var contextOut = [{"name": "blog", "lifespan": 1, "parameters": {"post_id": data[0].id}}];
                     // return generateResponse(res, phrase, contextOut);
 
                     return generateResponse(res, speech);

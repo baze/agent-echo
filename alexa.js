@@ -21,16 +21,16 @@ let helpers = {
         console.log(res);
         console.log(slots);
 
-        let request = app.textRequest('Hallo', {
+        var request = app.textRequest('Hallo', {
             sessionId: '<unique session id>'
         });
 
         request.on('response', function (response) {
 
-            let phrase = response.result.fulfillment.speech;
+            var phrase = response.result.fulfillment.speech;
 
-            // let phrase = 'Bitte werfen Sie eine Münze ein!';
-            let options = {
+            // var phrase = 'Bitte werfen Sie eine Münze ein!';
+            var options = {
                 shouldEndSession: false,
                 outputSpeech: phrase,
                 // reprompt: "Bitte werfen Sie noch eine Münze ein",
@@ -53,16 +53,16 @@ let helpers = {
 
     yes: function (req, res, slots) {
 
-        let phrase = "Ja";
+        var phrase = "Ja";
 
-        let request = app.textRequest(phrase, {
+        var request = app.textRequest(phrase, {
             sessionId: '<unique session id>'
         });
 
         request.on('response', function (response) {
 
-            let phrase = response.result.fulfillment.speech;
-            let options = {
+            var phrase = response.result.fulfillment.speech;
+            var options = {
                 shouldEndSession: true,
                 outputSpeech: phrase
             };
@@ -86,14 +86,14 @@ alexa.intent('DefaultWelcomeIntent', helpers.launch);
 alexa.ended(helpers.ended);
 
 alexa.intent('Thankyou', function (req, res) {
-    let request = app.textRequest('Danke', {
+    var request = app.textRequest('Danke', {
         sessionId: '<unique session id>'
     });
 
     request.on('response', function (response) {
 
-        let phrase = response.result.fulfillment.speech;
-        let options = {
+        var phrase = response.result.fulfillment.speech;
+        var options = {
             shouldEndSession: true,
             outputSpeech: phrase
         };
@@ -113,16 +113,16 @@ alexa.intent('SmalltalkNane', function (req, res) {
     console.log(req);
     console.log(res);
 
-    let phrase = 'Wer ist zauberhaft und elfengleich?';
+    var phrase = 'Wer ist zauberhaft und elfengleich?';
 
-    let request = app.textRequest(phrase, {
+    var request = app.textRequest(phrase, {
         sessionId: '<unique session id>'
     });
 
     request.on('response', function (response) {
 
-        let phrase = response.result.fulfillment.speech;
-        let options = {
+        var phrase = response.result.fulfillment.speech;
+        var options = {
             shouldEndSession: true,
             outputSpeech: phrase
         };
@@ -139,16 +139,16 @@ alexa.intent('SmalltalkNane', function (req, res) {
 
 alexa.intent('SmalltalkInsult', function (req, res) {
 
-    let phrase = 'Ficke disch';
+    var phrase = 'Ficke disch';
 
-    let request = app.textRequest(phrase, {
+    var request = app.textRequest(phrase, {
         sessionId: '<unique session id>'
     });
 
     request.on('response', function (response) {
 
-        let phrase = response.result.fulfillment.speech;
-        let options = {
+        var phrase = response.result.fulfillment.speech;
+        var options = {
             shouldEndSession: true,
             outputSpeech: phrase
         };
@@ -168,15 +168,15 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
     console.log(slots);
 
-    let textQuery = 'Wer ist ' + slots.employeeslot.value + '?';
+    var textQuery = 'Wer ist ' + slots.employeeslot.value + '?';
 
-    let request = app.textRequest(textQuery, {
+    var request = app.textRequest(textQuery, {
         sessionId: '<unique session id>'
     });
 
     request.on('response', function (response) {
-        let phrase = response.result.fulfillment.speech;
-        let options = {
+        var phrase = response.result.fulfillment.speech;
+        var options = {
             shouldEndSession: false,
             outputSpeech: phrase,
             contexts: [
@@ -207,10 +207,10 @@ alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots, s
     console.log(slots);
     console.log(sessionAttributes);
 
-    let phrase = "";
-    let textQuery = 'Wer ist die Durchwahl von ' + sessionAttributes.employee + '?';
+    var phrase = "";
+    var textQuery = 'Wer ist die Durchwahl von ' + sessionAttributes.employee + '?';
 
-    let request = app.textRequest(textQuery, {
+    var request = app.textRequest(textQuery, {
         sessionId: '<unique session id>'
     });
 
@@ -218,7 +218,7 @@ alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots, s
         console.log(response);
 
         phrase = response.result.fulfillment.speech;
-        let options = {
+        var options = {
             shouldEndSession: false,
             outputSpeech: phrase
         };
@@ -240,10 +240,10 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
     console.log(slots);
     console.log(sessionAttributes);
 
-    let phrase = "";
-    let textQuery = 'Wer ist die E-Mail-Adresse von ' + sessionAttributes.employee + '?';
+    var phrase = "";
+    var textQuery = 'Wer ist die E-Mail-Adresse von ' + sessionAttributes.employee + '?';
 
-    let request = app.textRequest(textQuery, {
+    var request = app.textRequest(textQuery, {
         sessionId: '<unique session id>'
     });
 
@@ -251,7 +251,7 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
         console.log(response);
 
         phrase = response.result.fulfillment.speech;
-        let options = {
+        var options = {
             shouldEndSession: false,
             outputSpeech: phrase
         };
@@ -271,7 +271,7 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 
     sessionAttributes.blog = 'euw';
 
-    let phrase = "";
+    var phrase = "";
     if (sessionAttributes.blog) {
         phrase = 'Was gibt es neues bei ' + sessionAttributes.blog + '?';
     } else {
@@ -280,7 +280,7 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 
     // sessionAttributes.blog = slots.blogslot.value;
 
-    let request = app.textRequest(phrase, {
+    var request = app.textRequest(phrase, {
         sessionId: '<unique session id>',
         contexts: [
             {
@@ -296,8 +296,8 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 
         // console.log(response);
 
-        let phrase = response.result.fulfillment.speech;
-        let options = {
+        var phrase = response.result.fulfillment.speech;
+        var options = {
             shouldEndSession: false,
             outputSpeech: phrase
         };
