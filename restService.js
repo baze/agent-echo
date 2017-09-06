@@ -9,8 +9,10 @@ restService.use(bodyParser.urlencoded({
     extended: true
 }));
 
+console.log(process.env.PORT);
+
 // restService.listen((process.env.PORT || 8000), function () {
-restService.listen((process.env.PORT || 8000), function () {
+restService.listen((process.env.PORT || 433), function () {
     console.log("Server up and listening");
 });
 
