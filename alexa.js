@@ -1,6 +1,11 @@
 'use strict';
 
-const restService = require('./restService');
+// const restService = require('./restService');
+
+const express = require('express');
+const restService = express();
+
+// console.log(restService);
 
 const AlexaSkills = require('alexa-skills');
 const alexa = new AlexaSkills({
@@ -349,3 +354,7 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('BlogReadAnswerYes', helpers.yes);
 */
+
+restService.listen((process.env.PORT || 8080), function () {
+    console.log("Server up and listening");
+});
