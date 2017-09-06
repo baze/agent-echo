@@ -34,7 +34,7 @@ let helpers = {
                 shouldEndSession: false,
                 outputSpeech: phrase,
                 // reprompt: "Bitte werfen Sie noch eine Münze ein",
-                reprompt: phrase
+                // reprompt: phrase
             };
 
             alexa.send(req, res, options);
@@ -79,12 +79,44 @@ let helpers = {
     }
 };
 
-alexa.launch(helpers.launch);
+alexa.launch(function (req, res) {
 
-alexa.intent('DefaultWelcomeIntent', helpers.launch);
+    console.log("start launch");
+    console.log(req);
+    // console.log(res);
+    console.log("end launch");
 
-alexa.ended(helpers.ended);
+    var phrase = "Bitte werfen Sie eine Münze ein";
+    var options = {
+        shouldEndSession: false,
+        outputSpeech: phrase,
+        reprompt: "Bitte werfen Sie noch eine eine Münze ein"
+    };
 
+    alexa.send(req, res, options);
+});
+
+alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
+
+    console.log(slots);
+
+    var phrase = 'Hallo';
+    var options = {
+        shouldEndSession: true,
+        outputSpeech: phrase,
+        card: alexa.buildCard("Card Title", phrase)
+    };
+
+    alexa.send(req, res, options);
+});
+
+alexa.ended(function (req, res, reason) {
+    console.log(reason);
+});
+
+// ======
+
+/*
 alexa.intent('Thankyou', function (req, res) {
     var request = app.textRequest('Danke', {
         sessionId: '<unique session id>'
@@ -163,7 +195,7 @@ alexa.intent('SmalltalkInsult', function (req, res) {
     request.end();
 });
 
-/*
+
 alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
     console.log(slots);
