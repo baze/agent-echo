@@ -27,17 +27,17 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state relative-caret-position="362">
+              <caret line="91" column="29" lean-forward="false" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
               <folding>
                 <element signature="e#546#2097#0" expanded="false" />
-                <marker date="1504685431000" expanded="false" signature="1464:1500" ph="{...}" />
-                <marker date="1504685431000" expanded="false" signature="3256:3713" ph="{...}" />
-                <marker date="1504685431000" expanded="false" signature="3767:4326" ph="{...}" />
-                <marker date="1504685431000" expanded="false" signature="4382:4872" ph="{...}" />
-                <marker date="1504685431000" expanded="true" signature="5914:6612" ph="{...}" />
-                <marker date="1504685431000" expanded="true" signature="6714:7417" ph="{...}" />
-                <marker date="1504685431000" expanded="true" signature="7494:8511" ph="{...}" />
+                <marker date="1504685593000" expanded="false" signature="1464:1500" ph="{...}" />
+                <marker date="1504685593000" expanded="false" signature="3286:3743" ph="{...}" />
+                <marker date="1504685593000" expanded="false" signature="3797:4356" ph="{...}" />
+                <marker date="1504685593000" expanded="false" signature="4412:4902" ph="{...}" />
+                <marker date="1504685593000" expanded="true" signature="5944:6642" ph="{...}" />
+                <marker date="1504685593000" expanded="true" signature="6744:7447" ph="{...}" />
+                <marker date="1504685593000" expanded="true" signature="7524:8541" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -73,7 +73,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response135.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response137.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1589,12 +1589,12 @@
       <workItem from="1504600219414" duration="9514000" />
       <workItem from="1504617246239" duration="4365000" />
       <workItem from="1504622376655" duration="1373000" />
-      <workItem from="1504623789929" duration="10032000" />
+      <workItem from="1504623789929" duration="10122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104714000" />
+    <option name="totallyTimeSpent" value="104804000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1607,6 +1607,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="550" y="23" width="1907" height="1288" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951543" sideWeight="0.48150223" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1614,7 +1615,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28847185" sideWeight="0.51688313" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3815261" sideWeight="0.45683646" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3815261" sideWeight="0.45683646" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28847185" sideWeight="0.4831169" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1989,17 +1990,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="362">
+          <caret line="91" column="29" lean-forward="false" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
           <folding>
             <element signature="e#546#2097#0" expanded="false" />
-            <marker date="1504685431000" expanded="false" signature="1464:1500" ph="{...}" />
-            <marker date="1504685431000" expanded="false" signature="3256:3713" ph="{...}" />
-            <marker date="1504685431000" expanded="false" signature="3767:4326" ph="{...}" />
-            <marker date="1504685431000" expanded="false" signature="4382:4872" ph="{...}" />
-            <marker date="1504685431000" expanded="true" signature="5914:6612" ph="{...}" />
-            <marker date="1504685431000" expanded="true" signature="6714:7417" ph="{...}" />
-            <marker date="1504685431000" expanded="true" signature="7494:8511" ph="{...}" />
+            <marker date="1504685593000" expanded="false" signature="1464:1500" ph="{...}" />
+            <marker date="1504685593000" expanded="false" signature="3286:3743" ph="{...}" />
+            <marker date="1504685593000" expanded="false" signature="3797:4356" ph="{...}" />
+            <marker date="1504685593000" expanded="false" signature="4412:4902" ph="{...}" />
+            <marker date="1504685593000" expanded="true" signature="5944:6642" ph="{...}" />
+            <marker date="1504685593000" expanded="true" signature="6744:7447" ph="{...}" />
+            <marker date="1504685593000" expanded="true" signature="7524:8541" ph="{...}" />
           </folding>
         </state>
       </provider>
