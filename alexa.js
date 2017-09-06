@@ -83,6 +83,8 @@ restService.post('/alexa2', function (req, res) {
     console.log(req.body.request.type);
 
     console.log(alexa);
+
+    return res.json({});
 });
 
 alexa.launch(function (req, res) {
