@@ -1,12 +1,12 @@
 'use strict';
 
-const restService = require('./restService');
+var restService = require('./restService');
 
-const WPAPI = require('wpapi');
-const moment = require('moment');
+var WPAPI = require('wpapi');
+var moment = require('moment');
 moment.locale('de');
 
-const OUTPUT_SPEECH_MAX_LENGTH = 8000;
+var OUTPUT_SPEECH_MAX_LENGTH = 8000;
 
 let striptags = require('striptags');
 let stripTags = require('strip-tags');
@@ -68,7 +68,7 @@ let helpers = {
 };
 
 function getInfoForUsername(username) {
-    const _users = require('./users.json');
+    var _users = require('./users.json');
 
     for (var i = 0, len = _users.length; i < len; i++) {
 
@@ -103,7 +103,7 @@ function replaceHTMLEntities(string) {
 }
 
 function getUsersForClient(client) {
-    const _users = require('./users.json');
+    var _users = require('./users.json');
     var users = [];
 
     for (var i = 0, len = _users.length; i < len; i++) {
