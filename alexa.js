@@ -12,7 +12,7 @@ var AlexaSkills = require('alexa-skills'),
 // initialize api.ai
 const apiai = require('apiai');
 const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
-/*
+
 
 var helpers = {
     launch: function(req, res, slots) {
@@ -32,7 +32,8 @@ var helpers = {
             var phrase = 'Bitte werfen Sie eine Münze ein!';
             var options = {
                 shouldEndSession: false,
-                outputSpeech: phrase
+                outputSpeech: phrase,
+                reprompt: "Bitte werfen Sie noch eine Münze ein"
             };
 
             alexa.send(req, res, options);
@@ -76,45 +77,12 @@ var helpers = {
         request.end();
     }
 };
-*/
 
-alexa.launch(function (req, res) {
+alexa.launch(helpers.launch);
 
-    var phrase = "Bitte werfen Sie eine Münze ein";
-    var options = {
-        shouldEndSession: false,
-        outputSpeech: phrase,
-        reprompt: "Bitte werfen Sie noch eine Münze ein"
-    };
+alexa.intent('DefaultWelcomeIntent', helpers.launch);
 
-    alexa.send(req, res, options);
-});
-
-alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
-
-    console.log(slots);
-
-    var phrase = 'Hello World!';
-    var options = {
-        shouldEndSession: true,
-        outputSpeech: phrase,
-        card: alexa.buildCard("Card Title", phrase)
-    };
-
-    alexa.send(req, res, options);
-});
-
-alexa.ended(function (req, res, reason) {
-    console.log(reason);
-});
-
-
-
-
-
-// alexa.launch(helpers.launch);
-
-// alexa.intent('DefaultWelcomeIntent', helpers.launch);
+alexa.ended(helpers.ended);
 
 /*alexa.intent('Thankyou', function (req, res) {
     var request = app.textRequest('Danke', {
