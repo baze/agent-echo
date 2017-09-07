@@ -15,7 +15,7 @@ console.log(alexa);
 const apiai = require('apiai');
 const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 
-/*let helpers = {
+var helpers = {
     launch: function(req, res, slots) {
 
         console.log("DefaultWelcomeIntent");
@@ -79,15 +79,7 @@ const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 
         request.end();
     }
-};*/
-
-/*restService.post('/alexa2', function (req, res) {
-    console.log(req.body.request.type);
-
-    console.log(alexa);
-
-    return res.json({});
-});*/
+};
 
 alexa.launch(function (req, res) {
 

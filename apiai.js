@@ -12,7 +12,7 @@ let striptags = require('striptags');
 let stripTags = require('strip-tags');
 // var html = require('html-escaper');
 
-let helpers = {
+var helpers = {
     speech: {
         user: {
             phone: function (user) {
