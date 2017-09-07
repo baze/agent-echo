@@ -22,20 +22,6 @@ var helpers = {
         console.log(intentName);
         // console.log(slots);
 
-        var foo = app.JSONApiRequest(intentName);
-
-        foo.on('response', function (response) {
-            console.log(response);
-        });
-
-        foo.on('error', function (error) {
-            console.log(error);
-        });
-
-        foo.end();
-
-
-
         var request = app.textRequest('Hallo', {
             sessionId: '<unique session id>'
         });
@@ -134,6 +120,8 @@ alexa.intent('SmalltalkNane', function (req, res) {
     });
 
     request.on('response', function (response) {
+
+        generateAlexaResponse(response.result.fulfillment.speech, true);
 
         var phrase = response.result.fulfillment.speech;
         var options = {
