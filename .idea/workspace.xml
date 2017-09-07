@@ -27,18 +27,18 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="19" selection-end-column="3" />
+            <state relative-caret-position="467">
+              <caret line="119" column="4" lean-forward="false" selection-start-line="119" selection-start-column="4" selection-end-line="119" selection-end-column="24" />
               <folding>
                 <element signature="e#583#2134#0" expanded="false" />
-                <element signature="e#2942#2970#0" expanded="false" />
-                <marker date="1504771330000" expanded="false" signature="1501:1537" ph="{...}" />
-                <marker date="1504771330000" expanded="false" signature="3022:3479" ph="{...}" />
-                <marker date="1504771330000" expanded="false" signature="3533:4092" ph="{...}" />
-                <marker date="1504771330000" expanded="false" signature="4148:4638" ph="{...}" />
-                <marker date="1504771330000" expanded="true" signature="5680:6378" ph="{...}" />
-                <marker date="1504771330000" expanded="true" signature="6480:7183" ph="{...}" />
-                <marker date="1504771330000" expanded="true" signature="7260:8277" ph="{...}" />
+                <element signature="e#2994#3022#0" expanded="false" />
+                <marker date="1504771490000" expanded="false" signature="1501:1537" ph="{...}" />
+                <marker date="1504771490000" expanded="false" signature="3074:3531" ph="{...}" />
+                <marker date="1504771490000" expanded="false" signature="3585:4144" ph="{...}" />
+                <marker date="1504771490000" expanded="false" signature="4200:4690" ph="{...}" />
+                <marker date="1504771490000" expanded="true" signature="5732:6430" ph="{...}" />
+                <marker date="1504771490000" expanded="true" signature="6532:7235" ph="{...}" />
+                <marker date="1504771490000" expanded="true" signature="7312:8329" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -47,8 +47,8 @@
       <file leaf-file-name="alexa-skills.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alexa-skills.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="403">
+              <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -74,7 +74,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response90.html" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response92.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -190,7 +190,7 @@
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="alexa2" />
+          <option name="urlPath" value="alexa" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -215,7 +215,7 @@
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="alexa" />
+          <option name="urlPath" value="alexa2" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -1675,12 +1675,12 @@
       <workItem from="1504617246239" duration="4365000" />
       <workItem from="1504622376655" duration="1373000" />
       <workItem from="1504623789929" duration="14250000" />
-      <workItem from="1504710983526" duration="7014000" />
+      <workItem from="1504710983526" duration="7182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115946000" />
+    <option name="totallyTimeSpent" value="116114000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1693,7 +1693,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="495" y="23" width="1907" height="1288" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.47935656" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1701,7 +1700,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28847185" sideWeight="0.52140075" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.49812332" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38072288" sideWeight="0.45254692" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38072288" sideWeight="0.45254692" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28847185" sideWeight="0.47859922" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2067,26 +2066,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa-skills.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="403">
+          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="19" selection-end-column="3" />
+        <state relative-caret-position="467">
+          <caret line="119" column="4" lean-forward="false" selection-start-line="119" selection-start-column="4" selection-end-line="119" selection-end-column="24" />
           <folding>
             <element signature="e#583#2134#0" expanded="false" />
-            <element signature="e#2942#2970#0" expanded="false" />
-            <marker date="1504771330000" expanded="false" signature="1501:1537" ph="{...}" />
-            <marker date="1504771330000" expanded="false" signature="3022:3479" ph="{...}" />
-            <marker date="1504771330000" expanded="false" signature="3533:4092" ph="{...}" />
-            <marker date="1504771330000" expanded="false" signature="4148:4638" ph="{...}" />
-            <marker date="1504771330000" expanded="true" signature="5680:6378" ph="{...}" />
-            <marker date="1504771330000" expanded="true" signature="6480:7183" ph="{...}" />
-            <marker date="1504771330000" expanded="true" signature="7260:8277" ph="{...}" />
+            <element signature="e#2994#3022#0" expanded="false" />
+            <marker date="1504771490000" expanded="false" signature="1501:1537" ph="{...}" />
+            <marker date="1504771490000" expanded="false" signature="3074:3531" ph="{...}" />
+            <marker date="1504771490000" expanded="false" signature="3585:4144" ph="{...}" />
+            <marker date="1504771490000" expanded="false" signature="4200:4690" ph="{...}" />
+            <marker date="1504771490000" expanded="true" signature="5732:6430" ph="{...}" />
+            <marker date="1504771490000" expanded="true" signature="6532:7235" ph="{...}" />
+            <marker date="1504771490000" expanded="true" signature="7312:8329" ph="{...}" />
           </folding>
         </state>
       </provider>

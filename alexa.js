@@ -100,6 +100,8 @@ alexa.launch(function (req, res) {
         reprompt: "Bitte werfen Sie noch eine eine Münze ein"
     };
 
+    return res.json({});
+
     alexa.send(req, res, options);
 });
 
@@ -114,6 +116,8 @@ alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
         outputSpeech: phrase,
         card: alexa.buildCard("Card Title", phrase)
     };
+
+    return res.json({});
 
     alexa.send(req, res, options);
 });
