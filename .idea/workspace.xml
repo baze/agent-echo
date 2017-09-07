@@ -27,17 +27,17 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            <state relative-caret-position="3588">
+              <caret line="138" column="1" lean-forward="false" selection-start-line="138" selection-start-column="1" selection-end-line="138" selection-end-column="1" />
               <folding>
-                <element signature="e#2942#2970#0" expanded="false" />
-                <marker date="1504767328000" expanded="false" signature="1501:1537" ph="{...}" />
-                <marker date="1504767328000" expanded="false" signature="3022:3479" ph="{...}" />
-                <marker date="1504767328000" expanded="false" signature="3533:4092" ph="{...}" />
-                <marker date="1504767328000" expanded="false" signature="4148:4638" ph="{...}" />
-                <marker date="1504767328000" expanded="true" signature="5680:6378" ph="{...}" />
-                <marker date="1504767328000" expanded="true" signature="6480:7183" ph="{...}" />
-                <marker date="1504767328000" expanded="true" signature="7260:8277" ph="{...}" />
+                <element signature="e#7070#7098#0" expanded="false" />
+                <marker date="1504768379000" expanded="false" signature="5629:5665" ph="{...}" />
+                <marker date="1504768379000" expanded="false" signature="7150:7607" ph="{...}" />
+                <marker date="1504768379000" expanded="false" signature="7661:8220" ph="{...}" />
+                <marker date="1504768379000" expanded="false" signature="8276:8766" ph="{...}" />
+                <marker date="1504768379000" expanded="true" signature="9808:10506" ph="{...}" />
+                <marker date="1504768379000" expanded="true" signature="10608:11311" ph="{...}" />
+                <marker date="1504768379000" expanded="true" signature="11388:12405" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -85,7 +85,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response54.txt" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response60.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -128,7 +128,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="496" />
+    <option name="x" value="495" />
     <option name="y" value="23" />
     <option name="width" value="1907" />
     <option name="height" value="1288" />
@@ -174,6 +174,17 @@
               <item name="agent-echo" type="b2602c69:ProjectViewProjectNode" />
               <item name="agent-echo" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="agent-echo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agent-echo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agent-echo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agent-echo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="alexa-skills" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -192,6 +203,85 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa2" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa2" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="https://flannel-poutine-21177.herokuapp.com" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
@@ -242,31 +332,6 @@
               <KeyValuePair>
                 <option name="key" value="Host" />
                 <option name="value" value="https://flannel-poutine-21177.herokuapp.com" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;amzn1.echo-api.session.[unique-value-here]&quot;,     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;     },     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;     }   },   &quot;version&quot;: &quot;1.0&quot;,   &quot;request&quot;: {     &quot;locale&quot;: &quot;en-US&quot;,     &quot;timestamp&quot;: &quot;2016-10-27T18:21:44Z&quot;,     &quot;type&quot;: &quot;LaunchRequest&quot;,     &quot;requestId&quot;: &quot;amzn1.echo-api.request.[unique-value-here]&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {           &quot;AudioPlayer&quot;: {}         }       },       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.[unique-value-here]&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.[unique-value-here]&quot;       }     }   } }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="alexa" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="SignatureCertChainUrl" />
-                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
               </KeyValuePair>
             </list>
           </option>
@@ -1559,56 +1624,6 @@
           <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.91e44096-987d-4399-a696-67413be64f70&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.db00844a-4978-4e89-9470-c0a77f1fa387&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T14:55:02Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="alexa" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json;charset=UTF-8" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Signature" />
-                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.91e44096-987d-4399-a696-67413be64f70&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.db00844a-4978-4e89-9470-c0a77f1fa387&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T14:55:02Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="alexa" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json;charset=UTF-8" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Accept-Charset" />
-                <option name="value" value="utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.91e44096-987d-4399-a696-67413be64f70&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.db00844a-4978-4e89-9470-c0a77f1fa387&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T14:55:02Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1676,12 +1691,12 @@
       <workItem from="1504617246239" duration="4365000" />
       <workItem from="1504622376655" duration="1373000" />
       <workItem from="1504623789929" duration="14250000" />
-      <workItem from="1504710983526" duration="4007000" />
+      <workItem from="1504710983526" duration="4480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112939000" />
+    <option name="totallyTimeSpent" value="113412000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1693,7 +1708,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="496" y="23" width="1907" height="1288" extended-state="0" />
+    <frame x="495" y="23" width="1907" height="1288" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.47935656" order="6" side_tool="false" content_ui="tabs" />
@@ -2032,14 +2047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/alexa-skills/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1534">
-          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/restService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -2074,19 +2081,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/alexa-skills/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3536">
+          <caret line="136" column="1" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="136" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="3588">
+          <caret line="138" column="1" lean-forward="false" selection-start-line="138" selection-start-column="1" selection-end-line="138" selection-end-column="1" />
           <folding>
-            <element signature="e#2942#2970#0" expanded="false" />
-            <marker date="1504767328000" expanded="false" signature="1501:1537" ph="{...}" />
-            <marker date="1504767328000" expanded="false" signature="3022:3479" ph="{...}" />
-            <marker date="1504767328000" expanded="false" signature="3533:4092" ph="{...}" />
-            <marker date="1504767328000" expanded="false" signature="4148:4638" ph="{...}" />
-            <marker date="1504767328000" expanded="true" signature="5680:6378" ph="{...}" />
-            <marker date="1504767328000" expanded="true" signature="6480:7183" ph="{...}" />
-            <marker date="1504767328000" expanded="true" signature="7260:8277" ph="{...}" />
+            <element signature="e#7070#7098#0" expanded="false" />
+            <marker date="1504768379000" expanded="false" signature="5629:5665" ph="{...}" />
+            <marker date="1504768379000" expanded="false" signature="7150:7607" ph="{...}" />
+            <marker date="1504768379000" expanded="false" signature="7661:8220" ph="{...}" />
+            <marker date="1504768379000" expanded="false" signature="8276:8766" ph="{...}" />
+            <marker date="1504768379000" expanded="true" signature="9808:10506" ph="{...}" />
+            <marker date="1504768379000" expanded="true" signature="10608:11311" ph="{...}" />
+            <marker date="1504768379000" expanded="true" signature="11388:12405" ph="{...}" />
           </folding>
         </state>
       </provider>
