@@ -8,8 +8,8 @@ moment.locale('de');
 
 var OUTPUT_SPEECH_MAX_LENGTH = 8000;
 
-let striptags = require('striptags');
-let stripTags = require('strip-tags');
+var striptags = require('striptags');
+var stripTags = require('strip-tags');
 // var html = require('html-escaper');
 
 var helpers = {
