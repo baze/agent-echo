@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa-skills.js" afterPath="$PROJECT_DIR$/alexa-skills.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,18 +27,17 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+            <state relative-caret-position="188">
+              <caret line="89" column="51" lean-forward="false" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
               <folding>
-                <element signature="e#583#2134#0" expanded="false" />
-                <element signature="e#2942#2970#0" expanded="false" />
-                <marker date="1504772654000" expanded="false" signature="1501:1537" ph="{...}" />
-                <marker date="1504772654000" expanded="false" signature="3022:3479" ph="{...}" />
-                <marker date="1504772654000" expanded="false" signature="3533:4092" ph="{...}" />
-                <marker date="1504772654000" expanded="false" signature="4148:4638" ph="{...}" />
-                <marker date="1504772654000" expanded="true" signature="5680:6378" ph="{...}" />
-                <marker date="1504772654000" expanded="true" signature="6480:7183" ph="{...}" />
-                <marker date="1504772654000" expanded="true" signature="7260:8277" ph="{...}" />
+                <element signature="e#2258#2286#0" expanded="false" />
+                <marker date="1504772852000" expanded="false" signature="1499:1535" ph="{...}" />
+                <marker date="1504772852000" expanded="false" signature="2336:2793" ph="{...}" />
+                <marker date="1504772852000" expanded="false" signature="2847:3406" ph="{...}" />
+                <marker date="1504772852000" expanded="false" signature="3462:3952" ph="{...}" />
+                <marker date="1504772852000" expanded="true" signature="4994:5692" ph="{...}" />
+                <marker date="1504772852000" expanded="true" signature="5794:6497" ph="{...}" />
+                <marker date="1504772852000" expanded="true" signature="6574:7591" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -75,7 +73,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response105.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response107.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1676,12 +1674,12 @@
       <workItem from="1504617246239" duration="4365000" />
       <workItem from="1504622376655" duration="1373000" />
       <workItem from="1504623789929" duration="14250000" />
-      <workItem from="1504710983526" duration="8250000" />
+      <workItem from="1504710983526" duration="8447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117182000" />
+    <option name="totallyTimeSpent" value="117379000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2076,18 +2074,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        <state relative-caret-position="188">
+          <caret line="89" column="51" lean-forward="false" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
           <folding>
-            <element signature="e#583#2134#0" expanded="false" />
-            <element signature="e#2942#2970#0" expanded="false" />
-            <marker date="1504772654000" expanded="false" signature="1501:1537" ph="{...}" />
-            <marker date="1504772654000" expanded="false" signature="3022:3479" ph="{...}" />
-            <marker date="1504772654000" expanded="false" signature="3533:4092" ph="{...}" />
-            <marker date="1504772654000" expanded="false" signature="4148:4638" ph="{...}" />
-            <marker date="1504772654000" expanded="true" signature="5680:6378" ph="{...}" />
-            <marker date="1504772654000" expanded="true" signature="6480:7183" ph="{...}" />
-            <marker date="1504772654000" expanded="true" signature="7260:8277" ph="{...}" />
+            <element signature="e#2258#2286#0" expanded="false" />
+            <marker date="1504772852000" expanded="false" signature="1499:1535" ph="{...}" />
+            <marker date="1504772852000" expanded="false" signature="2336:2793" ph="{...}" />
+            <marker date="1504772852000" expanded="false" signature="2847:3406" ph="{...}" />
+            <marker date="1504772852000" expanded="false" signature="3462:3952" ph="{...}" />
+            <marker date="1504772852000" expanded="true" signature="4994:5692" ph="{...}" />
+            <marker date="1504772852000" expanded="true" signature="5794:6497" ph="{...}" />
+            <marker date="1504772852000" expanded="true" signature="6574:7591" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -19,7 +19,7 @@ restService.post('/alexa2', function (req, res) {
     return res.json({});
 });
 
-/*var helpers = {
+var helpers = {
     launch: function(req, res, slots) {
 
         console.log("DefaultWelcomeIntent");
@@ -83,46 +83,17 @@ restService.post('/alexa2', function (req, res) {
 
         request.end();
     }
-};*/
+};
 
-alexa.launch(function (req, res) {
+alexa.launch(helpers.launch);
 
-    console.log("start launch");
-    // console.log(req);
-    console.log(req.body.request);
-    // console.log(res);
-    console.log("end launch");
-
-    var phrase = "Bitte werfen Sie eine Münze ein";
-    var options = {
-        shouldEndSession: false,
-        outputSpeech: phrase,
-        reprompt: "Bitte werfen Sie noch eine eine Münze ein"
-    };
-
-    alexa.send(req, res, options);
-});
-
-alexa.intent('DefaultWelcomeIntent', function (req, res, slots) {
-
-    console.log(req.body.request);
-    console.log(slots);
-
-    var phrase = 'Hallo';
-    var options = {
-        shouldEndSession: true,
-        outputSpeech: phrase,
-        card: alexa.buildCard("Card Title", phrase)
-    };
-
-    alexa.send(req, res, options);
-});
+alexa.intent('DefaultWelcomeIntent', helpers.launch);
 
 alexa.ended(function (req, res, reason) {
     console.log(reason);
 });
 
-/*
+
 alexa.intent('Thankyou', function (req, res) {
     var request = app.textRequest('Danke', {
         sessionId: '<unique session id>'
@@ -352,4 +323,3 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 });
 
 alexa.intent('BlogReadAnswerYes', helpers.yes);
-*/
