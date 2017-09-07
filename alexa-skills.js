@@ -15,15 +15,14 @@ module.exports = function(options) {
     // app.post(route, jsonParser, RequestValidator, function(req, res) {
     app.post(route, function(req, res) {
 
-        console.log(req.body);
-
         if(req.body.session.application.applicationId == appId || !appId.length) {
-
-            console.log(req.body.request.type);
 
             switch(req.body.request.type) {
 
                 case "LaunchRequest":
+
+                    console.log(launchCallback);
+
                     if(launchCallback)
                         launchCallback(req, res);
                     else
