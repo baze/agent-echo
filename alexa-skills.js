@@ -12,10 +12,14 @@ module.exports = function(options) {
     // app.post(route, jsonParser, RequestValidator, function(req, res) {
     app.post(route, function(req, res) {
 
-        if(req.body.session.application.applicationId == appId || !appId.length) {
+        console.log(req.body.request.type);
 
-            console.log(req.body.request.type);
-            console.log(launchCallback);
+        console.log(req.body.session.application.applicationId == appId || !appId.length);
+        console.log(appId);
+
+        console.log(launchCallback);
+
+        if(req.body.session.application.applicationId == appId || !appId.length) {
 
             switch(req.body.request.type) {
 
