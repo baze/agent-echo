@@ -57,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/alexa-skills.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -115,7 +115,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response62.html" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response67.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1727,12 +1727,12 @@
       <workItem from="1504617246239" duration="4365000" />
       <workItem from="1504622376655" duration="1373000" />
       <workItem from="1504623789929" duration="14250000" />
-      <workItem from="1504710983526" duration="5140000" />
+      <workItem from="1504710983526" duration="5545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114072000" />
+    <option name="totallyTimeSpent" value="114477000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2137,7 +2137,7 @@
     <entry file="file://$PROJECT_DIR$/alexa-skills.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding />
         </state>
       </provider>
