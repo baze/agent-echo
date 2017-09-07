@@ -118,9 +118,7 @@ alexa.ended(function (req, res, reason) {
     console.log(reason);
 });
 
-// ======
 
-/*
 alexa.intent('Thankyou', function (req, res) {
     var request = app.textRequest('Danke', {
         sessionId: '<unique session id>'
@@ -350,4 +348,3 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 });
 
 alexa.intent('BlogReadAnswerYes', helpers.yes);
-*/
