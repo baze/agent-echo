@@ -17,17 +17,18 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="141" column="52" lean-forward="false" selection-start-line="141" selection-start-column="52" selection-end-line="141" selection-end-column="52" />
+            <state relative-caret-position="106">
+              <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding>
                 <element signature="e#1427#1463#0" expanded="false" />
                 <element signature="e#2186#2214#0" expanded="false" />
                 <element signature="e#2263#2720#0" expanded="false" />
-                <element signature="e#3418#3908#0" expanded="false" />
-                <element signature="e#3983#4847#0" expanded="false" />
-                <element signature="e#4949#5647#0" expanded="false" />
-                <element signature="e#5749#6452#0" expanded="false" />
-                <element signature="e#6529#7546#0" expanded="false" />
+                <element signature="e#2774#3362#0" expanded="false" />
+                <element signature="e#3972#4462#0" expanded="false" />
+                <element signature="e#4537#5401#0" expanded="false" />
+                <element signature="e#5503#6201#0" expanded="false" />
+                <element signature="e#6303#7006#0" expanded="false" />
+                <element signature="e#7083#8100#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -92,7 +93,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response27.html" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response29.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1705,12 +1706,12 @@
       <workItem from="1504622376655" duration="1373000" />
       <workItem from="1504623789929" duration="14250000" />
       <workItem from="1504710983526" duration="10166000" />
-      <workItem from="1504792190073" duration="3147000" />
+      <workItem from="1504792190073" duration="4426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122245000" />
+    <option name="totallyTimeSpent" value="123524000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2126,17 +2127,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="141" column="52" lean-forward="false" selection-start-line="141" selection-start-column="52" selection-end-line="141" selection-end-column="52" />
+        <state relative-caret-position="106">
+          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
             <element signature="e#1427#1463#0" expanded="false" />
             <element signature="e#2186#2214#0" expanded="false" />
             <element signature="e#2263#2720#0" expanded="false" />
-            <element signature="e#3418#3908#0" expanded="false" />
-            <element signature="e#3983#4847#0" expanded="false" />
-            <element signature="e#4949#5647#0" expanded="false" />
-            <element signature="e#5749#6452#0" expanded="false" />
-            <element signature="e#6529#7546#0" expanded="false" />
+            <element signature="e#2774#3362#0" expanded="false" />
+            <element signature="e#3972#4462#0" expanded="false" />
+            <element signature="e#4537#5401#0" expanded="false" />
+            <element signature="e#5503#6201#0" expanded="false" />
+            <element signature="e#6303#7006#0" expanded="false" />
+            <element signature="e#7083#8100#0" expanded="false" />
           </folding>
         </state>
       </provider>
