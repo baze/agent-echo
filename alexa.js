@@ -24,8 +24,7 @@ var helpers = {
 
         // console.log(req);
         // console.log(res);
-        console.log(req.body.request);
-        console.log(req.body.session);
+        console.log(req.body.request.intent.name);
         console.log(slots);
 
         var request = app.textRequest('Hallo', {
