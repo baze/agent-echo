@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/alexa-skills.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
     </list>
@@ -27,19 +28,28 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="140" column="12" lean-forward="false" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="12" />
+            <state relative-caret-position="332">
+              <caret line="12" column="54" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="54" />
               <folding>
-                <element signature="e#60#4235#0" expanded="false" />
-                <element signature="e#7112#7140#0" expanded="false" />
-                <marker date="1504768680000" expanded="false" signature="5671:5707" ph="{...}" />
-                <marker date="1504768680000" expanded="false" signature="7192:7649" ph="{...}" />
-                <marker date="1504768680000" expanded="false" signature="7703:8262" ph="{...}" />
-                <marker date="1504768680000" expanded="false" signature="8318:8808" ph="{...}" />
-                <marker date="1504768680000" expanded="true" signature="9850:10548" ph="{...}" />
-                <marker date="1504768680000" expanded="true" signature="10650:11353" ph="{...}" />
-                <marker date="1504768680000" expanded="true" signature="11430:12447" ph="{...}" />
+                <element signature="e#2942#2970#0" expanded="false" />
+                <marker date="1504768815000" expanded="false" signature="1501:1537" ph="{...}" />
+                <marker date="1504768815000" expanded="false" signature="3022:3479" ph="{...}" />
+                <marker date="1504768815000" expanded="false" signature="3533:4092" ph="{...}" />
+                <marker date="1504768815000" expanded="false" signature="4148:4638" ph="{...}" />
+                <marker date="1504768815000" expanded="true" signature="5680:6378" ph="{...}" />
+                <marker date="1504768815000" expanded="true" signature="6480:7183" ph="{...}" />
+                <marker date="1504768815000" expanded="true" signature="7260:8277" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alexa-skills.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/alexa-skills.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,6 +122,7 @@
         <option value="$PROJECT_DIR$/restService.js" />
         <option value="$PROJECT_DIR$/apiai.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/alexa-skills.js" />
         <option value="$PROJECT_DIR$/alexa.js" />
       </list>
     </option>
@@ -189,6 +200,12 @@
               <item name="agent-echo" type="b2602c69:ProjectViewProjectNode" />
               <item name="agent-echo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agent-echo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agent-echo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="alexa-skills" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -1701,12 +1718,12 @@
       <workItem from="1504617246239" duration="4365000" />
       <workItem from="1504622376655" duration="1373000" />
       <workItem from="1504623789929" duration="14250000" />
-      <workItem from="1504710983526" duration="4780000" />
+      <workItem from="1504710983526" duration="4914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113712000" />
+    <option name="totallyTimeSpent" value="113846000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1757,14 +1774,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helga.js" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -2099,20 +2108,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/alexa-skills.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="140" column="12" lean-forward="false" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="12" />
+        <state relative-caret-position="332">
+          <caret line="12" column="54" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="54" />
           <folding>
-            <element signature="e#60#4235#0" expanded="false" />
-            <element signature="e#7112#7140#0" expanded="false" />
-            <marker date="1504768680000" expanded="false" signature="5671:5707" ph="{...}" />
-            <marker date="1504768680000" expanded="false" signature="7192:7649" ph="{...}" />
-            <marker date="1504768680000" expanded="false" signature="7703:8262" ph="{...}" />
-            <marker date="1504768680000" expanded="false" signature="8318:8808" ph="{...}" />
-            <marker date="1504768680000" expanded="true" signature="9850:10548" ph="{...}" />
-            <marker date="1504768680000" expanded="true" signature="10650:11353" ph="{...}" />
-            <marker date="1504768680000" expanded="true" signature="11430:12447" ph="{...}" />
+            <element signature="e#2942#2970#0" expanded="false" />
+            <marker date="1504768815000" expanded="false" signature="1501:1537" ph="{...}" />
+            <marker date="1504768815000" expanded="false" signature="3022:3479" ph="{...}" />
+            <marker date="1504768815000" expanded="false" signature="3533:4092" ph="{...}" />
+            <marker date="1504768815000" expanded="false" signature="4148:4638" ph="{...}" />
+            <marker date="1504768815000" expanded="true" signature="5680:6378" ph="{...}" />
+            <marker date="1504768815000" expanded="true" signature="6480:7183" ph="{...}" />
+            <marker date="1504768815000" expanded="true" signature="7260:8277" ph="{...}" />
           </folding>
         </state>
       </provider>
