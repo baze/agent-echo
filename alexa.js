@@ -25,7 +25,6 @@ var helpers = {
         var foo = app.JSONApiRequest(intentName);
 
         foo.on('response', function (response) {
-
             console.log(response);
         });
 
@@ -34,8 +33,6 @@ var helpers = {
         });
 
         foo.end();
-
-
 
 
 
