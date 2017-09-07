@@ -12,6 +12,13 @@ var alexa = new AlexaSkills({
 const apiai = require('apiai');
 const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 
+restService.post('/alexa2', function (req, res) {
+    console.log(req);
+    console.log(res);
+
+    return res.json({});
+});
+
 /*var helpers = {
     launch: function(req, res, slots) {
 
