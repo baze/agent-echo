@@ -27,6 +27,8 @@ var helpers = {
         console.log(req.body.request.intent.name);
         console.log(slots);
 
+        console.log(app);
+
         var request = app.textRequest('Hallo', {
             sessionId: '<unique session id>'
         });
