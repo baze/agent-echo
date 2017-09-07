@@ -9,9 +9,6 @@ module.exports = function(options) {
         endedCallback = null,
         intents = {};
 
-    console.log(options);
-    console.log(route);
-
     // app.post(route, jsonParser, RequestValidator, function(req, res) {
     app.post(route, function(req, res) {
 
