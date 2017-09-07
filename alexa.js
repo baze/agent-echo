@@ -22,9 +22,10 @@ restService.post('/alexa2', function (req, res) {
 var helpers = {
     launch: function(req, res, slots) {
 
-        console.log("DefaultWelcomeIntent");
-        console.log(req);
-        console.log(res);
+        // console.log(req);
+        // console.log(res);
+        console.log(req.body.request);
+        console.log(req.body.session);
         console.log(slots);
 
         var request = app.textRequest('Hallo', {
@@ -117,9 +118,6 @@ alexa.intent('Thankyou', function (req, res) {
 });
 
 alexa.intent('SmalltalkNane', function (req, res) {
-
-    console.log(req);
-    console.log(res);
 
     var phrase = 'Wer ist zauberhaft und elfengleich?';
 
