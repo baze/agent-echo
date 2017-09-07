@@ -17,11 +17,12 @@ module.exports = function(options) {
 
         if(req.body.session.application.applicationId == appId || !appId.length) {
 
+            console.log(req.body.request.type);
+            console.log(launchCallback);
+
             switch(req.body.request.type) {
 
                 case "LaunchRequest":
-
-                    console.log(launchCallback);
 
                     if(launchCallback)
                         launchCallback(req, res);
