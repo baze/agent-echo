@@ -15,7 +15,7 @@ console.log(alexa);
 const apiai = require('apiai');
 const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 
-var helpers = {
+/*var helpers = {
     launch: function(req, res, slots) {
 
         console.log("DefaultWelcomeIntent");
@@ -79,7 +79,7 @@ var helpers = {
 
         request.end();
     }
-};
+};*/
 
 alexa.launch(function (req, res) {
 
@@ -118,7 +118,7 @@ alexa.ended(function (req, res, reason) {
     console.log(reason);
 });
 
-
+/*
 alexa.intent('Thankyou', function (req, res) {
     var request = app.textRequest('Danke', {
         sessionId: '<unique session id>'
@@ -348,3 +348,4 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 });
 
 alexa.intent('BlogReadAnswerYes', helpers.yes);
+*/
