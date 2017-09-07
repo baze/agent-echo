@@ -17,10 +17,27 @@ var helpers = {
 
         // console.log(req);
         // console.log(res);
-        console.log(req.body.request.intent.name);
-        console.log(slots);
+        var intentName = req.body.request.intent.name;
 
-        console.log(app);
+        console.log(intentName);
+        // console.log(slots);
+
+        var foo = app.JSONApiRequest(intentName);
+
+        foo.on('response', function (response) {
+
+            console.log(response);
+        });
+
+        foo.on('error', function (error) {
+            console.log(error);
+        });
+
+        foo.end();
+
+
+
+
 
         var request = app.textRequest('Hallo', {
             sessionId: '<unique session id>'
