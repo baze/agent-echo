@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,18 +27,29 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            <state relative-caret-position="156">
+              <caret line="140" column="12" lean-forward="false" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="12" />
               <folding>
-                <element signature="e#7070#7098#0" expanded="false" />
-                <marker date="1504768379000" expanded="false" signature="5629:5665" ph="{...}" />
-                <marker date="1504768379000" expanded="false" signature="7150:7607" ph="{...}" />
-                <marker date="1504768379000" expanded="false" signature="7661:8220" ph="{...}" />
-                <marker date="1504768379000" expanded="false" signature="8276:8766" ph="{...}" />
-                <marker date="1504768379000" expanded="true" signature="9808:10506" ph="{...}" />
-                <marker date="1504768379000" expanded="true" signature="10608:11311" ph="{...}" />
-                <marker date="1504768379000" expanded="true" signature="11388:12405" ph="{...}" />
+                <element signature="e#60#4235#0" expanded="false" />
+                <element signature="e#7112#7140#0" expanded="false" />
+                <marker date="1504768680000" expanded="false" signature="5671:5707" ph="{...}" />
+                <marker date="1504768680000" expanded="false" signature="7192:7649" ph="{...}" />
+                <marker date="1504768680000" expanded="false" signature="7703:8262" ph="{...}" />
+                <marker date="1504768680000" expanded="false" signature="8318:8808" ph="{...}" />
+                <marker date="1504768680000" expanded="true" signature="9850:10548" ph="{...}" />
+                <marker date="1504768680000" expanded="true" signature="10650:11353" ph="{...}" />
+                <marker date="1504768680000" expanded="true" signature="11430:12447" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="request-validator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/request-validator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,7 +96,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response60.html" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response62.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -178,12 +190,6 @@
               <item name="agent-echo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="agent-echo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-echo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="alexa-skills" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -198,6 +204,11 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -1690,12 +1701,12 @@
       <workItem from="1504617246239" duration="4365000" />
       <workItem from="1504622376655" duration="1373000" />
       <workItem from="1504623789929" duration="14250000" />
-      <workItem from="1504710983526" duration="4598000" />
+      <workItem from="1504710983526" duration="4780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113530000" />
+    <option name="totallyTimeSpent" value="113712000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1746,14 +1757,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2088,19 +2091,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/request-validator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        <state relative-caret-position="156">
+          <caret line="140" column="12" lean-forward="false" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="12" />
           <folding>
-            <element signature="e#7070#7098#0" expanded="false" />
-            <marker date="1504768379000" expanded="false" signature="5629:5665" ph="{...}" />
-            <marker date="1504768379000" expanded="false" signature="7150:7607" ph="{...}" />
-            <marker date="1504768379000" expanded="false" signature="7661:8220" ph="{...}" />
-            <marker date="1504768379000" expanded="false" signature="8276:8766" ph="{...}" />
-            <marker date="1504768379000" expanded="true" signature="9808:10506" ph="{...}" />
-            <marker date="1504768379000" expanded="true" signature="10608:11311" ph="{...}" />
-            <marker date="1504768379000" expanded="true" signature="11388:12405" ph="{...}" />
+            <element signature="e#60#4235#0" expanded="false" />
+            <element signature="e#7112#7140#0" expanded="false" />
+            <marker date="1504768680000" expanded="false" signature="5671:5707" ph="{...}" />
+            <marker date="1504768680000" expanded="false" signature="7192:7649" ph="{...}" />
+            <marker date="1504768680000" expanded="false" signature="7703:8262" ph="{...}" />
+            <marker date="1504768680000" expanded="false" signature="8318:8808" ph="{...}" />
+            <marker date="1504768680000" expanded="true" signature="9850:10548" ph="{...}" />
+            <marker date="1504768680000" expanded="true" signature="10650:11353" ph="{...}" />
+            <marker date="1504768680000" expanded="true" signature="11430:12447" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -2,7 +2,7 @@
 
 var restService = require('./restService');
 
-var AlexaSkills = function (options) {
+/*var AlexaSkills = function (options) {
 
     var RequestValidator = require('./request-validator'),
         jsonParser = require('body-parser').json(),
@@ -136,9 +136,9 @@ var AlexaSkills = function (options) {
         return card;
     }
 
-};
-
-var alexa = new AlexaSkills({
+};*/
+var AlexaSkills = require('alexa-skills');
+var alexa = AlexaSkills({
     express: restService, // required
     route: "/alexa", // optional, defaults to "/"
     applicationId: "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938" // optional, but recommended. If you do not set this leave it blank
