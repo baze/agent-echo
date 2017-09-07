@@ -12,11 +12,6 @@ module.exports = function(options) {
     // app.post(route, jsonParser, RequestValidator, function(req, res) {
     app.post(route, function(req, res) {
 
-        console.log(req.body.request.type);
-
-        console.log(req.body.session.application.applicationId == appId || !appId.length);
-        console.log(appId);
-
         console.log(launchCallback);
 
         if(req.body.session.application.applicationId == appId || !appId.length) {

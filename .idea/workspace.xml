@@ -4,6 +4,7 @@
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa-skills.js" afterPath="$PROJECT_DIR$/alexa-skills.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,31 +25,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="257">
+              <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding>
                 <element signature="e#583#2134#0" expanded="false" />
-                <element signature="e#2994#3022#0" expanded="false" />
-                <marker date="1504771490000" expanded="false" signature="1501:1537" ph="{...}" />
-                <marker date="1504771490000" expanded="false" signature="3074:3531" ph="{...}" />
-                <marker date="1504771490000" expanded="false" signature="3585:4144" ph="{...}" />
-                <marker date="1504771490000" expanded="false" signature="4200:4690" ph="{...}" />
-                <marker date="1504771490000" expanded="true" signature="5732:6430" ph="{...}" />
-                <marker date="1504771490000" expanded="true" signature="6532:7235" ph="{...}" />
-                <marker date="1504771490000" expanded="true" signature="7312:8329" ph="{...}" />
+                <element signature="e#2942#2970#0" expanded="false" />
+                <marker date="1504772654000" expanded="false" signature="1501:1537" ph="{...}" />
+                <marker date="1504772654000" expanded="false" signature="3022:3479" ph="{...}" />
+                <marker date="1504772654000" expanded="false" signature="3533:4092" ph="{...}" />
+                <marker date="1504772654000" expanded="false" signature="4148:4638" ph="{...}" />
+                <marker date="1504772654000" expanded="true" signature="5680:6378" ph="{...}" />
+                <marker date="1504772654000" expanded="true" signature="6480:7183" ph="{...}" />
+                <marker date="1504772654000" expanded="true" signature="7260:8277" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alexa-skills.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="alexa-skills.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alexa-skills.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="27" />
+            <state relative-caret-position="168">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,7 +75,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response100.html" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response105.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -90,8 +91,8 @@
         <option value="$PROJECT_DIR$/restService.js" />
         <option value="$PROJECT_DIR$/apiai.js" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/alexa.js" />
         <option value="$PROJECT_DIR$/alexa-skills.js" />
+        <option value="$PROJECT_DIR$/alexa.js" />
       </list>
     </option>
   </component>
@@ -187,6 +188,31 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
+          <option name="urlPath" value="alexa" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="SignatureCertChainUrl" />
+                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.9e3ebaa5-2979-4240-a9c8-b01a335b9e60&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.68a78084-355a-4ea3-92b5-dfa5601e809f&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-07T08:22:33Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
@@ -1583,31 +1609,6 @@
           <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.91e44096-987d-4399-a696-67413be64f70&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.db00844a-4978-4e89-9470-c0a77f1fa387&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T14:55:02Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://flannel-poutine-21177.herokuapp.com" />
-          <option name="urlPath" value="alexa2" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json;charset=UTF-8" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="SignatureCertChainUrl" />
-                <option name="value" value="https://s3.amazonaws.com/echo.api/echo-api-cert.pem" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{   &quot;session&quot;: {     &quot;new&quot;: true,     &quot;sessionId&quot;: &quot;SessionId.91e44096-987d-4399-a696-67413be64f70&quot;,     &quot;application&quot;: {       &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;     },     &quot;attributes&quot;: {},     &quot;user&quot;: {       &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;     }   },   &quot;request&quot;: {     &quot;type&quot;: &quot;IntentRequest&quot;,     &quot;requestId&quot;: &quot;EdwRequestId.db00844a-4978-4e89-9470-c0a77f1fa387&quot;,     &quot;intent&quot;: {       &quot;name&quot;: &quot;DefaultWelcomeIntent&quot;,       &quot;slots&quot;: {}     },     &quot;locale&quot;: &quot;de-DE&quot;,     &quot;timestamp&quot;: &quot;2017-09-05T14:55:02Z&quot;   },   &quot;context&quot;: {     &quot;AudioPlayer&quot;: {       &quot;playerActivity&quot;: &quot;IDLE&quot;     },     &quot;System&quot;: {       &quot;application&quot;: {         &quot;applicationId&quot;: &quot;amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938&quot;       },       &quot;user&quot;: {         &quot;userId&quot;: &quot;amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ&quot;       },       &quot;device&quot;: {         &quot;supportedInterfaces&quot;: {}       }     }   },   &quot;version&quot;: &quot;1.0&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1675,12 +1676,12 @@
       <workItem from="1504617246239" duration="4365000" />
       <workItem from="1504622376655" duration="1373000" />
       <workItem from="1504623789929" duration="14250000" />
-      <workItem from="1504710983526" duration="7994000" />
+      <workItem from="1504710983526" duration="8250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116926000" />
+    <option name="totallyTimeSpent" value="117182000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1693,6 +1694,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="495" y="23" width="1907" height="1288" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.47935656" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1700,7 +1702,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28847185" sideWeight="0.52140075" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.49812332" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38072288" sideWeight="0.45254692" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38072288" sideWeight="0.45254692" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28847185" sideWeight="0.47859922" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2056,6 +2058,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/alexa-skills.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -2066,27 +2076,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="257">
+          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding>
             <element signature="e#583#2134#0" expanded="false" />
-            <element signature="e#2994#3022#0" expanded="false" />
-            <marker date="1504771490000" expanded="false" signature="1501:1537" ph="{...}" />
-            <marker date="1504771490000" expanded="false" signature="3074:3531" ph="{...}" />
-            <marker date="1504771490000" expanded="false" signature="3585:4144" ph="{...}" />
-            <marker date="1504771490000" expanded="false" signature="4200:4690" ph="{...}" />
-            <marker date="1504771490000" expanded="true" signature="5732:6430" ph="{...}" />
-            <marker date="1504771490000" expanded="true" signature="6532:7235" ph="{...}" />
-            <marker date="1504771490000" expanded="true" signature="7312:8329" ph="{...}" />
+            <element signature="e#2942#2970#0" expanded="false" />
+            <marker date="1504772654000" expanded="false" signature="1501:1537" ph="{...}" />
+            <marker date="1504772654000" expanded="false" signature="3022:3479" ph="{...}" />
+            <marker date="1504772654000" expanded="false" signature="3533:4092" ph="{...}" />
+            <marker date="1504772654000" expanded="false" signature="4148:4638" ph="{...}" />
+            <marker date="1504772654000" expanded="true" signature="5680:6378" ph="{...}" />
+            <marker date="1504772654000" expanded="true" signature="6480:7183" ph="{...}" />
+            <marker date="1504772654000" expanded="true" signature="7260:8277" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alexa-skills.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
