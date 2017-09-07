@@ -13,10 +13,7 @@ module.exports = function(options) {
     console.log(route);
 
     // app.post(route, jsonParser, RequestValidator, function(req, res) {
-    // app.post(route, RequestValidator, function(req, res) {
     app.post(route, function(req, res) {
-
-        return res.json(req.body);
 
         if(req.body.session.application.applicationId == appId || !appId.length) {
 
