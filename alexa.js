@@ -341,3 +341,30 @@ alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
 });
 
 alexa.intent('BlogReadAnswerYes', helpers.yes);
+
+alexa.intent('KnowledgeAddressfunny', function(req, res) {
+    var phrase = 'wie finde ich euch?';
+
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+
+        generateAlexaResponse(response.result.fulfillment.speech, true);
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+});
