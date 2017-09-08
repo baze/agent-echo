@@ -95,7 +95,7 @@ var helpers = {
                 contexts: contexts
             };
 
-            sessionAttributes.previousAction = response.result.action;
+            sessionAttributes.myAction = response.result.action;
 
             alexa.send(req, res, options, sessionAttributes);
         });
@@ -333,15 +333,15 @@ alexa.intent('Previousintent', function (req, res, slots, sessionAttributes) {
     console.log(slots);
     console.log(sessionAttributes);
 
-    switch (sessionAttributes.previousAction) {
+    switch (sessionAttributes.myAction) {
         case 'employee.email' :
             console.log("email");
-            helpers.request(req, res, 'und die email?');
+            helpers.request(req, res, 'und die email?', false, sessionAttributes);
             break;
 
         case 'employee.phone' :
             console.log("phone");
-            helpers.request(req, res, 'und die telefonnummer?');
+            helpers.request(req, res, 'und die telefonnummer?', false, sessionAttributes);
             break;
 
         default:
