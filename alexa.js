@@ -158,6 +158,7 @@ alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
     var phrase = 'Wer ist die E-Mail-Adresse von ' + employee + '?';
 
     sessionAttributes.employee = employee;
+    sessionAttributes.myAction = 'employee.email';
 
     var contexts = [
         {
@@ -185,6 +186,7 @@ alexa.intent('EmployeePhone', function (req, res, slots, sessionAttributes) {
     console.log(phrase);
 
     sessionAttributes.employee = employee;
+    sessionAttributes.myAction = 'employee.phone';
 
     var contexts = [
         {
@@ -209,6 +211,7 @@ alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots, s
     var employee = sessionAttributes.employee;
 
     var phrase = 'wie ist die Durchwahl?';
+    sessionAttributes.myAction = 'employee.phone';
 
     var contexts = [
         {
@@ -230,6 +233,7 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
     console.log(sessionAttributes);
 
     var employee = sessionAttributes.employee;
+    sessionAttributes.myAction = 'employee.email';
 
     var phrase = 'Wie ist die E-Mail-Adresse?';
 
