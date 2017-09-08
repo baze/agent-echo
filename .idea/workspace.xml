@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="" />
+    <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users.json" afterPath="$PROJECT_DIR$/users.json" />
+    </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apiai.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="apiai.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apiai.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="416">
@@ -44,6 +47,16 @@
                 <element signature="n#!!block;n#generateResponse#0" expanded="false" />
                 <element signature="e#4535#16985#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/users.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,7 +92,6 @@
         <option value="$PROJECT_DIR$/rest-service.js" />
         <option value="$PROJECT_DIR$/tmp.json" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/users.json" />
         <option value="$PROJECT_DIR$/helga.js" />
         <option value="$PROJECT_DIR$/ews.js" />
         <option value="$PROJECT_DIR$/apiai.js" />
@@ -88,6 +100,7 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/alexa-skills.js" />
         <option value="$PROJECT_DIR$/alexa.js" />
+        <option value="$PROJECT_DIR$/users.json" />
       </list>
     </option>
   </component>
@@ -1664,12 +1677,12 @@
       <workItem from="1504623789929" duration="14250000" />
       <workItem from="1504710983526" duration="10166000" />
       <workItem from="1504792190073" duration="4463000" />
-      <workItem from="1504859389433" duration="4540000" />
+      <workItem from="1504859389433" duration="4629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128101000" />
+    <option name="totallyTimeSpent" value="128190000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1951,14 +1964,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rest-service.js" />
-    <entry file="file://$PROJECT_DIR$/users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/alexa-skills/request-validator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -2081,6 +2086,14 @@
             <element signature="n#!!block;n#generateResponse#0" expanded="false" />
             <element signature="e#4535#16985#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
