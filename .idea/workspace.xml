@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
@@ -18,21 +17,29 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="468" column="51" lean-forward="false" selection-start-line="468" selection-start-column="51" selection-end-line="468" selection-end-column="51" />
+            <state relative-caret-position="-418">
+              <caret line="103" column="2" lean-forward="false" selection-start-line="103" selection-start-column="2" selection-end-line="103" selection-end-column="2" />
               <folding>
-                <element signature="e#1427#1463#0" expanded="false" />
-                <element signature="e#2186#2214#0" expanded="false" />
-                <element signature="e#2263#2720#0" expanded="false" />
-                <element signature="e#3342#3842#0" expanded="false" />
-                <element signature="e#3898#4388#0" expanded="false" />
-                <element signature="e#4463#5327#0" expanded="false" />
-                <element signature="e#5429#6127#0" expanded="false" />
-                <element signature="e#6229#6932#0" expanded="false" />
-                <element signature="e#7009#8026#0" expanded="false" />
-                <element signature="e#8136#8633#0" expanded="false" />
-                <element signature="e#8689#9189#0" expanded="false" />
-                <element signature="e#9248#9743#0" expanded="false" />
+                <element signature="e#512#1385#0" expanded="false" />
+                <element signature="e#1426#1462#0" expanded="false" />
+                <element signature="e#1500#2053#0" expanded="false" />
+                <element signature="e#2103#2623#0" expanded="false" />
+                <element signature="e#2754#2782#0" expanded="false" />
+                <element signature="e#2831#2905#0" expanded="false" />
+                <element signature="e#2959#3063#0" expanded="false" />
+                <element signature="e#3117#3207#0" expanded="false" />
+                <element signature="e#3263#3343#0" expanded="false" />
+                <element signature="e#3418#4282#0" expanded="false" />
+                <element signature="e#4384#5082#0" expanded="false" />
+                <element signature="e#5184#5887#0" expanded="false" />
+                <element signature="e#5964#6981#0" expanded="false" />
+                <element signature="e#7091#7179#0" expanded="false" />
+                <element signature="e#7235#7326#0" expanded="false" />
+                <element signature="e#7385#7471#0" expanded="false" />
+                <element signature="e#7529#7619#0" expanded="false" />
+                <element signature="e#7683#7787#0" expanded="false" />
+                <element signature="e#7840#7943#0" expanded="false" />
+                <element signature="e#8000#8094#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1654,12 +1661,12 @@
       <workItem from="1504623789929" duration="14250000" />
       <workItem from="1504710983526" duration="10166000" />
       <workItem from="1504792190073" duration="4463000" />
-      <workItem from="1504859389433" duration="1552000" />
+      <workItem from="1504859389433" duration="1887000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125113000" />
+    <option name="totallyTimeSpent" value="125448000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2056,21 +2063,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="468" column="51" lean-forward="false" selection-start-line="468" selection-start-column="51" selection-end-line="468" selection-end-column="51" />
+        <state relative-caret-position="-418">
+          <caret line="103" column="2" lean-forward="false" selection-start-line="103" selection-start-column="2" selection-end-line="103" selection-end-column="2" />
           <folding>
-            <element signature="e#1427#1463#0" expanded="false" />
-            <element signature="e#2186#2214#0" expanded="false" />
-            <element signature="e#2263#2720#0" expanded="false" />
-            <element signature="e#3342#3842#0" expanded="false" />
-            <element signature="e#3898#4388#0" expanded="false" />
-            <element signature="e#4463#5327#0" expanded="false" />
-            <element signature="e#5429#6127#0" expanded="false" />
-            <element signature="e#6229#6932#0" expanded="false" />
-            <element signature="e#7009#8026#0" expanded="false" />
-            <element signature="e#8136#8633#0" expanded="false" />
-            <element signature="e#8689#9189#0" expanded="false" />
-            <element signature="e#9248#9743#0" expanded="false" />
+            <element signature="e#512#1385#0" expanded="false" />
+            <element signature="e#1426#1462#0" expanded="false" />
+            <element signature="e#1500#2053#0" expanded="false" />
+            <element signature="e#2103#2623#0" expanded="false" />
+            <element signature="e#2754#2782#0" expanded="false" />
+            <element signature="e#2831#2905#0" expanded="false" />
+            <element signature="e#2959#3063#0" expanded="false" />
+            <element signature="e#3117#3207#0" expanded="false" />
+            <element signature="e#3263#3343#0" expanded="false" />
+            <element signature="e#3418#4282#0" expanded="false" />
+            <element signature="e#4384#5082#0" expanded="false" />
+            <element signature="e#5184#5887#0" expanded="false" />
+            <element signature="e#5964#6981#0" expanded="false" />
+            <element signature="e#7091#7179#0" expanded="false" />
+            <element signature="e#7235#7326#0" expanded="false" />
+            <element signature="e#7385#7471#0" expanded="false" />
+            <element signature="e#7529#7619#0" expanded="false" />
+            <element signature="e#7683#7787#0" expanded="false" />
+            <element signature="e#7840#7943#0" expanded="false" />
+            <element signature="e#8000#8094#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -48,11 +48,11 @@ var helpers = {
         request.end();
     },
 
-    ended: function (req, res, reason) {
+    ended: function(req, res, reason) {
         console.log(reason);
     },
 
-    yes: function (req, res, slots) {
+    yes: function(req, res, slots) {
 
         var phrase = "Ja";
 
@@ -77,6 +77,29 @@ var helpers = {
         });
 
         request.end();
+    },
+
+    simpleRequest: function (req, res, phrase) {
+        var request = app.textRequest(phrase, {
+            sessionId: '<unique session id>'
+        });
+
+        request.on('response', function (response) {
+
+            var phrase = response.result.fulfillment.speech;
+            var options = {
+                shouldEndSession: true,
+                outputSpeech: phrase
+            };
+
+            alexa.send(req, res, options);
+        });
+
+        request.on('error', function (error) {
+            console.log(error);
+        });
+
+        request.end();
     }
 };
 
@@ -89,104 +112,23 @@ alexa.ended(function (req, res, reason) {
 });
 
 alexa.intent('Thankyou', function (req, res) {
-    var request = app.textRequest('Danke', {
-        sessionId: '<unique session id>'
-    });
-
-    request.on('response', function (response) {
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options);
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();
+    var phrase = 'Danke';
+    helpers.simpleRequest(req, res, phrase);
 });
 
 alexa.intent('SmalltalkNane', function (req, res) {
-
     var phrase = 'Wer ist zauberhaft und elfengleich?';
-
-    var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>'
-    });
-
-    request.on('response', function (response) {
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options);
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();
+    helpers.simpleRequest(req, res, phrase);
 });
 
 alexa.intent('SmalltalkStkl', function (req, res) {
-
     var phrase = 'Wer hat Küchendienst?';
-
-    var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>'
-    });
-
-    request.on('response', function (response) {
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options);
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();
+    helpers.simpleRequest(req, res, phrase);
 });
 
 alexa.intent('SmalltalkInsult', function (req, res) {
-
     var phrase = 'Ficke disch';
-
-    var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>'
-    });
-
-    request.on('response', function (response) {
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options);
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();
+    helpers.simpleRequest(req, res, phrase);
 });
 
 alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
@@ -342,176 +284,35 @@ alexa.intent('BlogReadAnswerYes', helpers.yes);
 
 alexa.intent('KnowledgeAddressfunny', function(req, res) {
     var phrase = 'wie finde ich euch?';
-
-    var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>'
-    });
-
-    request.on('response', function (response) {
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options);
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();
+    helpers.simpleRequest(req, res, phrase);
 });
 
 alexa.intent('KnowledgeAddress', function(req, res) {
     var phrase = 'wie komme ich zu euch?';
-
-    var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>'
-    });
-
-    request.on('response', function (response) {
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options);
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();
+    helpers.simpleRequest(req, res, phrase);
 });
 
 alexa.intent('KnowledgeActivities', function(req, res) {
     var phrase = 'was macht ihr so?';
-
-    var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>'
-    });
-
-    request.on('response', function (response) {
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options);
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();
+    helpers.simpleRequest(req, res, phrase);
 });
 
 alexa.intent('KnowledgeEmployees', function(req, res) {
     var phrase = 'wer arbeitet bei euw?';
-
-    var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>'
-    });
-
-    request.on('response', function (response) {
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options);
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();
+    helpers.simpleRequest(req, res, phrase);
 });
 
 alexa.intent('KnowledgeEmployeescount', function (req, res) {
     var phrase = 'wieviele Personen arbeiten bei euw?';
-
-    var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>'
-    });
-
-    request.on('response', function (response) {
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options);
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();
+    helpers.simpleRequest(req, res, phrase);
 });
 
 alexa.intent('KnowledgeXbm', function (req, res) {
     var phrase = 'wie kommt euw auf die guten Ideen?';
-
-    var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>'
-    });
-
-    request.on('response', function (response) {
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options);
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();
+    helpers.simpleRequest(req, res, phrase);
 });
-
 
 alexa.intent('KnowledgeFounded', function (req, res) {
     var phrase = 'Wann wurde euw gegründet?';
-
-    var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>'
-    });
-
-    request.on('response', function (response) {
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: true,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options);
-    });
-
-    request.on('error', function (error) {
-        console.log(error);
-    });
-
-    request.end();
+    helpers.simpleRequest(req, res, phrase);
 });
