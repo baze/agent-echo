@@ -364,3 +364,154 @@ alexa.intent('KnowledgeAddressfunny', function(req, res) {
 
     request.end();
 });
+
+alexa.intent('KnowledgeAddress', function(req, res) {
+    var phrase = 'wie komme ich zu euch?';
+
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+});
+
+alexa.intent('KnowledgeActivities', function(req, res) {
+    var phrase = 'was macht ihr so?';
+
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+});
+
+alexa.intent('KnowledgeEmployees', function(req, res) {
+    var phrase = 'wer arbeitet bei euw?';
+
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+});
+
+alexa.intent('KnowledgeEmployeescount', function (req, res) {
+    var phrase = 'wieviele Personen arbeiten bei euw?';
+
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+});
+
+alexa.intent('KnowledgeXbm', function (req, res) {
+    var phrase = 'wie kommt euw auf die guten Ideen?';
+
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+});
+
+
+alexa.intent('KnowledgeFounded', function (req, res) {
+    var phrase = 'Wann wurde euw gegründet?';
+
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>'
+    });
+
+    request.on('response', function (response) {
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: true,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options);
+    });
+
+    request.on('error', function (error) {
+        console.log(error);
+    });
+
+    request.end();
+});
