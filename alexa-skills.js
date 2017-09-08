@@ -31,6 +31,7 @@ module.exports = function(options) {
                     if(intents[req.body.request.intent.name])
                         intents[req.body.request.intent.name](req, res, req.body.request.intent.slots, req.body.session.attributes);
                     else
+                        console.log("IntentRequest for `" + req.body.request.intent.name + "` not handled")
                         throw ("IntentRequest for `" + req.body.request.intent.name + "` not handled")
                     break;
                 case "SessionEndedRequest":
