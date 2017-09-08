@@ -317,3 +317,8 @@ alexa.intent('Thankyou', function (req, res) {
     var phrase = 'Danke';
     helpers.request(req, res, phrase);
 });
+
+alexa.intent('PreviousIntent', function (req, res) {
+    var phrase = 'Ich arbeite noch an meinen Konversations-Fähigkeiten …';
+    helpers.request(req, res, phrase);
+});
