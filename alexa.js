@@ -111,25 +111,57 @@ alexa.ended(function (req, res, reason) {
     console.log(reason);
 });
 
-alexa.intent('Thankyou', function (req, res) {
-    var phrase = 'Danke';
-    helpers.simpleRequest(req, res, phrase);
+// Blog
+
+alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
+
+    sessionAttributes.blog = 'euw';
+
+    var phrase = "";
+    if (sessionAttributes.blog) {
+        phrase = 'Was gibt es neues bei ' + sessionAttributes.blog + '?';
+    } else {
+        phrase = 'Was gibt es neues bei ' + slots.blogslot.value + '?';
+    }
+
+    // sessionAttributes.blog = slots.blogslot.value;
+
+    var request = app.textRequest(phrase, {
+        sessionId: '<unique session id>',
+        contexts: [
+            {
+                name: 'blog',
+                parameters: {
+                    'blog': sessionAttributes.blog
+                }
+            }
+        ]
+    });
+
+    request.on('response', function (response) {
+
+        // console.log(response);
+
+        var phrase = response.result.fulfillment.speech;
+        var options = {
+            shouldEndSession: false,
+            outputSpeech: phrase
+        };
+
+        alexa.send(req, res, options, sessionAttributes);
+
+    });
+
+    request.on('error', function (error) {
+        // console.log(error);
+    });
+
+    request.end();
 });
 
-alexa.intent('SmalltalkNane', function (req, res) {
-    var phrase = 'Wer ist zauberhaft und elfengleich?';
-    helpers.simpleRequest(req, res, phrase);
-});
+alexa.intent('BlogReadAnswerYes', helpers.yes);
 
-alexa.intent('SmalltalkStkl', function (req, res) {
-    var phrase = 'Wer hat Küchendienst?';
-    helpers.simpleRequest(req, res, phrase);
-});
-
-alexa.intent('SmalltalkInsult', function (req, res) {
-    var phrase = 'Ficke disch';
-    helpers.simpleRequest(req, res, phrase);
-});
+// Employees
 
 alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
@@ -234,66 +266,19 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
 
 });
 
-alexa.intent('BlogLatest', function (req, res, slots, sessionAttributes) {
-
-    sessionAttributes.blog = 'euw';
-
-    var phrase = "";
-    if (sessionAttributes.blog) {
-        phrase = 'Was gibt es neues bei ' + sessionAttributes.blog + '?';
-    } else {
-        phrase = 'Was gibt es neues bei ' + slots.blogslot.value + '?';
-    }
-
-    // sessionAttributes.blog = slots.blogslot.value;
-
-    var request = app.textRequest(phrase, {
-        sessionId: '<unique session id>',
-        contexts: [
-            {
-                name: 'blog',
-                parameters: {
-                    'blog': sessionAttributes.blog
-                }
-            }
-        ]
-    });
-
-    request.on('response', function (response) {
-
-        // console.log(response);
-
-        var phrase = response.result.fulfillment.speech;
-        var options = {
-            shouldEndSession: false,
-            outputSpeech: phrase
-        };
-
-        alexa.send(req, res, options, sessionAttributes);
-
-    });
-
-    request.on('error', function (error) {
-        // console.log(error);
-    });
-
-    request.end();
-});
-
-alexa.intent('BlogReadAnswerYes', helpers.yes);
-
-alexa.intent('KnowledgeAddressfunny', function(req, res) {
-    var phrase = 'wie finde ich euch?';
+// Knowledge
+alexa.intent('KnowledgeActivities', function (req, res) {
+    var phrase = 'was macht ihr so?';
     helpers.simpleRequest(req, res, phrase);
 });
 
-alexa.intent('KnowledgeAddress', function(req, res) {
+alexa.intent('KnowledgeAddress', function (req, res) {
     var phrase = 'wie komme ich zu euch?';
     helpers.simpleRequest(req, res, phrase);
 });
 
-alexa.intent('KnowledgeActivities', function(req, res) {
-    var phrase = 'was macht ihr so?';
+alexa.intent('KnowledgeAddressfunny', function(req, res) {
+    var phrase = 'wie finde ich euch?';
     helpers.simpleRequest(req, res, phrase);
 });
 
@@ -307,12 +292,61 @@ alexa.intent('KnowledgeEmployeescount', function (req, res) {
     helpers.simpleRequest(req, res, phrase);
 });
 
+alexa.intent('KnowledgeFounded', function (req, res) {
+    var phrase = 'Wann wurde euw gegründet?';
+    helpers.simpleRequest(req, res, phrase);
+});
+
+alexa.intent('KnowledgeIndustrysectors', function (req, res) {
+    var phrase = 'In welchen Branchen seid ihr tätig';
+    helpers.simpleRequest(req, res, phrase);
+});
+
+alexa.intent('KnowledgeOpeninghours', function (req, res) {
+    var phrase = 'Wie sind die Öffnungszeiten';
+    helpers.simpleRequest(req, res, phrase);
+});
+
+alexa.intent('KnowledgeRevenue', function (req, res) {
+    var phrase = 'Welchen Umsatz macht euw?';
+    helpers.simpleRequest(req, res, phrase);
+});
+
+alexa.intent('KnowledgeServices', function (req, res) {
+    var phrase = 'welche Leistungen bietet ihr an?';
+    helpers.simpleRequest(req, res, phrase);
+});
+
 alexa.intent('KnowledgeXbm', function (req, res) {
     var phrase = 'wie kommt euw auf die guten Ideen?';
     helpers.simpleRequest(req, res, phrase);
 });
 
-alexa.intent('KnowledgeFounded', function (req, res) {
-    var phrase = 'Wann wurde euw gegründet?';
+// Smalltalk
+
+alexa.intent('SmalltalkAbout', function (req, res) {
+    var phrase = 'wofür steht helga';
+    helpers.simpleRequest(req, res, phrase);
+});
+
+alexa.intent('SmalltalkInsult', function (req, res) {
+    var phrase = 'Ficke disch';
+    helpers.simpleRequest(req, res, phrase);
+});
+
+alexa.intent('SmalltalkNane', function (req, res) {
+    var phrase = 'Wer ist zauberhaft und elfengleich?';
+    helpers.simpleRequest(req, res, phrase);
+});
+
+alexa.intent('SmalltalkStkl', function (req, res) {
+    var phrase = 'Wer hat Küchendienst?';
+    helpers.simpleRequest(req, res, phrase);
+});
+
+// Misc
+
+alexa.intent('Thankyou', function (req, res) {
+    var phrase = 'Danke';
     helpers.simpleRequest(req, res, phrase);
 });
