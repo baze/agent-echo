@@ -318,7 +318,11 @@ alexa.intent('Thankyou', function (req, res) {
     helpers.request(req, res, phrase);
 });
 
-alexa.intent('Previousintent', function (req, res) {
+alexa.intent('Previousintent', function (req, res, slots, sessionAttributes) {
+
+    console.log(slots);
+    console.log(sessionAttributes);
+
     var phrase = 'Ich arbeite noch an meinen Konversations-Fähigkeiten …';
     helpers.request(req, res, phrase);
 });
