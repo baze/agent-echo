@@ -121,8 +121,6 @@ alexa.intent('SmalltalkNane', function (req, res) {
 
     request.on('response', function (response) {
 
-        generateAlexaResponse(response.result.fulfillment.speech, true);
-
         var phrase = response.result.fulfillment.speech;
         var options = {
             shouldEndSession: true,
@@ -350,8 +348,6 @@ alexa.intent('KnowledgeAddressfunny', function(req, res) {
     });
 
     request.on('response', function (response) {
-
-        generateAlexaResponse(response.result.fulfillment.speech, true);
 
         var phrase = response.result.fulfillment.speech;
         var options = {

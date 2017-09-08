@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa-skills.js" afterPath="$PROJECT_DIR$/alexa-skills.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,31 +15,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="345" column="18" lean-forward="true" selection-start-line="345" selection-start-column="18" selection-end-line="345" selection-end-column="37" />
+            <state relative-caret-position="260">
+              <caret line="342" column="23" lean-forward="false" selection-start-line="342" selection-start-column="23" selection-end-line="342" selection-end-column="23" />
               <folding>
                 <element signature="e#1427#1463#0" expanded="false" />
                 <element signature="e#2186#2214#0" expanded="false" />
                 <element signature="e#2263#2720#0" expanded="false" />
-                <element signature="e#3416#3916#0" expanded="false" />
-                <element signature="e#3972#4462#0" expanded="false" />
-                <element signature="e#4537#5401#0" expanded="false" />
-                <element signature="e#5503#6201#0" expanded="false" />
-                <element signature="e#6303#7006#0" expanded="false" />
-                <element signature="e#7083#8100#0" expanded="false" />
+                <element signature="e#3342#3842#0" expanded="false" />
+                <element signature="e#3898#4388#0" expanded="false" />
+                <element signature="e#4463#5327#0" expanded="false" />
+                <element signature="e#5429#6127#0" expanded="false" />
+                <element signature="e#6229#6932#0" expanded="false" />
+                <element signature="e#7009#8026#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alexa-skills.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="alexa-skills.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alexa-skills.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="33" column="107" lean-forward="false" selection-start-line="33" selection-start-column="107" selection-end-line="33" selection-end-column="107" />
+            <state relative-caret-position="-2031">
+              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -59,6 +59,7 @@
       <find>helga.</find>
       <find>alexaYes</find>
       <find>let blog</find>
+      <find>genera</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -82,8 +83,8 @@
         <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/restService.js" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/alexa.js" />
         <option value="$PROJECT_DIR$/alexa-skills.js" />
+        <option value="$PROJECT_DIR$/alexa.js" />
       </list>
     </option>
   </component>
@@ -1660,12 +1661,12 @@
       <workItem from="1504623789929" duration="14250000" />
       <workItem from="1504710983526" duration="10166000" />
       <workItem from="1504792190073" duration="4463000" />
-      <workItem from="1504859389433" duration="772000" />
+      <workItem from="1504859389433" duration="949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124333000" />
+    <option name="totallyTimeSpent" value="124510000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2052,29 +2053,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/alexa-skills.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2031">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="345" column="18" lean-forward="true" selection-start-line="345" selection-start-column="18" selection-end-line="345" selection-end-column="37" />
+        <state relative-caret-position="260">
+          <caret line="342" column="23" lean-forward="false" selection-start-line="342" selection-start-column="23" selection-end-line="342" selection-end-column="23" />
           <folding>
             <element signature="e#1427#1463#0" expanded="false" />
             <element signature="e#2186#2214#0" expanded="false" />
             <element signature="e#2263#2720#0" expanded="false" />
-            <element signature="e#3416#3916#0" expanded="false" />
-            <element signature="e#3972#4462#0" expanded="false" />
-            <element signature="e#4537#5401#0" expanded="false" />
-            <element signature="e#5503#6201#0" expanded="false" />
-            <element signature="e#6303#7006#0" expanded="false" />
-            <element signature="e#7083#8100#0" expanded="false" />
+            <element signature="e#3342#3842#0" expanded="false" />
+            <element signature="e#3898#4388#0" expanded="false" />
+            <element signature="e#4463#5327#0" expanded="false" />
+            <element signature="e#5429#6127#0" expanded="false" />
+            <element signature="e#6229#6932#0" expanded="false" />
+            <element signature="e#7009#8026#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alexa-skills.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="33" column="107" lean-forward="false" selection-start-line="33" selection-start-column="107" selection-end-line="33" selection-end-column="107" />
-          <folding />
         </state>
       </provider>
     </entry>
