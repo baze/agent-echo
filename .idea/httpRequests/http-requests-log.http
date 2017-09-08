@@ -1,0 +1,11 @@
+POST https://flannel-poutine-21177.herokuapp.com/alexa
+Accept:application/json
+Content-Type:application/json
+SignatureCertChainUrl:https://s3.amazonaws.com/echo.api/echo-api-cert.pem
+
+{   "session": {     "new": false,     "sessionId": "SessionId.1ea16483-0a29-4e74-8f68-7c5a15aeaae4",     "application": {       "applicationId": "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938"     },     "attributes": {},     "user": {       "userId": "amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ"     }   },   "request": {     "type": "IntentRequest",     "requestId": "EdwRequestId.8b846d86-6c7a-4188-baeb-87d522d13304",     "intent": {       "name": "DefaultWelcomeIntent",       "slots": {}     },     "locale": "de-DE",     "timestamp": "2017-09-07T08:36:49Z"   },   "context": {     "AudioPlayer": {       "playerActivity": "IDLE"     },     "System": {       "application": {         "applicationId": "amzn1.ask.skill.17e64ff1-708e-432e-add3-f925579d1938"       },       "user": {         "userId": "amzn1.ask.account.AGSAOZOK6I2SIJY5LDXO5ORFJQPZEAQ4ZUUEVU4E5666QQJPY76VPRFLA2Y6J4C6F7U6CUS5TLJ53PUTV2APDKQYWSZ575Z3FFWOBKSBEWYIKW2XKZ4PN72IZRVXNPYBWISGDFLLLIFJPKNJF3H4VFW3UEZCGK4K6F3F3Q7FK2V3KDRZZYT4JUAUYXFKYZIVR7FIIOH7U3J2PSQ"       },       "device": {         "supportedInterfaces": {}       }     }   },   "version": "1.0" }
+
+<> 2017-09-08T103008.200.json
+
+###
+
