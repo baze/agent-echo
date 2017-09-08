@@ -79,7 +79,7 @@ var helpers = {
         request.end();
     },
 
-    request: function (req, res, phrase, shouldEndSession = false, sessionAttributes, context) {
+    request: function (req, res, phrase, shouldEndSession = false, sessionAttributes, contexts) {
         var request = app.textRequest(phrase, {
             sessionId: '<unique session id>'
         });
@@ -169,7 +169,7 @@ alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
 
     var shouldEndSession = false;
 
-    //helpers.request(req, res, phrase, shouldEndSession, sessionAttributes, contexts);
+    helpers.request(req, res, phrase, shouldEndSession, sessionAttributes, contexts);
 });
 
 alexa.intent('EmployeePhone', function (req, res, slots, sessionAttributes) {
