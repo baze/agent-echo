@@ -201,8 +201,7 @@ alexa.intent('EmployeePhone', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots, sessionAttributes) {
 
-    // var employee = sessionAttributes.employee;
-    var employee = slots.employeeSlot.value;
+    var employee = sessionAttributes.employee;
     sessionAttributes.employee = employee;
 
     var phrase = 'wie ist die Durchwahl?';
@@ -223,8 +222,7 @@ alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots, s
 
 alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, sessionAttributes) {
 
-    // var employee = sessionAttributes.employee;
-    var employee = slots.employeeSlot.value;
+    var employee = sessionAttributes.employee;
     sessionAttributes.employee = employee;
 
     var phrase = 'Wie ist die E-Mail-Adresse?';
