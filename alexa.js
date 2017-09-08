@@ -150,6 +150,8 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
 
+    console.log(slots);
+
     var employee = slots.employeeslot.value;
 
     var phrase = 'Wer ist die E-Mail-Adresse von ' + employee + '?';
@@ -167,7 +169,7 @@ alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
 
     var shouldEndSession = false;
 
-    helpers.request(req, res, phrase, shouldEndSession, sessionAttributes, contexts);
+    //helpers.request(req, res, phrase, shouldEndSession, sessionAttributes, contexts);
 });
 
 alexa.intent('EmployeePhone', function (req, res, slots, sessionAttributes) {

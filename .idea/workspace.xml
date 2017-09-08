@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41cd959d-8cf2-4c22-9ae8-3014fa29b27a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users.json" afterPath="$PROJECT_DIR$/users.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alexa.js" afterPath="$PROJECT_DIR$/alexa.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,21 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="122" column="38" lean-forward="false" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
+            <state relative-caret-position="605">
+              <caret line="171" column="6" lean-forward="false" selection-start-line="171" selection-start-column="6" selection-end-line="171" selection-end-column="6" />
               <folding>
                 <element signature="e#512#1385#0" expanded="false" />
                 <element signature="e#1426#1462#0" expanded="false" />
                 <element signature="e#1500#2053#0" expanded="false" />
                 <element signature="e#2869#2897#0" expanded="false" />
+                <element signature="e#2964#3102#0" expanded="false" />
                 <element signature="e#3240#3657#0" expanded="false" />
-                <element signature="e#3737#4178#0" expanded="false" />
-                <element signature="e#4258#4695#0" expanded="false" />
-                <element signature="e#4797#5235#0" expanded="false" />
-                <element signature="e#5337#5780#0" expanded="false" />
+                <element signature="e#4285#4722#0" expanded="false" />
+                <element signature="e#4824#5262#0" expanded="false" />
+                <element signature="e#5364#5807#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -51,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="users.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+            <state relative-caret-position="260">
+              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -99,8 +98,8 @@
         <option value="$PROJECT_DIR$/restService.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/alexa-skills.js" />
-        <option value="$PROJECT_DIR$/alexa.js" />
         <option value="$PROJECT_DIR$/users.json" />
+        <option value="$PROJECT_DIR$/alexa.js" />
       </list>
     </option>
   </component>
@@ -1677,12 +1676,12 @@
       <workItem from="1504623789929" duration="14250000" />
       <workItem from="1504710983526" duration="10166000" />
       <workItem from="1504792190073" duration="4463000" />
-      <workItem from="1504859389433" duration="4629000" />
+      <workItem from="1504859389433" duration="4797000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128190000" />
+    <option name="totallyTimeSpent" value="128358000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2057,24 +2056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alexa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="122" column="38" lean-forward="false" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
-          <folding>
-            <element signature="e#512#1385#0" expanded="false" />
-            <element signature="e#1426#1462#0" expanded="false" />
-            <element signature="e#1500#2053#0" expanded="false" />
-            <element signature="e#2869#2897#0" expanded="false" />
-            <element signature="e#3240#3657#0" expanded="false" />
-            <element signature="e#3737#4178#0" expanded="false" />
-            <element signature="e#4258#4695#0" expanded="false" />
-            <element signature="e#4797#5235#0" expanded="false" />
-            <element signature="e#5337#5780#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apiai.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -2091,9 +2072,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        <state relative-caret-position="260">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alexa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="171" column="6" lean-forward="false" selection-start-line="171" selection-start-column="6" selection-end-line="171" selection-end-column="6" />
+          <folding>
+            <element signature="e#512#1385#0" expanded="false" />
+            <element signature="e#1426#1462#0" expanded="false" />
+            <element signature="e#1500#2053#0" expanded="false" />
+            <element signature="e#2869#2897#0" expanded="false" />
+            <element signature="e#2964#3102#0" expanded="false" />
+            <element signature="e#3240#3657#0" expanded="false" />
+            <element signature="e#4285#4722#0" expanded="false" />
+            <element signature="e#4824#5262#0" expanded="false" />
+            <element signature="e#5364#5807#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
