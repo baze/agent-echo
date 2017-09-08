@@ -95,6 +95,8 @@ var helpers = {
                 contexts: contexts
             };
 
+            sessionAttributes.previousAction = response.result.action;
+
             alexa.send(req, res, options, sessionAttributes);
         });
 
@@ -160,7 +162,6 @@ alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
     var phrase = 'Wer ist die E-Mail-Adresse von ' + employee + '?';
 
     sessionAttributes.employee = employee;
-    sessionAttributes.previousAction = 'employee.email';
 
     var contexts = [
         {
@@ -188,7 +189,6 @@ alexa.intent('EmployeePhone', function (req, res, slots, sessionAttributes) {
     console.log(phrase);
 
     sessionAttributes.employee = employee;
-    sessionAttributes.previousAction = 'employee.phone';
 
     var contexts = [
         {
@@ -213,7 +213,6 @@ alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots, s
     // var employee = sessionAttributes.employee;
     var employee = slots.employeeSlot.value;
     sessionAttributes.employee = employee;
-    sessionAttributes.previousAction = 'employee.phone';
 
     var phrase = 'wie ist die Durchwahl?';
 
@@ -239,7 +238,6 @@ alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, s
     // var employee = sessionAttributes.employee;
     var employee = slots.employeeSlot.value;
     sessionAttributes.employee = employee;
-    sessionAttributes.previousAction = 'employee.email';
 
     var phrase = 'Wie ist die E-Mail-Adresse?';
 
@@ -348,14 +346,18 @@ alexa.intent('Previousintent', function (req, res, slots, sessionAttributes) {
     console.log(sessionAttributes);
 
     switch (sessionAttributes.previousAction) {
+        case 'employee.email' :
+            console.log("email");
+            helpers.request(req, res, 'und die email?');
+            break;
+
         case 'employee.phone' :
-            var phrase = 'Das habe ich leider nicht verstanden';
+            console.log("phone");
+            helpers.request(req, res, 'und die telefonnummer?');
             break;
 
         default:
-            var phrase = 'Das habe ich leider nicht verstanden';
+            console.log("default");
             break;
     }
-
-    helpers.request(req, res, phrase);
 });
