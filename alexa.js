@@ -182,6 +182,8 @@ alexa.intent('EmployeePhone', function (req, res, slots, sessionAttributes) {
 
     var phrase = 'Wer ist die Durchwahl von ' + employee + '?';
 
+    console.log(phrase);
+
     sessionAttributes.employee = employee;
 
     var contexts = [
