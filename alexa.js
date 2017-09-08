@@ -86,6 +86,8 @@ var helpers = {
 
         request.on('response', function (response) {
 
+            console.log(response);
+
             var phrase = response.result.fulfillment.speech;
             var options = {
                 shouldEndSession: shouldEndSession,
