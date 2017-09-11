@@ -321,8 +321,7 @@ alexa.intent('Thankyou', function (req, res) {
 
 alexa.intent('Previousintent', function (req, res, slots, sessionAttributes) {
 
-    console.log(req.body.request.intent.name);
-    console.log(sessionAttributes);
+    console.log(req.body);
 
     switch (sessionAttributes.myAction) {
         case 'employee.email' :
