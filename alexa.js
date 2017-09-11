@@ -134,6 +134,10 @@ var helpers = {
                 contexts: contexts
             };
 
+            if (sessionAttributes !== 'undefined') {
+                sessionAttributes = {};
+            }
+
             sessionAttributes.myAction = response.result.action;
 
             alexa.send(req, res, options, sessionAttributes);
@@ -259,29 +263,29 @@ alexa.intent('KnowledgeXbm', function (req, res) {
 
 alexa.intent('SmalltalkAbout', function (req, res) {
     var phrase = 'wofür steht helga';
-    helpers.request(req, res, phrase);
+    helpers.request(req, res, phrase, true);
 });
 
 alexa.intent('SmalltalkInsult', function (req, res) {
     var phrase = 'Ficke disch';
-    helpers.request(req, res, phrase);
+    helpers.request(req, res, phrase, true);
 });
 
 alexa.intent('SmalltalkNane', function (req, res) {
     var phrase = 'Wer ist zauberhaft und elfengleich?';
-    helpers.request(req, res, phrase);
+    helpers.request(req, res, phrase, true);
 });
 
 alexa.intent('SmalltalkStkl', function (req, res) {
     var phrase = 'Wer hat Küchendienst?';
-    helpers.request(req, res, phrase);
+    helpers.request(req, res, phrase, true);
 });
 
 // Misc
 
 alexa.intent('Thankyou', function (req, res) {
     var phrase = 'Danke';
-    helpers.request(req, res, phrase);
+    helpers.request(req, res, phrase, true);
 });
 
 alexa.intent('Previousintent', function (req, res, slots, sessionAttributes) {
