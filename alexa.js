@@ -76,8 +76,6 @@ var helpers = {
 
     request: function (req, res, phrase, shouldEndSession = false, sessionAttributes, contexts) {
 
-        console.log(phrase);
-
         var request = app.textRequest(phrase, {
             sessionId: '<unique session id>'
         });
