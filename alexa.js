@@ -15,12 +15,9 @@ const app = apiai("cb3111d6b5cb4b22a6a47d96f8e0bb0a");
 var helpers = {
     launch: function(req, res, slots) {
 
-        // console.log(req);
-        // console.log(res);
         var intentName = req.body.request.intent.name;
 
         console.log(intentName);
-        // console.log(slots);
 
         var request = app.textRequest('Hallo', {
             sessionId: '<unique session id>'
@@ -94,7 +91,6 @@ var helpers = {
             };
 
             sessionAttributes.myAction = response.result.action;
-            console.log(sessionAttributes);
 
             alexa.send(req, res, options, sessionAttributes);
         });
@@ -153,12 +149,14 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
 
+    console.log("EmployeeEmail");
     console.log(req.body.request);
 
     // var employee = slots.employeeslot.value;
     var employee = req.body.request.intent.name == 'Previousintent' ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
+    console.log(employee);
 
-    var phrase = 'Wer ist die E-Mail-Adresse von ' + employee + '?';
+    var phrase = 'Wie ist die E-Mail-Adresse von ' + employee + '?';
 
     sessionAttributes.employee = employee;
 
@@ -181,7 +179,7 @@ alexa.intent('EmployeePhone', function (req, res, slots, sessionAttributes) {
     // var employee = slots.employeeslot.value;
     var employee = req.body.request.intent.name == 'Previousintent' ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
 
-    var phrase = 'Wer ist die Durchwahl von ' + employee + '?';
+    var phrase = 'Wie ist die Durchwahl von ' + employee + '?';
 
     sessionAttributes.employee = employee;
 
@@ -328,9 +326,6 @@ alexa.intent('Thankyou', function (req, res) {
 });
 
 alexa.intent('Previousintent', function (req, res, slots, sessionAttributes) {
-
-    console.log(slots);
-    // console.log(sessionAttributes);
 
     switch (sessionAttributes.myAction) {
         case 'employee.email' :
