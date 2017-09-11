@@ -86,8 +86,6 @@ var helpers = {
 
         request.on('response', function (response) {
 
-            console.log(response);
-
             var phrase = response.result.fulfillment.speech;
             var options = {
                 shouldEndSession: shouldEndSession,
@@ -96,6 +94,7 @@ var helpers = {
             };
 
             sessionAttributes.myAction = response.result.action;
+            console.log(sessionAttributes);
 
             alexa.send(req, res, options, sessionAttributes);
         });
