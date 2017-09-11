@@ -102,11 +102,23 @@ var helpers = {
 
         email : function (req, res, slots, sessionAttributes) {
 
+            console.log(sessionAttributes.employee);
+            console.log(slots.employeeslot.value);
+            console.log(req.body.request.intent.slots.employeeslot.value);
+
+            var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
+
             var phrase = 'Wie ist die E-Mail-Adresse von ' + employee + '?';
             helpers.userinfo.get(phrase, req, res, slots, sessionAttributes);
         },
 
         phone: function (req, res, slots, sessionAttributes) {
+
+            console.log(sessionAttributes.employee);
+            console.log(slots.employeeslot.value);
+            console.log(req.body.request.intent.slots.employeeslot.value);
+
+            var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
 
             var phrase = 'Wie ist die Telefonnummer von ' + employee + '?';
             helpers.userinfo.get(phrase, req, res, slots, sessionAttributes);
