@@ -96,10 +96,10 @@ var helpers = {
 
         email : function (req, res, slots, sessionAttributes) {
 
+            console.log(sessionAttributes)
+
             var employee = req.body.request.intent.slots.employeeslot.value ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
             sessionAttributes.employee = employee;
-
-            console.log(sessionAttributes)
 
             var phrase = 'Wie ist die E-Mail-Adresse von ' + employee + '?';
             helpers.userinfo.get(phrase, req, res, slots, sessionAttributes);
@@ -107,10 +107,12 @@ var helpers = {
 
         phone: function (req, res, slots, sessionAttributes) {
 
+            console.log(sessionAttributes)
+
             var employee = req.body.request.intent.slots.employeeslot.value ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
             sessionAttributes.employee = employee;
 
-            console.log(sessionAttributes)
+
 
             var phrase = 'Wie ist die Telefonnummer von ' + employee + '?';
             helpers.userinfo.get(phrase, req, res, slots, sessionAttributes);
