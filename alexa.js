@@ -77,13 +77,7 @@ var helpers = {
     userinfo: {
         get : function (phrase, req, res, slots, sessionAttributes) {
 
-            console.log(sessionAttributes);
-            console.log(slots.employeeslot.value);
-            console.log(req.body.request.intent.slots.employeeslot.value);
-
-            var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
-
-            sessionAttributes.employee = employee;
+            var employee = sessionAttributes.employee;
 
             var contexts = [
                 {
@@ -102,11 +96,8 @@ var helpers = {
 
         email : function (req, res, slots, sessionAttributes) {
 
-            console.log(sessionAttributes.employee);
-            console.log(slots.employeeslot.value);
-            console.log(req.body.request.intent.slots.employeeslot.value);
-
-            var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
+            var employee = req.body.request.intent.slots.employeeslot.value ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
+            sessionAttributes.employee = employee;
 
             var phrase = 'Wie ist die E-Mail-Adresse von ' + employee + '?';
             helpers.userinfo.get(phrase, req, res, slots, sessionAttributes);
@@ -114,11 +105,8 @@ var helpers = {
 
         phone: function (req, res, slots, sessionAttributes) {
 
-            console.log(sessionAttributes.employee);
-            console.log(slots.employeeslot.value);
-            console.log(req.body.request.intent.slots.employeeslot.value);
-
-            var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
+            var employee = req.body.request.intent.slots.employeeslot.value ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
+            sessionAttributes.employee = employee;
 
             var phrase = 'Wie ist die Telefonnummer von ' + employee + '?';
             helpers.userinfo.get(phrase, req, res, slots, sessionAttributes);
