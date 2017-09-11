@@ -75,12 +75,13 @@ var helpers = {
     },
 
     userinfo: {
-        email : function (req, res, slots, sessionAttributes) {
+        get : function (phrase, req, res, slots, sessionAttributes) {
 
-            // var employee = slots.employeeslot.value;
+            console.log(sessionAttributes.employee);
+            console.log(slots.employeeslot.value);
+            console.log(req.body.request.intent.slots.employeeslot.value);
+
             var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
-
-            var phrase = 'Wie ist die E-Mail-Adresse von ' + employee + '?';
 
             sessionAttributes.employee = employee;
 
@@ -99,27 +100,16 @@ var helpers = {
 
         },
 
+        email : function (req, res, slots, sessionAttributes) {
+
+            var phrase = 'Wie ist die E-Mail-Adresse von ' + employee + '?';
+            helpers.userinfo.get(phrase, req, res, slots, sessionAttributes);
+        },
+
         phone: function (req, res, slots, sessionAttributes) {
 
-            // var employee = slots.employeeslot.value;
-            var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
-
-            var phrase = 'Wie ist die Durchwahl von ' + employee + '?';
-
-            sessionAttributes.employee = employee;
-
-            var contexts = [
-                {
-                    name: 'userinfo',
-                    parameters: {
-                        'employee': employee
-                    }
-                }
-            ];
-
-            var shouldEndSession = false;
-
-            helpers.request(req, res, phrase, shouldEndSession, sessionAttributes, contexts);
+            var phrase = 'Wie ist die Telefonnummer von ' + employee + '?';
+            helpers.userinfo.get(phrase, req, res, slots, sessionAttributes);
 
         }
     },
