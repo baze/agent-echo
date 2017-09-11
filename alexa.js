@@ -134,7 +134,7 @@ var helpers = {
                 contexts: contexts
             };
 
-            if (sessionAttributes) {
+            if (sessionAttributes !== 'undefined') {
                 sessionAttributes.myAction = response.result.action;
             }
 
