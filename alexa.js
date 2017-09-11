@@ -148,7 +148,7 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
 
     // var employee = slots.employeeslot.value;
-    var employee = req.body.request.intent.name == 'Previousintent' ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
+    var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
 
     var phrase = 'Wie ist die E-Mail-Adresse von ' + employee + '?';
 
@@ -171,7 +171,7 @@ alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
 alexa.intent('EmployeePhone', function (req, res, slots, sessionAttributes) {
 
     // var employee = slots.employeeslot.value;
-    var employee = req.body.request.intent.name == 'Previousintent' ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
+    var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
 
     var phrase = 'Wie ist die Durchwahl von ' + employee + '?';
 
@@ -321,17 +321,18 @@ alexa.intent('Thankyou', function (req, res) {
 
 alexa.intent('Previousintent', function (req, res, slots, sessionAttributes) {
 
-    console.log(req.body.request.intent.slots.employeeslot.value);
-    console.log(sessionAttributes);
+    // console.log(req.body.request.intent.slots.employeeslot.value);
 
     switch (sessionAttributes.myAction) {
         case 'employee.email' :
             console.log("email");
+            sessionAttributes.employee = req.body.request.intent.slots.employeeslot.value;
             helpers.request(req, res, 'und die email?', false, sessionAttributes);
             break;
 
         case 'employee.phone' :
             console.log("phone");
+            sessionAttributes.employee = req.body.request.intent.slots.employeeslot.value;
             helpers.request(req, res, 'und die telefonnummer?', false, sessionAttributes);
             break;
 
