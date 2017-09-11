@@ -74,6 +74,56 @@ var helpers = {
         request.end();
     },
 
+    userinfo: {
+        email : function (req, res, slots, sessionAttributes) {
+
+            // var employee = slots.employeeslot.value;
+            var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
+
+            var phrase = 'Wie ist die E-Mail-Adresse von ' + employee + '?';
+
+            sessionAttributes.employee = employee;
+
+            var contexts = [
+                {
+                    name: 'userinfo',
+                    parameters: {
+                        'employee': employee
+                    }
+                }
+            ];
+
+            var shouldEndSession = false;
+
+            helpers.request(req, res, phrase, shouldEndSession, sessionAttributes, contexts);
+
+        },
+
+        phone: function (req, res, slots, sessionAttributes) {
+
+            // var employee = slots.employeeslot.value;
+            var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
+
+            var phrase = 'Wie ist die Durchwahl von ' + employee + '?';
+
+            sessionAttributes.employee = employee;
+
+            var contexts = [
+                {
+                    name: 'userinfo',
+                    parameters: {
+                        'employee': employee
+                    }
+                }
+            ];
+
+            var shouldEndSession = false;
+
+            helpers.request(req, res, phrase, shouldEndSession, sessionAttributes, contexts);
+
+        }
+    },
+
     request: function (req, res, phrase, shouldEndSession = false, sessionAttributes, contexts) {
 
         console.log(phrase);
@@ -150,94 +200,13 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
     helpers.request(req, res, phrase, shouldEndSession, sessionAttributes, contexts);
 });
 
-alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
+alexa.intent('EmployeeEmail', helpers.userinfo.email);
 
-    // var employee = slots.employeeslot.value;
-    var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
+alexa.intent('EmployeePhone', helpers.userinfo.phone);
 
-    var phrase = 'Wie ist die E-Mail-Adresse von ' + employee + '?';
+alexa.intent('EmployeeContextUserinfoCommentPhone', helpers.userinfo.phone);
 
-    sessionAttributes.employee = employee;
-
-    var contexts = [
-        {
-            name: 'userinfo',
-            parameters: {
-                'employee': employee
-            }
-        }
-    ];
-
-    var shouldEndSession = false;
-
-    helpers.request(req, res, phrase, shouldEndSession, sessionAttributes, contexts);
-});
-
-alexa.intent('EmployeePhone', function (req, res, slots, sessionAttributes) {
-
-    // var employee = slots.employeeslot.value;
-    var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
-
-    var phrase = 'Wie ist die Durchwahl von ' + employee + '?';
-
-    sessionAttributes.employee = employee;
-
-    var contexts = [
-        {
-            name: 'userinfo',
-            parameters: {
-                'employee': employee
-            }
-        }
-    ];
-
-    var shouldEndSession = false;
-
-    helpers.request(req, res, phrase, shouldEndSession, sessionAttributes, contexts);
-
-});
-
-alexa.intent('EmployeeContextUserinfoCommentPhone', function (req, res, slots, sessionAttributes) {
-
-    var employee = sessionAttributes.employee;
-    sessionAttributes.employee = employee;
-
-    var phrase = 'wie ist die Durchwahl?';
-
-    var contexts = [
-        {
-            name: 'userinfo',
-            parameters: {
-                'employee': employee
-            }
-        }
-    ];
-
-    var shouldEndSession = false;
-
-    helpers.request(req, res, phrase, shouldEndSession, sessionAttributes, contexts);
-});
-
-alexa.intent('EmployeeContextUserinfoCommentEmail', function (req, res, slots, sessionAttributes) {
-
-    var employee = sessionAttributes.employee;
-    sessionAttributes.employee = employee;
-
-    var phrase = 'Wie ist die E-Mail-Adresse?';
-
-    var contexts = [
-        {
-            name: 'userinfo',
-            parameters: {
-                'employee': employee
-            }
-        }
-    ];
-
-    var shouldEndSession = false;
-
-    helpers.request(req, res, phrase, shouldEndSession, sessionAttributes, contexts);
-});
+alexa.intent('EmployeeContextUserinfoCommentEmail', helpers.userinfo.email);
 
 // Knowledge
 alexa.intent('KnowledgeActivities', function (req, res) {
@@ -332,13 +301,15 @@ alexa.intent('Previousintent', function (req, res, slots, sessionAttributes) {
         case 'employee.email' :
             console.log("email");
             sessionAttributes.employee = req.body.request.intent.slots.employeeslot.value;
-            helpers.request(req, res, 'wie ist die email von ' + sessionAttributes.employee, false, sessionAttributes);
+            // helpers.request(req, res, 'wie ist die email von ' + sessionAttributes.employee, false, sessionAttributes);
+            helpers.userinfo.email(req, res, slots, sessionAttributes);
             break;
 
         case 'employee.phone' :
             console.log("phone");
             sessionAttributes.employee = req.body.request.intent.slots.employeeslot.value;
-            helpers.request(req, res, 'wie ist die telefonnummer von ' + sessionAttributes.employee, false, sessionAttributes);
+            // helpers.request(req, res, 'wie ist die telefonnummer von ' + sessionAttributes.employee, false, sessionAttributes);
+            helpers.userinfo.phone(req, res, slots, sessionAttributes);
             break;
 
         default:
