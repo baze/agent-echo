@@ -148,11 +148,8 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
 
-    var employee = slots.employeeslot.value;
-    // var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
-
-    console.log(employee);
-    console.log(req.body.request.intent.slots.employeeslot.value);
+    // var employee = slots.employeeslot.value;
+    var employee = sessionAttributes.employee ? sessionAttributes.employee : slots.employeeslot.value;
 
     var phrase = 'Wie ist die E-Mail-Adresse von ' + employee + '?';
 
@@ -330,13 +327,13 @@ alexa.intent('Previousintent', function (req, res, slots, sessionAttributes) {
     switch (sessionAttributes.myAction) {
         case 'employee.email' :
             console.log("email");
-            // sessionAttributes.employee = req.body.request.intent.slots.employeeslot.value;
+            sessionAttributes.employee = req.body.request.intent.slots.employeeslot.value;
             helpers.request(req, res, 'und die email?', false, sessionAttributes);
             break;
 
         case 'employee.phone' :
             console.log("phone");
-            // sessionAttributes.employee = req.body.request.intent.slots.employeeslot.value;
+            sessionAttributes.employee = req.body.request.intent.slots.employeeslot.value;
             helpers.request(req, res, 'und die telefonnummer?', false, sessionAttributes);
             break;
 
