@@ -134,9 +134,7 @@ var helpers = {
                 contexts: contexts
             };
 
-            if (sessionAttributes !== 'undefined') {
-                sessionAttributes.myAction = response.result.action;
-            }
+            sessionAttributes.myAction = response.result.action;
 
             alexa.send(req, res, options, sessionAttributes);
         });
@@ -224,7 +222,7 @@ alexa.intent('KnowledgeEmployees', function(req, res) {
 
 alexa.intent('KnowledgeEmployeescount', function (req, res) {
     var phrase = 'wieviele Personen arbeiten bei euw?';
-    helpers.request(req, res, phrase, false, sessionAttributes);
+    helpers.request(req, res, phrase);
 });
 
 alexa.intent('KnowledgeFounded', function (req, res) {
