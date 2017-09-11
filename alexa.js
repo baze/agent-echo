@@ -135,8 +135,10 @@ var helpers = {
             };
 
             if (sessionAttributes !== 'undefined') {
-                sessionAttributes.myAction = response.result.action;
+                sessionAttributes = {};
             }
+
+            sessionAttributes.myAction = response.result.action;
 
             alexa.send(req, res, options, sessionAttributes);
         });
