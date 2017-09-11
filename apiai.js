@@ -75,7 +75,7 @@ function getInfoForUsername(username) {
         var user = _users[i];
 
         if (user.username == username) {
-            console.log(user);
+            // console.log(user);
             return user;
         }
     }
@@ -150,7 +150,7 @@ restService.post('/helga', function (req, res) {
         action = previousAction;
     }
 
-    console.log(action);
+    // console.log(action);
 
     switch (action) {
 
