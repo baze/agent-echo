@@ -17,7 +17,7 @@ var helpers = {
 
         var intentName = req.body.request.intent.name;
 
-        console.log(intentName);
+        // console.log(intentName);
 
         var request = app.textRequest('Hallo', {
             sessionId: '<unique session id>'
@@ -149,12 +149,8 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
 
-    console.log("EmployeeEmail");
-    console.log(req.body.request);
-
     // var employee = slots.employeeslot.value;
     var employee = req.body.request.intent.name == 'Previousintent' ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
-    console.log(employee);
 
     var phrase = 'Wie ist die E-Mail-Adresse von ' + employee + '?';
 
@@ -326,6 +322,8 @@ alexa.intent('Thankyou', function (req, res) {
 });
 
 alexa.intent('Previousintent', function (req, res, slots, sessionAttributes) {
+
+    console.log(req.body.request);
 
     switch (sessionAttributes.myAction) {
         case 'employee.email' :
