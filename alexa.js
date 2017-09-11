@@ -153,9 +153,10 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
 
-    console.log(req.request);
+    console.log(req.body.request);
 
-    var employee = slots.employeeslot.value;
+    // var employee = slots.employeeslot.value;
+    var employee = req.body.request.intent.name == 'Previousintent' ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
 
     var phrase = 'Wer ist die E-Mail-Adresse von ' + employee + '?';
 
@@ -177,7 +178,8 @@ alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('EmployeePhone', function (req, res, slots, sessionAttributes) {
 
-    var employee = slots.employeeslot.value;
+    // var employee = slots.employeeslot.value;
+    var employee = req.body.request.intent.name == 'Previousintent' ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
 
     var phrase = 'Wer ist die Durchwahl von ' + employee + '?';
 
