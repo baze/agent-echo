@@ -330,13 +330,13 @@ alexa.intent('Previousintent', function (req, res, slots, sessionAttributes) {
         case 'employee.email' :
             console.log("email");
             sessionAttributes.employee = req.body.request.intent.slots.employeeslot.value;
-            helpers.request(req, res, 'und die email?', false, sessionAttributes);
+            helpers.request(req, res, 'wie ist die email von ' + sessionAttributes.employee, false, sessionAttributes);
             break;
 
         case 'employee.phone' :
             console.log("phone");
             sessionAttributes.employee = req.body.request.intent.slots.employeeslot.value;
-            helpers.request(req, res, 'und die telefonnummer?', false, sessionAttributes);
+            helpers.request(req, res, 'wie ist die telefonnummer von ' + sessionAttributes.employee, false, sessionAttributes);
             break;
 
         default:
