@@ -78,6 +78,8 @@ var helpers = {
 
         console.log(phrase);
 
+        console.log(contexts);
+
         var request = app.textRequest(phrase, {
             sessionId: '<unique session id>'
         });
