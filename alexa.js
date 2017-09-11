@@ -153,7 +153,7 @@ alexa.intent('Employee', function (req, res, slots, sessionAttributes) {
 
 alexa.intent('EmployeeEmail', function (req, res, slots, sessionAttributes) {
 
-    console.log(req);
+    console.log(req.request);
 
     var employee = slots.employeeslot.value;
 
