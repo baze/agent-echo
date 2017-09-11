@@ -116,7 +116,7 @@ var helpers = {
         }
     },
 
-    request: function (req, res, phrase, shouldEndSession = false, sessionAttributes, contexts) {
+    request: function (req, res, phrase, shouldEndSession = false, sessionAttributes = {}, contexts = []) {
 
         console.log(phrase);
         console.log(contexts);
@@ -133,10 +133,6 @@ var helpers = {
                 outputSpeech: phrase,
                 contexts: contexts
             };
-
-            if (sessionAttributes !== 'undefined') {
-                sessionAttributes = {};
-            }
 
             sessionAttributes.myAction = response.result.action;
 
