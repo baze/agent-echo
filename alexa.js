@@ -96,9 +96,7 @@ var helpers = {
 
         email : function (req, res, slots, sessionAttributes) {
 
-            console.log(sessionAttributes.employee)
-
-            var employee = req.body.request.intent.slots.employeeslot.value ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
+            var employee = req.body.request.intent.slots.employeeslot.value ? req.body.request.intent.slots.employeeslot.value : sessionAttributes.employee;
             sessionAttributes.employee = employee;
 
             var phrase = 'Wie ist die E-Mail-Adresse von ' + employee + '?';
@@ -107,9 +105,7 @@ var helpers = {
 
         phone: function (req, res, slots, sessionAttributes) {
 
-            console.log(sessionAttributes.employee)
-
-            var employee = req.body.request.intent.slots.employeeslot.value ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
+            var employee = req.body.request.intent.slots.employeeslot.value ? req.body.request.intent.slots.employeeslot.value : sessionAttributes.employee;
             sessionAttributes.employee = employee;
 
 
