@@ -18,25 +18,26 @@
       <file leaf-file-name="alexa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/alexa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="155">
+              <caret line="324" column="33" lean-forward="false" selection-start-line="324" selection-start-column="33" selection-end-line="324" selection-end-column="33" />
               <folding>
-                <element signature="e#1340#1376#0" expanded="false" />
-                <element signature="e#1414#1967#0" expanded="false" />
-                <element signature="e#2850#2878#0" expanded="false" />
-                <element signature="e#2945#3083#0" expanded="false" />
-                <element signature="e#3221#3638#0" expanded="false" />
-                <element signature="e#6090#6170#0" expanded="false" />
-                <element signature="e#6227#6312#0" expanded="false" />
-                <element signature="e#6373#6455#0" expanded="false" />
-                <element signature="e#6513#6597#0" expanded="false" />
-                <element signature="e#6661#6759#0" expanded="false" />
-                <element signature="e#6816#6904#0" expanded="false" />
-                <element signature="e#6969#7066#0" expanded="false" />
-                <element signature="e#7128#7218#0" expanded="false" />
-                <element signature="e#7275#7363#0" expanded="false" />
-                <element signature="e#7421#7516#0" expanded="false" />
-                <element signature="e#7569#7666#0" expanded="false" />
+                <element signature="e#512#1261#0" expanded="false" />
+                <element signature="e#1302#1338#0" expanded="false" />
+                <element signature="e#1376#1929#0" expanded="false" />
+                <element signature="e#2812#2840#0" expanded="false" />
+                <element signature="e#2907#3045#0" expanded="false" />
+                <element signature="e#3183#3600#0" expanded="false" />
+                <element signature="e#6052#6132#0" expanded="false" />
+                <element signature="e#6189#6274#0" expanded="false" />
+                <element signature="e#6335#6417#0" expanded="false" />
+                <element signature="e#6475#6559#0" expanded="false" />
+                <element signature="e#6623#6721#0" expanded="false" />
+                <element signature="e#6778#6866#0" expanded="false" />
+                <element signature="e#6931#7028#0" expanded="false" />
+                <element signature="e#7090#7180#0" expanded="false" />
+                <element signature="e#7237#7325#0" expanded="false" />
+                <element signature="e#7383#7478#0" expanded="false" />
+                <element signature="e#7531#7628#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -107,6 +108,7 @@
       <find>request</find>
       <find>req.</find>
       <find>console.log</find>
+      <find>console.log(</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1710,12 +1712,12 @@
       <workItem from="1504710983526" duration="10166000" />
       <workItem from="1504792190073" duration="4463000" />
       <workItem from="1504859389433" duration="11086000" />
-      <workItem from="1505113692367" duration="2362000" />
+      <workItem from="1505113692367" duration="2715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137009000" />
+    <option name="totallyTimeSpent" value="137362000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1728,6 +1730,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="590" y="23" width="1907" height="1288" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.47935656" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1735,7 +1738,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2241287" sideWeight="0.53488374" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.49383378" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37831324" sideWeight="0.47238606" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37831324" sideWeight="0.47238606" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2241287" sideWeight="0.4651163" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2106,25 +2109,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/alexa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="155">
+          <caret line="324" column="33" lean-forward="false" selection-start-line="324" selection-start-column="33" selection-end-line="324" selection-end-column="33" />
           <folding>
-            <element signature="e#1340#1376#0" expanded="false" />
-            <element signature="e#1414#1967#0" expanded="false" />
-            <element signature="e#2850#2878#0" expanded="false" />
-            <element signature="e#2945#3083#0" expanded="false" />
-            <element signature="e#3221#3638#0" expanded="false" />
-            <element signature="e#6090#6170#0" expanded="false" />
-            <element signature="e#6227#6312#0" expanded="false" />
-            <element signature="e#6373#6455#0" expanded="false" />
-            <element signature="e#6513#6597#0" expanded="false" />
-            <element signature="e#6661#6759#0" expanded="false" />
-            <element signature="e#6816#6904#0" expanded="false" />
-            <element signature="e#6969#7066#0" expanded="false" />
-            <element signature="e#7128#7218#0" expanded="false" />
-            <element signature="e#7275#7363#0" expanded="false" />
-            <element signature="e#7421#7516#0" expanded="false" />
-            <element signature="e#7569#7666#0" expanded="false" />
+            <element signature="e#512#1261#0" expanded="false" />
+            <element signature="e#1302#1338#0" expanded="false" />
+            <element signature="e#1376#1929#0" expanded="false" />
+            <element signature="e#2812#2840#0" expanded="false" />
+            <element signature="e#2907#3045#0" expanded="false" />
+            <element signature="e#3183#3600#0" expanded="false" />
+            <element signature="e#6052#6132#0" expanded="false" />
+            <element signature="e#6189#6274#0" expanded="false" />
+            <element signature="e#6335#6417#0" expanded="false" />
+            <element signature="e#6475#6559#0" expanded="false" />
+            <element signature="e#6623#6721#0" expanded="false" />
+            <element signature="e#6778#6866#0" expanded="false" />
+            <element signature="e#6931#7028#0" expanded="false" />
+            <element signature="e#7090#7180#0" expanded="false" />
+            <element signature="e#7237#7325#0" expanded="false" />
+            <element signature="e#7383#7478#0" expanded="false" />
+            <element signature="e#7531#7628#0" expanded="false" />
           </folding>
         </state>
       </provider>
