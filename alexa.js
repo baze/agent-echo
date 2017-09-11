@@ -134,12 +134,9 @@ var helpers = {
                 contexts: contexts
             };
 
-            console.log(sessionAttributes);
-            console.log(sessionAttributes !== 'undefined');
-            console.log(typeof sessionAttributes !== 'undefined');
-
-
-            // sessionAttributes.myAction = response.result.action;
+            if (sessionAttributes !== 'undefined') {
+                sessionAttributes.myAction = response.result.action;
+            }
 
             alexa.send(req, res, options, sessionAttributes);
         });
