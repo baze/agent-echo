@@ -96,8 +96,8 @@ var helpers = {
 
         email : function (req, res, slots, sessionAttributes) {
 
-            console.log(req.body.request.intent.slots.employeeslot.value)
-            console.log(slots.employeeslot.value)
+            console.log(req.body.request.intent.slots)
+            console.log(slots)
             console.log(sessionAttributes.employees)
 
             var employee = req.body.request.intent.slots.employeeslot.value ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
@@ -109,8 +109,8 @@ var helpers = {
 
         phone: function (req, res, slots, sessionAttributes) {
 
-            console.log(req.body.request.intent.slots.employeeslot.value)
-            console.log(slots.employeeslot.value)
+            console.log(req.body.request.intent.slots)
+            console.log(slots)
             console.log(sessionAttributes.employees)
 
             var employee = req.body.request.intent.slots.employeeslot.value ? req.body.request.intent.slots.employeeslot.value : slots.employeeslot.value;
