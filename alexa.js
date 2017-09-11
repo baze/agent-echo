@@ -77,7 +77,7 @@ var helpers = {
     userinfo: {
         get : function (phrase, req, res, slots, sessionAttributes) {
 
-            console.log(sessionAttributes.employee);
+            console.log(sessionAttributes);
             console.log(slots.employeeslot.value);
             console.log(req.body.request.intent.slots.employeeslot.value);
 
